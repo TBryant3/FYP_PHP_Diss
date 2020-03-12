@@ -171,6 +171,7 @@
     <Content Include="Views\Topics\JavaScriptPage.cshtml" />
     <Content Include="Views\Topics\CSharpPage.cshtml" />
     <Content Include="Views\Topics\CplusplusPage.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

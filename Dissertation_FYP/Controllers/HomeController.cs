@@ -43,6 +43,15 @@ namespace Dissertation_FYP.Controllers
 
         public ActionResult Login()
         {
+            ViewBag.Message = "Welcome to our Login Page! ";
+
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            ViewBag.Message = "Welcome to our Register Page!";
+
             return View();
         }
     }

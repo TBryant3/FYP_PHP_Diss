@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2><strong>Register Form</strong></h2>
+<h2 style="text-align:center">@ViewBag.Message</h2>
+@{
+    if (IsPost)
+    {
+        string username = Request["Username"];
+        string password = Request["Password"];
+        string email = Request["Email"];
+        
+        <p>
+            Username: @username <br />
+            Email: @email <br />
+            Password: @password <br />
+            Confirm Password: @password <br />
+            
+        </p>
+
+        <p>AAA</p>
+        <br />
+        <p>BBB</p>
+        <br>
+        <p>CCC</p>
+
+    }
+    else
+    {
+<form method="post" action="">
+    Username:<br>
+    <input type="text" name="username" placeholder="cojoUser1"><br>
+    Email:<br>
+    <input type="text" name="email" placeholder="cojoUser1"><br>
+    Password:<br>
+    <input type="password" name="password" placeholder="cojoUser1"><br>
+    Confirm Password:<br>
+    <input type="password" name="confirmPassword" placeholder="Insert password here..."><br>
+    <input type="submit" value="Submit" class="submit">
+</form>
+    }
+}
+

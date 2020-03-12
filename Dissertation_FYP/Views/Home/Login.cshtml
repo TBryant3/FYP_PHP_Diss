@@ -2,14 +2,15 @@
     ViewBag.Title = "Login Form";
 }
     <h2><strong>Login Form</strong></h2>
+    <h2 style="text-align:center">@ViewBag.Message</h2>
 @{
     if (IsPost)
     {
         string username = Request["Username"];
         string password = Request["Password"];
         <p>
-            Company Name: @username <br />
-            Contact Name: @password
+            Username: @username <br />
+            Password: @password
         </p>
     }
     else
