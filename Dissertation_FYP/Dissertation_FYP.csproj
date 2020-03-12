@@ -167,6 +167,10 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Topics.cshtml" />
     <Content Include="Views\Home\Account.cshtml" />
+    <Content Include="Views\Topics\HTMLPage.cshtml" />
+    <Content Include="Views\Topics\JavaScriptPage.cshtml" />
+    <Content Include="Views\Topics\CSharpPage.cshtml" />
+    <Content Include="Views\Topics\CplusplusPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,14 +1,14 @@
 ﻿@{
     ViewBag.Title = "Login Form";
 }
-    <h2>Login Form</h2>
+    <h2><strong>Login Form</strong></h2>
 @{
     if (IsPost)
     {
         string username = Request["Username"];
         string password = Request["Password"];
         <p>
-            Company Name: @username <br>
+            Company Name: @username <br />
             Contact Name: @password
         </p>
     }
