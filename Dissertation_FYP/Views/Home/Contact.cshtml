@@ -4,9 +4,44 @@
 <h1 style="text-align:center">@ViewBag.Title.</h1>
 <h2 style="text-align:center">@ViewBag.Message</h2>
 
-<form>
+@{
+    if (IsPost)
+    {
+        string username = Request["Username"];
+        string email = Request["Email"];
 
-</form>
+        <p>
+            Username logged in as: @username <br />
+            Using Email: @email <br />
+        </p>
+    }
+    else
+    {
+        <form method="post" name="contactForm" action="" style="border:dotted;">
+            <label>Username:</label>
+            <br />
+            <input type="text" name="username" placeholder="E.g.Username to contact through...">
+            <br>
+            <br />
+            <label>Email:</label>
+            <br />
+            <input type="text" name="email" placeholder="E.G.cojoUser@cojo.co.uk...">
+            <br>
+            <br />
+            <label>Reason of Contact:</label>
+            <br />
+            <input type="text" name="subject" placeholder="Insert the main reason for needing to contact us...">
+            <br>
+            <br />
+            <label>Extra Information:</label>
+            <br />
+            <textarea input type="text" name="extraInfo" placeholder="Anymore information in here..."></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    }
+}
 <h3><u>Where we are:</u></h3>
 <address>
     <br />
