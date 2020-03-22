@@ -3,63 +3,87 @@
 }
 @*Added head element to then add in the JS files that are explicit to this page and this page alone*@
     <head>
-        <link href="../packages/jQuery.UI.Combined.1.12.1/Content/Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-        <script src="~/Scripts/jquery-3.4.1.js"></script>
-        <script src="../packages/jQuery.UI.Combined.1.12.1/Content/Scripts/jquery-ui-1.12.1.min.js"></script>
+        <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery-ui-1.12.1.min.js" type="text/javascript"></script>
     </head>
-<div class="Welcoming">
-    <h1 style="text-align:center"><strong>Choose a Language!</strong></h1>
-    <h3>@ViewBag.Message</h3>
-</div>
-<br />
-<h2 style="text-align:center"><strong>Beginner</strong></h2>
-@* HTML / CSS *@
-<div class="row">
-    <div class="col-md-4" style="border-style:solid; border-radius:5%; ">
-        <h2 style="color:green; text-align:center"><strong>Topic 1 <br /> Front-End Web Design </strong></h2>
-        <p style="text-align:center"><i>HTML & CSS Tests</i></p>
-        <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")">Learn more &raquo;</a><div id="progressBarHTML" style="border:dashed;"><br></div></p>
+    <body>
+        <div class="Welcoming">
+            <h1 style="text-align:center"><strong>Choose a Language!</strong></h1>
+            <h3>@ViewBag.Message</h3>
+        </div>
+        <br />
+        <h2 style="text-align:center"><strong>Beginner</strong></h2>
+        @* HTML / CSS *@
+        <div class="row">
+            <div class="col-md-4" style="border-style:solid; border-radius:5%; ">
+                <h2 style="color:green; text-align:center"><strong>Topic 1 <br /> Front-End Web Design </strong></h2>
+                <p style="text-align:center"><i>HTML & CSS Tests</i></p>
+                <p>
+                    <a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")">Learn more &raquo;</a>
+                </p>
+                @*Progress Bar*@
+                <div id="progressBarHTML"><br></div>
+                <script type="text/javascript">
+                    $("#progressBarHTML").progressbar({ value: 50 });
+                </script>
+            </div>
+            @* JavaScript *@
+        <div class="col-md-4" style="border-style:solid; border-radius:5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 2 <br /> JavaScript </strong></h2>
+            <p style="text-align:center"><i>JavaScript Tests</i></p>
+            <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")">Learn more &raquo;</a></p>
+            @*Progress Bar*@
+            <div id="progressBarJS"><br></div>
+            <script type="text/javascript">
+                $("#progressBarJS").progressbar({ value: 75 });
+            </script>
+        </div>
+        </div>
+        <br />
+        @* Second Section *@
+        <h2 style="text-align:center"><strong>Intermediate</strong></h2>
+        <div class="row">
+            @* C-Sharp *@
+            <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
+                <h2 style="color:green; text-align:center"><strong>Topic 3 <br /> C# & ASP.NET </strong></h2>
+                <p style="text-align:center"><i>C# Tests</i></p>
+                <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")">Learn more &raquo;</a></p>
+                @*Progress Bar*@
+                <div id="progressBarC#"><br></div>
+                <script type="text/javascript">
+                    $("#progressBarC#").progressbar({ value: 75 });
+                </script>
+            </div>
+            @* CPlusPlus *@
+        <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 4 <br /> C++</strong></h2>
+            <p style="text-align:center"><i>C++ Tests</i></p>
+            <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")">Learn more &raquo;</a></p>
+            @*Progress Bar*@
+            <div id="progressBarC++"><br></div>
+            <script type="text/javascript">
+                $("#progressBarC++").progressbar({ value: 25 });
+            </script>
+        </div>
+        </div>
+        <br />
+        @* Third Section *@
+        <h2 style="text-align:center"><strong>Hard</strong></h2>
+        <br />
+        <h2><strong>Support</strong></h2>
+        <div class="row">
+            <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
+                <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
+                <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
+                <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+            </div>
+            <div class="col-md-4" style="border-style:solid; border-radius:5%;">
+                <h2 style="color:green; text-align:center"><strong>Ask an expert!</strong></h2>
+                <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
+                <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+            </div>
+        </div>
 
-    </div>
-    @* JavaScript *@
-    <div class="col-md-4" style="border-style:solid; border-radius:5%;">
-        <h2 style="color:green; text-align:center"><strong>Topic 2 <br /> JavaScript </strong></h2>
-        <p style="text-align:center"><i>JavaScript Tests</i></p>
-        <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")">Learn more &raquo;</a><div id="progressBarJS" style="border:dashed;"><br></div></p>
-    </div>
-</div>
-<br />
-@* Second Section *@
-<h2 style="text-align:center"><strong>Intermediate</strong></h2>
-<div class="row">
-    @* C-Sharp *@
-    <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-        <h2 style="color:green; text-align:center"><strong>Topic 3 <br /> C# & ASP.NET </strong></h2>
-        <p style="text-align:center"><i>C# Tests</i></p>
-        <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")">Learn more &raquo;</a><div id="progressBarC#" style="border:dashed;">Progress Bar Placeholder: Type 1</div></p>
-    </div>
-    @* CPlusPlus *@
-    <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-        <h2 style="color:green; text-align:center"><strong>Topic 4 <br /> C++</strong></h2>
-        <p style="text-align:center"><i>C++ Tests</i></p>
-        <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")">Learn more &raquo;</a><div id="progressBarC++" style="border:dashed;"><br>Progress Bar Placeholder: Type 2</div></p>
-    </div>
-</div>
-<br />
-@* Third Section *@
-<h2 style="text-align:center"><strong>Hard</strong></h2>
-<br />
-<h2><strong>Support</strong></h2>
-<div class="row">
-    <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-        <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
-        <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4" style="border-style:solid; border-radius:5%;">
-        <h2 style="color:green; text-align:center"><strong>Ask an expert!</strong></h2>
-        <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-</div>
 
+    </body>
