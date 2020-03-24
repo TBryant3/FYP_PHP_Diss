@@ -1,98 +1,100 @@
 ﻿@{
     ViewBag.Title = "Topics";
 }
-@*Added head element to then add in the JS files that are explicit to this page and this page alone*@
-    <head>
-        <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-        <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
-        <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <div class="Welcoming">
-            <h1 style="text-align:center"><strong>Choose a Language!</strong></h1>
-            <h3 style="text-align:center">@ViewBag.Message</h3>
-        </div>
-        <br />
-        @*First Section - Beginner*@
-        <h2 style="text-align:center"><strong>Beginner</strong></h2>
-        @* HTML/CSS *@
-        <div class="row">
-            <div class="col-md-4" style="border-style:solid; border-radius:5%; ">
-                <h2 style="color:green; text-align:center"><strong>Topic 1 <br /> Front-End Web Design </strong></h2>
-                    <p style="text-align:center"><i>HTML & CSS</i></p>
-                        <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")">Learn more &raquo;</a></p>
-                @*Progress Bar*@
-                <div id="progressBarHTML" style="margin-bottom:1%">
-                    <br>
-                    <script type="text/javascript">
-                        $("#progressBarHTML").progressbar({ value: 0 });
-                    </script>
-                </div>
-            </div>
-            @* C-Sharp *@
-            <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-                <h2 style="color:green; text-align:center"><strong>Topic 3 <br /> C# & ASP.NET </strong></h2>
-                <p style="text-align:center"><i>C#</i></p>
-                <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")">Learn more &raquo;</a></p>
-                @*Progress Bar*@
-                <div id="progressBarCsharp" style="margin-bottom:1%">
-                    <br>
-                    <script type="text/javascript">
-                        $("#progressBarCsharp").progressbar({ value: 0 });
-                        
-                    </script>
-                </div>
-            </div>
-        </div>
-        <br />
-        @* Second Section - Intermediate*@
-        <h2 style="text-align:center"><strong>Intermediate</strong></h2>
-        <div class="row">
-            @* CPlusPlus *@
-            <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-                <h2 style="color:green; text-align:center"><strong>Topic 4 <br /> C++</strong></h2>
-                <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
-                <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")">Learn more &raquo;</a></p>
-                @*Progress Bar*@
-                <div id="progressBarCplusplus" style="margin-bottom:1%">
-                    <br>
-                    <script type="text/javascript">
-                        $("#progressBarCplusplus").progressbar({ value: 50 });
-                    </script>
-                </div>
+<!--jQuery Link-->
+<script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
+<!--jQuery-UI Link-->
+<script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
 
-            </div>
-            @* JavaScript *@
-            <div class="col-md-4" style="border-style:solid; border-radius:5%;">
-                <h2 style="color:green; text-align:center"><strong>Topic 2 <br /> JavaScript </strong></h2>
-                <p style="text-align:center"><i>JavaScript</i></p>
-                <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")">Learn more &raquo;</a></p>
-                @*Progress Bar*@
-                <div id="progressBarJS" style="margin-bottom:1%">
-                    <br>
-                    <script type="text/javascript">
-                        $("#progressBarJS").progressbar({ value: 0 });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <br />
-        @* Third Section - Support *@
-        <h2 style="text-align:center"><strong>Hard</strong></h2>
-        <br />
-        <h2><strong>Support</strong></h2>
-        <div class="row">
-            <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-                <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
-                <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
-                <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-            </div>
-            <div class="col-md-4" style="border-style:solid; border-radius:5%;">
-                <h2 style="color:green; text-align:center"><strong>Ask an expert!</strong></h2>
-                <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
-                <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-            </div>
-        </div>
+<script src="~/Scripts/progressBar.js" type="text/javascript"></script>
 
 
-    </body>
+<body>
+    <div class="Welcoming">
+        <h1 style="text-align:center"><strong>Choose a Language!</strong></h1>
+        <h3 style="text-align:center">@ViewBag.Message</h3>
+    </div>
+    <br />
+    @*First Section - Beginner*@
+    <h2 style="text-align:center"><strong>Beginner</strong></h2>
+    @* HTML/CSS *@
+    <div class="row">
+        <div class="col-md-4" style="border-style:solid; border-radius:5%; ">
+            <h2 style="color:green; text-align:center"><strong>Topic 1 <br /> Front-End Web Design </strong></h2>
+            <p style="text-align:center"><i>HTML & CSS</i></p>
+            <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")">Learn more &raquo;</a></p>
+            @*Progress Bar*@
+            <div id="progressBarHTML" style="margin-bottom:1%">
+                <br>
+                <script type="text/javascript">
+                    $("#progressBarHTML").progressbar({ value: 0 });
+                </script>
+            </div>
+        </div>
+        @* C-Sharp *@
+        <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 3 <br /> C# & ASP.NET </strong></h2>
+            <p style="text-align:center"><i>C#</i></p>
+            <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")">Learn more &raquo;</a></p>
+            @*Progress Bar*@
+            <div id="progressBarCsharp" style="margin-bottom:1%">
+                <br>
+                <script type="text/javascript">
+                    $("#progressBarCsharp").progressbar({ value: 0 });
+
+                </script>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Second Section - Intermediate*@
+    <h2 style="text-align:center"><strong>Intermediate</strong></h2>
+    <div class="row">
+        @* CPlusPlus *@
+        <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 4 <br /> C++</strong></h2>
+            <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
+            <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")">Learn more &raquo;</a></p>
+            @*Progress Bar*@
+            <div id="progressBarCplusplus" style="margin-bottom:1%">
+                <br>
+                <script type="text/javascript">
+                    $("#progressBarCplusplus").progressbar({ value: 50 });
+                </script>
+            </div>
+
+        </div>
+        @* JavaScript *@
+        <div class="col-md-4" style="border-style:solid; border-radius:5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 2 <br /> JavaScript </strong></h2>
+            <p style="text-align:center"><i>JavaScript</i></p>
+            <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")">Learn more &raquo;</a></p>
+            @*Progress Bar*@
+            <div id="progressBarJS" style="margin-bottom:1%">
+                <br>
+                <script type="text/javascript">
+                    $("#progressBarJS").progressbar({ value: 0 });
+                </script>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Third Section - Support *@
+    <h2 style="text-align:center"><strong>Hard</strong></h2>
+    <br />
+    <h2><strong>Support</strong></h2>
+    <div class="row">
+        <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
+            <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
+            <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
+            <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4" style="border-style:solid; border-radius:5%;">
+            <h2 style="color:green; text-align:center"><strong>Ask an expert!</strong></h2>
+            <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
+            <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        </div>
+    </div>
+
+
+</body>

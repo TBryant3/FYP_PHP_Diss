@@ -24,7 +24,9 @@ namespace Dissertation_FYP
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/allTopicStyles.css",
+                      "~/Content/themes/base/jquery-ui.css"));
         }
     }
 }
