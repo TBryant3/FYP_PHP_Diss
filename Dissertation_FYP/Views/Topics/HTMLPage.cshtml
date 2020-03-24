@@ -2,9 +2,40 @@
 @{
     ViewBag.Title = "HTML & CSS";
 }
-
     <head>
         <link href="~/Content/allTopicStyles.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
+
+        @*This is thew scripts for the progress bars!*@
+        <script type="text/javascript">
+            //Initialise
+            $(document).ready(function ()
+            {
+                //First progress Bar
+                var valueHTMLt1 = $("#pbHTMLt1");
+                    valueHTMLt1.progressbar();
+                //Second Progress Bar
+                var valueHTMLt2 = $("#pbHTMLt2");
+                    valueHTMLt2.progressbar();
+                //Third Progress Bar
+                var valueHTMLt3 = $("#pbHTMLt3");
+                    valueHTMLt3.progressbar();
+
+                $("#t1Btn1").click(function ()
+                {
+                    valueHTMLt1.progressbar({
+                        //value: ;
+                        change: function()
+                        {
+                            $("#progressbar-label").text(valueHTMLt1.progressbar("value") + "%");
+                        }
+                    });
+                });
+
+            });
+        </script>
     </head>
 
 <h2>HTML - Hypertext Markup Language</h2>
@@ -16,10 +47,12 @@
         <p>
             TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
         </p>
-        <div id="pbHTMLt1"><br></div>
-        <script type="text/javascript">
-            $("#pbHTMLt1").progressbar({ value: 50 });
-        </script>
+        <div id="pbHTMLt1" style="position:relative">
+            <span id="progressbar-label" style="position:absolute; left:50%; top:20%">ABC</span>
+        </div>
+        <input type="button" id="t1Btn1" value="Click me when complete"/>
+
+
         @*<p><a class="btn btn-default" href="">Learn more &raquo;</a></p>*@
     </div>
     <div class="col-md-4">
@@ -27,11 +60,8 @@
         <p>
             This part will explain how to make web pages look better using another language called CSS.
         </p>
-        <div id="pbHTMLt2"><br></div>
-        <script type="text/javascript">
-            $("#pbHTMLt2").progressbar({ value: 50 });
-        </script>
-        <a class="btn btn-default" href="">Learn more &raquo;</a>
+        <div id="pbHTMLt2"></div>
+        <btn id="htmlp2btn" class="btn btn-default">Got it! &raquo;</btn>
     </div>
     <div class="col-md-4">
         <h2>Advancing HTML further</h2>
@@ -40,10 +70,8 @@
             TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
         </p>
         <div id="pbHTMLt3"><br></div>
-        <script type="text/javascript">
-            $("#pbHTMLt3").progressbar({ value: 50 });
-        </script>
-        <a class="btn btn-default" href="">Learn more &raquo;</a>
+        
+        <a class="btn btn-default" href="">Got it! &raquo;</a>
     </div>
 </div>
 <h2>HTML Demos</h2>
@@ -51,18 +79,17 @@
     <div class="col-md-4">
         <h2>Part 1 - Simple HTML</h2>
         <p>
-
+            TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
         </p>
-        @*<p><a class="btn btn-default" href="">Learn more &raquo;</a></p>*@
     </div>
     <div class="col-md-4">
         <h2>Find out more about us</h2>
         <p>We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more</p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>For the Coding Veterans</h2>
         <p>Here are some practice questions and test your knowledge quizzes to see where you're at</p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
 </div>
