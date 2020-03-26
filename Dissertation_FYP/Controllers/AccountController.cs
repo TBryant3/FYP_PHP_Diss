@@ -10,7 +10,12 @@ namespace Dissertation_FYP.Controllers
     public class AccountController : Controller
     {
         // GET: Account
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+        public ActionResult Verify()
         {
             return View();
         }

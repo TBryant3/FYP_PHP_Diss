@@ -7,7 +7,7 @@ namespace Dissertation_FYP.Models
 {
     public class Account
     {
-        public string name { get; set; } 
-        public string password { get; set; }
+        public string Name { get; set; } 
+        public string Password { get; set; }
     }
 }
