@@ -14,33 +14,69 @@
         
         <p>
             Username logged in as: @username <br />
-            Using Email: @email <br />
         </p>
     }
     else
     {
-<form method="post" name="registerForm" action="">
-    <label>Username:</label>
-    <br />
-    <input type="text" name="username" placeholder="E.g.cojoUser1...">
-    <br>
-    <br />
-    <label>Email:</label>
-    <br />
-    <input type="text" name="email" placeholder="E.G.cojoUser@cojo.co.uk...">
-    <br>
-    <br />
-    <label>Password:</label>
-    <br />
-    <input type="password" name="password" placeholder="Insert password...">
-    <br>
-    <br />
-    <label>Confirm Password:</label>
-    <br />
-    <input type="password" name="confirmPassword" placeholder="Re-type password...">
-    <br>
-    <br>
-    <input type="submit" value="Submit" class="submit">
+<form method="post" id="registerForm" action="">
+
+
+    <table>
+        <tr>
+            <th> Exercise 1 </th>
+            <th> Exercise Description </th>
+        </tr>
+
+        <tr>
+            <th> Simple HTML </th>
+            <th> In this exercise you can to use the knowledge from section 1 to be able to  </th>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+    <asp:Table id="regFormtable" width="550">
+        <asp:TableRow font-bold="true">
+            <asp:TableCell>Username</asp:TableCell>
+            <asp:TextBox id="regUsername" placeholder="E.g.cojoUser1..."></asp:TextBox>
+        </asp:TableRow>
+
+        @*<label>Username:</label>
+            <input type="text" name="username" placeholder="E.g.cojoUser1...">*@
+        <br>
+        <br />
+        <label>Email:</label>
+        <input type="text" name="email" placeholder="E.G.cojoUser@cojo.co.uk...">
+        <br>
+        <br />
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Insert password...">
+        <br>
+        <br />
+        <label>Confirm Password:</label>
+        <input type="password" name="confirmPassword" placeholder="Re-type password...">
+        <br>
+        <br>
+        <label>Country:</label>
+        <select id="countryChoice">
+            <option value="UK">United Kingdom</option>
+            <option value="USA">United States of America</option>
+            <option value="CAN">Canada</option>
+            <option value="FRA">France</option>
+            <option value="GER">Germany</option>
+            <option value="SPA">Spain</option>
+        </select>
+
+        <input type="submit" value="Submit" class="submit">
+    </asp:Table>
 </form>
     }
 }

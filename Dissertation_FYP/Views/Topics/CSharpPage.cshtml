@@ -22,16 +22,109 @@
         <p>
             Here is some text to fill the void of my heart.
         </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        <div id="progressBarCS1" style="position:relative">
+            <script>
+                $(document).ready(function ($)
+                {
+                    $('#t2Btn1').button();
+                    $('#progressBarCS1').progressbar(
+                        {
+                            value: 0,
+                            create: function (e)
+                            {
+                                $('#pbcs-label1').text($('#progressBarCS1').progressbar("value"));
+                            },
+                            complete: function (e)
+                            {
+                                $('#t2Btn1').button("disable"),
+                                $('#t2Btn1').text("Completed")
+                            },
+                            change: function (e)
+                            {
+                                if ($(this).progressbar("value") < 100)
+                                {
+                                    $('#t2Btn1').button("enable")
+                                }
+                                $('#pbcs-label1').text($('#progressBarCS1').progressbar("value"));
+                            }
+                        });
+                    //Button click
+                    $('#t2Btn1').click(function (e)
+                    {
+                        $('#progressBarCS1').progressbar({ value: 100 });
+                    })
+                });
+            </script>
+            Progress Completed: <strong><span id="pbcs-label1" style="position:absolute; left:37%"></span></strong>
+        </div>
+        <button id="t2Btn1">Click me to complete</button>
     </div>
     <div class="col-md-4">
-        <h2>Find out more about us</h2>
+        <h2>Part 2 - C# Classes</h2>
         <p>We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more</p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        <div id="progressBarCS2" style="position:relative">
+            <script>
+                $(document).ready(function ($) {
+                    $('#t2Btn2').button();
+                    $('#progressBarCS2').progressbar(
+                        {
+                            value: 0,
+                            create: function (e) {
+                                $('#pbcs-label2').text($('#progressBarCS2').progressbar("value"));
+                            },
+                            complete: function (e) {
+                                $('#t2Btn2').button("disable"),
+                                $('#t2Btn2').text("Completed")
+                            },
+                            change: function (e) {
+                                if ($(this).progressbar("value") < 100) {
+                                    $('#t2Btn2').button("enable")
+                                }
+                                $('#pbcs-label2').text($('#progressBarCS2').progressbar("value"));
+                            }
+                        });
+                    //Button click
+                    $('#t2Btn2').click(function (e) {
+                        $('#progressBarCS2').progressbar({ value: 100 });
+                    })
+                });
+            </script>
+            Progress Completed: <strong><span id="pbcs-label2" style="position:absolute; left:37%"></span></strong>
+        </div>
+        <button id="t2Btn2">Click me to complete</button>
     </div>
     <div class="col-md-4">
-        <h2>For the Coding Veterans</h2>
+        <h2>Part 3 - C# Expanded Further</h2>
         <p>Here are some practice questions and test your knowledge quizzes to see where you're at</p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+        <div id="progressBarCS3" style="position:relative">
+            <script>
+                $(document).ready(function ($) {
+                    $('#t2Btn3').button();
+                    $('#progressBarCS3').progressbar(
+                        {
+                            value: 0,
+                            create: function (e) {
+                                $('#pbcs-label3').text($('#progressBarCS3').progressbar("value"));
+                            },
+                            complete: function (e) {
+                                $('#t2Btn3').button("disable"),
+                                    $('#t2Btn3').text("Completed")
+                            },
+                            change: function (e) {
+                                if ($(this).progressbar("value") < 100) {
+                                    $('#t2Btn3').button("enable")
+                                }
+                                $('#pbcs-label3').text($('#progressBarCS3').progressbar("value"));
+                            }
+                        });
+                    //Button click
+                    $('#t2Btn3').click(function (e) {
+                        $('#progressBarCS3').progressbar({ value: 100 });
+                    })
+                });
+            </script>
+            Progress Completed: <strong><span id="pbcs-label3" style="position:absolute; left:37%"></span></strong>
+        </div>
+        <button id="t2Btn3">Click me to complete</button>
     </div>
 </div>
