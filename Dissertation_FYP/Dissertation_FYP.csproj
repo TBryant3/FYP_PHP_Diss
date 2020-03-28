@@ -225,6 +225,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="Views\Register\" />
     <Folder Include="Views\Tests\" />
   </ItemGroup>
   <ItemGroup>

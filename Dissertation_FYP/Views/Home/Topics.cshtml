@@ -24,12 +24,36 @@
             <p style="text-align:center"><i>HTML & CSS</i></p>
             <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")">Learn more &raquo;</a></p>
             @*Progress Bar*@
-            <div id="progressBarHTML" style="margin-bottom:1%">
+            <div id="pbTopicHTML" style="margin-bottom:1%">
                 <br>
-                <script type="text/javascript">
-                    $("#progressBarHTML").progressbar({ value: 0 });
+                <script>
+                    $(document).ready(function ($) {
+                        $('#t1Btn1').button();
+                        $('#progressBarH1').progressbar(
+                            {
+                                value: 0,
+                                create: function (e) {
+                                    $('#pb-label1').text($('#progressBarH1').progressbar("value"));
+                                },
+                                complete: function (e) {
+                                    $('#t1Btn1').button("disable")
+                                    $('#t1Btn1').text("Completed")
+                                }, change: function (e) {
+                                    if ($(this).progressbar("value") < 100) {
+                                        $('#t1Btn1').button("enable")
+                                    }
+                                    $('#pb-label1').text($('#progressBarH1').progressbar("value"));
+                                }
+                            });
+                        //Button click
+                        $('#t1Btn1').click(function (e) {
+                            $('#progressBarH1').progressbar({ value: 100 });
+                        })
+                    });
                 </script>
+                Progress Completed: <strong><span id="pb-label1" style="position:absolute; left:37%"></span></strong>
             </div>
+        </div>
         </div>
         @* C-Sharp *@
         <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
