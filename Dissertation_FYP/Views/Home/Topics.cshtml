@@ -8,103 +8,138 @@
 
 <script src="~/Scripts/progressBar.js" type="text/javascript"></script>
 
-
+@*<body style="background-color:transparent; background-image: url(~/Images/dojoBackground.jpg);">*@
 <body>
+
     <div class="Welcoming">
         <h1 style="text-align:center"><strong>Choose a Language!</strong></h1>
         <h3 style="text-align:center">@ViewBag.Message</h3>
     </div>
     <br />
     @*First Section - Beginner*@
-    <h2 style="text-align:center"><strong>Beginner</strong></h2>
+    <h2 style="text-align:center"><strong>Stage 1</strong></h2>
     @* HTML/CSS *@
-    <div class="row">
-        <div class="col-md-4" style="border-style:solid; border-radius:5%; ">
-            <h2 style="color:green; text-align:center"><strong>Topic 1 <br /> Front-End Web Design </strong></h2>
+    <div class="row" style="height:500px;">
+        <div class="col-md-6" style="border-style:solid; border-radius:5%; ">
+            <h2 style="color:green; text-align:center"><strong>Topic 1 <img class="topicLogos" src="~/Images/HTML5_logo.png" /><br /> Front-End Web Design </strong></h2>
             <p style="text-align:center"><i>HTML & CSS</i></p>
-            <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")">Learn more &raquo;</a></p>
+            <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
             @*Progress Bar*@
-            <div id="pbTopicHTML" style="margin-bottom:1%">
-                <br>
+            <div id="pbTopic1" style="margin-bottom:1%;">
                 <script>
                     $(document).ready(function ($) {
-                        $('#t1Btn1').button();
-                        $('#progressBarH1').progressbar(
+                        $('#pbTopic1').progressbar(
                             {
                                 value: 0,
                                 create: function (e) {
-                                    $('#pb-label1').text($('#progressBarH1').progressbar("value"));
+                                    $('#html-label').text($('#pbTopic1').progressbar("value"));
                                 },
                                 complete: function (e) {
-                                    $('#t1Btn1').button("disable")
-                                    $('#t1Btn1').text("Completed")
-                                }, change: function (e) {
-                                    if ($(this).progressbar("value") < 100) {
-                                        $('#t1Btn1').button("enable")
-                                    }
-                                    $('#pb-label1').text($('#progressBarH1').progressbar("value"));
+                                    $('#html-label').text("Completed")
+                                },
+                                change: function (e) {
+                                    $('#html-label').text($('#pbTopic1').progressbar("value"));
                                 }
                             });
-                        //Button click
-                        $('#t1Btn1').click(function (e) {
-                            $('#progressBarH1').progressbar({ value: 100 });
-                        })
                     });
                 </script>
-                Progress Completed: <strong><span id="pb-label1" style="position:absolute; left:37%"></span></strong>
+                Topic Completion: <strong><span id="html-label" style="position:relative;"></span></strong>
             </div>
         </div>
-        </div>
         @* C-Sharp *@
-        <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-            <h2 style="color:green; text-align:center"><strong>Topic 2 <br /> C# & ASP.NET </strong></h2>
+        <div class="col-md-6" style="border-style: solid; border-radius: 5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 2 <img class="topicLogos" src="~/Images/Csharp_logo.png" /><br /> C# & ASP.NET </strong></h2>
             <p style="text-align:center"><i>C#</i></p>
             <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")">Learn more &raquo;</a></p>
             @*Progress Bar*@
-            <div id="progressBarCsharp" style="margin-bottom:1%">
-                <br>
-                <script type="text/javascript">
-                    $("#progressBarCsharp").progressbar({ value: 0 });
-
+            <div id="pbTopic2" style="margin-bottom:1%;">
+                <script>
+                    $(document).ready(function ($) {
+                        $('#pbTopic2').progressbar(
+                            {
+                                value: 0,
+                                create: function (e) {
+                                    $('#csharp-label').text($('#pbTopic2').progressbar("value"));
+                                },
+                                complete: function (e) {
+                                    $('#csharp-label').text("Completed!")
+                                },
+                                change: function (e) {
+                                    $('#csharp-label').text($('#pbTopic2').progressbar("value"));
+                                }
+                            });
+                    });
                 </script>
+                Topic Completion: <strong><span id="csharp-label" style="position:relative;"></span></strong>
             </div>
         </div>
     </div>
     <br />
     @* Second Section - Intermediate*@
-    <h2 style="text-align:center"><strong>Intermediate</strong></h2>
+    <h2 style="text-align:center"><strong>Stage 2</strong></h2>
     <div class="row">
         @* CPlusPlus *@
-        <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-            <h2 style="color:green; text-align:center"><strong>Topic 3 <br /> C++</strong></h2>
+        <div class="col-md-6" style="border-style: solid; border-radius: 5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 3 <img class="topicLogos" src="~/Images/Cplusplus_logo.png" /><br /> C++</strong></h2>
             <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
             <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")">Learn more &raquo;</a></p>
             @*Progress Bar*@
-            <div id="progressBarCplusplus" style="margin-bottom:1%">
-                <br>
-                <script type="text/javascript">
-                    $("#progressBarCplusplus").progressbar({ value: 50 });
+            <div id="pbTopic3" style="margin-bottom:1%;">
+                <script>
+                    $(document).ready(function ($) {
+                        $('#pbTopic3').progressbar(
+                            {
+                                value: 0,
+                                create: function (e) {
+                                    $('#cplus-label').text($('#pbTopic3').progressbar("value"));
+                                },
+                                complete: function (e) {
+                                    $('#cplus-label').text("Completed!")
+                                },
+                                change: function (e) {
+                                    $('#cplus-label').text($('#pbTopic3').progressbar("value"));
+                                }
+                            });
+                    });
                 </script>
+                Topic Completion: <strong><span id="cplus-label" style="position:relative;"></span></strong>
             </div>
 
         </div>
         @* JavaScript *@
-        <div class="col-md-4" style="border-style:solid; border-radius:5%;">
-            <h2 style="color:green; text-align:center"><strong>Topic 4 <br /> JavaScript </strong></h2>
+        <div class="col-md-6" style="border-style:solid; border-radius:5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 4 <img class="topicLogos" src="~/Images/js-logo.png" /><br /> JavaScript </strong></h2>
             <p style="text-align:center"><i>JavaScript</i></p>
             <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")">Learn more &raquo;</a></p>
             @*Progress Bar*@
-            <div id="progressBarJS" style="margin-bottom:1%">
-                <br>
-                <script type="text/javascript">
-                    $("#progressBarJS").progressbar({ value: 0 });
-                </script>
+            <div id="pbTopic4" style="margin-bottom:1%;">
+            <script>
+                $(document).ready(function ($)
+                {
+                    $('#pbTopic4').progressbar(
+                    {
+                        value: 0,
+                        create: function (e)
+                        {
+                            $('#js-label').text($('#pbTopic4').progressbar("value"));
+                        },
+                        complete: function (e)
+                        {
+                            $('#js-label').text("Completed!")
+                        },
+                        change: function (e)
+                        {
+                            $('#js-label').text($('#pbTopic4').progressbar("value"));
+                        }
+                    });
+                });
+            </script>
+                Topic Completion: <strong><span id="js-label" style="position:relative;"></span></strong>
             </div>
         </div>
     </div>
     <br />
     @* Third Section - Support *@
-    <h2 style="text-align:center"><strong>Hard</strong></h2>
     <br />
     <h2><strong>Support</strong></h2>
     <div class="row">
