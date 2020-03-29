@@ -29,57 +29,59 @@
         #signin-container 
         {
             border:dashed;
-            background-color: aqua;
         }
         </style>
     </head>
 
     <form method="post" id="registerForm" action="">
         <div class="formContainer">
+            <h2 style="text-align:center"><strong>@ViewBag.Message</strong></h2>
+            <br>
+            <h4 style="text-align:center">Here you can register an account with us!</h4>
+            <h4 style="text-align: center ">Its quick and easy and comes with a variety of <a>benefits</a></h4>
+            <br />
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <h2 style="text-align:center"><strong>@ViewBag.Message</strong></h2>
-                    <br>
-                    <h4 style="text-align:center">Here you can register an account with us!</h4>
-                    <h4 style="text-align: center ">Its quick and easy and comes with a variety of <a>benefits</a></h4>
+                    <div class="row" style="width:100%; border:dashed">
+                        <label for="username" style="width:25%">Username:</label>
+                        <input type="text" name="username" placeholder="E.g.cojoUser1..." required>
+                    </div>
                     <br />
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" placeholder="E.g.cojoUser1..." required>
-                    <br>
+                    <div class="row" style="width:100%">
+                        <label for="email" style="width:25%"><b>Email:</b></label>
+                        <input type="text" name="email" placeholder="E.G.cojoUser@cojo.co.uk..." required>
+                    </div>
                     <br />
-                    <label for="email"><b>Email:</b></label>
-                    <input type="text" name="email" placeholder="E.G.cojoUser@cojo.co.uk..." required>
-                    <br>
+                    <div class="row" style="width:100%">
+                        <label for="psw" style="width:25%">Password:</label>
+                        <input type="password" name="psw" placeholder="Insert password..." required>
+                    </div>
                     <br />
-                    <label for="psw">Password:</label>
-                    <input type="password" name="psw" placeholder="Insert password..." required>
-                    <br>
+                    <div class="row" style="width:100%">
+                        <label for="confirm-psw" style="width:25%">Confirm Password:</label>
+                        <input type="password" name="confirm-psw" placeholder="Re-type password..." required>
+                    </div>
                     <br />
-                    <label for="confirm-psw">Confirm Password:</label>
-                    <input type="password" name="confirm-psw" placeholder="Re-type password..." required>
-                    <br>
-                    <br>
-                    <label for="country">Country:</label>
-                    <select id="countryChoice">
-                        <option value="UK">United Kingdom</option>
-                        <option value="USA">United States of America</option>
-                        <option value="CAN">Canada</option>
-                        <option value="FRA">France</option>
-                        <option value="GER">Germany</option>
-                        <option value="SPA">Spain</option>
-                    </select>
-                    <br>
+                    <div class="row" style="width:100%">
+                        <label for="country" style="width:25%">Country:</label>
+                        <select id="countryChoice">
+                            <option value="UK">United Kingdom</option>
+                            <option value="USA">United States of America</option>
+                            <option value="CAN">Canada</option>
+                            <option value="FRA">France</option>
+                            <option value="GER">Germany</option>
+                            <option value="SPA">Spain</option>
+                        </select>
+                    </div>
                     <br>
                     <p>By creating an account you agree to our <a href="@Url.Action("Contact", "Home")">Terms & Privacy Policy</a>!</p>
                     <div id="signin-container">
-                        <p><input type="submit" value="Register" class="submit" style="        margin-right: 1%;
-        border-radius: 5%
-"> Already have an account? <a href="@Url.Action("Login", "Home")">Sign In</a>!</p>
+                        <p><input type="submit" value="Register" class="submit" style="margin-right: 1%;border-radius:5%"> Already have an account? <a href="@Url.Action("Login", "Home")">Sign In</a>!</p>
                     </div>
                 </div>
-                    <div class="col-md-3"></div>
-                </div>
+                <div class="col-md-3"></div>
             </div>
+        </div>
     </form>
 

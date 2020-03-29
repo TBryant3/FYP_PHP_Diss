@@ -8,21 +8,29 @@
 <script src="~/Scripts/jquery-ui-1.12.1.min.js" type="text/javascript"></script>
 <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 
+@* WORK IN PROGRESS *@
+@*<script>
+    var HTMLProgress = (progressBarH1.progressbar("value") + progressBarH2.progressbar("value") + progressBarH2.progressbar("value"));
+
+</script>*@
+
+
 
 
 @*<script>if (window.module) module = window.module;</script>*@
 
+<a class="btn btn-default" href="@Url.Action("Topics", "Home")" value="Go Back"></a>
+<h1 style="text-align:center">Hypertext Markup Language<img class="topicLogos" src="~/Images/HTML5_logo.png" /></h1>
 
-<h2>HTML - Hypertext Markup Language</h2>
-<img class="topicLogos" src="~/Images/HTML5_logo.png" />
 <h4 class="topicDesc">HTML is a computing language that is used for the development of websites and webpages.</h4>
 <h4 class="topicDesc">The first part of the naming for HTML, Hypertext, refers to the hyperlinks that can be included in the website as to navigate between pages. </h4>
 <h4 class="topicDesc">The second being that of 'Markup Language' which refers to the layout and how elements are defined within the webpage(s).</h4>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Part 1 - Simple HTML</h2>
-        <p>
-            TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+<h2><b>Learning Modules</b></h2>
+<div class="row" style="height:255px; border:dashed">
+    <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
+        <h2><b>Part 1</b> - Simple HTML</h2>
+        <p style="text-align:center">
+            Find out what HTML is and learn how HTML came to be. Also what can consist within a webpage and a few of the key elements used within a HTML page  
         </p>
 
         <div id="progressBarH1" style="position:relative">
@@ -59,15 +67,13 @@
             </script>
             Progress Completed: <strong><span id="pb-label1" style="position:absolute; left:37%"></span></strong>
         </div>
-        <button id="t1Btn1">Click me to complete</button>
-
-        @*<button id="t1Btn1" class="btn btn-default">Click me when complete</button>*@
-
+        <button id="t1Btn1" type="submit">Click me to complete</button>
     </div>
-    <div class="col-md-4">
-        <h2>Part 2 - Styling within HTML</h2>
-        <p>
-            This part will explain how to make web pages look better using another language called CSS.
+
+    <div class="col-md-4" style="border:solid; height:100%; background-color:lightgoldenrodyellow">
+        <h2><b>Part 2</b> - Styling with CSS</h2>
+        <p style="text-align:center">
+            This part will explain how to make webpages look better using the stylesheet language CSS. This language is used hand-in-hand with HTML to produce high-quality websites and can be done a variety of ways! 
         </p>
         <div id="progressBarH2" style="position:relative">
             <script>
@@ -102,12 +108,12 @@
             </script>
             Progress Completed: <strong><span id="pb-label2" style="position:absolute; left:37%"></span></strong>
         </div>
-        <button id="t1Btn2">Click me to complete</button>
+        <button id="t1Btn2" type="submit">Click me to complete</button>
     </div>
 
-    <div class="col-md-4">
-        <h2>Part 3 - Advancing HTML further</h2>
-        <p>
+    <div class="col-md-4" style="border:solid; height:100%; background-color:lightcoral">
+        <h2><b>Part 3</b> - Advancing HTML</h2>
+        <p style="text-align:center">
         In this section will be be exploring more into what extra features and languages can be utilised alongside HTML
         </p>
         <div id="progressBarH3" style="position:relative">
@@ -143,27 +149,28 @@
             </script>
             Progress Completed: <strong><span id="pb-label3" style="position:absolute; left:37%"></span></strong>
         </div>
-        <button id="t1Btn3">Click me to complete</button>
+        <button id="t1Btn3" type="submit">Click me to complete</button>
     </div>
 </div>
 
+<br />
 
 @*Second Section Demos / Show how its done*@
-
-<h2>HTML Demos</h2>
-<div class="row">
-    <div class="col-md-4">
+<h2><b>Demostrations and Examples</b></h2>
+<div class="row" style="height:255px; border:dashed">
+    <div class="col-md-4"  style="border:solid; height:100%">
         <h2>Part 1 - Simple HTML</h2>
-        <p>
-            TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
-        </p>
+        <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+        <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
-    <div class="col-md-4">
+
+    <div class="col-md-4"  style="border:solid; height:100%">
         <h2>Find out more about us</h2>
         <p>We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more</p>
         <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
-    <div class="col-md-4">
+
+    <div class="col-md-4"  style="border:solid; height:100%">
         <h2>For the Coding Veterans</h2>
         <p>Here are some practice questions and test your knowledge quizzes to see where you're at</p>
         <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>

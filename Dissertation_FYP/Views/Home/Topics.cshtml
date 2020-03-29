@@ -17,12 +17,12 @@
     </div>
     <br />
     @*First Section - Beginner*@
-    <h2 style="text-align:center"><strong>Stage 1</strong></h2>
+    <h2 style="text-align:center"><strong>Stage 1 - Beginner</strong></h2>
     @* HTML/CSS *@
-    <div class="row" style="height:500px;">
-        <div class="col-md-6" style="border-style:solid; border-radius:5%; ">
-            <h2 style="color:green; text-align:center"><strong>Topic 1 <img class="topicLogos" src="~/Images/HTML5_logo.png" /><br /> Front-End Web Design </strong></h2>
-            <p style="text-align:center"><i>HTML & CSS</i></p>
+    <div class="row" style="height:275px">
+        <div class="col-md-6" style="border-style:solid; height:100%; border-radius:5%; ">
+            <h2 style="color:green; text-align:center"><strong>Topic 1 <img class="topicLogos" src="~/Images/HTML5_logo.png" /><br /> HTML & CSS</strong></h2>
+            <p style="text-align:center"><i>Web Developement Mark-up language used to produce webpages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
             <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
             @*Progress Bar*@
             <div id="pbTopic1" style="margin-bottom:1%;">
@@ -35,7 +35,7 @@
                                     $('#html-label').text($('#pbTopic1').progressbar("value"));
                                 },
                                 complete: function (e) {
-                                    $('#html-label').text("Completed")
+                                    $('#html-label').append("Completed")
                                 },
                                 change: function (e) {
                                     $('#html-label').text($('#pbTopic1').progressbar("value"));
@@ -47,10 +47,10 @@
             </div>
         </div>
         @* C-Sharp *@
-        <div class="col-md-6" style="border-style: solid; border-radius: 5%;">
-            <h2 style="color:green; text-align:center"><strong>Topic 2 <img class="topicLogos" src="~/Images/Csharp_logo.png" /><br /> C# & ASP.NET </strong></h2>
-            <p style="text-align:center"><i>C#</i></p>
-            <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")">Learn more &raquo;</a></p>
+        <div class="col-md-6" style="border-style: solid; height:100%; border-radius: 5%;">
+            <h2 style="color:green; text-align:center"><strong>Topic 2 <img class="topicLogos" src="~/Images/Csharp_logo.png" /><br /> C# </strong></h2>
+            <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
+            <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
             @*Progress Bar*@
             <div id="pbTopic2" style="margin-bottom:1%;">
                 <script>
@@ -76,13 +76,13 @@
     </div>
     <br />
     @* Second Section - Intermediate*@
-    <h2 style="text-align:center"><strong>Stage 2</strong></h2>
-    <div class="row">
+    <h2 style="text-align:center"><strong>Stage 2 - Advanced</strong></h2>
+    <div class="row" style="height:275px">
         @* CPlusPlus *@
-        <div class="col-md-6" style="border-style: solid; border-radius: 5%;">
+        <div class="col-md-6" style="border-style:solid; height:100%; border-radius: 5%;">
             <h2 style="color:green; text-align:center"><strong>Topic 3 <img class="topicLogos" src="~/Images/Cplusplus_logo.png" /><br /> C++</strong></h2>
             <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
-            <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")">Learn more &raquo;</a></p>
+            <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
             @*Progress Bar*@
             <div id="pbTopic3" style="margin-bottom:1%;">
                 <script>
@@ -107,10 +107,10 @@
 
         </div>
         @* JavaScript *@
-        <div class="col-md-6" style="border-style:solid; border-radius:5%;">
+        <div class="col-md-6" style="border-style:solid; height:100%; border-radius:5%;">
             <h2 style="color:green; text-align:center"><strong>Topic 4 <img class="topicLogos" src="~/Images/js-logo.png" /><br /> JavaScript </strong></h2>
             <p style="text-align:center"><i>JavaScript</i></p>
-            <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")">Learn more &raquo;</a></p>
+            <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
             @*Progress Bar*@
             <div id="pbTopic4" style="margin-bottom:1%;">
             <script>
@@ -141,7 +141,6 @@
     <br />
     @* Third Section - Support *@
     <br />
-    <h2><strong>Support</strong></h2>
     <div class="row">
         <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
             <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
