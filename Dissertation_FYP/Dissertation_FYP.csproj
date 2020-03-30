@@ -220,12 +220,12 @@
     <Content Include="Views\Topics\CSharpPage.cshtml" />
     <Content Include="Views\Topics\CplusplusPage.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\ForgottenPSWpage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
     <Folder Include="Views\Account\" />
-    <Folder Include="Views\Register\" />
     <Folder Include="Views\Tests\" />
   </ItemGroup>
   <ItemGroup>

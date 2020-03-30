@@ -54,5 +54,10 @@ namespace Dissertation_FYP.Controllers
 
             return View();
         }
+        public ActionResult ForgottenPSWPage()
+        {
+            ViewBag.Message = "Welcome to our Recover Password Page!";
+            return View();
+        }
     }
 }

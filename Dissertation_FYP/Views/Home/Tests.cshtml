@@ -2,52 +2,144 @@
 @{
     ViewBag.Title = "Test Centre";
 }
-<div class="Welcoming">
-    <h1 style="text-align:center"><strong>CoJō Test Centre</strong></h1>
-    <h3>@ViewBag.Message</h3>
-</div>
-<br />
-<h2 style="text-align:center"><strong>Pick Your Poison</strong></h2>
-<div class="row">
-    <div class="col-md-4" style="border-style:solid; border-radius:5%; ">
-        <h2 style="color:green; text-align:center"><strong>Topic 1 <br /> Front-End Web Design </strong></h2>
-        <p style="text-align:center"><i>HTML & CSS Tests</i></p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
+    <body>
+        <div class="Welcoming">
+            <h1 style="text-align:center"><strong>CoJō Test Centre</strong></h1>
+            <h3 style="text-align:center">@ViewBag.Message</h3>
+        </div>
+        <br />
+        @*First Section - Beginner*@
+        <h2 style="text-align:center"><strong>Stage 1 - Beginner</strong></h2>
+        @* HTML/CSS *@
+        <div class="row" style="height:275px">
+            <div class="col-md-6" style="border-style:solid; height:100%; border-radius:5%; ">
+                <h2 style="color:orange; text-align:center"><strong>HTML & CSS Tests <img class="topicLogos" src="~/Images/HTML5_logo.png" /></strong></h2>
+                <p style="text-align:center"><i>Web Developement Mark-up language used to produce webpages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
+                <p><a class="btn btn-default" href="@Url.Action("HTMLPage", "Topics")" style="background-color:lightcoral">Learn more &raquo;</a></p>
+                @*Progress Bar*@
+                <div id="pbTest1" style="margin-bottom:1%;">
+                    <script>
+                        $(document).ready(function ($) {
+                            $('#pbTest1').progressbar(
+                                {
+                                    value: 0,
+                                    create: function (e) {
+                                        $('#htmlTest-label').text($('#pbTest1').progressbar("value"));
+                                    },
+                                    complete: function (e) {
+                                        $('#htmlTest-label').append("Completed")
+                                    },
+                                    change: function (e) {
+                                        $('#htmlTest-label').text($('#pbTest1').progressbar("value"));
+                                    }
+                                });
+                        });
+                    </script>
+                    Topic Completion: <strong><span id="htmlTest-label" style="position:relative;"></span></strong>
+                </div>
+            </div>
+            @* C-Sharp *@
+            <div class="col-md-6" style="border-style: solid; height:100%; border-radius: 5%;">
+                <h2 style="color:rebeccapurple; text-align:center"><strong>C# Tests <img class="topicLogos" src="~/Images/Csharp_logo.png" /></strong></h2>
+                <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
+                <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")" style="background-color:lightcoral">Learn more &raquo;</a></p>
+                @*Progress Bar*@
+                <div id="pbTest2" style="margin-bottom:1%;">
+                    <script>
+                        $(document).ready(function ($) {
+                            $('#pbTest2').progressbar(
+                                {
+                                    value: 0,
+                                    create: function (e) {
+                                        $('#csharpTest-label').text($('#pbTest2').progressbar("value"));
+                                    },
+                                    complete: function (e) {
+                                        $('#csharpTest-label').text("Completed!")
+                                    },
+                                    change: function (e) {
+                                        $('#csharpTest-label').text($('#pbTest2').progressbar("value"));
+                                    }
+                                });
+                        });
+                    </script>
+                    Tests Completed: <strong><span id="csharpTest-label" style="position:relative;"></span></strong>
+                </div>
+            </div>
+        </div>
+        <br />
+        @* Second Section - Intermediate*@
+        <h2 style="text-align:center"><strong>Stage 2 - Advanced</strong></h2>
+        <div class="row" style="height:275px">
+            @* CPlusPlus *@
+            <div class="col-md-6" style="border-style:solid; height:100%; border-radius: 5%;">
+                <h2 style="color:lightblue; text-align:center"><strong>C++ Tests <img class="topicLogos" src="~/Images/Cplusplus_logo.png" /></strong></h2>
+                <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
+                <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")" style="background-color:lightcoral">Learn more &raquo;</a></p>
+                @*Progress Bar*@
+                <div id="pbTest3" style="margin-bottom:1%;">
+                    <script>
+                        $(document).ready(function ($) {
+                            $('#pbTest3').progressbar(
+                                {
+                                    value: 0,
+                                    create: function (e) {
+                                        $('#cplusTest-label').text($('#pbTest3').progressbar("value"));
+                                    },
+                                    complete: function (e) {
+                                        $('#cplusTest-label').text("Completed!")
+                                    },
+                                    change: function (e) {
+                                        $('#cplusTest-label').text($('#pbTest3').progressbar("value"));
+                                    }
+                                });
+                        });
+                    </script>
+                    Tests Completed: <strong><span id="cplusTest-label" style="position:relative;"></span></strong>
+                </div>
 
-    <div class="col-md-4" style="border-style:solid; border-radius:5%;">
-        <h2 style="color:green; text-align:center"><strong>Topic 2 <br /> JavaScript </strong></h2>
-        <p style="text-align:center"><i>JavaScript Tests</i></p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-</div>
-<br />
-@* Second Section *@
-<div class="row">
-    <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-    <h2 style="color:green; text-align:center"><strong>Topic 3 <br /> C# & ASP.NET </strong></h2>
-    <p style="text-align:center"><i>C# Tests</i></p>
-    <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-</div>
-    <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-        <h2 style="color:green; text-align:center"><strong>Topic 4 <br /> C++</strong></h2>
-        <p style="text-align:center"><i>C++ Tests</i></p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-</div>
-<br />
-@* Third Section *@
-<h2><strong>Support</strong></h2>
-<div class="row">
-    <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
-        <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
-        <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4" style="border-style:solid; border-radius:5%;">
-        <h2 style="color:green; text-align:center"><strong>Ask an expert!</strong></h2>
-        <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-</div>
+            </div>
+            @* JavaScript *@
+            <div class="col-md-6" style="border-style:solid; height:100%; border-radius:5%;">
+                <h2 style="color:yellow; text-align:center"><strong>JavaScript Tests<img class="topicLogos" src="~/Images/js-logo.png" /></strong></h2>
+                <p style="text-align:center"><i>JavaScript</i></p>
+                <p><a class="btn btn-default" href="@Url.Action("JavaScriptPage", "Topics")" style="background-color:lightcoral">Learn more &raquo;</a></p>
+                @*Progress Bar*@
+                <div id="pbTest4" style="margin-bottom:1%;">
+                    <script>
+                        $(document).ready(function ($) {
+                            $('#pbTest4').progressbar(
+                                {
+                                    value: 0,
+                                    create: function (e) {
+                                        $('#jsTest-label').text($('#pbTest4').progressbar("value"));
+                                    },
+                                    complete: function (e) {
+                                        $('#jsTest-label').text("Completed!")
+                                    },
+                                    change: function (e) {
+                                        $('#jsTest-label').text($('#pbTest4').progressbar("value"));
+                                    }
+                                });
+                        });
+                    </script>
+                    Topic Completion: <strong><span id="jsTest-label" style="position:relative;"></span></strong>
+                </div>
+            </div>
+        </div>
+        <br />
+        @* Third Section - Support *@
+        <br />
+        <div class="row">
+            <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
+                <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
+                <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
+                <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+            </div>
+            <div class="col-md-4" style="border-style:solid; border-radius:5%;">
+                <h2 style="color:green; text-align:center"><strong>Ask an expert!</strong></h2>
+                <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
+                <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+            </div>
+        </div>
+    </body>
 

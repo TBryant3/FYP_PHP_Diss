@@ -10,70 +10,55 @@
         input[type=text], input[type=password] {
             width: 100%;
             padding: 1%;
-         
             display: inline-block;
-            background-color: aliceblue;
+         
         }
 
-        input[type=text]:focus, input[type=password]:focus 
-        {
-            background-color: #ddd;
-        }
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+            }
 
-        .formContainer 
-        {
+        .formContainer {
             padding: 10%;
-            background-color: blue;
+ 
         }
 
-        #signin-container 
-        {
+        #signin-container {
             border: dashed;
-            background-color: aqua;
+
         }
     </style>
 </head>
 
 
-<form method="post" name="loginForm" action="">
+<form method="post" id="loginForm" action="">
     <div class="formContainer">
+        <h2 style="text-align:center"><strong>@ViewBag.Message</strong></h2>
+        <br>
+        <h4 style="text-align:center">Here you can register an account with us!</h4>
+        <h4 style="text-align: center ">Its quick and easy and comes with a variety of <a>benefits</a></h4>
+        <br />
         <div class="row">
-            <div class="col-25"></div>
-            <div class="col-50">
-                <h2><strong>Login Form</strong></h2>
-                <h2 style="text-align:center">@ViewBag.Message</h2>
-            </div>
-            <div class="col-25"></div>
-            <div class="row">
-                <div class="col-25"></div>
-                <div class="col-25">
-                    <label for="username">Username:</label>
-                </div>
-                <div class="col-25">
-                    <input type="text" name="username" id="username" placeholder="E.g.cojoUser1...">
-                </div>
-            </div>
-            <div class="col-25"></div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="username">Username:</label>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="row" style="width:100%">
+                    <label for="username" style="width:25%">Username:</label>
+                    <input type="text" name="username" placeholder="E.g.cojoUser1..." required>
                 </div>
                 <br />
-                <input type="text" name="username" id="username" placeholder="E.g.cojoUser1...">
+                <div class="row" style="width:100%">
+                    <label for="psw" style="width:25%">Password:</label>
+                    <input type="password" name="psw" placeholder="Insert password..." required>
+                    <p>Forgotten your password? <a href="@Url.Action("ForgottenPSWPage", "Home")">Click me to recover</a>!</p>
+                </div>
+                <br />
+                <div id="signin-container">
+                    <p><input type="submit" value="Login" class="submit" style="margin-right: 1%;border-radius:5%"> Don't already have an account? <a href="@Url.Action("Register", "Home")">Register here</a>!</p>
+                </div>
             </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
-
-
-        <br />
-        <br />
-        <label>Password:</label>
-        <br />
-        <input type="password" name="password" id="password" placeholder="Insert password...">
-        <br />
-        <br />
-        <input type="submit" value="Submit" class="submit">
-
 </form>
 
 
