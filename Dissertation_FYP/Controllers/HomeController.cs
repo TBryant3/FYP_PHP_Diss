@@ -59,5 +59,10 @@ namespace Dissertation_FYP.Controllers
             ViewBag.Message = "Welcome to our Recover Password Page!";
             return View();
         }
+        public ActionResult Account()
+        {
+            ViewBag.Message = "Welcome to your very own account!";
+            return View();
+        }
     }
 }

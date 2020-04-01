@@ -221,12 +221,15 @@
     <Content Include="Views\Topics\CplusplusPage.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\ForgottenPSWpage.cshtml" />
+    <Content Include="Views\Tests\CPlusTests.cshtml" />
+    <Content Include="Views\Tests\HTMLTests.cshtml" />
+    <Content Include="Views\Tests\JavaScriptTests.cshtml" />
+    <Content Include="Views\Tests\CSharpTests.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
     <Folder Include="Views\Account\" />
-    <Folder Include="Views\Tests\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
