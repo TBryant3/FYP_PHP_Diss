@@ -43,14 +43,14 @@ namespace Dissertation_FYP.Controllers
 
         public ActionResult Login()
         {
-            ViewBag.Message = "Welcome to our Login Page! ";
+            ViewBag.Message = "Login to access your Inner Warrior! ";
 
             return View();
         }
 
         public ActionResult Register()
         {
-            ViewBag.Message = "Welcome to our Register Page!";
+            ViewBag.Message = "Register to join our community of Coding Ninja!";
 
             return View();
         }

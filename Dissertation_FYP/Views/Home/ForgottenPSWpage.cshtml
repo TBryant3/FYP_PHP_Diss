@@ -8,24 +8,30 @@
         <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
 
         <style>
-            input[type=text], input[type=password] {
+            input[type=text]{
                 width: 100%;
                 padding: 1%;
                 display: inline-block;
 
             }
-
-                input[type=text]:focus, input[type=password]:focus {
-                    background-color: #ddd;
+            input[type=text]:focus
+            {
+                background-color: #ddd;
                 }
 
-            .formContainer {
-                padding: 10%;
+            .formContainer 
+            {
+                padding: 1%;
+                background-color: white;
 
-            }         
+            }
+            .submit:hover 
+    {
+        background-color: darkgray;
+    }
         </style>
     </head>
-<form method="post" id="loginForm" action="">
+<form method="post" id="forgotPSWForm" action="">
     <div class="formContainer">
         <h2 style="text-align:center"><strong>@ViewBag.Message</strong></h2>
         <br>
@@ -35,21 +41,25 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <h4 style="text-align:center">Either input your Username on the account...</h4>
-                <div class="row" style="width:100%">
+                <h4 style="text-align:center">Either input the Username of your account...</h4>
+                <div class="row" style="width:100%; padding-left:10%">
                     <label for="username" style="width:25%; text-align:right">Username:</label>
-                    <input type="text" name="username" placeholder="E.g.cojoUser1..." required>
+                    <input type="text" name="username" placeholder="E.g: cojoUser1..." required>
                 </div>
                 <br />
                 <h1 style="text-align:center"><b>OR</b></h1>
                 <br />
-                <h4 style="text-align:center">Input your email address that is linked to the account</h4>
-                <div class="row" style="width:100%">
-                    <label for="email" style="width:25%; text-align:right"><b>Email:</b></label>
-                    <input type="text" name="email" placeholder="E.G.cojoUser@cojo.co.uk..." required>
+                <h4 style="text-align:center">Input the email address that is linked to your account</h4>
+                <div class="row" style="width:100%; padding-left:10%">
+                    <label for="email" style="width:25%; text-align:right; padding-left:5%"><b>Email:</b></label>
+                    <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required>
                 </div>
+                <br />
+                <div class="row" style="width:100%">
+                    <span style="padding-left:38%"><input type="submit" value="Submit" class="submit" style="border-radius:5%; height:15%; width:20%;"></span>
+                </div>
+                <div class="col-md-3"></div>
             </div>
-            <div class="col-md-3"></div>
         </div>
     </div>
 </form>

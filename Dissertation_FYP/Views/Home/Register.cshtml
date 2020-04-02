@@ -24,6 +24,16 @@
             {
                 background-color: #ddd;
             }
+            #signin-container
+            {
+                background-color:white;
+                border:none;
+            }
+            .submit:hover
+            {
+                background-color: darkgray;
+            }
+
         </style>
     </head>
 
@@ -32,18 +42,19 @@
             <h2 style="text-align:center"><strong>@ViewBag.Message</strong></h2>
             <br>
             <h4 style="text-align:center">Here you can register an account with us!</h4>
-            <h4 style="text-align: center ">Its quick and easy and comes with a variety of <a>benefits</a></h4>
+            <h4 style="text-align: center ">Its quick and easy and comes with a variety of <a id="benefitsLink" href="@Url.Action("About", "Home")">Benefits</a></h4>
+            <br />
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
+                <div class="col-md-4"></div>
+                <div class="col-md-5">
                     <div class="row" style="width:100%">
                         <label for="username" style="width:25%">Username:</label>
-                        <input type="text" name="username" placeholder="E.g.cojoUser1..." required>
+                        <input type="text" name="username" placeholder="E.g: cojoUser1..." required>
                     </div>
                     <br />
                     <div class="row" style="width:100%">
-                        <label for="email" style="width:25%"><b>Email:</b></label>
-                        <input type="text" name="email" placeholder="E.G.cojoUser@cojo.co.uk..." required>
+                        <label for="email" style="width:25%">Email:</label>
+                        <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required>
                     </div>
                     <br />
                     <div class="row" style="width:100%">
@@ -68,9 +79,11 @@
                         </select>
                     </div>
                     <br>
-                    <p>By creating an account you agree to our <a href="@Url.Action("Contact", "Home")">Terms & Privacy Policy</a>!</p>
-                    <div id="signin-container">
-                        <p><input type="submit" value="Register" class="submit" style="margin-right: 1%;border-radius:5%"> Already have an account? <a href="@Url.Action("Login", "Home")">Sign In</a>!</p>
+                    <div class="row" style="width:100%">
+                        <p>By creating an account you agree to our <a href="@Url.Action("Contact", "Home")">Terms & Privacy Policy</a>!</p>
+                        <div id="signin-container" style="padding-left:5%">
+                            <p><input type="submit" value="Register" class="submit" style="margin-right: 1%;border-radius:5%; height:15%; width:20%;"><b style="font-size:medium"> OR </b> Already have an account? <a href="@Url.Action("Login", "Home")">Sign In here</a>!</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3"></div>
