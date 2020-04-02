@@ -8,6 +8,38 @@ namespace Dissertation_FYP.Controllers
 {
     public class TestsController : Controller
     {
+        public ActionResult HTMLTests()
+        {
+            return View();
+        }
+        public ActionResult CPlusTests()
+        {
+            return View();
+        }
+
+        public ActionResult CSharpTests()
+        {
+            return View();
+        }
+
+        public ActionResult JavaScriptTests()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // GET: Tests
         public ActionResult Index()
         {
