@@ -9,9 +9,64 @@
         <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
         <!--Ace Code Editor Link (Hosted on GitHub)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.9/ace.js"></script>
-        <!--StyleSheets-->        
+        <!--StyleSheets-->
         <link href="~/Content/themes/base/accordion.css" rel="stylesheet" type="text/css" />
-                       
+
+        <!--Styling to be moved to CSS file-->
+        <style>
+            .testTitles 
+            {
+                 width: 100%;
+                 display: inline-block;
+            }
+            #editorInput1 
+            {
+                width: 100%;
+                height: 350px;
+            }            
+            #editorOutput1
+            {
+                 width: 100%; 
+                 height:100%; 
+                 background-color: yellow;                
+                 
+            }
+            .hint
+            {
+                width: 25%;
+                text-decoration-color:red;
+            }
+            .hintText
+            {             
+                color: green; 
+                margin: 0px 0px 10px;
+            }
+            
+            #editorInput2
+            {
+
+            }
+            #editorOutput2
+            {
+
+            }
+
+            .testTitles
+            {
+                width:40%;
+                display: inline-block;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            .checkAnswer 
+            {
+                border-radius: 5%;
+                width: 24%;
+                display: inline-block;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }         
+        </style>
     </head>
 
     <div class="container" style="overflow:hidden;">
@@ -22,67 +77,67 @@
                 </div>
             </div>
         </div>
-
-        <div id="accordion">
-            
-            <p>
-                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-            </p>
-            <h3>test drop down menu</h3>
-            <p>
-                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-            </p>
-        </div>
-        <div class="row" style="border:dashed; height:500px">
+    </div>
+    <!--FIRST ROW-->
+    <div class="row" style="border: dashed; height: 100%">
+        <h1>Set 1 -> Rookie Codee</h1>
+        <div class="col-md-6" style="height: 100%;" @*width: 100%"*@>
             <!--Column for Inputs-->
-            <div class="col-md-6" style="height:100%">
-                <h3>Demo 1 - Create a JavaScript Application</h3>
-                <h2 style="color:red; text-align:center"><b>Input your code here</b></h2>
-                <div id="editorInput1" style="width:100%; height:80%; ">
-
+            <div id="accordion1" style="width:100%">
+                <h3 class="testTitles">Create a function that <b>Adds Two</b> values together</h3>
+                <div id="editorInput1">
+                    <!--INPUT CODE-->
                 </div>
-                <span><input type="submit" value="Check answer!" class="submit" style="border-radius:5%; width:100px"></span>
+                <h3 class="hint">Click for a Hint!</h3>
+                <p class="hintText">Remember that adding values is the same as in maths equations</p>
             </div>
-            <!--Column for Outputs-->
-            <div class="col-md-6" style="height:100%">
-                <h2 style="color:red; text-align:center"><b>Output shown here</b></h2>
-                <iframe id='editorOutput1' style="width:100%; height:80%; background-color:yellow; ">
+        </div>
+        <!--Column for Outputs-->
+        <div class="col-md-6" @*style="height:100%; width:100%"*@>
+            <div id="accordion2" style="width: 100%">
+                <p class="testTitles">Check answer!</p>
+                @*<button type="submit" class="checkAnswer">Check answer!</button>*@
+                <iframe id="editorOutput1">
+                    <!--OUTPUT CODE-->
                 </iframe>
             </div>
         </div>
+    </div>
+    @*</div>*@
+        <br />
+        <br />        
+        <!--Task 2------------------------------------------------------------------------->        
+        @*<div class="row" style="border:dashed; height:50%">
+            Column for Inputs
+            <div id="accordion2" style="width:70%; display:inline-block">
+                <h3 class="testTitles">Demo 2 - Create a JavaScript Application</h3>
+                <div class="col-md-6" style="height:100%">
+                    <h2 style="color:red; text-align:center"><b>Input your code here</b></h2>
+                    <div id="editorInput2" style="width:100%; height:80%; ">
 
-        <!--Task 2-->
-        <h3>Demo 2 - Create a JavaScript Application</h3>
-        <div class="row" style="border:dashed; height:500px">
-            <!--Column for Inputs-->
-            <div class="col-md-6" style="height:100%">
-                <h2 style="color:red; text-align:center"><b>Input your code here</b></h2>
-                <div id="editorInput2" style="width:100%; height:80%; ">
+                    </div>
+                    <span><input type="submit" value="Check answer!" class="submit" style="border-radius:5%; width:100px"></span>
 
+                    Column for Outputs
+                    <div class="col-md-6" style="height:100%">
+                        <h2 style="        color: red;
+        text-align: center">
+                            <b>Output shown here</b>
+                        </h2>
+                        <iframe id='editorOutput2' style="width: 100%; height: 80%; background-color: yellow;
+">
+                        </iframe>
+                    </div>
                 </div>
-                <span><input type="submit" value="Check answer!" class="submit" style="border-radius:5%; width:100px"></span>
             </div>
-            <!--Column for Outputs-->
-            <div class="col-md-6" style="height:100%">
-                <h2 style="color:red; text-align:center"><b>Output shown here</b></h2>
-                <iframe id='editorOutput2' style="width:100%; height:80%; background-color:yellow; ">
-                </iframe>
-            </div>
-        </div>
-
+        </div>*@
 
 
         <!--Scripts-->
         <script>
             // Declaring Variables //
             var userEditor1 = ace.edit("editorInput1");
-            var userEditor2 = ace.edit("editorInput2");
+            //var userEditor2 = ace.edit("editorInput2");
 
             //if (true) {
 
@@ -92,11 +147,11 @@
 
             function update() // This funtion is to get the information that the user is inputting and write it to the editor //
             {
-                var outputFrame1 = document.getElementById('editorOutput1').contentWindow.document;
+                var outputFrame1 = document.getElementById("editorOutput1").contentWindow.document;
 
-                outputFrame1.open();
-                outputFrame1.write(userEditor1.getValue());
-                outputFrame1.close();
+                outputFrame1.open(); // Loads the Output window //
+                outputFrame1.write(userEditor1.getValue()); // Obtains value from input and shows in output //
+                outputFrame1.close(); // Closes connection from input
             }
 
             function setUp() // This function is purely to create the code editor with a variety of settings //
@@ -105,7 +160,8 @@
                 userEditor1.setTheme("ace/theme/monokai"); // Sets a theme for the editor //
                 userEditor1.getSession().setMode("ace/mode/javascript"); // Sets which language the editor uses for highlighting and Syntax //
                 userEditor1.setValue(` `, 1); // 1 here moves the cursor to the end of the file //
-                userEditor1.getSession().on('change', function () {
+                userEditor1.getSession().on('change', function ()
+                {
                     update();
                 });
                 userEditor1.focus();
@@ -117,12 +173,20 @@
                         vScrollBarAlwaysVisible: false
                     });
                 userEditor1.setShowPrintMargin(true);
-                userEditor1.setBehavioursEnabled(true);
+                userEditor1.setBehavioursEnabled(false);
             }
 
-            function collapse()
-            {
-                $("#accordion").accordion();
+            function collapse() {
+                $("#accordion1").accordion(
+                    {
+                        collapsible: true,
+                        animate: 150
+                    });
+                $("#accordion2").accordion(
+                    {
+                        collapsible: true,
+                        animate: 300
+                    });
             }
 
 
@@ -130,9 +194,6 @@
             update();
             collapse();
 
+
         </script>
-    </div>
-@*</div>*@
-
-
-
+  
