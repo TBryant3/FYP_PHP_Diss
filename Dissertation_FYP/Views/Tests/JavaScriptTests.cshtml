@@ -36,10 +36,12 @@
                 width: 25%;
                 text-decoration-color:red;
             }
-            .hintText
+            .hintText 
             {             
                 color: green; 
                 margin: 0px 0px 10px;
+                max-height: 45px;
+                visibility:hidden;
             }
             
             #editorInput2
@@ -53,15 +55,14 @@
 
             .testTitles
             {
-                width:40%;
+                width:65%;
                 display: inline-block;
                 padding: 0px 0px 0px 0px;
                 margin: 0px 0px 0px 0px;
             }
-            .checkAnswer 
-            {
+            .checkAnswer {
                 border-radius: 5%;
-                width: 24%;
+                width: 20%;
                 display: inline-block;
                 padding: 0px 0px 0px 0px;
                 margin: 0px 0px 0px 0px;
@@ -81,19 +82,19 @@
     <!--FIRST ROW-->
     <div class="row" style="border: dashed; height: 100%">
         <h1>Set 1 -> Rookie Codee</h1>
-        <div class="col-md-6" style="height: 100%;" @*width: 100%"*@>
+        <div class="col-md-6" style="height: 100%;">
             <!--Column for Inputs-->
             <div id="accordion1" style="width:100%">
-                <h3 class="testTitles">Create a function that <b>Adds Two</b> values together</h3>
+                <h3 class="testTitles" style="background-color:darkseagreen">Create a function that <b>Adds Two</b> values together</h3>
                 <div id="editorInput1">
                     <!--INPUT CODE-->
                 </div>
-                <h3 class="hint">Click for a Hint!</h3>
-                <p class="hintText">Remember that adding values is the same as in maths equations</p>
             </div>
+            <button onclick="showHint()" style="background-color:orange">Click for a Hint!</button>
+            <p id="hintText" style="color:green; font-style:oblique"></p>
         </div>
         <!--Column for Outputs-->
-        <div class="col-md-6" @*style="height:100%; width:100%"*@>
+        <div class="col-md-6" style="height:100%">
             <div id="accordion2" style="width: 100%">
                 <p class="testTitles">Check answer!</p>
                 @*<button type="submit" class="checkAnswer">Check answer!</button>*@
@@ -137,7 +138,7 @@
         <script>
             // Declaring Variables //
             var userEditor1 = ace.edit("editorInput1");
-            //var userEditor2 = ace.edit("editorInput2");
+            //var userEditor2 = ace.edit("editorInput2");            
 
             //if (true) {
 
@@ -173,26 +174,38 @@
                         vScrollBarAlwaysVisible: false
                     });
                 userEditor1.setShowPrintMargin(true);
-                userEditor1.setBehavioursEnabled(false);
+                userEditor1.setBehavioursEnabled(false);                               
             }
 
-            function collapse() {
+            function collapse()
+            {
                 $("#accordion1").accordion(
                     {
+                        active: false,
                         collapsible: true,
-                        animate: 150
+                        animate: 150,
+                        
                     });
                 $("#accordion2").accordion(
                     {
+                         active: false,
                         collapsible: true,
-                        animate: 300
+                        animate: 150
                     });
             }
+
+            function showHint()
+            {
+                document.getElementById("hintText").innerHTML = "Remember that adding values is the same as in maths equations";
+            }
+
+
 
 
             setUp();
             update();
             collapse();
+            
 
 
         </script>
