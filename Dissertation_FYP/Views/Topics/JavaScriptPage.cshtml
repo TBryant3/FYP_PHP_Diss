@@ -34,7 +34,10 @@
         <h2>Introduction to JavaScript</h2>
         <div id="accordionP1" style="width:100%">
             <h3 class="learnTitles">History of JavaScript</h3>
-            <p>JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.</p>
+            <p>
+                JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. 
+                The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.
+            </p>
             <h3 class="learnTitles">Present Day JavaScript</h3>
             <p>Yes there has been many iteration of Javascript and the '.js' extension over time but the core functionality of JavaScript is still used today in web development through the likes of adding features and more options to HTML websites as well as being flexible at intigrating into other language projects.</p>
             <h3 class="learnTitles">The Future of JavaScript</h3>
@@ -51,18 +54,22 @@
         <div id="progressBarJ1" style="position:relative">
             <script>
                 $(document).ready(function ($) {
-                    $('#t4Btn1').button();
+                    $('#t4Btn1').button(); // Initialise Button
                     $('#progressBarJ1').progressbar(
                         {
                             value: 0,
-                            create: function (e) {
+                            create: function (e)
+                            {
                                 $('#pbj-label1').text($('#progressBarJ1').progressbar("value"));
                             },
                             complete: function (e) {
                                 $('#t4Btn1').button("disable"),
                                     $('#t4Btn1').text("Completed")
-                            }, change: function (e) {
-                                if ($(this).progressbar("value") < 100) {
+                            },
+                            change: function (e)
+                            {
+                                if ($(this).progressbar("value") < 100)
+                                {
                                     $('#t4Btn1').button("enable")
                                 }
                                 $('#pbj-label1').text($('#progressBarJ1').progressbar("value"));
@@ -389,6 +396,7 @@
             {
                 active: false,
                 collapsible: true,
+                heightStyle: "content",
                 animate: 150,
 
             });
@@ -396,30 +404,35 @@
             {
                 active: false,
                 collapsible: true,
+                heightStyle: "content",
                 animate: 150
             });
         $("#accordionP3").accordion(
             {
                 active: false,
                 collapsible: true,
+                heightStyle: "content",
                 animate: 150
             });
         $("#accordionP4").accordion(
             {
                 active: false,
                 collapsible: true,
+                heightStyle: "content",
                 animate: 150
             });
         $("#accordionP5").accordion(
             {
                 active: false,
                 collapsible: true,
+                heightStyle: "content",
                 animate: 150
             });
         $("#accordionP6").accordion(
             {
                 active: false,
                 collapsible: true,
+                heightStyle: "content",
                 animate: 150
             });
     }
