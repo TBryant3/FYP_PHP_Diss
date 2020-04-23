@@ -20,7 +20,7 @@
 
     </head>
 <div class="Welcoming">
-    <h1 style="text-align:center"><strong>Hi #USERNAME#</strong> -- <i class="fa fa-user fa-2x"></i></h1>
+    <h1 style="text-align:center"><b>Hi -- #USERNAME#</b> -- <i class="fa fa-user fa-2x"></i></h1>
     <h3 style="text-align:center">@ViewBag.Message</h3>
 </div>
 <div class="container">
@@ -32,7 +32,7 @@
                 <h3>HTML & CSS</h3>
                 <div id="htmlAcc">
                     <h3>Module 1</h3>
-                    <p> DXDDDD</p>
+                    <p> FOr this Module, you have achieved: <b></b>   </p>
                     <h3>Module 2</h3>
                     <p> FDFFSF</p>
                     <h3>Module 3</h3>
@@ -138,16 +138,17 @@
 </div>
 
 <script>
+    // Function which sets the options for the accordion elements //
     function collapseHeadings()
-    {
+    {        // Topics main Accodion element
         $("#topicAccordion").accordion(
             {
-                active: false,
-                collapsible: true,
-                heightStyle: "content",
-                animate: 150,
+                active: false, // Is not open on load //
+                collapsible: true, // Can be collapsed //
+                heightStyle: "content", // Matches height of its contents //
+                animate: 150, // Time in milliseconds of how fast the tabs open //
             });
-        
+        // 4 Sub-Topics Accordion elements within parent div for grouping //
         $("#htmlAcc").accordion(
             {
                 active: false,
@@ -176,7 +177,7 @@
                 heightStyle: "content",
                 animate: 150,
             });
-
+        // Test Accordion (P)
         $("#testAccordion").accordion(
             {
                 active: false,

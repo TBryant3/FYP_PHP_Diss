@@ -26,11 +26,15 @@
 <h4 class="topicDesc">JavaScript is a Scripting Language that is used alongside web development tools to produce dynamic and responsive webpages</h4>
 <h4 class="topicDesc">There are many extensive libraries which can be used in conjuction with core JavaScript to help reduce code lines as well as add in extra features that core JS would take too long to code as well as taking up more memory of the system. </h4>
 <h4 class="topicDesc">Finallt, JS is a fun language to work with as it is multi-paradigm support and can be tested easily with the use of Mocha and Chia (explained later)</h4>
+
+<!---------------------Section 1--------------------->
 <h2><b>Learning Modules</b></h2>
+<!--First Row-->
 <div class="row" style="max-height:600px">
     <!--Part 1 - Introduction to JS-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
         <h2>Introduction to JavaScript</h2>
+        <!--First Accordion Widget-->
         <div id="accordionP1" style="width:100%">
             <h3 class="learnTitles">History of JavaScript</h3>
             <p>
@@ -38,9 +42,13 @@
                 The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.
             </p>
             <h3 class="learnTitles">Present Day JavaScript</h3>
-            <p>Yes there has been many iteration of Javascript and the '.js' extension over time but the core functionality of JavaScript is still used today in web development through the likes of adding features and more options to HTML websites as well as being flexible at intigrating into other language projects.</p>
+            <p>
+                Yes there has been many iteration of Javascript and the '.js' extension over time but the core functionality of JavaScript is still used today in web development through the likes of adding features and more options to HTML websites as well as being flexible at intigrating into other language projects.
+            </p>
             <h3 class="learnTitles">The Future of JavaScript</h3>
-            <p>JavaScript is currently on update 1.8.5 which doesn't seem that updated but JavaScript is helping developers create applications rapidly and to a very high-level of complexity therfore making JavaScript a programming language that will most likely continue on this path due to how efficent and flexible the language is </p>
+            <p>
+                JavaScript is currently on update 1.8.5 which doesn't seem that updated but JavaScript is helping developers create applications rapidly and to a very high-level of complexity therfore making JavaScript a programming language that will most likely continue on this path due to how efficent and flexible the language is 
+            </p>
             <h3 class="learnTitles">Summary of JavaScript</h3>
             <p>
                 JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
@@ -91,7 +99,7 @@
     </div>
     <!--Part 3 - JavaScript for people with some JS experience-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightcoral">
-        <h2>JavaScript for the Pros</h2>
+        <h2>JavaScript for the Pros</h2>        
         <div id="accordionP3" style="width:100%">
             <h3 class="learnTitles">Recap of JavaScript</h3>
             <p>
@@ -221,8 +229,10 @@
 
 
 <script>
-    //Function for collapsing the acordion information //
-    function collapse() {
+    //Function for collapsing the Accordion information //
+    function collapse()
+    {
+        // Set 1 //
         $("#accordionP1").accordion(
             {
                 active: false,
@@ -245,6 +255,7 @@
                 heightStyle: "content",
                 animate: 150
             });
+        // Set 2 //
         $("#accordionP4").accordion(
             {
                 active: false,
