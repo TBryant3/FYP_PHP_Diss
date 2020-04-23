@@ -1,12 +1,218 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Account Page";
 }
-<head>
-    <!--jQuery Link-->
-    <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
-    <!--jQuery-UI Link-->
-    <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
+    <head>
+        <!--jQuery Link-->
+        <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
+        <!--jQuery-UI Link-->
+        <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
+        <!--Icons Link-->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!--StyleSheets-->
+        <link href="~/Content/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
-    <script src="~/Scripts/progressBar.js" type="text/javascript"></script>
-</head>
+        <style>
+            p {
+                text-align: center;
+            }
+        </style>
+
+
+    </head>
+<div class="Welcoming">
+    <h1 style="text-align:center"><strong>Hi #USERNAME#</strong> -- <i class="fa fa-user fa-2x"></i></h1>
+    <h3 style="text-align:center">@ViewBag.Message</h3>
+</div>
+<div class="container">
+    <h1 style="text-align:center">Account Break-down</h1>
+    <div class="row" style="border:double">
+        <div class="col-md-4">
+            <h2 style="text-align:center"><strong>Topics</strong></h2>
+            <div id="topicAccordion">
+                <h3>HTML & CSS</h3>
+                <div id="htmlAcc">
+                    <h3>Module 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Module 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Module 3</h3>
+                    <p>FVGDGDG</p>
+                </div>                
+                <h3>C#</h3>
+                <div id="cSharpAcc">
+                    <h3>Module 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Module 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Module 3</h3>
+                    <p>FVGDGDG</p>
+                </div>
+                <h3>C++</h3>
+                <div id="cPlusAcc">
+                    <h3>Module 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Module 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Module 3</h3>
+                    <p>FVGDGDG</p>
+                </div>
+                <h3>JavaScript</h3>
+                <div id="javaScriptAcc">
+                    <h3>Module 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Module 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Module 3</h3>
+                    <p>FVGDGDG</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2 style="text-align:center"><strong>Tests</strong></h2>
+            <div id="testAccordion">
+                <h3>HTML & CSS</h3>
+                <div id="htmltestAcc">
+                    <h3>Test 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Test 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Test 3</h3>
+                    <p>FVGDGDG</p>
+                </div>
+                <h3>C#</h3>
+                <div id="cSharptestAcc">
+                    <h3>Test 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Test 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Test 3</h3>
+                    <p>FVGDGDG</p>
+                </div>
+                <h3>C++</h3>
+                <div id="cPlustestAcc">
+                    <h3>Test 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Test 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Test 3</h3>
+                    <p>FVGDGDG</p>
+                </div>
+                <h3>JavaScript</h3>
+                <div id="javaScripttestAcc">
+                    <h3>Test 1</h3>
+                    <p> DXDDDD</p>
+                    <h3>Test 2</h3>
+                    <p> FDFFSF</p>
+                    <h3>Test 3</h3>
+                    <p>FVGDGDG</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2 style="text-align:center"><strong>Favourites</strong></h2>
+            <h3 style="text-align:center">All Favourited topic modules will be shown here</h3>
+        </div>
+    </div>
+    <!--Carry On-->
+    <div class="row" style="border:double">
+        <h1 style="text-align:center">Pick-up where you left off!</h1>
+        <div class="col-md-6">
+            <h2 style="text-align:center">Topics</h2>
+            <p>abc</p>
+        </div>
+        <div class="col-md-6">
+            <h2 style="text-align:center">Tests</h2>
+            <p>abc</p>
+        </div>        
+    </div>
+    <!--Settings-->
+    <div class="row" style="border:double">
+        <h1 style="text-align:center">Settings</h1>
+        <div class="col-md-6">
+            <h2 style="text-align:center"></h2>
+        </div>
+        <div class="col-md-6">
+            <h2 style="text-align:center">Tests</h2>
+        </div>        
+    </div>
+</div>
+
+<script>
+    function collapseHeadings()
+    {
+        $("#topicAccordion").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        
+        $("#htmlAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        $("#cSharpAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        $("#cPlusAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        $("#javaScriptAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+
+        $("#testAccordion").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        $("#htmltestAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        $("#cSharptestAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        $("#cPlustestAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+        $("#javaScripttestAcc").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+            });
+    }
+    collapseHeadings();
+
+</script>

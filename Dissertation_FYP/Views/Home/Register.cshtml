@@ -1,39 +1,36 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Register";
 }
     <head>
-        <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <!--Script Links-->
         <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
         <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
+        <!--Icons Link-->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-        <style>        
-            .formContainer 
-            {
+        <style>
+            .formContainer {
                 padding: 1%;
                 background-color: white;
             }
 
-            input[type=text], input[type=password] 
-            {
+            input[type=text], input[type=password] {
                 width: 100%;
                 padding: 1%;
             }
 
-            input[type=text]:focus, input[type=password]:focus 
-            {
-                background-color: #ddd;
-            }
-            #signin-container
-            {
-                background-color:white;
-                border:none;
-            }
-            .submit:hover
-            {
-                background-color: darkgray;
+                input[type=text]:focus, input[type=password]:focus {
+                    background-color: #ddd;
+                }
+
+            #signin-container {
+                background-color: white;
+                border: none;
             }
 
+            .submit:hover {
+                background-color: darkgray;
+            }
         </style>
     </head>
 
@@ -48,26 +45,31 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-5">
                     <div class="row" style="width:100%">
+                        <i class="fa fa-user"></i>
                         <label for="username" style="width:25%">Username:</label>
                         <input type="text" name="username" placeholder="E.g: cojoUser1..." required>
                     </div>
                     <br />
                     <div class="row" style="width:100%">
+                        <i class="fa fa-envelope"></i>
                         <label for="email" style="width:25%">Email:</label>
                         <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required>
                     </div>
                     <br />
                     <div class="row" style="width:100%">
+                        <i class="fa fa-key"></i>
                         <label for="psw" style="width:25%">Password:</label>
                         <input type="password" name="psw" placeholder="Insert password..." required>
                     </div>
                     <br />
                     <div class="row" style="width:100%">
+                        <i class="fa fa-key"></i>
                         <label for="confirm-psw" style="width:25%">Confirm Password:</label>
                         <input type="password" name="confirm-psw" placeholder="Re-type password..." required>
                     </div>
                     <br />
                     <div class="row" style="width:100%">
+                        <i class="fa fa-globe"></i>
                         <label for="country" style="width:25%">Country:</label>
                         <select id="countryChoice">
                             <option value="UK">United Kingdom</option>
@@ -85,8 +87,7 @@
                             <p><input type="submit" value="Register" class="submit" style="margin-right: 1%;border-radius:5%; height:15%; width:20%;"><b style="font-size:medium"> OR </b> Already have an account? <a href="@Url.Action("Login", "Home")">Sign In here</a>!</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3"></div>
+                </div>                
             </div>
         </div>
     </form>

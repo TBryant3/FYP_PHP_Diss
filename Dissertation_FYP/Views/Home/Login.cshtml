@@ -1,37 +1,38 @@
 ﻿@{
     ViewBag.Title = "Login Form";
 }
-<head>
-    <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
-    <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
+    <head>
+        <!--Script Links-->
+        <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>        
+        <!--Icons Link-->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <style>
-    .formContainer 
-    {
-        padding: 1%;
-        background-color: white;
-    }
-    input[type=text], input[type=password] 
-    {
-        width: 100%;
-        padding: 1%;
-    }
-    input[type=text]:focus, input[type=password]:focus 
-    {
-        background-color: #ddd;
-    }
-    #signin-container
-    {
-        background-color:white;
-        border:none;
-    }
-    .submit:hover
-            {
+        <style>
+            .formContainer {
+                padding: 1%;
+                background-color: white;
+            }
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 1%;
+            }
+
+                input[type=text]:focus, input[type=password]:focus {
+                    background-color: #ddd;
+                }
+
+            #signin-container {
+                background-color: white;
+                border: none;
+            }
+
+            .submit:hover {
                 background-color: darkgray;
             }
-    </style>
-</head>
+        </style>
+    </head>
 
 
 <form method="post" id="loginForm" action="">
@@ -45,22 +46,23 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="row" style="width:100%">
+                    <i class="fa fa-user"></i>
                     <label for="username" style="width:25%">Username:</label>
                     <input type="text" name="username" placeholder="Insert username..." required>
                 </div>
                 <br />
                 <div class="row" style="width:100%">
-                    <label for="psw" style="width:25%">Password:</label>
+                    <i class="fa fa-key"></i>
+                    <label for="psw" style="width:24.5%">Password:</label>
                     <input type="password" name="psw" placeholder="Insert password..." required>
-
-                    <p style="padding-left:26%">Forgotten your password? <a href="@Url.Action("ForgottenPSWPage", "Home")">Click me to recover</a>!</p>
                 </div>
+                    <p style="padding-left:26%">Forgotten your password? <a href="@Url.Action("ForgottenPSWPage", "Home")">Click me to recover</a>!</p>
+                
                 <br />
                 <div id="signin-container" style="padding-left:5%">
                     <p><input type="submit" value="Login" class="submit" style="margin-right: 1%;border-radius:3%; height:15%; width:15%"><b style="font-size:medium"> OR </b> Don't already have an account? <a href="@Url.Action("Register", "Home")">Register here</a>!</p>
                 </div>
-            </div>
-            <div class="col-md-3"></div>
+            </div>            
         </div>
     </div>
 </form>

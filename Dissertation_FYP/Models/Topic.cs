@@ -12,11 +12,10 @@ namespace Dissertation_FYP.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Account
+    public partial class Topic
     {
-        public int AccountID { get; set; }
-        public System.DateTime AccountStart { get; set; }
-        public int UserID { get; set; }
-        public string IsAdmin { get; set; }
+        public int TopicID { get; set; }
+        public string TopicName { get; set; }
+        public System.DateTime LastUpdated { get; set; }
     }
 }
