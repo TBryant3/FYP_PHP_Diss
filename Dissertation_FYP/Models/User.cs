@@ -14,10 +14,22 @@ namespace Dissertation_FYP.Models
     
     public partial class User
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public User()
+        {
+            this.Accounts = new HashSet<Account>();
+        }
+    
         public int UserID { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public int Topic1Progress { get; set; }
+        public Nullable<int> Topic1Progress { get; set; }
+        public Nullable<int> Topic2Progress { get; set; }
+        public Nullable<int> Topic3Progress { get; set; }
+        public Nullable<int> Topic4Progress { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Account> Accounts { get; set; }
     }
 }

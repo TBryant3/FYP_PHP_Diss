@@ -15,8 +15,10 @@ namespace Dissertation_FYP.Models
     public partial class Account
     {
         public int AccountID { get; set; }
-        public System.DateTime AccountStart { get; set; }
         public int UserID { get; set; }
+        public System.DateTime CreationDate { get; set; }
         public string IsAdmin { get; set; }
+    
+        public virtual User User { get; set; }
     }
 }

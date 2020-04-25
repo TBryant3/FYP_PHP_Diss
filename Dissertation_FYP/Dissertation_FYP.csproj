@@ -139,29 +139,30 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs">
-      <DependentUpon>DatabaseConnector.tt</DependentUpon>
+      <DependentUpon>DatabaseTest.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DatabaseConnector.Context.cs">
+    <Compile Include="Models\DatabaseTest.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseConnector.Context.tt</DependentUpon>
+      <DependentUpon>DatabaseTest.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DatabaseConnector.cs">
+    <Compile Include="Models\DatabaseTest.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseConnector.tt</DependentUpon>
+      <DependentUpon>DatabaseTest.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DatabaseConnector.Designer.cs">
+    <Compile Include="Models\DatabaseTest.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseConnector.edmx</DependentUpon>
+      <DependentUpon>DatabaseTest.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Topic.cs">
-      <DependentUpon>DatabaseConnector.tt</DependentUpon>
+      <DependentUpon>DatabaseTest.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>DatabaseConnector.tt</DependentUpon>
+      <DependentUpon>DatabaseTest.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\UserClassModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -215,24 +216,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\DatabaseConnector.Context.tt">
+    <Content Include="Models\DatabaseTest.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DatabaseConnector.Context.cs</LastGenOutput>
-      <DependentUpon>DatabaseConnector.edmx</DependentUpon>
+      <DependentUpon>DatabaseTest.edmx</DependentUpon>
+      <LastGenOutput>DatabaseTest.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DatabaseConnector.tt">
+    <Content Include="Models\DatabaseTest.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatabaseConnector.edmx</DependentUpon>
-      <LastGenOutput>DatabaseConnector.cs</LastGenOutput>
+      <DependentUpon>DatabaseTest.edmx</DependentUpon>
+      <LastGenOutput>DatabaseTest.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\DatabaseConnector.edmx">
+    <EntityDeploy Include="Models\DatabaseTest.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DatabaseConnector.Designer.cs</LastGenOutput>
+      <LastGenOutput>DatabaseTest.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\DatabaseConnector.edmx.diagram">
-      <DependentUpon>DatabaseConnector.edmx</DependentUpon>
+    <Content Include="Models\DatabaseTest.edmx.diagram">
+      <DependentUpon>DatabaseTest.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\ContactValidation.js" />

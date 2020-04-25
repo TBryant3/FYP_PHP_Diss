@@ -13,10 +13,10 @@ namespace Dissertation_FYP.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AccountsDBEntities : DbContext
+    public partial class AccountsDBEntitiesTEST : DbContext
     {
-        public AccountsDBEntities()
-            : base("name=AccountsDBEntities")
+        public AccountsDBEntitiesTEST()
+            : base("name=AccountsDBEntitiesTEST")
         {
         }
     
@@ -26,7 +26,7 @@ namespace Dissertation_FYP.Models
         }
     
         public virtual DbSet<Account> Accounts { get; set; }
-        public virtual DbSet<Topic> Topics { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Topic> Topics { get; set; }
     }
 }
