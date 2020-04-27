@@ -64,7 +64,7 @@
                 </div>
                 <br />
                 <div class="row">
-                    <input type="submit" value="Submit" class="submit" style="border-radius:5%; height:15%; width:20%; margin-left:45%">
+                    <button type="submit" id="submitBtn" onclick="confirmMessage()" style="border-radius:5%; height:15%; width:20%; margin-left:45%">Submit</button>
                 </div>
                 
             </div>
@@ -98,3 +98,16 @@
         </div>
     </div>
 </form>
+<script>
+    $('#submitBtn').button(); 
+    function confirmMessage()
+    {
+        window.alert("Thank you!" + "\n" + "This feature is not functional but is to show the form submission");
+    };
+
+    if ($("#usernameInput").Text == null)
+    {
+        $('#submitBtn').button("disable");
+    };
+
+</script>
