@@ -1,0 +1,33 @@
+﻿.topicLogos
+{
+    max-width: 100px;
+    max-height: 100px;
+}
+.topicDesc
+{
+    text-align:center;
+}
+#signin-container
+ {
+     background-color:white;
+ }
+#HTML_logo {
+    max-width: 135px;
+    max-height: 125px;
+       
+}
+#Csharp_logo {
+    max-width: 135px;
+    max-height: 125px;
+   
+}
+#Cplus_logo {
+    max-width: 135px;
+    max-height: 125px;
+    
+}
+#JavaScript_logo {
+    max-width: 135px;
+    max-height: 125px;
+    
+}
