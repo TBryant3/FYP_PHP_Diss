@@ -5,23 +5,23 @@
     <title>Account Page</title>
 
     <!--Browser version support-->
-    <script src="/scripts/modernizr-2.8.3.js"></script>
+    <script src="assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="/scripts/jquery-3.4.1.js"></script>
+    <script src="assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="/scripts/jquery-ui-1.12.1.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="/scripts/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
     <!--Personal Icons-->
     <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
 
     <!-- Stylesheets -->
-    <link href="/styles/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/Site.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
         p
@@ -45,7 +45,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
             <a class="navbar-brand" href="index.php"> CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">

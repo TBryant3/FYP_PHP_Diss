@@ -5,22 +5,23 @@
         <title>CoJō Topics</title>
 
         <!--Browser version support-->
-        <script src="/scripts/modernizr-2.8.3.js"></script>
+        <script src="assets/js/modernizr-2.8.3.js"></script>
         <!--jQuery Link-->
-        <script src="/scripts/jquery-3.4.1.js"></script>
+        <script src="assets/js/jquery-3.4.1.js"></script>
         <!--jQuery-UI Link-->
-        <script src="/scripts/jquery-ui-1.12.1.js"></script>
+        <script src="assets/js/jquery-ui-1.12.1.js"></script>
         <!-- Bootstrap -->
-        <script src="/scripts/bootstrap.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
         <!--Personal Icons-->
         <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
 
         <!-- Stylesheets -->
-        <link href="/styles/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="/styles/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-        <link href="/styles/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-        <link href="/styles/Site.css" rel="stylesheet" type="text/css" />
-        <link href="/styles/allTopicStyles.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
         <style>
             h2
@@ -39,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+                <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
                 <a class="navbar-brand" href="index.php"> CoJō Home</a>
             </div>
             <div class="navbar-collapse collapse">
@@ -84,7 +85,7 @@
             <div class="col-xs-2"></div>
             <div class="col-xs-4" style="border-style:solid; border-radius:5%;">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic1" style="float:left; padding:5px"></i>
-                <h2 style="color:green; text-align:center"><b>Topic 1 <img class="topicLogos" src="img/HTML5_logo.png"  /><br /> HTML & CSS</b></h2>
+                <h2 style="color:green; text-align:center"><b>Topic 1 <img class="topicLogos" src="assets/img/HTML5_logo.png"  /><br /> HTML & CSS</b></h2>
                 <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
                 <p><a class="btn btn-default" href="htmlPage.php" style="background-color:rosybrown">Learn more &raquo;</a></p>
                 <!--@*Progress Bar*@-->
@@ -97,9 +98,9 @@
             <!--@* C-Sharp *@-->
             <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic2" style="float:left; padding:5px"></i>
-                <h2 style="color:green; text-align:center"><b>Topic 2 <img class="topicLogos" alt="C_Sharp_Logo" src="img/Csharp_logo.png" /><br /> C# </b></h2>
+                <h2 style="color:green; text-align:center"><b>Topic 2 <img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /><br /> C# </b></h2>
                 <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
-                <p><a class="btn btn-default" href="@Url.Action("CSharpPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
+                <p><a class="btn btn-default" href="" style="background-color:rosybrown">Learn more &raquo;</a></p>
                 <!--@*Progress Bar*@-->
                 <div id="pbTopic2" style="margin-bottom:1%;">
                     Topic Completion: <b style="visibility: hidden"><span id="csharp-label" style="position:relative;"></span>%</b>
@@ -116,7 +117,7 @@
             <div class="col-xs-2"></div>
             <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic3" style="float:left; padding:5px"></i>
-                <h2 style="color:green; text-align:center"><b>Topic 3 <img class="topicLogos" alt="C_Plus_Logo"  src="img/Cplusplus_logo.png" /><br /> C++</b></h2>
+                <h2 style="color:green; text-align:center"><b>Topic 3 <img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /><br /> C++</b></h2>
                 <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
                 <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
                 <!--@*Progress Bar*@-->

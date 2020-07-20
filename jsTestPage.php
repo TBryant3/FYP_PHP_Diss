@@ -14,12 +14,12 @@
     <script src="/scripts/bootstrap.js"></script>
 
     <!-- Stylesheets -->
-    <link href="/styles/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/Site.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
 
@@ -36,7 +36,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
             <a class="navbar-brand" href="index.php"> CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
@@ -71,7 +71,7 @@
 
 <div class="container" style="overflow:hidden">
     <div class="Welcoming">
-        <h1 style="text-align:center"><strong>JavaScript Tests</strong><img class="topicLogos" alt="JavaScript_Logo"  src="img/js-logo.png" /></h1>
+        <h1 style="text-align:center"><strong>JavaScript Tests</strong><img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></h1>
     </div>
     <br />
     <!--------------------------Test 1------------------------------------>

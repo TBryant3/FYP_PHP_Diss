@@ -6,21 +6,21 @@
     <title>HTML/CSS Page</title>
 
     <!--Browser version support-->
-    <script src="/scripts/modernizr-2.8.3.js"></script>
+    <script src="assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="/scripts/jquery-3.4.1.js"></script>
+    <script src="assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="/scripts/jquery-ui-1.12.1.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="/scripts/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
 
     <!-- Stylesheets -->
-    <link href="/styles/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/Site.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
             <a class="navbar-brand" href="index.php"> CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
@@ -66,7 +66,7 @@
 </div>
 
 
-<h1 style="text-align:center">Hypertext Markup Language<img class="topicLogos" alt="HTML_Logo" src="img/HTML5_logo.png" /></h1>
+<h1 style="text-align:center">Hypertext Markup Language<img class="topicLogos" alt="HTML_Logo" src="assets/img/HTML5_logo.png" /></h1>
 <!--Quick description of the topic-->
 <h4 class="topicDesc">HTML is a computing language that is used for the development of websites and webpages.</h4>
 <h4 class="topicDesc">The first part of the naming for HTML, Hypertext, refers to the hyperlinks that can be included in the website as to navigate between pages. </h4>

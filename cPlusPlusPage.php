@@ -1,8 +1,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About CoJō</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C++ Page</title>
 
     <!--Browser version support-->
     <script src="assets/js/modernizr-2.8.3.js"></script>
@@ -12,6 +12,8 @@
     <script src="assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
+    <!--Personal Icons-->
+    <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
 
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -19,8 +21,12 @@
     <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
-</head>
+    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
+    <style>
+
+    </style>
+</head>
 <body>
 <!--NAV BAR SETTINGS-->
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -64,10 +70,9 @@
     </div>
 </div>
 
-<h1 style="text-align:center">About CoJo</h1>
-<h2 style="text-align:center">A non-profit project to help aid in the learning of Computing and Code Learning</h2>
-<br />
-<p>Here at CoJo, the aim is to give you the user the best possible experience with coding and the practices that are necessary to produce coherent and robust applications.</p>
+<h1>C++ Page - Work in Progress</h1>
 
-<p>The idea started when I, Tyler, had to decide what to do for my Final Year Project at University and then the idea to create a code learning / teaching application came to fruition and hence the development of this application</p>
 
+</body>
+</html>
+<?php
