@@ -81,13 +81,13 @@
         <!--@*First Section - Beginner*@-->
         <h2 style="text-align:center"><strong>Stage 1 - White Belt</strong></h2>
         <!--@* HTML/CSS *@-->
-        <div class="row" style="height:250px">
+        <div class="row" style="height:265px">
             <div class="col-xs-2"></div>
-            <div class="col-xs-4" style="border-style:solid; border-radius:5%;">
+            <div class="col-xs-4" style="border-style:solid; border-radius:5%; height:100%">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic1" style="float:left; padding:5px"></i>
-                <h2 style="color:green; text-align:center"><b>Topic 1 <img class="topicLogos" src="assets/img/HTML5_logo.png"  /><br /> HTML & CSS</b></h2>
-                <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
-                <p><a class="btn btn-default" href="htmlPage.php" style="background-color:rosybrown">Learn more &raquo;</a></p>
+                <h2 style="color:orange; text-align:center"><b>HTML & CSS</b><img class="topicLogos" src="assets/img/HTML5_logo.png"  /><img class="topicLogos" src="assets/img/CSS3_logo.png"  /></h2>
+                <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure your webpages and then CSS to style them and stand out from the crowd!</i></p>
+                <p><a class="btn btn-default" href="htmlPage.php" style="color:orange">Learn more &raquo;</a><b>*Recommended for beginners</b></p>
                 <!--@*Progress Bar*@-->
                 <div id="pbTopic1" style="margin-bottom: 1%; ">
 
@@ -96,11 +96,11 @@
                 </div>
             </div>
             <!--@* C-Sharp *@-->
-            <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
+            <div class="col-xs-4" style="border-style: solid; border-radius: 5%; height:100%">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic2" style="float:left; padding:5px"></i>
-                <h2 style="color:green; text-align:center"><b>Topic 2 <img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /><br /> C# </b></h2>
-                <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
-                <p><a class="btn btn-default" href="" style="background-color:rosybrown">Learn more &raquo;</a></p>
+                <h2 style="color:rebeccapurple; text-align:center"><b>C-Sharp </b><img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></h2>
+                <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm. In this topic we will delve into <b>What</b> C# is used for, <b>How</b> it is used and <b>Why</b> the programming language was developed</i></p>
+                <p><a class="btn btn-default" href="" style="color:rebeccapurple">Learn more &raquo;</a></p>
                 <!--@*Progress Bar*@-->
                 <div id="pbTopic2" style="margin-bottom:1%;">
                     Topic Completion: <b style="visibility: hidden"><span id="csharp-label" style="position:relative;"></span>%</b>
@@ -109,17 +109,22 @@
             <div class="col-xs-2"></div>
         </div>
         <br />
-        <!--@* Second Section - Intermediate*@-->
-        <h2 style="text-align: center"><strong>Stage 2 - Brown Belt</strong></h2>
-        <br />
+    <br />
+    <br />
+    <!--@* Second Section - Intermediate*@-->
+        <h2 style="text-align: center"><b>Stage 2 - Brown Belt</b></h2>
         <!--@* CPlusPlus *@-->
-        <div class="row" style="height:255px">
+        <div class="row" style="height:25%">
             <div class="col-xs-2"></div>
             <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic3" style="float:left; padding:5px"></i>
-                <h2 style="color:green; text-align:center"><b>Topic 3 <img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /><br /> C++</b></h2>
-                <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
-                <p><a class="btn btn-default" href="@Url.Action("CplusplusPage", "Topics")" style="background-color:rosybrown">Learn more &raquo;</a></p>
+                <h2 style="color:deepskyblue; text-align:center"><b> C-Plus-Plus </b><img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></h2>
+                <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm.  We will go through: <b>What</b> C++ is, <b>How</b> it is used, and <b>Why</b> C++ is used over certain other programming languages</i></p>
+
+
+                <p><a class="btn btn-default" href="" style="color:deepskyblue">Learn more &raquo;</a></p>
+
+
                 <!--@*Progress Bar*@-->
                 <div id="pbTopic3" style="margin-bottom:1%;">
 
@@ -130,9 +135,9 @@
             <!--@* JavaScript *@-->
             <div class="col-xs-4" style="border-style:solid; border-radius:5%;">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic4" style="float:left; padding:5px"></i>
-                <h2 style="color: green;text-align: center"><b>Topic 4 <img class="topicLogos" alt="JavaScript_Logo"  src="img/js-logo.png" /><br /> JavaScript </b></h2>
-                <p style="text-align:center"><i>In this topic we shall we exploring the high-level scripting language JavaScript. We will go through: What JavaScript is, How it is used, and Why JavaScript is so important especially in the web development industry</i></p>
-                <p><a class="btn btn-default" href="jsPage.php" style="background-color:rosybrown">Learn more &raquo;</a></p>
+                <h2 style="color: goldenrod; text-align: center"><b>JavaScript </b><img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></h2>
+                <p style="text-align:center"><i>In this topic we shall we exploring the high-level scripting language JavaScript. We will go through: <b>What</b> JavaScript is, <b>How</b> it is used, and <b>Why</b> JavaScript is so important especially in the web development industry</i></p>
+                <p><a class="btn btn-default" href="jsPage.php" style="color:goldenrod">Learn more &raquo;</a><b>*Recommended after completing HTML & CSS</b></p>
                 <!--@*Progress Bar*@-->
                 <div id="pbTopic4" style="margin-bottom:1%;">
 
@@ -143,12 +148,14 @@
             <div class="col-xs-2"></div>
         </div>
         <br />
-        <h2 style="text-align:center"><strong>Stage 3 - Black Belt</strong></h2>
+        <br />
+    <br />
+    <h2 style="text-align:center"><strong>Stage 3 - Black Belt</strong></h2>
         <div class="row">
             <div class="col-xs-2"></div>
             <div class="col-xs-8" style="border-style: solid; border-radius: 5%;">
                 <h2 style="color:green; text-align:center"><strong>Coming Soon</strong></h2>
-                <p id="countDownArea" style="text-align:center"></p>
+                <b><p id="countDownArea" style="text-align:center; font-size: large"></p></b>
             </div>
             <div class="col-xs-2"></div>
         </div>
@@ -157,15 +164,15 @@
         <div class="row">
             <div class="col-xs-2"></div>
             <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
-                <h2 style="color:green; text-align:center"><strong>FAQ</strong></h2>
+                <h2 style="color:lightsalmon; text-align:center"><b>FAQ</b></h2>
                 <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
-                <p><a class="btn btn-default" href="aboutUs.php">Learn more &raquo;</a></p>
+                <p><a class="btn btn-default" href="aboutUs.php" style="color:lightsalmon">Learn more &raquo;</a></p>
             </div>
             <div class="col-xs-4" style="        border-style: solid;
                 border-radius: 5%;">
-                <h2 style="color:green; text-align:center"><strong>Ask an expert!</strong></h2>
+                <h2 style="color:lightsalmon; text-align:center"><b>Ask an expert!</b></h2>
                 <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
-                <p><a class="btn btn-default" href="contactUs.php">Learn more &raquo;</a></p>
+                <p><a class="btn btn-default" href="contactUs.php" style="color:lightsalmon">Learn more &raquo;</a></p>
             </div>
             <div class="col-xs-2"></div>
         </div>

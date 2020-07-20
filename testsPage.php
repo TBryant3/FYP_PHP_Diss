@@ -77,9 +77,9 @@
 <div class="row" style="height:275px">
     <div class="col-xs-2"></div>
     <div class="col-xs-4" style="border-style:solid; height:100%; border-radius:5%; ">
-        <h2 style="color:orange; text-align:center"><strong>HTML & CSS Tests <img class="topicLogos" alt="HTML_Logo" src="assets/img/HTML5_logo.png" /></strong></h2>
+        <h2 style="color:orange; text-align:center"><b>HTML & CSS Tests <img class="topicLogos" alt="HTML_Logo" src="assets/img/HTML5_logo.png" /><img class="topicLogos" src="assets/img/CSS3_logo.png"  /></b></h2>
         <p style="text-align:center"><i>Web Development Mark-up language used to produce web pages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
-        <p><a class="btn btn-default" href="htmlTestPage.php" style="background-color:lightcoral">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="htmlTestPage.php" style="color:orange">Test me &raquo;</a></p>
         <!--@*Progress Bar*@-->
         <div id="pbTest1" style="margin-bottom:1%;">
 
@@ -89,9 +89,9 @@
     </div>
     <!--@* C-Sharp *@-->
     <div class="col-xs-4" style="border-style: solid; height:100%; border-radius: 5%;">
-        <h2 style="color:rebeccapurple; text-align:center"><strong>C# Tests <img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></strong></h2>
+        <h2 style="color:rebeccapurple; text-align:center"><b>C# Tests <img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></b></h2>
         <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
-        <p><a class="btn btn-default" href="cSharpTestPage.php" style="background-color:lightcoral">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="cSharpTestPage.php" style="color:rebeccapurple">Test me &raquo;</a></p>
         <!--@*Progress Bar*@-->
         <div id="pbTest2" style="margin-bottom:1%;">
 
@@ -108,9 +108,9 @@
             <div class="col-xs-2"></div>
             <!--@* CPlusPlus *@-->
             <div class="col-xs-4" style="border-style:solid; height:100%; border-radius: 5%;">
-                <h2 style="color:lightblue; text-align:center"><strong>C++ Tests <img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></strong></h2>
+                <h2 style="color:lightblue; text-align:center"><b>C++ Tests <img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></b></h2>
                 <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
-                <p><a class="btn btn-default" href="cPlusPlusTestPage.php" style="background-color:lightcoral">Learn more &raquo;</a></p>
+                <p><a class="btn btn-default" href="cPlusPlusTestPage.php" style="color:lightblue">Test me &raquo;</a></p>
                 <!--@*Progress Bar*@-->
                 <div id="pbTest3" style="margin-bottom:1%;">
 
@@ -120,9 +120,9 @@
             </div>
             <!--@* JavaScript *@-->
             <div class="col-xs-4" style="border-style:solid; height:100%; border-radius:5%;">
-                <h2 style="color:yellow; text-align:center"><strong>JavaScript Tests<img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></strong></h2>
+                <h2 style="color:goldenrod; text-align:center"><b>JavaScript Tests<img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></b></h2>
                 <p style="text-align:center"><i>JavaScript</i></p>
-                <p><a class="btn btn-default" href="jsTestPage.php" style="background-color:lightcoral">Learn more &raquo;</a></p>
+                <p><a class="btn btn-default" href="jsTestPage.php" style="color:goldenrod">Test me &raquo;</a></p>
                 <!--@*Progress Bar*@-->
                 <div id="pbTest4" style="margin-bottom:1%;">
 

@@ -1,7 +1,7 @@
 ﻿.topicLogos
 {
-    max-width: 100px;
-    max-height: 100px;
+    width: 90px;
+    height: 90px;
 }
 .topicDesc
 {
@@ -30,4 +30,7 @@
     max-width: 135px;
     max-height: 125px;
     
+}
+body{
+    background-color:whitesmoke;
 }
