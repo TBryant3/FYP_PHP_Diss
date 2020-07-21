@@ -71,11 +71,15 @@
 <h4 class="topicDesc">HTML is a computing language that is used for the development of websites and webpages.</h4>
 <h4 class="topicDesc">The first part of the naming for HTML, Hypertext, refers to the hyperlinks that can be included in the website as to navigate between pages. </h4>
 <h4 class="topicDesc">The second being that of 'Markup Language' which refers to the layout and how elements are defined within the webpage(s).</h4>
-<h2><b>Learning Modules</b></h2>
-<div class="row" style="height:255px; border:dashed">
+</br>
+<h1 style="text-align: center"><b><u>Learning Modules</u></b></h1>
+<div class="row" style="height:330px; border:solid">
     <!--Part 1 - Introduction to HTML-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
-        <h2>Introduction to HTML</h2>
+        <h2 style="text-align: center"><b>Introduction to HTML</b></h2>
+        <p style="text-align:center">
+            In this section will be be exploring more into what extra features and languages can be utilised alongside HTML
+        </p>
         <div id="accordionH1" style="width:100%">
             <h3 class="learnTitles">History of JavaScript</h3>
             <p>JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.</p>
@@ -92,105 +96,61 @@
             </p>
         </div>
         <br />
-
         <div id="progressBarH1" style="position:relative">
-            <script>
-                $(document).ready(function ($) {
-                    $('#t1Btn1').button();
-                    $('#progressBarH1').progressbar(
-                        {
-                            value: 0,
-                            create: function (e) {
-                                $('#pb-label1').text($('#progressBarH1').progressbar("value"));
-                            },
-                            complete: function (e) {
-                                $('#t1Btn1').button("disable")
-                                $('#t1Btn1').text("Completed")
-                            }, change: function (e) {
-                                if ($(this).progressbar("value") < 100) {
-                                    $('#t1Btn1').button("enable")
-                                }
-                                $('#pb-label1').text($('#progressBarH1').progressbar("value"));
-                            }
-                        });
-                    //Button click
-                    $('#t1Btn1').click(function (e) {
-                        $('#progressBarH1').progressbar({ value: 100 });
-                    })
-                });
-            </script>
-            Progress Completed: <strong><span id="pb-label1" style="position:absolute; left:37%"></span></strong>
+            Progress Completed: <b><span id="pb-label1" style="position:relative"></span></b>
         </div>
         <button id="t1Btn1" style="margin-bottom:1%">Click me to complete</button>
     </div>
     <!--Part 2 - Explaining Tags-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgoldenrodyellow">
-        <h2><b>Part 2</b> - Styling with CSS</h2>
+        <h2 style="text-align: center"><b>Styling with CSS</b></h2>
         <p style="text-align:center">
-            This part will explain how to make webpages look better using the stylesheet language CSS. This language is used hand-in-hand with HTML to produce high-quality websites and can be done a variety of ways!
+            In this section will be be exploring more into what extra features and languages can be utilised alongside HTML
         </p>
+        <div id="accordionH2">
+            <h3 class="learnTitles">History of JavaScript</h3>
+            <p>JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.</p>
+            <h3 class="learnTitles">Present Day JavaScript</h3>
+            <p>Yes there has been many iteration of Javascript and the '.js' extension over time but the core functionality of JavaScript is still used today in web development through the likes of adding features and more options to HTML websites as well as being flexible at intigrating into other language projects.</p>
+            <h3 class="learnTitles">The Future of JavaScript</h3>
+            <p>JavaScript is currently on update 1.8.5 which doesn't seem that updated but JavaScript is helping developers create applications rapidly and to a very high-level of complexity therfore making JavaScript a programming language that will most likely continue on this path due to how efficent and flexible the language is </p>
+            <h3 class="learnTitles">Summary of JavaScript</h3>
+            <p>
+                JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
+                <b>///</b> The extension for JavaScript is .js
+                <b>///</b> The language is easy to pick up but can be difficult to master
+                <b>///</b> Be aware that JavaScript and Java are completely dfferent languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
+            </p>
+        </div>
+        </br>
         <div id="progressBarH2" style="position:relative">
-            <script>
-                $(document).ready(function ($) {
-                    $('#t1Btn2').button();
-                    $('#progressBarH2').progressbar(
-                        {
-                            value: 0,
-                            create: function (e) {
-                                $('#pb-label2').text($('#progressBarH2').progressbar("value"));
-                            },
-                            complete: function (e) {
-                                $('#t1Btn2').button("disable")
-                                $('#t1Btn2').text("Completed")
-                            }, change: function (e) {
-                                if ($(this).progressbar("value") < 100) {
-                                    $('#t1Btn2').button("enable")
-                                }
-                                $('#pb-label2').text($('#progressBarH2').progressbar("value"));
-                            }
-                        });
-                    //Button click
-                    $('#t1Btn2').click(function (e) {
-                        $('#progressBarH2').progressbar({ value: 100 });
-                    })
-                });
-            </script>
-            Progress Completed: <strong><span id="pb-label2" style="position:absolute; left:37%"></span></strong>
+            Progress Completed: <b><span id="pb-label2" style="position:relative"></span></b>
         </div>
         <button id="t1Btn2" type="submit">Click me to complete</button>
     </div>
 
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightcoral">
-        <h2><b>Part 3</b> - Advancing HTML</h2>
+        <h2 style="text-align: center"><b>Advancing HTML</b></h2>
         <p style="text-align:center">
             In this section will be be exploring more into what extra features and languages can be utilised alongside HTML
         </p>
+        <div id="accordionH3" style="width:100%">
+            <h3 class="learnTitles">History of JavaScript</h3>
+            <p>JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.</p>
+            <h3 class="learnTitles">Present Day JavaScript</h3>
+            <p>Yes there has been many iteration of Javascript and the '.js' extension over time but the core functionality of JavaScript is still used today in web development through the likes of adding features and more options to HTML websites as well as being flexible at intigrating into other language projects.</p>
+            <h3 class="learnTitles">The Future of JavaScript</h3>
+            <p>JavaScript is currently on update 1.8.5 which doesn't seem that updated but JavaScript is helping developers create applications rapidly and to a very high-level of complexity therfore making JavaScript a programming language that will most likely continue on this path due to how efficent and flexible the language is </p>
+            <h3 class="learnTitles">Summary of JavaScript</h3>
+            <p>
+                JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
+                <b>///</b> The extension for JavaScript is .js
+                <b>///</b> The language is easy to pick up but can be difficult to master
+                <b>///</b> Be aware that JavaScript and Java are completely dfferent languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
+            </p>
+        </div>
+        </br>
         <div id="progressBarH3" style="position:relative">
-            <script>
-                $(document).ready(function ($) {
-                    $('#t1Btn3').button();
-                    $('#progressBarH3').progressbar(
-                        {
-                            value: 0,
-                            create: function (e) {
-                                $('#pb-label3').text($('#progressBarH3').progressbar("value"));
-                            },
-                            complete: function (e) {
-                                $('#t1Btn3').button("disable")
-                                $('#t1Btn3').text("Completed")
-                            }, change: function (e) {
-                                if ($(this).progressbar("value") < 100) {
-                                    $('#t1Btn3').button("enable")
-                                }
-                                $('#pb-label3').text($('#progressBarH3').progressbar("value"));
-                            }
-                        });
-                    //Button click
-                    $('#t1Btn3').click(function (e) {
-                        $('#progressBarH3').progressbar({ value: 100 });
-                    })
-                });
-            </script>
             Progress Completed: <strong><span id="pb-label3" style="position:absolute; left:37%"></span></strong>
         </div>
         <button id="t1Btn3" type="submit">Click me to complete</button>
@@ -199,8 +159,8 @@
 
 <br />
 
-@*Second Section Demos / Show how its done*@
-<h2><b>Examples</b></h2>
+<!--@*Second Section Demos / Show how its done*@-->
+<h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
 <div class="row" style="height:255px; border:dashed">
     <div class="col-md-4" style="border:solid; height:100%">
         <h2>Part 1 - Simple HTML</h2>
@@ -223,3 +183,127 @@
 
 </body>
 </html>
+<script>
+    //Function for collapsing the Accordion information //
+    function collapse()
+    {
+        // Set 1 //
+        $("#accordionH1").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150,
+
+            });
+        $("#accordionH2").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150
+            });
+        $("#accordionH3").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150
+            });
+        // Set 2 //
+        $("#accordionH4").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150
+            });
+        $("#accordionH5").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150
+            });
+        $("#accordionH6").accordion(
+            {
+                active: false,
+                collapsible: true,
+                heightStyle: "content",
+                animate: 150
+            });
+    }
+    collapse();
+
+
+    $(document).ready(function ($) {
+        $('#t1Btn1').button();
+        $('#progressBarH1').progressbar(
+            {
+                value: 0,
+                create: function (e) {
+                    $('#pb-label1').text($('#progressBarH1').progressbar("value"));
+                },
+                complete: function (e) {
+                    $('#t1Btn1').button("disable")
+                    $('#t1Btn1').text("Completed")
+                }, change: function (e) {
+                    if ($(this).progressbar("value") < 100) {
+                        $('#t1Btn1').button("enable")
+                    }
+                    $('#pb-label1').text($('#progressBarH1').progressbar("value"));
+                }
+            });
+        //Button click
+        $('#t1Btn1').click(function (e) {
+            $('#progressBarH1').progressbar({ value: 100 });
+        })
+
+        $(document).ready(function ($) {
+            $('#t1Btn2').button();
+            $('#progressBarH2').progressbar(
+                {
+                    value: 0,
+                    create: function (e) {
+                        $('#pb-label2').text($('#progressBarH2').progressbar("value"));
+                    },
+                    complete: function (e) {
+                        $('#t1Btn2').button("disable")
+                        $('#t1Btn2').text("Completed")
+                    }, change: function (e) {
+                        if ($(this).progressbar("value") < 100) {
+                            $('#t1Btn2').button("enable")
+                        }
+                        $('#pb-label2').text($('#progressBarH2').progressbar("value"));
+                    }
+                });
+            //Button click
+            $('#t1Btn2').click(function (e) {
+                $('#progressBarH2').progressbar({ value: 100 });
+            })
+        });
+        $(document).ready(function ($) {
+            $('#t1Btn3').button();
+            $('#progressBarH3').progressbar(
+                {
+                    value: 0,
+                    create: function (e) {
+                        $('#pb-label3').text($('#progressBarH3').progressbar("value"));
+                    },
+                    complete: function (e) {
+                        $('#t1Btn3').button("disable")
+                        $('#t1Btn3').text("Completed")
+                    }, change: function (e) {
+                        if ($(this).progressbar("value") < 100) {
+                            $('#t1Btn3').button("enable")
+                        }
+                        $('#pb-label3').text($('#progressBarH3').progressbar("value"));
+                    }
+                });
+            //Button click
+            $('#t1Btn3').click(function (e) {
+                $('#progressBarH3').progressbar({ value: 100 });
+            })
+        });
+    });
+</script>

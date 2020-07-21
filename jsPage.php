@@ -83,14 +83,14 @@
 <h4 class="topicDesc">Finally, JS is a fun language to work with as it is multi-paradigm support and can be tested easily with the use of Mocha and Chia (explained later)</h4>
 
 <!---------------------Section 1--------------------->
-<h2><b>Learning Modules</b></h2>
+<h1 style="text-align: center"><b><u>Learning Modules</u></b></h1>
 <!--First Row-->
-<div class="row" style="max-height:600px">
+<div class="row" style="height:300px">
     <!--Part 1 - Introduction to JS-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
-        <h2>Introduction to JavaScript</h2>
+        <h2 style="text-align: center">Introduction to JavaScript</h2>
         <!--First Accordion Widget-->
-        <div id="accordionP1" style="width:100%">
+        <div id="accordionP1" style="padding-left: 25%">
             <h3 class="learnTitles">History of JavaScript</h3>
             <p>
                 JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. 
@@ -109,7 +109,7 @@
                 JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
                 <b>///</b> The extension for JavaScript is .js
                 <b>///</b> The language is easy to pick up but can be difficult to master
-                <b>///</b> Be aware that JavaScript and Java are completely dfferent languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
+                <b>///</b> Be aware that JavaScript and Java are completely different languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
             </p>
         </div>
         <br />
@@ -123,8 +123,8 @@
 
     <!--Part 2 - Explaining Script Tags-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgoldenrodyellow">
-        <h2>JavaScript Expanded</h2>
-        <div id="accordionP2" style="width:100%">
+        <h2 style="text-align: center">JavaScript Expanded</h2>
+        <div id="accordionP2" style="padding-left: 25%">
             <h3 class="learnTitles">What is JavaScript?</h3>
             <p>
                 JavaScript is a scripting language and so you will need to know what exactly a 'Scripting Language' is to fully understand what this entails.
@@ -154,8 +154,8 @@
     </div>
     <!--Part 3 - JavaScript for people with some JS experience-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightcoral">
-        <h2>JavaScript for the Pros</h2>        
-        <div id="accordionP3" style="width:100%">
+        <h2 style="text-align: center">JavaScript for the Pros</h2>
+        <div id="accordionP3" style="padding-left: 25%">
             <h3 class="learnTitles">Recap of JavaScript</h3>
             <p>
                 If you've got this far then congratulations! You now know more about JavaScript then most! JavaScript can be a pain when it comes to putting the right variable in the right place at the right time but the next tab will be a quick run down as a recap.
@@ -185,11 +185,11 @@
     </div>
 </div>
 <!--------------------------------------------------------------More Learning Modules-------------------------------------------------------------->
-<div class="row" style="max-height:600px">
+<div class="row" style="height:300px">
     <!--Part 4 - Introduction to JS variables-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
-        <h2>JavaScript Variables</h2>
-        <div id="accordionP4" style="width:100%">
+        <h2 style="text-align: center">JavaScript: Variables</h2>
+        <div id="accordionP4" style="padding-left: 15%">
             <h3 class="learnTitles">Types of Variables</h3>
             <p>JavaScript is a script-based programming language which was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.</p>
             <h3 class="learnTitles">Strings and Integers</h3>
@@ -212,14 +212,14 @@
 
     <!--Part 5 - Explaining core functions and variables-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgoldenrodyellow">
-        <h2>JavaScript Expanded</h2>
-        <div id="accordionP5" style="width:100%">
-            <h3 class="learnTitles">What is JavaScript?</h3>
+        <h2 style="text-align: center">JavaScript: Integration</h2>
+        <div id="accordionP5" style="padding-left: 15%">
+            <h3 class="learnTitles">Why use JS over other languages?</h3>
             <p>
                 JavaScript is a scripting language and so you will need to know what exactly a 'Scripting Language' is to fully understand what this entails.
                 By 'Scripting Language' what we mean is that the code that is carried out by your IDE is read in a seperate way to your usual HTML or CSS.
             </p>            
-            <h3 class="learnTitles">JavaScript Sources</h3>
+            <h3 class="learnTitles">JavaScript Applications</h3>
             <p>JavaScript is a recognised language world-wide and so most developement environments would be compatible with it. There is also.................... </p>
             <h3 class="learnTitles">Example use of Script Tags</h3>
             <p>
@@ -236,8 +236,8 @@
     </div>
     <!--Part 6 - Final Learning Module-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightcoral">
-        <h2>JavaScript for the Pros</h2>
-        <div id="accordionP6" style="width:100%">
+        <h2 style="text-align: center">JavaScript: Extension Libraries</h2>
+        <div id="accordionP6" style="padding-left: 15%">
             <h3 class="learnTitles">Final JS Module</h3>
             <p>
                 If you've got this far then congratulations! You now know more about JavaScript then most! JavaScript can be a pain when it comes to putting the right variable in the right place at the right time but the next tab will be a quick run down as a recap.
@@ -263,8 +263,8 @@
 
 <br />
 
-@*Section Two - Demos*@
-<h2><b>Demostrations and Examples</b></h2>
+<!--@*Section Two - Demos*@-->
+<h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
 <div class="row" style="height:255px; border:dashed">
     <div class="col-md-4" style="border:solid; height:100%">
         <h2>Part 1 - Simple HTML</h2>
