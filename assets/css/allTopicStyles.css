@@ -31,6 +31,10 @@
     max-height: 125px;
     
 }
+#CSS_logo {
+    width: 80px;
+    height: 90px;
+}
 body{
     background-color:whitesmoke;
 }

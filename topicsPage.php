@@ -85,8 +85,8 @@
             <div class="col-xs-2"></div>
             <div class="col-xs-4" style="border-style:solid; border-radius:5%; height:100%">
                 <i class="far fa-grin-stars fa-2x" id="favouriteTopic1" style="float:left; padding:5px"></i>
-                <h2 style="color:orange; text-align:center"><b>HTML & CSS</b><img class="topicLogos" src="assets/img/HTML5_logo.png"  /><img class="topicLogos" src="assets/img/CSS3_logo.png"  /></h2>
-                <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure your webpages and then CSS to style them and stand out from the crowd!</i></p>
+                <h2 style="color:orange; text-align:center"><b>HTML & CSS</b><img class="topicLogos" src="assets/img/HTML5_logo.png"  /> <img class="topicLogos" src="assets/img/CSS3_logo.png"  /> </h2>
+                <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure your webpages and then CSS to style them and stand out from the crowd! This topic will include <b>What</b>, <b>How</b> and <b>Why</b> this language is used</i></p></p>
                 <p><a class="btn btn-default" href="htmlPage.php" style="color:orange">Learn more &raquo;</a><b>*Recommended for beginners</b></p>
                 <!--@*Progress Bar*@-->
                 <div id="pbTopic1" style="margin-bottom: 1%; ">

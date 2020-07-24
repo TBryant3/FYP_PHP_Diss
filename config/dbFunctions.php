@@ -1,9 +1,10 @@
 <?php
 
 const DB_SERVER = 'fyphost';
+const DB_DATABASE = 'fypdb';
 const DB_USER = 'fypdb_<users username>';
 const DB_PASSWORD = 'fypdb_<users psw>';
-const DB_DATABASE = 'fypdb_<users username>';
+
 
 function getConnection()
 {
@@ -18,7 +19,14 @@ function getConnection()
 
     } catch(PDOException $err)
     {
-        echo('ERROR: Could not connect. ', $err->getMessage());
+        echo'ERROR: Could not connect. ', $err->getMessage();
     }
     return $dbConnection;
+}
+
+function getAll($users)
+{
+    $sql = getConnection()->prepare("SELECT * FROM".$users);
+    $sql->execute();
+    return $sql->fetchAll(PDO::FETCH_ASSOC);
 }

@@ -267,7 +267,7 @@
 <h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
 <div class="row" style="height:255px; border:dashed">
     <div class="col-md-4" style="border:solid; height:100%">
-        <h2>Part 1 - Simple HTML</h2>
+        <h2>A</h2>
         <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
     </div>
     <div class="col-md-4" style="border:solid; height:100%">
