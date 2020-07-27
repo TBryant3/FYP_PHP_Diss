@@ -1,3 +1,8 @@
+<?php
+
+include 'config/dbFunctions.php';
+?>
+
 <html>
 <head>
     <meta charset="utf-8" />

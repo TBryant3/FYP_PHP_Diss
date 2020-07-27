@@ -83,8 +83,8 @@
 
     
 <div class="Welcoming">
-    <h1 style="text-align:center"><b>Hi -- #USERNAME#</b> -- <i class="fas fa-user-ninja fa-2x"></i></h1>
-    <h3 style="text-align:center">@ViewBag.Message</h3>
+    <h1 style="text-align:center">Hi - <b><?php echo htmlspecialchars($_SESSION["username"]); ?> </b> - <i class="fas fa-user-ninja fa-2x"></i></h1>
+    <h2 style="text-align:center">Welcome to your Account Page!</h2>
 </div>
 <div class="container">
     <h1 style="text-align:center">Account Break-down</h1>

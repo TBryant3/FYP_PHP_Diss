@@ -1,13 +1,15 @@
 <?php
 
-include 'dbFunctions.php';
+require_once "config/dbFunctions.php";
 
 //Initialising variables with blank values
 $first_name = $last_name = $username = $email = $password = $confirm_psw = $country = "";
 $first_name_err = $last_name_err  = $username_err  = $email_err  = $password_err  = $confirm_psw_err  = $country_err  = "";
 
+// On form submit - Process data
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
+    // Username Validation
     if(empty(trim($_POST["username"])))
     {
         $username_err = "Please enter a username";
@@ -16,11 +18,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $sql = "SELECT userID FROM users WHERE username = :username";
 
-        if ($stmt = $pdo->prepare($sql))
+        if ($stmt = $dbConnection->prepare($sql))
         {
+            //Bind parameters to prepared statement ($stmt)
             $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
 
+            // Set username parameter
             $param_username = trim($_POST["username"]);
+
+            //Execute prepared statement
             if ($stmt->execute())
             {
                 if ($stmt->rowCount() == 1)
@@ -32,98 +38,98 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     $username = trim($_POST["username"]);
                 }
             }
-        }
-        else
-        {
-            echo "Sorry! Something has gone wrong, please try again later!";
-        }
+            else
+            {
+                echo "Sorry! Something has gone wrong, please try again!";
+            }
+            //Close statement
             unset($stmt);
         }
-//    }
-//
-//    if ()
-}
-
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-// Validate username
-if(empty(trim($_POST["username"]))){
-    $username_err = "Please enter a username.";
-} else{
-    // Prepare a select statement
-    $sql = "SELECT id FROM users WHERE username = :username";
-
-    if($stmt = $pdo->prepare($sql)){
-        // Bind variables to the prepared statement as parameters
-        $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
-
-        // Set parameters
-        $param_username = trim($_POST["username"]);
-
-        // Attempt to execute the prepared statement
-        if($stmt->execute()){
-            if($stmt->rowCount() == 1){
-                $username_err = "This username is already taken.";
-            } else{
-                $username = trim($_POST["username"]);
-            }
-        } else{
-            echo "Oops! Something went wrong. Please try again later.";
-        }
-
-        // Close statement
-        unset($stmt);
     }
+
+
+    // Validate Password
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Please enter a password.";
+    } elseif(strlen(trim($_POST["password"])) < 5) {
+        $password_err = "Password must be at least  5 characters.";
+    } else {
+        $password = trim($_POST["password"]);
+    }
+
+    // Validate Confirm Password
+    if (empty(trim($_POST["confirm_psw"])))
+    {
+        $confirm_psw_err = "Please confirm your password";
+    }
+    else {
+        $confirm_psw = trim($_POST["confirm_psw"]);
+        if (empty($password_err) && ($password != $confirm_psw))
+        {
+            $confirm_psw_err =  "Passwords do not match!";
+        }
+    }
+
+
+
+    // Check for errors before database insertion
+    if (empty($username_err) && empty($first_name_err) && empty($last_name_err) && empty($password_err) && empty($confirm_psw_err) &&empty($email_err) && empty($country_err))
+    {
+        $sql = "INSERT INTO users (username, first_name, last_name, password, email, country) VALUES (:username,:first_name,:last_name,:password,:email,:country)";
+
+        if ($stmt = $dbConnection->prepare($sql))
+        {
+            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
+            $stmt->bindParam(":password", $param_password, PDO::PARAM_STR);
+
+            //Set Parameters
+            $param_username = $username;
+            //Create psw hash
+            $param_password = password_hash($password, PASSWORD_DEFAULT);
+
+            //Execute statement
+            if ($stmt->execute())
+            {
+                header("location: Login.php");
+            }
+            else
+            {
+                echo "Whoops, seems like something has gone wrong! Please try again.";
+            }
+
+            //Close statement
+            unset($stmt);
+        }
+    }
+    //Close connection
+    unset($dbConnection);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
 
 
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoJō Register Page</title>
 
     <!--Browser version support-->
-    <script src="/scripts/modernizr-2.8.3.js"></script>
+    <script src="assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="/scripts/jquery-3.4.1.js"></script>
+    <script src="assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="/scripts/jquery-ui-1.12.1.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="/scripts/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
     <!--Personal Icons-->
     <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
 
     <!-- Stylesheets -->
-    <link href="/styles/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/Site.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
 
     <style>
         .formContainer {
@@ -161,7 +167,7 @@ if(empty(trim($_POST["username"]))){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
             <a class="navbar-brand" href="index.php"> CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">

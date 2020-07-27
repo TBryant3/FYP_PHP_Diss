@@ -1,3 +1,105 @@
+<?php
+// Initialise session
+session_start();
+
+//Is user logged in already or not?! Redirect to account page if so
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true)
+{
+    header("location: account.php");
+    exit;
+}
+
+require_once "config/dbfunctions.php";
+
+//Defining & Initialising login variables
+$username = $password = "";
+$username_err = $password_err = "";
+
+//Form submit process
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    // Check if username is empty & remove white space
+    if(empty(trim($_POST["username"])))
+    {
+        $username_err = "Please enter username.";
+    }
+    else
+    {
+        $username = trim($_POST["username"]);
+    }
+    // Check if password is empty & remove white space
+    if(empty(trim($_POST["password"])))
+    {
+        $password_err = "Please enter your password.";
+    }
+    else
+    {
+        $password = trim($_POST["password"]);
+    }
+
+
+    // Validate credentials //
+    if(empty($username_err) && empty($password_err))
+    {
+        // Select statement to/from db
+        $sql = "SELECT userID, username, psw FROM users WHERE username = :username";
+
+        if ($stmt = $dbConnection->prepare($sql))
+        {
+            //Bind variable parameters
+            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
+
+            //Set parameters
+            $param_username = trim($_POST["username"]);
+
+            //Execute statement
+            if ($stmt->execute())
+            {
+                if ($stmt->rowCount() == 1)
+                {
+                    if ($row = $stmt->fetch())
+                    {
+                        $userID = $row["userID"];
+                        $username = $row["username"];
+                        $hashed_password = $row["psw"];
+                        if (password_verify($password, $hashed_password))
+                        {
+                            session_start();
+
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["userID"] = $userID;
+                            $_SESSION["username"] = $username;
+
+                            //Redirect to account page on success
+                            header("location: account.php");
+                        }
+                        else
+                        {
+                            $password_err = "The password you entered was incorrect, please try again!";
+                        }
+                    }
+                }
+                else
+                {
+                    $username_err = "The username entered doesn't match with our system, please try again!";
+                }
+            }
+            else
+            {
+                echo "Whoops, seems like something went wrong. Please try again!";
+            }
+            // Close statement
+            unset($stmt);
+        }
+    }
+    // Close connection
+    unset($pdo);
+}
+?>
+
+
+
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -106,19 +208,19 @@
                 <div class="row" style="width:100%">
                     <i class="fa fa-user"></i>
                     <label for="username" style="width:25%">Username:</label>
-                    <input type="text" name="username" placeholder="Insert username..." required>
+                    <input type="text" name="username" placeholder="Insert username..." class="form-control" required>
                 </div>
                 <br />
                 <div class="row" style="width:100%">
                     <i class="fa fa-key"></i>
                     <label for="psw" style="width:24.5%">Password:</label>
-                    <input type="password" name="psw" placeholder="Insert password..." required>
+                    <input type="password" name="password" placeholder="Insert password..." class="form-control" required>
                 </div>
                     <p style="padding-left:26%">Forgotten your password? <a href="forgotPsw.php">Click me to recover</a>!</p>
                 
                 <br />
                 <div id="signin-container" style="padding-left:5%">
-                    <p><input type="submit" value="Login" class="submit" style="margin-right: 1%;border-radius:3%; height:15%; width:15%"><b style="font-size:medium"> OR </b> Don't already have an account? <a href="Register.php">Register here</a>!</p>
+                    <p><input type="submit" value="Login" class="btn btn-info" style="margin-right: 1%;border-radius:3%; height:15%; width:15%"><b style="font-size:medium"> OR </b> Don't already have an account? <a href="Register.php">Register here</a>!</p>
                 </div>
             </div>            
         </div>
