@@ -28,3 +28,4 @@ const DB_PASSWORD = '';
 //    $sql->execute();
 //    return $sql->fetchAll(PDO::FETCH_ASSOC);
 //}
+?>

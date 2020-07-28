@@ -12,8 +12,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true)
 require_once "config/dbfunctions.php";
 
 //Defining & Initialising login variables
-$username = $password = "";
-$username_err = $password_err = "";
+$username = $psw = "";
+$username_err = $psw_err = "";
 
 //Form submit process
 if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -28,18 +28,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $username = trim($_POST["username"]);
     }
     // Check if password is empty & remove white space
-    if(empty(trim($_POST["password"])))
+    if(empty(trim($_POST["psw"])))
     {
-        $password_err = "Please enter your password.";
+        $psw_err = "Please enter your password.";
     }
     else
     {
-        $password = trim($_POST["password"]);
+        $psw = trim($_POST["psw"]);
     }
 
 
     // Validate credentials //
-    if(empty($username_err) && empty($password_err))
+    if(empty($username_err) && empty($psw_err))
     {
         // Select statement to/from db
         $sql = "SELECT userID, username, psw FROM users WHERE username = :username";
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                         $userID = $row["userID"];
                         $username = $row["username"];
                         $hashed_password = $row["psw"];
-                        if (password_verify($password, $hashed_password))
+                        if (password_verify($psw, $hashed_password))
                         {
                             session_start();
 
@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                         }
                         else
                         {
-                            $password_err = "The password you entered was incorrect, please try again!";
+                            $psw_err = "The password you entered was incorrect, please try again!";
                         }
                     }
                 }
@@ -203,8 +203,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <h4 style="text-align: center ">See your total progress within each Topic and be able to track your test scores and progress from your <a href="account.php">Account </a>page!</h4>
         <br />
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
+            <div class="col-xs-5"></div>
+            <div class="col-xs-3">
                 <div class="row" style="width:100%">
                     <i class="fa fa-user"></i>
                     <label for="username" style="width:25%">Username:</label>
@@ -214,15 +214,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 <div class="row" style="width:100%">
                     <i class="fa fa-key"></i>
                     <label for="psw" style="width:24.5%">Password:</label>
-                    <input type="password" name="password" placeholder="Insert password..." class="form-control" required>
+                    <input type="password" name="password" placeholder="Insert password..." class="form-control" style="margin: 0" required>
+                    <p>Forgotten your password? <a href="forgotPsw.php">Click me to recover</a>!</p>
                 </div>
-                    <p style="padding-left:26%">Forgotten your password? <a href="forgotPsw.php">Click me to recover</a>!</p>
-                
+            </div>
                 <br />
                 <div id="signin-container" style="padding-left:5%">
-                    <p><input type="submit" value="Login" class="btn btn-info" style="margin-right: 1%;border-radius:3%; height:15%; width:15%"><b style="font-size:medium"> OR </b> Don't already have an account? <a href="Register.php">Register here</a>!</p>
+                    <p><input type="submit" value="Login" class="btn btn-info" style="margin-right: 1%;border-radius:3%; height:5%; width:8%"><b style="font-size:medium"> OR </b> Don't already have an account? <a href="Register.php">Register here</a>!</p>
                 </div>
-            </div>            
+            <div class="col-xs-4"></div>
+            </div>
         </div>
     </div>
 </form>

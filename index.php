@@ -1,7 +1,7 @@
 <?php
-
-include 'config/dbFunctions.php';
-?>
+//
+//include 'config/dbFunctions.php';
+//?>
 
 <html>
 <head>
