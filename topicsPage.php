@@ -14,29 +14,22 @@
         <script src="assets/js/jquery-ui-1.12.1.js"></script>
         <!-- Bootstrap -->
         <script src="assets/js/bootstrap.js"></script>
-        <!--Personal Icons-->
-        <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
+
 
         <!-- Stylesheets -->
         <link href="assets/css/bootstrap.css" rel="stylesheet" />
         <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
         <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" />
+        <link href="assets/css/Site.css" rel="stylesheet" />
+        <!--Personal Icons-->
         <link href="assets/css/all.min.css" rel="stylesheet" />
         <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-        <link href="assets/css/Site.css" rel="stylesheet" />
+        <!--Custom CSS-->
         <link href="assets/css/allTopicStyles.css" rel="stylesheet" />
-        <link href="assets/css/themes/base/accordion.css" rel="stylesheet" />
-
-        <style>
-            h2
-            {
-                margin-top: 10px;
-            }
-        </style>
 
     </head>
     <body>
-    <!--NAV BAR SETTINGS-->
+    <!--UNIVERSAL NAV BAR-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -87,9 +80,9 @@
 <br>
 <!--First Section - Beginner-->
 <h2 style="text-align:center"><strong>Stage 1 - White Belt</strong></h2>
-<div class="row" style="height:33%">
+<div class="row" style="height:35%">
     <div class="col-xs-2">
-        <div id="alertBox1">
+        <div id="alertBox1" style="margin-left: 15px; margin-top: 40px">
             <div>
                 <div id="alertBoxHeader1"><b></b></div>
                 <div id="alertBoxBody1"></div>
@@ -125,7 +118,7 @@
         </div>
     </div>
     <div class="col-xs-2">
-        <div id="alertBox2">
+        <div id="alertBox2" style="margin-top: 40px">
             <div>
                 <div id="alertBoxHeader2"><b></b></div>
                 <div id="alertBoxBody2"></div>
@@ -138,9 +131,9 @@
 <!-- Second Section - Intermediate-->
 <h2 style="text-align: center"><b>Stage 2 - Brown Belt</b></h2>
 <!-- CPlusPlus -->
-<div class="row" style="height:33%">
+<div class="row" style="height:35%">
     <div class="col-xs-2">
-        <div id="alertBox3">
+        <div id="alertBox3" style="margin-left: 15px; margin-top: 40px">
             <div>
                 <div id="alertBoxHeader3"><b></b></div>
                 <div id="alertBoxBody3"></div>
@@ -175,7 +168,7 @@
         </div>
     </div>
     <div class="col-xs-2">
-        <div id="alertBox4">
+        <div id="alertBox4" style="margin-top: 40px">
             <div>
                 <div id="alertBoxHeader4"><b></b></div>
                 <div id="alertBoxBody4"></div>
@@ -405,78 +398,8 @@ function favouritesAlert()
 
     }
 }
-    var Alert = new favouritesAlert();
-    // this.ok = function()
-    // {
-    //     document.getElementById('alertBox').style.display = "none";
-    //     // POST TO DB CODE HERE //
-    // }
+var Alert = new favouritesAlert();
 
-
-
-
-
-
-function favourite2()
-{
-    if (favTop2.style.color === 'lightgrey') {
-        favTop2.style.color = 'green';
-        cSharpAlert.style.display = 'block';
-    }
-    else if (favTop2.style.color === 'green') {
-        favTop2.style.color = 'lightgrey';
-        cSharpAlert.style.display = 'block';
-    }
-    else
-    {
-        // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-        cSharpAlert.style.display = 'block';
-        // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-    }
-}
-
-// window.setTimeout(function()
-// {
-//     $("#hcAlert").fadeTo(500, 0).fadeOut(500, function ()
-//     {
-//         $(this).remove();
-//     });
-    //},3500);
-//     $("#cpAlert").fadeTo(500, 0).fadeOut(500, function ()
-//     {
-//         $(this).remove();
-//     });
-//     $("#csAlert").fadeTo(500, 0).fadeOut(500, function ()
-//     {
-//         $(this).remove();
-//     });
-//     $("#jsAlert").fadeTo(500, 0).fadeOut(500, function ()
-//     {
-//         $(this).remove();
-//     });
-// }, 3500);
-
-
-
-// // Get all 'closebtn' elements
-var close = document.getElementsByClassName("closebtn");
-var i;
-
-//Loop through
-for (i = 0; i < close.length; i++)
-{
-    // When close 'x' is clicked
-    close[i].onclick = function()
-    {
-        // Get div holding alert element
-        var div = this.parentElement;
-
-        div.style.opacity = "0";
-        //Timeout function
-        setTimeout(function(){ div.style.display = "none";}, 400);
-
-    }
-}
 
 /// Scripts for Progress Bars ///
 $(document).ready(function ($)

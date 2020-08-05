@@ -40,6 +40,8 @@ body
 {
     background-color:whitesmoke;
 }
+
+
 /*HTML alert box settings*/
 #alertBox1
 {
@@ -57,11 +59,11 @@ body
 {
     background-color: saddlebrown;
     padding:5px;
-    color: firebrick;
 }
 #alertBox1 > div > #alertBoxHeader1
 {
     background-color: #ecbd72;
+    color: firebrick;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
@@ -70,6 +72,7 @@ body
 #alertBox1 > div > #alertBoxBody1
 {
     background-color: #caa472;
+    color: black;
     text-align: center;
     padding:20px;
 }
@@ -90,11 +93,11 @@ body
 {
     background-color: saddlebrown;
     padding:5px;
-    color: firebrick;
 }
 #alertBox2 > div > #alertBoxHeader2
 {
     background-color: #ecbd72;
+    color: firebrick;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
@@ -103,6 +106,7 @@ body
 #alertBox2 > div > #alertBoxBody2
 {
     background-color: #caa472;
+    color: black;
     text-align: center;
     padding:20px;
 }
@@ -123,11 +127,11 @@ body
 {
     background-color: saddlebrown;
     padding:5px;
-    color: firebrick;
 }
 #alertBox3 > div > #alertBoxHeader3
 {
     background-color: #ecbd72;
+    color: firebrick;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
@@ -136,6 +140,7 @@ body
 #alertBox3 > div > #alertBoxBody3
 {
     background-color: #caa472;
+    color: black;
     text-align: center;
     padding:20px;
 }
@@ -156,11 +161,11 @@ body
 {
     background-color: saddlebrown;
     padding:5px;
-    color: firebrick;
 }
 #alertBox4 > div > #alertBoxHeader4
 {
     background-color: #ecbd72;
+    color: firebrick;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
@@ -169,6 +174,7 @@ body
 #alertBox4 > div > #alertBoxBody4
 {
     background-color: #caa472;
+    color: black;
     text-align: center;
     padding:20px;
 }
