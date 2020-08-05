@@ -31,10 +31,104 @@
     max-height: 125px;
     
 }
-#CSS_logo {
-    width: 80px;
-    height: 90px;
+.CSS_logo
+{
+    max-width: 80px;
+    max-height: 90px;
 }
-body{
+body
+{
     background-color:whitesmoke;
+}
+#alertBox1
+{
+    display: none;
+    padding: 10px;
+    width: 95%;
+    opacity: 0.9;
+    position: relative;
+    background: rosybrown;
+    border: solid black;
+    border-radius: 3%;
+    transition: opacity 0.6s;
+}
+#alertBox1 > div
+{
+    background-color: saddlebrown;
+    padding:5px;
+    color: firebrick;
+}
+#alertBox1 > div > #alertBoxHeader1
+{
+    background-color: #ecbd72;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding:1px;
+}
+#alertBox1 > div > #alertBoxBody1
+{
+    background-color: #caa472;
+    text-align: center;
+    padding:20px;
+}
+
+#alertBox2
+{
+    display: none;
+    padding: 10px;
+    width: 95%;
+    opacity: 0.9;
+    position: relative;
+    background: rosybrown;
+    border: solid black;
+    border-radius: 3%;
+    transition: opacity 0.6s;
+}
+#alertBox2 > div
+{
+    background-color: saddlebrown;
+    padding:5px;
+    color: firebrick;
+}
+#alertBox2 > div > #alertBoxHeader2
+{
+    background-color: #ecbd72;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding:1px;
+}
+#alertBox2 > div > #alertBoxBody2
+{
+    background-color: #caa472;
+    text-align: center;
+    padding:20px;
+}
+
+
+
+
+.alert
+{
+    padding: 20px;
+    background-color: lightblue;
+    color: white;
+    opacity: 0.9;
+    transition: opacity 0.6s;
+}
+.closebtn
+{
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover
+{
+    color:black;
 }

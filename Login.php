@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 
 
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -145,9 +145,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             border: none;
         }
 
-        .submit:hover {
-            background-color: darkgray;
-        }
+        /*.submit:hover {*/
+        /*    background-color: darkgray;*/
+        /*}*/
     </style>
 </head>
 
@@ -208,13 +208,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 <div class="row" style="width:100%">
                     <i class="fa fa-user"></i>
                     <label for="username" style="width:25%">Username:</label>
-                    <input type="text" name="username" placeholder="Insert username..." class="form-control" required>
+                    <input type="text" name="username" placeholder="Insert username..." class="form-control" required />
                 </div>
                 <br />
                 <div class="row" style="width:100%">
                     <i class="fa fa-key"></i>
                     <label for="psw" style="width:24.5%">Password:</label>
-                    <input type="password" name="password" placeholder="Insert password..." class="form-control" style="margin: 0" required>
+                    <input type="password" name="password" placeholder="Insert password..." class="form-control" style="margin: 0" required />
                     <p>Forgotten your password? <a href="forgotPsw.php">Click me to recover</a>!</p>
                 </div>
             </div>
@@ -225,7 +225,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             <div class="col-xs-4"></div>
             </div>
         </div>
-    </div>
 </form>
 
 

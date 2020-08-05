@@ -9,36 +9,6 @@ $firstName_err = $lastName_err  = $username_err  = $email_err  = $psw_err  = $co
 // On form submit - Process data
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
-    //First Name Validation
-    if (empty(trim($_POST["firstName"])))
-    {
-        $firstName_err = "Please enter your First Name";
-    }
-    elseif (!preg_match("/^[a-zA-Z ]*$/", $firstName))
-    {
-        $firstName_err = "Only letters and spaces are allowed";
-    }
-    else
-    {
-        $firstName = trim($_POST["firstName"]);
-    }
-
-    //Last Name Validation
-    if (empty(trim($_POST["lastName"])))
-    {
-        $lastName_err = "Please enter your Last Name";
-    }
-    elseif (!preg_match("/^[a-zA-Z ]*$/", $lastName))
-    {
-        $lastName_err = "Only letters and spaces are allowed";
-    }
-    else
-    {
-        $lastName = trim($_POST["lastName"]);
-    }
-
-
-
     // Username Validation
     if(empty(trim($_POST["username"])))
     {
@@ -75,6 +45,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             //Close statement
             unset($stmt);
         }
+    }
+    //First Name Validation
+    if (empty(trim($_POST["firstName"])))
+    {
+        $firstName_err = "Please enter your First Name";
+    }
+    elseif (!preg_match("/^[a-zA-Z ]*$/", $firstName))
+    {
+        $firstName_err = "Only letters and spaces are allowed";
+    }
+    else
+    {
+        $firstName = trim($_POST["firstName"]);
+    }
+
+    //Last Name Validation
+    if (empty(trim($_POST["lastName"])))
+    {
+        $lastName_err = "Please enter your Last Name";
+    }
+    elseif (!preg_match("/^[a-zA-Z ]*$/", $lastName))
+    {
+        $lastName_err = "Only letters and spaces are allowed";
+    }
+    else
+    {
+        $lastName = trim($_POST["lastName"]);
     }
 
     // Password Validation

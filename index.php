@@ -3,7 +3,7 @@
 //include 'config/dbFunctions.php';
 //?>
 
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,11 +83,11 @@
         <!--ADD IMAGE HERE -> PUT IN AN ANIMATION -->
         <img class="center-block" id="HTML_logo" title="HTML Logo" alt="HTML_Logo" src="assets/img/HTML5_logo.png" />
     </div>
-    <div class="col-xs-4" style="border:solid">
+    <div class="col-xs-4">
         <h3><u>Multiple Computing Languages to choose from!</u></h3>
         <p style="font-size: medium">
             We at CoJō want to give you the best possible experience and so we have a selection of languages from <b>Website Mark-Up HTML</b> to <b>Programming language JavaScript</b> and more!
-        </br>
+        <br>
         </p>
     </div>
     <div class="col-xs-2">
@@ -135,7 +135,7 @@
         <!--ADD IMAGE HERE -> PUT IN AN ANIMATION -->
         <img class="center-block" id="Cplus_logo" title="C Plus Plus Logo" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" />
     </div>
-    <div class="col-xs-4" style="border:solid">
+    <div class="col-xs-4">
         <h2>Find out more about us</h2>
         <p>
             We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more

@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,7 +104,7 @@
                 <h4 style="text-align:center">Either input the Username of your account...</h4>
                 <div class="row" style="width:100%; padding-left:10%">
                     <label for="username" style="width:25%; text-align:right">Username:</label>
-                    <input type="text" name="username" placeholder="E.g: cojoUser1..." required>
+                    <input type="text" name="username" placeholder="E.g: cojoUser1..." required />
                 </div>
                 <br />
                 <h1 style="text-align:center"><b>OR</b></h1>
@@ -112,7 +112,7 @@
                 <h4 style="text-align:center">Input the email address that is linked to your account</h4>
                 <div class="row" style="width:100%; padding-left:10%">
                     <label for="email" style="width:25%; text-align:right; padding-left:5%"><b>Email:</b></label>
-                    <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required>
+                    <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required />
                 </div>
                 <br />
                 <div class="row" style="width:100%">

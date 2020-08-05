@@ -1,17 +1,17 @@
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoJō Home Page</title>
 
     <!--Browser version support-->
-    <script src="/scripts/modernizr-2.8.3.js"></script>
+    <script src="assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="/scripts/jquery-3.4.1.js"></script>
+    <script src="assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="/scripts/jquery-ui-1.12.1.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="/scripts/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
 
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
