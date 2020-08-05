@@ -40,6 +40,7 @@ body
 {
     background-color:whitesmoke;
 }
+/*HTML alert box settings*/
 #alertBox1
 {
     display: none;
@@ -72,7 +73,7 @@ body
     text-align: center;
     padding:20px;
 }
-
+/*CSharp alert box settings*/
 #alertBox2
 {
     display: none;
@@ -105,30 +106,71 @@ body
     text-align: center;
     padding:20px;
 }
-
-
-
-
-.alert
+/*CPlusPlus alert box settings*/
+#alertBox3
 {
-    padding: 20px;
-    background-color: lightblue;
-    color: white;
+    display: none;
+    padding: 10px;
+    width: 95%;
     opacity: 0.9;
+    position: relative;
+    background: rosybrown;
+    border: solid black;
+    border-radius: 3%;
     transition: opacity 0.6s;
 }
-.closebtn
+#alertBox3 > div
 {
-    margin-left: 15px;
-    color: white;
+    background-color: saddlebrown;
+    padding:5px;
+    color: firebrick;
+}
+#alertBox3 > div > #alertBoxHeader3
+{
+    background-color: #ecbd72;
+    text-align: center;
     font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 2em;
+    padding:1px;
 }
-.closebtn:hover
+#alertBox3 > div > #alertBoxBody3
 {
-    color:black;
+    background-color: #caa472;
+    text-align: center;
+    padding:20px;
 }
+ /*JavaScript alert box settings*/
+#alertBox4
+{
+    display: none;
+    padding: 10px;
+    width: 95%;
+    opacity: 0.9;
+    position: relative;
+    background: rosybrown;
+    border: solid black;
+    border-radius: 3%;
+    transition: opacity 0.6s;
+}
+#alertBox4 > div
+{
+    background-color: saddlebrown;
+    padding:5px;
+    color: firebrick;
+}
+#alertBox4 > div > #alertBoxHeader4
+{
+    background-color: #ecbd72;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding:1px;
+}
+#alertBox4 > div > #alertBoxBody4
+{
+    background-color: #caa472;
+    text-align: center;
+    padding:20px;
+}
+
+

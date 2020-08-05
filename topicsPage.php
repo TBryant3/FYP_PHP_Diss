@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CoJō Topics</title>
 
+
+
         <!--Browser version support-->
         <script src="assets/js/modernizr-2.8.3.js"></script>
         <!--jQuery Link-->
@@ -16,12 +18,14 @@
         <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
 
         <!-- Stylesheets -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" />
+        <link href="assets/css/all.min.css" rel="stylesheet" />
+        <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="assets/css/Site.css" rel="stylesheet" />
+        <link href="assets/css/allTopicStyles.css" rel="stylesheet" />
+        <link href="assets/css/themes/base/accordion.css" rel="stylesheet" />
 
         <style>
             h2
@@ -29,6 +33,7 @@
                 margin-top: 10px;
             }
         </style>
+
     </head>
     <body>
     <!--NAV BAR SETTINGS-->
@@ -93,7 +98,7 @@
     </div>
     <!-- HTML/CSS -->
     <div class="col-xs-4" style="border-style:solid; border-radius:5%; height:100%">
-        <span style="cursor: pointer; color: lightgrey" id="favTop1" onclick="Alert.render('Favourites have been updated!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTop1" onclick="Alert.favHTML('HTML/CSS Favourite Settings have been updated!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:orange; text-align:center"><b>HTML & CSS</b><img class="topicLogos" alt="HTML Logo"  src="assets/img/HTML5_logo.png"  /> <img class="CSS_logo"  alt="CSS Logo" src="assets/img/CSS3_logo.png"  /> </h2>
@@ -107,7 +112,7 @@
     </div>
     <!-- C-Sharp -->
     <div class="col-xs-4" style="border-style: solid; border-radius: 5%; height:100%">
-        <span style="cursor: pointer; color: lightgrey" id="favTop2"  onclick="Alert.render('Favourites have been updated!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTop2" onclick="Alert.favSharp('C# Favourite Settings have been updated!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:rebeccapurple; text-align:center"><b>C-Sharp </b><img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></h2>
@@ -130,47 +135,51 @@
 </div>
 <br>
 
-<!--@* Second Section - Intermediate*@-->
+<!-- Second Section - Intermediate-->
 <h2 style="text-align: center"><b>Stage 2 - Brown Belt</b></h2>
-<!--@* CPlusPlus *@-->
+<!-- CPlusPlus -->
 <div class="row" style="height:33%">
     <div class="col-xs-2">
-        <div class="alert" id="cpAlert"  style="visibility: hidden; text-align: center">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <strong>Info!</strong> Favourites have been updated!
+        <div id="alertBox3">
+            <div>
+                <div id="alertBoxHeader3"><b></b></div>
+                <div id="alertBoxBody3"></div>
+            </div>
         </div>
     </div>
     <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
-        <span style="cursor: pointer; color: lightgrey" id="favTop3" onclick="favourite3(this)">
+        <span style="cursor: pointer; color: lightgrey" id="favTop3" onclick="Alert.favPlus('C++ Favourite Settings have been updated!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:deepskyblue; text-align:center"><b> C-Plus-Plus </b><img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></h2>
         <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm.  We will go through: <b>What</b> C++ is, <b>How</b> it is used, and <b>Why</b> C++ is used over certain other programming languages</i></p>
         <br>
         <p><a class="btn btn-default" href="" style="color:deepskyblue">Learn more &raquo;</a></p>
-        <!--@*Progress Bar*@-->
+        <!--Progress Bar-->
         <div id="pbTopic3" style="margin-bottom:1%;">
             Topic Completion: <b style="visibility: hidden"><span id="cplus-label" style="position:relative;"></span>%</b>
         </div>
     </div>
-    <!--@* JavaScript *@-->
+    <!-- JavaScript -->
     <div class="col-xs-4" style="border-style:solid; border-radius:5%;">
-        <span style="cursor: pointer; color: lightgrey" id="favTop4" onclick="favourite4(this)">
+        <span style="cursor: pointer; color: lightgrey" id="favTop4" onclick="Alert.favJS('JavaScript Favourite Settings have been updated!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color: goldenrod; text-align: center"><b>JavaScript </b><img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></h2>
         <p style="text-align:center"><i>In this topic we shall we exploring the high-level scripting language JavaScript. We will go through: <b>What</b> JavaScript is, <b>How</b> it is used, and <b>Why</b> JavaScript is so important especially in the web development industry</i></p>
         <br>
         <p><a class="btn btn-default" href="jsPage.php" style="color:goldenrod">Learn more &raquo;</a><b>*Recommended after completing HTML & CSS</b></p>
-        <!--@*Progress Bar*@-->
+        <!--Progress Bar-->
         <div id="pbTopic4" style="margin-bottom:1%;">
             Topic Completion: <b style="visibility: hidden"><span id="js-label" style="position:relative"></span>%</b>
         </div>
     </div>
     <div class="col-xs-2">
-        <div class="alert" id="jsAlert" style="visibility: hidden; text-align: center">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <strong>Info!</strong> Favourites have been updated!
+        <div id="alertBox4">
+            <div>
+                <div id="alertBoxHeader4"><b></b></div>
+                <div id="alertBoxBody4"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -240,58 +249,58 @@ var favTop3 = document.getElementById("favTop3");
 var favTop4 = document.getElementById("favTop4");
 
 
+// Favourite Topic notification alerts
 function favouritesAlert()
 {
-    this.render = function(dialog)
+    // First (HTML/CSS) Alert Settings //
+    this.favHTML = function(dialog)
     {
         var alertBox1 = document.getElementById('alertBox1');
-        alertBox1.style.display = "block";
-        document.getElementById('alertBoxHeader1').innerHTML = "Application Message";
-        document.getElementById('alertBoxBody1').innerHTML = dialog;
 
-        var alertBox2 = document.getElementById('alertBox2');
-        alertBox2.style.display = "block";
-        document.getElementById('alertBoxHeader2').innerHTML = "Application Message";
-        document.getElementById('alertBoxBody2').innerHTML = dialog;
-
-        var alertBox3 = document.getElementById('alertBox3');
-        alertBox3.style.display = "block";
-        document.getElementById('alertBoxHeader3').innerHTML = "Application Message";
-        document.getElementById('alertBoxBody3').innerHTML = dialog;
-
-        var alertBox4 = document.getElementById('alertBox4');
-        alertBox4.style.display = "block";
-        document.getElementById('alertBoxHeader4').innerHTML = "Application Message";
-        document.getElementById('alertBoxBody4').innerHTML = dialog;
-
-        // First Alert Settings //
         if (favTop1.click && favTop1.style.color === 'lightgrey')
         {
+            alertBox1.style.display = "block";
+            document.getElementById('alertBoxHeader1').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody1').innerHTML = dialog;
+
             favTop1.style.color = 'green';
 
             $("#alertBox1").fadeIn("slow", function()
             {
                 setTimeout(function()
                 {
-                    $("#alertBox1").fadeOut(5000);
+                    $("#alertBox1").fadeOut(3000);
                 }, 1000);
             });
         }
         else if (favTop1.click && favTop1.style.color === 'green')
         {
+            alertBox1.style.display = "block";
+            document.getElementById('alertBoxHeader1').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody1').innerHTML = dialog;
+
             favTop1.style.color = 'lightgrey';
 
             $("#alertBox1").fadeIn("slow", function()
             {
                 setTimeout(function()
                 {
-                    $("#alertBox1").fadeOut(5000);
+                    $("#alertBox1").fadeOut(3000);
                 }, 1000);
             });
         }
-        // Second Alert Settings //
+    }
+    // Second (C#) Alert Settings //
+    this.favSharp = function(dialog2)
+    {
+        var alertBox2 = document.getElementById('alertBox2');
+
         if (favTop2.click && favTop2.style.color === 'lightgrey')
         {
+            alertBox2.style.display = "block";
+            document.getElementById('alertBoxHeader2').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody2').innerHTML = dialog2;
+
             favTop2.style.color = 'green';
 
             $("#alertBox2").fadeIn("slow", function()
@@ -302,8 +311,12 @@ function favouritesAlert()
                 }, 1000);
             });
         }
-        else if (favTop2.click && favTop1.style.color === 'green')
+        else if (favTop2.click && favTop2.style.color === 'green')
         {
+            alertBox2.style.display = "block";
+            document.getElementById('alertBoxHeader2').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody2').innerHTML = dialog2;
+
             favTop2.style.color = 'lightgrey';
 
             $("#alertBox2").fadeIn("slow", function()
@@ -315,14 +328,89 @@ function favouritesAlert()
             });
         }
     }
+    // Third (C++) Alert Settings //
+    this.favPlus = function(dialog3)
+    {
+        var alertBox3 = document.getElementById('alertBox3');
+
+        if (favTop3.click && favTop3.style.color === 'lightgrey')
+        {
+            alertBox3.style.display = "block";
+            document.getElementById('alertBoxHeader3').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody3').innerHTML = dialog3;
+
+            favTop3.style.color = 'green';
+
+            $("#alertBox3").fadeIn("slow", function()
+            {
+                setTimeout(function()
+                {
+                    $("#alertBox3").fadeOut(5000);
+                }, 1000);
+            });
+        }
+        else if (favTop3.click && favTop3.style.color === 'green')
+        {
+            alertBox3.style.display = "block";
+            document.getElementById('alertBoxHeader3').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody3').innerHTML = dialog3;
+
+            favTop3.style.color = 'lightgrey';
+
+            $("#alertBox3").fadeIn("slow", function()
+            {
+                setTimeout(function()
+                {
+                    $("#alertBox3").fadeOut(5000);
+                }, 1000);
+            });
+        }
+    }
+    this.favJS = function(dialog4)
+    {
+        var alertBox4 = document.getElementById('alertBox4');
+
+        if (favTop4.click && favTop4.style.color === 'lightgrey')
+        {
+            alertBox4.style.display = "block";
+            document.getElementById('alertBoxHeader4').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody4').innerHTML = dialog4;
+
+            favTop4.style.color = 'green';
+
+            $("#alertBox4").fadeIn("slow", function()
+            {
+                setTimeout(function()
+                {
+                    $("#alertBox4").fadeOut(5000);
+                }, 1000);
+            });
+        }
+        else if (favTop4.click && favTop4.style.color === 'green')
+        {
+            alertBox4.style.display = "block";
+            document.getElementById('alertBoxHeader4').innerHTML = "Application Message";
+            document.getElementById('alertBoxBody4').innerHTML = dialog4;
+
+            favTop4.style.color = 'lightgrey';
+
+            $("#alertBox4").fadeIn("slow", function()
+            {
+                setTimeout(function()
+                {
+                    $("#alertBox4").fadeOut(5000);
+                }, 1000);
+            });
+        }
+
+    }
+}
+    var Alert = new favouritesAlert();
     // this.ok = function()
     // {
     //     document.getElementById('alertBox').style.display = "none";
     //     // POST TO DB CODE HERE //
     // }
-}
-    var Alert = new favouritesAlert();
-
 
 
 
@@ -346,41 +434,7 @@ function favourite2()
         // PUSH TO DB ON FAV CLICK /////////////////////////////////////
     }
 }
-function favourite3() {
-    if (favTop3.style.color === 'lightgrey') {
-        favTop3.style.color = 'green';
-        cPlusAlert.style.display = 'block';
-    }
-    else if (favTop3.style.color === 'green') {
-        favTop3.style.color = 'lightgrey';
-        cPlusAlert.style.display = 'block';
-    }
-    else
-    {
-        // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-        cPlusAlert.style.display = 'block';
-        // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-    }
-}
-function favourite4()
-{
-    if (favTop4.style.color === 'lightgrey')
-    {
-        favTop4.style.color = 'green';
-        jsAlert.style.display = 'block';
-    }
-    else if (favTop4.style.color === 'green')
-    {
-        favTop4.style.color = 'lightgrey';
-        jsAlert.style.display = 'block';
-    }
-    else
-    {
-        // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-        jsAlert.style.display = 'block';
-        // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-    }
-}
+
 // window.setTimeout(function()
 // {
 //     $("#hcAlert").fadeTo(500, 0).fadeOut(500, function ()
