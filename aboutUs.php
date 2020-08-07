@@ -64,10 +64,30 @@
     </div>
 </div>
 
-<h1 style="text-align:center">About CoJo</h1>
+<h1 style="text-align:center">About CoJō</h1>
 <h2 style="text-align:center">A non-profit project to help aid in the learning of Computing and Code Learning</h2>
 <br />
-<p>Here at CoJo, the aim is to give you the user the best possible experience with coding and the practices that are necessary to produce coherent and robust applications.</p>
+<div style="text-align: center">
+<p>Here at CoJō, the aim is to give you the user the best possible experience with coding and the practices that are necessary to produce coherent and robust applications.</p>
 
 <p>The idea started when I, Tyler, had to decide what to do for my Final Year Project at University and then the idea to create a code learning / teaching application came to fruition and hence the development of this application</p>
 
+</div>
+<!--Intro about Plymouth University-->
+<div class="row">
+    <div class="col-xs-6">
+
+    </div>
+    <div class="col-xs-6">
+
+    </div>
+</div>
+<!--Code Example to show what the website will be able to show-->
+<div class="row">
+    <div class="col-xs-6">
+
+    </div>
+    <div class="col-xs-6">
+
+    </div>
+</div>

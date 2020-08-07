@@ -83,7 +83,7 @@
 <h4 class="topicDesc">Finally, JS is a fun language to work with as it is multi-paradigm support and can be tested easily with the use of Mocha and Chia (explained later)</h4>
 
 <!---------------------Section 1--------------------->
-<h1 style="text-align: center"><b><u>Learning Modules</u></b></h1>
+<h1 style="color:goldenrod; text-align: center"><b><u>Learning Modules</u></b></h1>
 <!--First Row-->
 <div class="row" style="height:300px">
     <!--Part 1 - Introduction to JS-->
@@ -185,6 +185,7 @@
     </div>
 </div>
 <!--------------------------------------------------------------More Learning Modules-------------------------------------------------------------->
+<h1 style="color:goldenrod; text-align: center"><b><u>More Modules</u></b></h1>
 <div class="row" style="height:300px">
     <!--Part 4 - Introduction to JS variables-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
@@ -199,7 +200,7 @@
                 JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
                 <b>///</b> The extension for JavaScript is .js
                 <b>///</b> The language is easy to pick up but can be difficult to master
-                <b>///</b> JavaScript and Java are completely dfferent languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
+                <b>///</b> JavaScript and Java are completely different languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
             </p>
         </div>
         <br />
@@ -220,7 +221,7 @@
                 By 'Scripting Language' what we mean is that the code that is carried out by your IDE is read in a seperate way to your usual HTML or CSS.
             </p>            
             <h3 class="learnTitles">JavaScript Applications</h3>
-            <p>JavaScript is a recognised language world-wide and so most developement environments would be compatible with it. There is also.................... </p>
+            <p>JavaScript is a recognised language world-wide and so most development environments would be compatible with it. There is also.................... </p>
             <h3 class="learnTitles">Example use of Script Tags</h3>
             <p>
                 In this example, it is showing you that firstly you need to specify the script tag, then specify where the file is, and then finally, specify what the file type is -> <b>< script src="~/Scripts/javascriptFile.js" type="text/javascript"> < /script ></b>
@@ -263,12 +264,11 @@
 
 <br />
 
-<!--@*Section Two - Demos*@-->
-<h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
+<!--Section Two - Demos-->
+<h1 style="color:goldenrod; text-align: center"><b><u>Demos & Examples</u></b></h1>
 <div class="row" style="height:255px; border:dashed">
     <div class="col-md-4" style="border:solid; height:100%">
-        <h2>A</h2>
-        <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+
     </div>
     <div class="col-md-4" style="border:solid; height:100%">
         <h2>Find out more about us</h2>
@@ -278,6 +278,29 @@
         <h2>For the Coding Veterans</h2>
         <p>Here are some practice questions and test your knowledge quizzes to see where you're at</p>
     </div>
+</div>
+<!--Row 4 - 1 box Helpful JavaScript guides / Add-Ons-->
+<h1 style="color: goldenrod; text-align: center"><b><u>Useful JavaScript Extras and Libraries</u></b></h1>
+<br>
+<div class="row" style="text-align: center">
+    <div class="col-xs-2">
+        <div id="alertBox" style="margin-left: 15px; margin-top: 40px">
+            <div>
+                <div id="alertBoxHeader"><b></b></div>
+                <div id="alertBoxBody"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-8">
+        <span style="text-align:center">
+            <img class="topicAddons" alt="jQuery Logo" src="assets/img/jquery.jpg" >
+            <br>
+            <br>
+            <img class="topicAddons" alt="jQuery-ui Logo" src="assets/img/jqueryui.jpg" >
+        </span>
+        <h2 style="text-align:center"></h2>
+    </div>
+    <div class="col-xs-2"></div>
 </div>
 
 </body>

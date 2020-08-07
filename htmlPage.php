@@ -72,7 +72,7 @@
 <h4 class="topicDesc">The first part of the naming for HTML, Hypertext, refers to the hyperlinks that can be included in the website as to navigate between pages. </h4>
 <h4 class="topicDesc">The second being that of 'Markup Language' which refers to the layout and how elements are defined within the webpage(s).</h4>
 </br>
-<h1 style="text-align: center"><b><u>Learning Modules</u></b></h1>
+<h1 style="color: orange; text-align: center"><b><u>Learning Modules</u></b></h1>
 <div class="row" style="height:330px; border:solid">
     <!--Part 1 - Introduction to HTML-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
@@ -146,12 +146,12 @@
                 JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
                 <b>///</b> The extension for JavaScript is .js
                 <b>///</b> The language is easy to pick up but can be difficult to master
-                <b>///</b> Be aware that JavaScript and Java are completely dfferent languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
+                <b>///</b> Be aware that JavaScript and Java are completely different languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
             </p>
         </div>
         </br>
         <div id="progressBarH3" style="position:relative">
-            Progress Completed: <strong><span id="pb-label3" style="position:absolute; left:37%"></span></strong>
+            Progress Completed: <b><span id="pb-label3" style="position:absolute; left:37%"></span></b>
         </div>
         <button id="t1Btn3" type="submit">Click me to complete</button>
     </div>
@@ -159,12 +159,12 @@
 
 <br />
 
-<!--@*Second Section Demos / Show how its done*@-->
-<h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
+<!--Second Section Demos / Show how its done-->
+<h1 style="color:orange; text-align: center"><b><u>Demos & Examples</u></b></h1>
 <div class="row" style="height:255px; border:dashed">
     <div class="col-md-4" style="border:solid; height:100%">
         <h2>Part 1 - Simple HTML</h2>
-        <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+
         <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
 
@@ -180,6 +180,25 @@
         <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
 </div>
+<!--Row 4 - 1 box Helpful HTML guides / Add-Ons-->
+<h1 style="color: orange; text-align: center"><b><u>Useful HTML/CSS Plug-ins & Frameworks</u></b></h1>
+<div class="row" style="text-align: center">
+    <div class="col-xs-2">
+        <div id="alertBox" style="margin-left: 15px; margin-top: 40px">
+            <div>
+                <div id="alertBoxHeader"><b></b></div>
+                <div id="alertBoxBody"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-8">
+        <h2 style="color:mediumpurple; text-align:center"><img class="topicLogos" alt="Bootstrap4 Logo" src="assets/img/bootstrap-solid.svg" ><b>Bootstrap</b></h2>
+
+    </div>
+    <div class="col-xs-2"></div>
+</div>
+
+
 
 </body>
 </html>
@@ -236,18 +255,21 @@
     collapse();
 
 
-    $(document).ready(function ($) {
+    $(document).ready(function ($)
+    {
+
+
         $('#t1Btn1').button();
         $('#progressBarH1').progressbar(
             {
                 value: 0,
-                create: function (e) {
+                create: function () {
                     $('#pb-label1').text($('#progressBarH1').progressbar("value"));
                 },
-                complete: function (e) {
+                complete: function () {
                     $('#t1Btn1').button("disable")
                     $('#t1Btn1').text("Completed")
-                }, change: function (e) {
+                }, change: function () {
                     if ($(this).progressbar("value") < 100) {
                         $('#t1Btn1').button("enable")
                     }
@@ -255,22 +277,24 @@
                 }
             });
         //Button click
-        $('#t1Btn1').click(function (e) {
+        $('#t1Btn1').click(function () {
             $('#progressBarH1').progressbar({ value: 100 });
         })
 
         $(document).ready(function ($) {
+
+
             $('#t1Btn2').button();
             $('#progressBarH2').progressbar(
                 {
                     value: 0,
-                    create: function (e) {
+                    create: function () {
                         $('#pb-label2').text($('#progressBarH2').progressbar("value"));
                     },
-                    complete: function (e) {
+                    complete: function () {
                         $('#t1Btn2').button("disable")
                         $('#t1Btn2').text("Completed")
-                    }, change: function (e) {
+                    }, change: function () {
                         if ($(this).progressbar("value") < 100) {
                             $('#t1Btn2').button("enable")
                         }
@@ -278,22 +302,25 @@
                     }
                 });
             //Button click
-            $('#t1Btn2').click(function (e) {
+            $('#t1Btn2').click(function () {
                 $('#progressBarH2').progressbar({ value: 100 });
             })
         });
+
         $(document).ready(function ($) {
+
+
             $('#t1Btn3').button();
             $('#progressBarH3').progressbar(
                 {
                     value: 0,
-                    create: function (e) {
+                    create: function () {
                         $('#pb-label3').text($('#progressBarH3').progressbar("value"));
                     },
-                    complete: function (e) {
+                    complete: function () {
                         $('#t1Btn3').button("disable")
                         $('#t1Btn3').text("Completed")
-                    }, change: function (e) {
+                    }, change: function () {
                         if ($(this).progressbar("value") < 100) {
                             $('#t1Btn3').button("enable")
                         }

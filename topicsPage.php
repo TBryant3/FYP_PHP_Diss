@@ -4,8 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CoJō Topics</title>
 
-
-
         <!--Browser version support-->
         <script src="assets/js/modernizr-2.8.3.js"></script>
         <!--jQuery Link-->
@@ -14,7 +12,6 @@
         <script src="assets/js/jquery-ui-1.12.1.js"></script>
         <!-- Bootstrap -->
         <script src="assets/js/bootstrap.js"></script>
-
 
         <!-- Stylesheets -->
         <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -26,7 +23,6 @@
         <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
         <!--Custom CSS-->
         <link href="assets/css/allTopicStyles.css" rel="stylesheet" />
-
     </head>
     <body>
     <!--UNIVERSAL NAV BAR-->
@@ -91,30 +87,30 @@
     </div>
     <!-- HTML/CSS -->
     <div class="col-xs-4" style="border-style:solid; border-radius:5%; height:100%">
-        <span style="cursor: pointer; color: lightgrey" id="favTop1" onclick="Alert.favHTML('HTML/CSS Favourite Settings have been updated!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTop1" onclick="Alert.favHTML('HTML/CSS Topic: <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:orange; text-align:center"><b>HTML & CSS</b><img class="topicLogos" alt="HTML Logo"  src="assets/img/HTML5_logo.png"  /> <img class="CSS_logo"  alt="CSS Logo" src="assets/img/CSS3_logo.png"  /> </h2>
         <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure your webpages and then CSS to style them and stand out from the crowd! This topic will include <b>What</b>, <b>How</b> and <b>Why</b> this language is used</i></p>
         <br>
-        <p><a class="btn btn-default" href="htmlPage.php" style="color:orange">Learn more &raquo;</a><b>*Recommended for beginners</b></p>
+        <p><a class="btn btn-default" href="htmlPage.php" style="color:orange"><b>Learn more &raquo;</b></a><b>*Recommended for beginners</b></p>
         <!--Progress Bar-->
         <div id="pbTopic1" style="margin-bottom: 1%; ">
             Topic Completion: <b style="visibility: hidden"><span id="html-label" style="position:relative;"></span>%</b>
         </div>
     </div>
-    <!-- C-Sharp -->
-    <div class="col-xs-4" style="border-style: solid; border-radius: 5%; height:100%">
-        <span style="cursor: pointer; color: lightgrey" id="favTop2" onclick="Alert.favSharp('C# Favourite Settings have been updated!')">
+    <!-- JavaScript -->
+    <div class="col-xs-4" style="border-style:solid; border-radius:5%;">
+        <span style="cursor: pointer; color: lightgrey" id="favTop2" onclick="Alert.favJS('JavaScript Topic: <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color:rebeccapurple; text-align:center"><b>C-Sharp </b><img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></h2>
-        <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm. In this topic we will delve into <b>What</b> C# is used for, <b>How</b> it is used and <b>Why</b> the programming language was developed</i></p>
+        <h2 style="color: goldenrod; text-align: center"><b>JavaScript </b><img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></h2>
+        <p style="text-align:center"><i>In this topic we shall we exploring the high-level scripting language JavaScript. We will go through: <b>What</b> JavaScript is, <b>How</b> it is used, and <b>Why</b> JavaScript is so important especially in the web development industry</i></p>
         <br>
-        <p><a class="btn btn-default" href="" style="color:rebeccapurple">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="jsPage.php" style="color:goldenrod"><b>Learn more &raquo;</b></a><b>*Recommended after completing HTML & CSS</b></p>
         <!--Progress Bar-->
         <div id="pbTopic2" style="margin-bottom:1%;">
-            Topic Completion: <b style="visibility: hidden"><span id="csharp-label" style="position:relative;"></span>%</b>
+            Topic Completion: <b style="visibility: hidden"><span id="js-label" style="position:relative"></span>%</b>
         </div>
     </div>
     <div class="col-xs-2">
@@ -141,30 +137,30 @@
         </div>
     </div>
     <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
-        <span style="cursor: pointer; color: lightgrey" id="favTop3" onclick="Alert.favPlus('C++ Favourite Settings have been updated!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTop3" onclick="Alert.favPlus('C++ Topic: <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:deepskyblue; text-align:center"><b> C-Plus-Plus </b><img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></h2>
         <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm.  We will go through: <b>What</b> C++ is, <b>How</b> it is used, and <b>Why</b> C++ is used over certain other programming languages</i></p>
         <br>
-        <p><a class="btn btn-default" href="" style="color:deepskyblue">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="" style="color:deepskyblue"><b>Learn more &raquo;</b></a></p>
         <!--Progress Bar-->
         <div id="pbTopic3" style="margin-bottom:1%;">
             Topic Completion: <b style="visibility: hidden"><span id="cplus-label" style="position:relative;"></span>%</b>
         </div>
     </div>
-    <!-- JavaScript -->
-    <div class="col-xs-4" style="border-style:solid; border-radius:5%;">
-        <span style="cursor: pointer; color: lightgrey" id="favTop4" onclick="Alert.favJS('JavaScript Favourite Settings have been updated!')">
+    <!-- C-Sharp -->
+    <div class="col-xs-4" style="border-style: solid; border-radius: 5%; height:100%">
+        <span style="cursor: pointer; color: lightgrey" id="favTop4" onclick="Alert.favSharp('C# Topic: <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color: goldenrod; text-align: center"><b>JavaScript </b><img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></h2>
-        <p style="text-align:center"><i>In this topic we shall we exploring the high-level scripting language JavaScript. We will go through: <b>What</b> JavaScript is, <b>How</b> it is used, and <b>Why</b> JavaScript is so important especially in the web development industry</i></p>
+        <h2 style="color:rebeccapurple; text-align:center"><b>C-Sharp </b><img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></h2>
+        <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm. In this topic we will delve into <b>What</b> C# is used for, <b>How</b> it is used and <b>Why</b> the programming language was developed</i></p>
         <br>
-        <p><a class="btn btn-default" href="jsPage.php" style="color:goldenrod">Learn more &raquo;</a><b>*Recommended after completing HTML & CSS</b></p>
+        <p><a class="btn btn-default" href="" style="color:rebeccapurple"><b>Learn more &raquo;</b></a></p>
         <!--Progress Bar-->
         <div id="pbTopic4" style="margin-bottom:1%;">
-            Topic Completion: <b style="visibility: hidden"><span id="js-label" style="position:relative"></span>%</b>
+            Topic Completion: <b style="visibility: hidden"><span id="csharp-label" style="position:relative;"></span>%</b>
         </div>
     </div>
     <div class="col-xs-2">
@@ -178,6 +174,7 @@
 </div>
 <br>
 <br>
+    <!-- Coming Soon Section -->
 <h2 style="text-align:center"><strong>Stage 3 - Black Belt</strong></h2>
 <div class="row">
     <div class="col-xs-2"></div>
@@ -187,20 +184,20 @@
     </div>
     <div class="col-xs-2"></div>
 </div>
-<!--@* Support Section *@-->
+<!-- Support Section -->
 <h2 style="text-align:center"><strong>Support</strong></h2>
 <div class="row">
     <div class="col-xs-2"></div>
     <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
         <h2 style="color:lightsalmon; text-align:center"><b>FAQ</b></h2>
         <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
-        <p><a class="btn btn-default" href="aboutUs.php" style="color:lightsalmon">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="aboutUs.php" style="color:lightsalmon"><b>Learn more &raquo;</b></a></p>
     </div>
     <div class="col-xs-4" style="        border-style: solid;
         border-radius: 5%;">
         <h2 style="color:lightsalmon; text-align:center"><b>Ask an expert!</b></h2>
         <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
-        <p><a class="btn btn-default" href="contactUs.php" style="color:lightsalmon">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="contactUs.php" style="color:lightsalmon"><b>Learn more &raquo;</b></a></p>
     </div>
     <div class="col-xs-2"></div>
 </div>
@@ -243,7 +240,7 @@ var favTop4 = document.getElementById("favTop4");
 
 
 // Favourite Topic notification alerts
-function favouritesAlert()
+function favTopicAlert()
 {
     // First (HTML/CSS) Alert Settings //
     this.favHTML = function(dialog)
@@ -253,7 +250,7 @@ function favouritesAlert()
         if (favTop1.click && favTop1.style.color === 'lightgrey')
         {
             alertBox1.style.display = "block";
-            document.getElementById('alertBoxHeader1').innerHTML = "Application Message";
+            document.getElementById('alertBoxHeader1').innerHTML = "Favourites Updated";
             document.getElementById('alertBoxBody1').innerHTML = dialog;
 
             favTop1.style.color = 'green';
@@ -269,7 +266,7 @@ function favouritesAlert()
         else if (favTop1.click && favTop1.style.color === 'green')
         {
             alertBox1.style.display = "block";
-            document.getElementById('alertBoxHeader1').innerHTML = "Application Message";
+            document.getElementById('alertBoxHeader1').innerHTML = "Favourites Updated";
             document.getElementById('alertBoxBody1').innerHTML = dialog;
 
             favTop1.style.color = 'lightgrey';
@@ -283,15 +280,15 @@ function favouritesAlert()
             });
         }
     }
-    // Second (C#) Alert Settings //
-    this.favSharp = function(dialog2)
+    // Second (JS) Alert Settings //
+    this.favJS = function(dialog2)
     {
         var alertBox2 = document.getElementById('alertBox2');
 
         if (favTop2.click && favTop2.style.color === 'lightgrey')
         {
             alertBox2.style.display = "block";
-            document.getElementById('alertBoxHeader2').innerHTML = "Application Message";
+            document.getElementById('alertBoxHeader2').innerHTML = "Favourites Updated";
             document.getElementById('alertBoxBody2').innerHTML = dialog2;
 
             favTop2.style.color = 'green';
@@ -307,8 +304,8 @@ function favouritesAlert()
         else if (favTop2.click && favTop2.style.color === 'green')
         {
             alertBox2.style.display = "block";
-            document.getElementById('alertBoxHeader2').innerHTML = "Application Message";
-            document.getElementById('alertBoxBody2').innerHTML = dialog2;
+            document.getElementById('alertBoxHeader4').innerHTML = "Favourites Updated";
+            document.getElementById('alertBoxBody4').innerHTML = dialog2;
 
             favTop2.style.color = 'lightgrey';
 
@@ -320,6 +317,7 @@ function favouritesAlert()
                 }, 1000);
             });
         }
+
     }
     // Third (C++) Alert Settings //
     this.favPlus = function(dialog3)
@@ -329,7 +327,7 @@ function favouritesAlert()
         if (favTop3.click && favTop3.style.color === 'lightgrey')
         {
             alertBox3.style.display = "block";
-            document.getElementById('alertBoxHeader3').innerHTML = "Application Message";
+            document.getElementById('alertBoxHeader3').innerHTML = "Favourites Updated";
             document.getElementById('alertBoxBody3').innerHTML = dialog3;
 
             favTop3.style.color = 'green';
@@ -345,7 +343,7 @@ function favouritesAlert()
         else if (favTop3.click && favTop3.style.color === 'green')
         {
             alertBox3.style.display = "block";
-            document.getElementById('alertBoxHeader3').innerHTML = "Application Message";
+            document.getElementById('alertBoxHeader3').innerHTML = "Favourites Updated";
             document.getElementById('alertBoxBody3').innerHTML = dialog3;
 
             favTop3.style.color = 'lightgrey';
@@ -359,14 +357,15 @@ function favouritesAlert()
             });
         }
     }
-    this.favJS = function(dialog4)
+    // Fourth (C#) Alert Settings //
+    this.favSharp = function(dialog4)
     {
         var alertBox4 = document.getElementById('alertBox4');
 
         if (favTop4.click && favTop4.style.color === 'lightgrey')
         {
             alertBox4.style.display = "block";
-            document.getElementById('alertBoxHeader4').innerHTML = "Application Message";
+            document.getElementById('alertBoxHeader4').innerHTML = "Favourites Updated";
             document.getElementById('alertBoxBody4').innerHTML = dialog4;
 
             favTop4.style.color = 'green';
@@ -382,7 +381,7 @@ function favouritesAlert()
         else if (favTop4.click && favTop4.style.color === 'green')
         {
             alertBox4.style.display = "block";
-            document.getElementById('alertBoxHeader4').innerHTML = "Application Message";
+            document.getElementById('alertBoxHeader4').innerHTML = "Favourites Updated";
             document.getElementById('alertBoxBody4').innerHTML = dialog4;
 
             favTop4.style.color = 'lightgrey';
@@ -395,10 +394,9 @@ function favouritesAlert()
                 }, 1000);
             });
         }
-
     }
 }
-var Alert = new favouritesAlert();
+var Alert = new favTopicAlert();
 
 
 /// Scripts for Progress Bars ///
@@ -407,13 +405,13 @@ $(document).ready(function ($)
 $("#pbTopic1").progressbar(
     {
         value: false,
-        create: function (ev) {
+        create: function () {
             $("#html-label").text($("#pbTopic1").progressbar("value"));
         },
-        change: function (ev) {
+        change: function () {
             $("#html-label").text($("#pbTopic1").progressbar("value"));
         },
-        complete: function (ev) {
+        complete: function () {
             $("#html-label").append("Completed")
         }
     });
@@ -421,13 +419,13 @@ $("#pbTopic1").progressbar(
 $("#pbTopic2").progressbar(
     {
         value: false,
-        create: function (ev) {
+        create: function () {
             $("#csharp-label").text($("#pbTopic2").progressbar("value"));
         },
-        change: function (ev) {
+        change: function () {
             $("#csharp-label").text($("#pbTopic2").progressbar("value"));
         },
-        complete: function (ev) {
+        complete: function () {
             $("#csharp-label").text("Completed!")
         }
     });
@@ -435,13 +433,13 @@ $("#pbTopic2").progressbar(
 $('#pbTopic3').progressbar(
     {
         value: false,
-        create: function (ev) {
+        create: function () {
             $("#cplus-label").text($("#pbTopic3").progressbar("value"));
         },
-        change: function (ev) {
+        change: function () {
             $("#cplus-label").text($("#pbTopic3").progressbar("value"));
         },
-        complete: function (ev) {
+        complete: function () {
             $("#cplus-label").text("Completed!")
         }
     });
@@ -449,13 +447,13 @@ $('#pbTopic3').progressbar(
 $("#pbTopic4").progressbar(
     {
         value: false,
-        create: function (ev) {
+        create: function () {
             $("#js-label").text($("#pbTopic4").progressbar("value"));
         },
-        change: function (ev) {
+        change: function () {
             $("#js-label").text($("#pbTopic4").progressbar("value"));
         },
-        complete: function (ev) {
+        complete: function () {
             $("#js-label").text("Completed!")
         }
     });

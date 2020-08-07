@@ -89,9 +89,9 @@
 
 
 
-<h1 style="text-align:center">Contact CoJo </h1>
+<h1 style="text-align:center"><u>Contact CoJo</u></h1>
 <h2 style="text-align:center">This is the space to get in contact to ask questions and or to find out more information about any of the topics included in this application</h2>
-
+<h3 style="text-align:center">The following form asks for the details used for your account as to help get a more tailored response for you!</h3>
 <form method="post" id="contactForm" action="">
     <div class="formContainer">
         <div class="row">
@@ -117,12 +117,12 @@
                 <br />
                 <div class="row" style="width:100%">                    
                     <i class="fa fa-info"></i>
-                    <label>Extra Information:</label>
-                    <input type="text" id="infoInput" name="extraInfo" placeholder="Any more details can go here..."></>
+                    <label for="extraInfo" style="width:26%">Extra Information:</label>
+                    <input type="text" id="infoInput" name="extraInfo" placeholder="Any more details can go here..." >
                 </div>
                 <br />
                 <div class="row">
-                    <button type="submit" id="submitBtn" onclick="confirmMessage()" style="border-radius:5%; height:15%; width:20%; margin-left:45%">Submit</button>
+                    <button type="submit" id="submitBtn" onclick="confirmMessage()" style="border-radius:5%; height:5%; width:10%; margin-left:52%">Submit</button>
                 </div>
                 
             </div>
@@ -134,16 +134,16 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-5">
-                <h3><u>Where we are:</u></h3>
+                <h2><u>Where we are:</u></h2>
                 <address>
                     <br />
-                    <abbr title="Office Address"><b>Address:</b></abbr>
-                    123 Carendan Road<br />
-                    London, EC1A 4NT<br />
-                    <abbr title="Telephone Number"><b>Telephone:</b></abbr>
-                    0118 999 881 999 119 725 3
+                    <abbr title="Office Address" style="font-size: large"><b>Address:</b></abbr>
+                    <p>123 Carendan Road<br />
+                    London, EC1A 4NT</p><br />
+                    <abbr title="Telephone Number" style="font-size: large"><b>Telephone:</b></abbr>
+                    <p>0118 999 881 999 119 725 3</p>
                 </address>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.5132215270094!2d-0.06746489616339846!3d51.50794376357336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760357196b5e3d%3A0xb885ac56e90836e!2sIpsos%20MORI!5e0!3m2!1sen!2suk!4v1585769091840!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:solid" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.5132215270094!2d-0.06746489616339846!3d51.50794376357336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760357196b5e3d%3A0xb885ac56e90836e!2sIpsos%20MORI!5e0!3m2!1sen!2suk!4v1585769091840!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:solid" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
 
 
                 <address>
