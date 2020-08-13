@@ -22,11 +22,9 @@
     <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
     <!--Styling to be moved to CSS file-->
     <style>
-        .learnTitles {
-            width: 60%;
-            display: inline-block;
-            padding: 100px 0 0 0;
-            margin: 0 0 0 0;
+        .accordions
+        {
+            padding-left: 5%;
         }
     </style>
 </head>
@@ -83,14 +81,14 @@
 <h4 class="topicDesc">Finally, JS is a fun language to work with as it is multi-paradigm support and can be tested easily with the use of Mocha and Chia (explained later)</h4>
 
 <!---------------------Section 1--------------------->
-<h1 style="color:goldenrod; text-align: center"><b><u>Learning Modules</u></b></h1>
 <!--First Row-->
-<div class="row" style="height:300px">
+<div class="row" style="height:400px">
+    <h1 style="color:goldenrod; text-align: center"><b><u>Learning Modules</u></b></h1>
     <!--Part 1 - Introduction to JS-->
-    <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
-        <h2 style="text-align: center">Introduction to JavaScript</h2>
+    <div class="col-md-4" style="border:solid; height:auto; background-color:lightgreen">
+        <h2 style="text-align: center"><b>Introduction to JavaScript</b></h2>
         <!--First Accordion Widget-->
-        <div id="accordionP1" style="padding-left: 25%">
+        <div id="accordionP1" class="accordions">
             <h3 class="learnTitles">History of JavaScript</h3>
             <p>
                 JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. 
@@ -113,7 +111,7 @@
             </p>
         </div>
         <br />
-        <div id="progressBarJ1" style="position:relative">
+        <div id="progressBarJ1" style="position:relative; width: 75%">
             
             Progress Completed: <strong><span id="pbj-label1" style="position:relative"></span></strong>
         
@@ -122,13 +120,13 @@
     </div>
 
     <!--Part 2 - Explaining Script Tags-->
-    <div class="col-md-4" style="border:solid; height:100%; background-color:lightgoldenrodyellow">
-        <h2 style="text-align: center">JavaScript Expanded</h2>
-        <div id="accordionP2" style="padding-left: 25%">
+    <div class="col-md-4" style="border:solid; height:auto; background-color:lightgoldenrodyellow">
+        <h2 style="text-align: center"><b>JavaScript Expanded</b></h2>
+        <div id="accordionP2" class="accordions">
             <h3 class="learnTitles">What is JavaScript?</h3>
             <p>
                 JavaScript is a scripting language and so you will need to know what exactly a 'Scripting Language' is to fully understand what this entails.
-                By 'Scripting Language' what we mean is that the code that is carried out by your IDE is read in a seperate way to your usual HTML or CSS as this code is executed upon certain function calls and can also be set-up to execute at run-time of the application.
+                By 'Scripting Language' what we mean is that the code that is carried out by your IDE is read in a separate way to your usual HTML or CSS as this code is executed upon certain function calls and can also be set-up to execute at run-time of the application.
             </p>
             <h3 class="learnTitles">How to code in JavaScript</h3>
             <p>
@@ -137,11 +135,7 @@
             </p>
             <h3 class="learnTitles">JavaScript Sources</h3>
             <p>
-                JavaScript is a recognised language world-wide and so most developement environments would be compatible with it. There is also 
-            </p>
-            <h3 class="learnTitles">Example use of Script Tags</h3>
-            <p>
-                In this example, it is showing you that firstly you need to specify the script tag, then specify where the file is, and then finally, specify what the file type is -> <b>< script src="~/Scripts/javascriptFile.js" type="text/javascript"> < /script ></b>
+                JavaScript is a recognised language world-wide and so most development environments would be compatible with it. There is also
             </p>
         </div>
         <br />
@@ -153,9 +147,9 @@
         <button id="t4Btn2" style="margin-bottom:1%">Click me to complete</button>
     </div>
     <!--Part 3 - JavaScript for people with some JS experience-->
-    <div class="col-md-4" style="border:solid; height:100%; background-color:lightcoral">
-        <h2 style="text-align: center">JavaScript for the Pros</h2>
-        <div id="accordionP3" style="padding-left: 25%">
+    <div class="col-md-4" style="border:solid; height:auto; background-color:lightcoral">
+        <h2 style="text-align: center"><b>JavaScript for the Pros</b></h2>
+        <div id="accordionP3" class="accordions">
             <h3 class="learnTitles">Recap of JavaScript</h3>
             <p>
                 If you've got this far then congratulations! You now know more about JavaScript then most! JavaScript can be a pain when it comes to putting the right variable in the right place at the right time but the next tab will be a quick run down as a recap.
@@ -184,9 +178,12 @@
         <button id="t4Btn3" style="margin-bottom:1%">Click me to complete</button>
     </div>
 </div>
+<br>
+<br>
+<br>
 <!--------------------------------------------------------------More Learning Modules-------------------------------------------------------------->
-<h1 style="color:goldenrod; text-align: center"><b><u>More Modules</u></b></h1>
-<div class="row" style="height:300px">
+<div class="row" style="height:400px">
+    <h1 style="color:goldenrod; text-align: center; float "><b><u>More Modules</u></b></h1>
     <!--Part 4 - Introduction to JS variables-->
     <div class="col-md-4" style="border:solid; height:100%; background-color:lightgreen">
         <h2 style="text-align: center">JavaScript: Variables</h2>
@@ -262,25 +259,39 @@
     </div>
 </div>
 
-<br />
 
-<!--Section Two - Demos-->
+<!--Section Two - DEMOS & EXAMPLES-->
 <h1 style="color:goldenrod; text-align: center"><b><u>Demos & Examples</u></b></h1>
-<div class="row" style="height:255px; border:dashed">
-    <div class="col-md-4" style="border:solid; height:100%">
-
+<div class="row" style="height:300px; text-align: center">
+    <div class="col-xs-3" style="border:solid; height:100%">
+        <h2>Key JS Variables</h2>
     </div>
-    <div class="col-md-4" style="border:solid; height:100%">
-        <h2>Find out more about us</h2>
+    <div class="col-xs-3" style="border:solid; height:100%">
+        <h2>Including JavaScript on a Web App</h2>
         <p>We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more</p>
     </div>
-    <div class="col-md-4" style="border:solid; height:100%">
-        <h2>For the Coding Veterans</h2>
+    <div class="col-xs-3" style="border:solid; height:100%">
+        <h2 style="text-align: center">JavaScript Events</h2>
+        <p>Here are some practice questions and test your knowledge quizzes to see where you're at</p>
+    </div>
+    <div class="col-xs-3" style="border:solid; height:100%">
+        <h2 style="text-align: center">For the Coding Veterans</h2>
         <p>Here are some practice questions and test your knowledge quizzes to see where you're at</p>
     </div>
 </div>
+<div class="row" style="height:255px">
+    <div class="col-xs-2" style="height:100%"></div>
+
+        <div class="col-xs-8" style="border:solid; height:100%; text-align: center">
+            <h2 style="text-align: center"><b>For the Coding Veterans</b></h2>
+            <h3>Are you ready to Test Your Knowledge on what you have learnt!</h3>
+        </div>
+
+    <div class="col-xs-2" style="height:100%""></div>
+    </div>
+</div>
 <!--Row 4 - 1 box Helpful JavaScript guides / Add-Ons-->
-<h1 style="color: goldenrod; text-align: center"><b><u>Useful JavaScript Extras and Libraries</u></b></h1>
+<h1 style="color: goldenrod; text-align: center; font-family: "><b><u>Useful JavaScript Extras and Libraries</u></b></h1>
 <br>
 <div class="row" style="text-align: center">
     <div class="col-xs-2">
@@ -293,10 +304,10 @@
     </div>
     <div class="col-xs-8">
         <span style="text-align:center">
-            <img class="topicAddons" alt="jQuery Logo" src="assets/img/jquery.jpg" >
+            <a href="https://jquery.com/"><img class="topicAddons" alt="jQuery Logo" title="jQuery Logo" src="assets/img/jquery.jpg" style="cursor: pointer"></a>
             <br>
             <br>
-            <img class="topicAddons" alt="jQuery-ui Logo" src="assets/img/jqueryui.jpg" >
+            <a href="https://jqueryui.com/"><img class="topicAddons" alt="jQuery-ui Logo" title="jQuery-UI Logo" src="assets/img/jqueryui.jpg" style="cursor: pointer"></a>
         </span>
         <h2 style="text-align:center"></h2>
     </div>
@@ -316,22 +327,23 @@
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
+                heightStyle: true,
                 animate: 150,
+                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
 
             });
         $("#accordionP2").accordion(
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
+                heightStyle: true,
                 animate: 150
             });
         $("#accordionP3").accordion(
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
+                heightStyle: true,
                 animate: 150
             });
         // Set 2 //
@@ -339,21 +351,21 @@
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
+                heightStyle: true,
                 animate: 150
             });
         $("#accordionP5").accordion(
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
+                heightStyle: true,
                 animate: 150
             });
         $("#accordionP6").accordion(
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
+                heightStyle: true,
                 animate: 150
             });
     }

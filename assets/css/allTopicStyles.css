@@ -1,39 +1,56 @@
-﻿.topicLogos
+﻿body
+{
+    background-color:whitesmoke;
+    padding: 3%;
+}
+
+.topicLogos
 {
     width: 90px;
     height: 90px;
 }
 .topicAddons
 {
-    width: 200px;
+    width: 250px;
     height: 90px;
 }
 .topicDesc
 {
     text-align:center;
 }
+
+
 #signin-container
  {
      background-color:white;
  }
-#HTML_logo {
-    max-width: 135px;
-    max-height: 125px;
+/*Logo settings*/
+#HTML_logo
+{
+    margin-top: 80px;
+    width: 145px;
+    height: 135px;
        
 }
-#Csharp_logo {
-    max-width: 135px;
-    max-height: 125px;
+#Csharp_logo
+{
+    margin-top: 75px;
+    width: 125px;
+    height: 135px;
    
 }
-#Cplus_logo {
-    max-width: 135px;
-    max-height: 125px;
+#Cplus_logo
+{
+    margin-top: 75px;
+    width: 115px;
+    height: 125px;
     
 }
-#JavaScript_logo {
-    max-width: 135px;
-    max-height: 125px;
+#JavaScript_logo
+{
+    margin-top: 65px;
+    width: 145px;
+    height: 135px;
     
 }
 .CSS_logo
@@ -41,9 +58,10 @@
     max-width: 80px;
     max-height: 90px;
 }
-body
+#CSSlogo
 {
-    background-color:whitesmoke;
+    max-width: 80px;
+    max-height: 90px;
 }
 
 
@@ -182,11 +200,6 @@ body
     color: black;
     text-align: center;
     padding:20px;
-}
-
-#map:hover
-{
-
 }
 
 

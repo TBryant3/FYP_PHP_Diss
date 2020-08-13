@@ -37,30 +37,30 @@
                 <span class="icon-bar"></span>
             </button>
             <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php"> CoJō Home</a>
+            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="topicsPage.php">Topics</a>
+                <a class="nav-link" href="topicsPage.php" style="font-size: medium">Topics</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="testsPage.php">Tests</a>
+                <a class="nav-link" href="testsPage.php" style="font-size: medium">Tests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="aboutUs.php">About CoJō</a>
+                <a class="nav-link" href="aboutUs.php" style="font-size: medium">About CoJō</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contactUs.php">Contact Us</a>
+                <a class="nav-link" href="contactUs.php" style="font-size: medium">Contact Us</a>
             </li>
         </ul>
             <div class="nav navbar-nav navbar-right">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="Login.php">Log in</a>
+                        <a class="nav-link" href="Login.php" style="font-size: medium">Log in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Register.php">Register</a>
+                        <a class="nav-link" href="Register.php" style="font-size: medium">Register</a>
                     </li>
 
                 </ul>
@@ -72,80 +72,85 @@
 
 <!------------------CONTENT START------------------------>
 <div class="Welcoming">
-    <h1 style="text-align:center">CoJō -A Code Learning Dōjō</h1>
-    <p style="text-align:center; font-size: large">Welcome to this Code Learning Dōjō application where you're the one in control of how and what you learn!</p>
+    <h1 style="text-align:center"><b>CoJō - A Code Learning Dōjō</b></h1>
+    <p style="text-align:center; font-size: x-large">Welcome to this Code Learning Dōjō application where you're the one in control of how and what you learn!</p>
 </div>
+<br>
 <!--Row 1 - 1 box -->
 <div class="row" style="text-align: center">
-    <div class="col-xs-2"></div>
-    <div class="col-xs-2">
-        <br />
-        <!--ADD IMAGE HERE -> PUT IN AN ANIMATION -->
-        <img class="center-block" id="HTML_logo" title="HTML Logo" alt="HTML_Logo" src="assets/img/HTML5_logo.png" />
-    </div>
     <div class="col-xs-4">
-        <h3><u>Multiple Computing Languages to choose from!</u></h3>
-        <p style="font-size: medium">
-            We at CoJō want to give you the best possible experience and so we have a selection of languages from <b>Website Mark-Up HTML</b> to <b>Programming language JavaScript</b> and more!
+        <!--ADD IMAGE HERE -> PUT IN AN ANIMATION -->
+            <img title="Click me for HTML" src="assets/img/HTML5_logo.png" alt="HTML Logo" class="center-block" id="HTML_logo" />
+        </div>
+    <div class="col-xs-4">
+        <h2><u>Multiple Computing Languages to choose from!</u></h2>
+        <p style="font-size: x-large">
+            At CoJō, we want to give you the best possible experience and so we have a selection of languages from <i>Website Mark-Up</i> <b>HTML</b> to <i>Programming languages</i> such as <b>JavaScript</b> and beyond!
         <br>
         </p>
     </div>
-    <div class="col-xs-2">
+    <div class="col-xs-4">
         <br />
         <!--ADD IMAGE HERE -> PUT IN AN ANIMATION -->
-        <img class="center-block" id="Csharp_logo" title="C-Sharp Logo" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" />
+        <a href="cSharpPage.php"><img title="Click me for C#" src="assets/img/Csharp_logo.png" alt="C_Sharp_Logo" class="center-block" id="Csharp_logo"/></a>
     </div>
-    <div class="col-xs-2"></div>
+
 </div>
+<br>
+<br>
+<br>
 
 <!--Row 2 ----- 3 boxes-->
-<div class="row" style="text-align: center">
-    <div class="col-xs-1"></div>
-    <div class="col-xs-3" style="border:solid">
-        <h2>Getting started</h2>
-        <p>
-            All of our Topics have their own accompanying educational elements breaking them down and explaining them in terms you can understand!
+<div class="row" style="text-align: center; height:250px">
+    <div class="col-xs-4" style="border:solid">
+        <h2><u><b style="color: lightgreen">STEP 1:</b> What exactly is "Code" & "Coding"?</u></h2>
+        <p style="font-size: medium">
+            We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is!
         </p>
         <p>
-            <a class="btn btn-default" href="">Learn more &raquo;</a>
+            <a class="btn btn-default" href="">Click me to find out &raquo;</a>
         </p>
     </div>
     <div class="col-xs-4" style="border:solid">
-        <h2>Find out more about us</h2>
-        <p>
-            We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more
+        <h2><u><b style="color: goldenrod">STEP 2:</b> Getting started</u></h2>
+        <p style="font-size: medium">
+            All of the available Topics have their own accompanying educational elements breaking them down and explaining them in terms you can understand!
         </p>
         <p>
-            <a class="btn btn-default" href="">Learn more &raquo;</a>
+            <a class="btn btn-default" onclick="" style="color: goldenrod">Tell me more &raquo;</a>
         </p>
     </div>
-    <div class="col-xs-3" style="border:solid">
-        <h2>For the Coder looking for a challenge!</h2>
-        <p>
+    <div class="col-xs-4" style="border:solid">
+        <h2><u><b style="color: lightcoral">STEP 3:</b> Let's start learning! </u></h2>
+        <p style="font-size: medium">
             Alongside the educational element, we include tests to practice what you've learnt and help you where you may have been going wrong.
         </p>
+        <p>
+            <a class="btn btn-default" href="topicsPage.php" style="color: lightcoral">Take me there &raquo;</a>
+        </p>
     </div>
-    <div class="col-xs-1"></div>
 </div>
 
 <!--Row 3 - 1 box -->
 <div class="row" style="text-align: center">
-    <div class="col-xs-2"></div>
-    <div class="col-xs-2">
+    <div class="col-xs-4">
         <!--ADD IMAGE HERE -> PUT IN AN ANIMATION -->
-        <img class="center-block" id="Cplus_logo" title="C Plus Plus Logo" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" />
+        <a href="cPlusPlusPage.php"><img title="Click me for C++" src="assets/img/Cplusplus_logo.png" alt="C_Plus_Logo" class="center-block" id="Cplus_logo" /></a>
     </div>
     <div class="col-xs-4">
-        <h2>Find out more about us</h2>
+        <h2><u><b style="color: purple">STEP 4:</b> For the Coder looking for a challenge!</u></h2>
+        <p style="font-size: medium">
+            If you feel confident enough, you can jump into our Tests and see how you fair! Each Topic has their own accompanying sets of Tests which uses a progressive difficulty system to slowly build-up your confidence and familiarity with the testing methods.
+        </p>
         <p>
-            We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more
+            <a class="btn btn-default" href="testsPage.php" style="color: purple">I'm Ready! &raquo;</a>
         </p>
     </div>
-    <div class="col-xs-2">
+    <div class="col-xs-4">
         <!--ADD IMAGE HERE -> PUT IN AN ANIMATION -->
-        <img class="center-block" id="JavaScript_logo" title="JavaScript Logo" alt="JavaScript_Logo"  src="assets/img/js-logo.png" />
+        <a href="jsPage.php"><img title="Click me for JavaScript" src="assets/img/js-logo.png" alt="JavaScript_Logo" class="center-block" id="JavaScript_logo" /></a>
     </div>
-    <div class="col-xs-2"></div>
+
 </div>
 
 
