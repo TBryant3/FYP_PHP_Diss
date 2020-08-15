@@ -1,6 +1,6 @@
 ﻿body
 {
-    background-color:whitesmoke;
+    background-color:floralwhite;
     padding: 3%;
 }
 
@@ -58,11 +58,7 @@
     max-width: 80px;
     max-height: 90px;
 }
-#CSSlogo
-{
-    max-width: 80px;
-    max-height: 90px;
-}
+
 
 
 /*HTML alert box settings*/
@@ -99,6 +95,8 @@
     text-align: center;
     padding:20px;
 }
+
+
 /*CSharp alert box settings*/
 #alertBox2
 {
@@ -133,6 +131,8 @@
     text-align: center;
     padding:20px;
 }
+
+
 /*CPlusPlus alert box settings*/
 #alertBox3
 {
@@ -167,6 +167,8 @@
     text-align: center;
     padding:20px;
 }
+
+
  /*JavaScript alert box settings*/
 #alertBox4
 {
@@ -203,3 +205,94 @@
 }
 
 
+
+/*Index Page pop-up box settings*/
+#popOverlay
+{
+    display: none;
+    opacity: 0.75;
+    position: fixed;
+    background-color: lightgrey;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 7;
+}
+/*Index Step 1 box settings*/
+#popBox1
+{
+    display: none;
+    position: fixed;
+    background-color: lightgreen;
+    border-radius: 3%;
+    width: 50%;
+    z-index: 10;
+}
+#popBox1 > div
+{
+    background-color: grey;
+    margin: 6px;
+}
+#popBox1 > div > #popBoxHeader1
+{
+    background-color: #333333;
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding:1px;
+}
+#popBox1 > div > #popBoxBody1
+{
+    background-color: #666666;
+    color: black;
+    text-align: center;
+    padding:20px;
+}
+#popBox1 > div > #popBoxFooter1
+{
+    background-color: #333333;
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+    padding:10px;
+}
+/*Index Step 2 box settings*/
+#popBox2
+{
+    display: none;
+    position: fixed;
+    background-color: goldenrod;
+    border-radius: 3%;
+    width: 50%;
+    z-index: 10;
+}
+#popBox2 > div
+{
+    background-color: grey;
+    margin: 6px;
+}
+#popBox2 > div > #popBoxHeader2
+{
+    background-color: #333333;
+    color: goldenrod;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding:1px;
+}
+#popBox2 > div > #popBoxBody2
+{
+    background-color: #666666;
+    color: black;
+    text-align: center;
+    padding:20px;
+}
+#popBox2 > div > #popBoxFooter2
+{
+    background-color: #333333;
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+    padding:10px;
+}

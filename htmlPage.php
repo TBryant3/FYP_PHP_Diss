@@ -66,18 +66,18 @@
     </div>
 </div>
 
+<!--Introduction information about the Topic-->
 <div class="row">
     <div class="col-xs-6">
-        <h1 style="text-align:center">
+        <h1 style="text-align:center; color: orange; font-family: monospace">
             <u><b>Hypertext Markup Language</b></u>
             <img class="topicLogos" alt="HTML_Logo" src="assets/img/HTML5_logo.png" />
-            <p style="text-align: center; font-size: medium">
-                <i>Founded in 1993 by Tim Berners-Lee</i>
-            </p>
+            <br>
+            <b style="text-align: center; font-size: x-large"><i>Founded in 1993 by Tim Berners-Lee</i></b>
         </h1>
         <br>
         <!--Short description of HTML-->
-        <p class="topicDesc" style="font-size: large">
+        <p title="HTML Description" class="topicDesc" style="font-size: large; text-align: center">
             HTML is a computing mark-up language that is used for the development of websites and to display documents within a web browser!
             <br>
             <br>
@@ -87,34 +87,35 @@
         </p>
     </div>
     <div class="col-xs-6">
-        <h1 style="text-align:center">
+        <h1 style="text-align:center; color: blue; font-family: monospace">
             <u><b>Cascading Style Sheets</b></u>
             <img class="CSS_logo" alt="CSS_Logo" src="assets/img/CSS3_logo.png" />
-            <p style="text-align: center; font-size: medium">
-                <i>Developed by Hakon Wium Lie in 1994,
-                    <br>
-                    First standard published in 1996 by W3C!
-                </i>
-            </p>
+            <br>
+            <b style="text-align: center; font-size: x-large"><i>
+                Developed by Hakon Wium Lie in 1994,
+                <br>
+                First standard published in 1996 by W3C!</i>
+            </b>
         </h1>
         <br>
         <!--Short description of CSS-->
-        <p class="topicDesc" style="font-size: large">
+        <p title="CSS Description" class="topicDesc" style="font-size: large; text-align: center">
             CSS is a style defining language for HTML webpages!
-            <br>
             <br>
             The use of style sheets enabled web developers to push the boundaries on how their content was delivered to the user!
             <br>
-            The second being that of 'Markup Language' which refers to the layout and how elements are defined within the webpage(s).
+            CSS allows HTML documents to become more then just data on a webpage, it opens up more to presentation and customisation!
         </p>
     </div>
 </div>
 
 
 <!--First Section Teaching Element and Theory-->
-<div class="row" style="height:500px">
-    <h1 style="color: orange; text-align: center"><b><u>Learning Modules</u></b></h1>
-    <!--Part 1 - Introduction to HTML-->
+<div class="row" style="height:400px">
+    <h1 style="text-align: center"><b><u>Learning Modules</u></b></h1>
+
+    <div class="col-xs-2"></div>
+        <!--Part 1 - Introduction to HTML-->
     <div class="col-xs-4" style="border:solid; height:auto; background-color:lightgreen">
         <h2 style="text-align: center"><b>Introduction to HTML</b></h2>
         <p style="text-align:center">
@@ -133,7 +134,7 @@
             <div id="progressBarH1" style="position:relative">
                 Progress Completed: <b><span id="pb-label1" style="position:relative"></span></b>
             </div>
-            <button id="t1Btn1" style="margin-bottom:1%">Click me to complete</button>
+            <button id="t1Btn1" type="submit" style="margin-bottom:1%">Click me to complete</button>
         </div>
     </div>
     <!--Part 2 - Explaining Tags-->
@@ -150,68 +151,43 @@
             <h3 class="learnTitles">CSS Integration</h3>
             <p>ADD TEXT</p>
         </div>
-        </br>
+        <br>
         <div id="progressBarH2" style="position:relative">
             Progress Completed: <b><span id="pb-label2" style="position:relative"></span></b>
         </div>
-        <button id="t1Btn2" type="submit">Click me to complete</button>
+        <button id="t1Btn2" type="submit" style="margin-bottom:1%">Click me to complete</button>
     </div>
-
-    <div class="col-xs-4" style="border:solid; height:auto; background-color:lightcoral">
-        <h2 style="text-align: center"><b>Advancing HTML</b></h2>
-        <p style="text-align:center">
-            In this section will be be exploring more into what extra features and languages can be utilised alongside HTML
-        </p>
-        <div id="accordionH3" class="accordions">
-            <h3 class="learnTitles">History of JavaScript</h3>
-            <p>JavaScript was first developed in 1995 by a man called Brendan Eich, who worked for a company called 'Netscape'. The purpose of this was to add interactive and dynamic elements to websites and webpages! Furthermore, it only took him 10 days to develop the scripting language with its initial title being that of LiveScript.</p>
-            <h3 class="learnTitles">Present Day JavaScript</h3>
-            <p>Yes there has been many iteration of Javascript and the '.js' extension over time but the core functionality of JavaScript is still used today in web development through the likes of adding features and more options to HTML websites as well as being flexible at intigrating into other language projects.</p>
-            <h3 class="learnTitles">The Future of JavaScript</h3>
-            <p>JavaScript is currently on update 1.8.5 which doesn't seem that updated but JavaScript is helping developers create applications rapidly and to a very high-level of complexity therfore making JavaScript a programming language that will most likely continue on this path due to how efficent and flexible the language is </p>
-            <h3 class="learnTitles">Summary of JavaScript</h3>
-            <p>
-                JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
-                <b>///</b> The extension for JavaScript is .js
-                <b>///</b> The language is easy to pick up but can be difficult to master
-                <b>///</b> Be aware that JavaScript and Java are completely different languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
-            </p>
-        </div>
-        </br>
-        <div id="progressBarH3" style="position:relative">
-            Progress Completed: <b><span id="pb-label3" style="position:relative"></span></b>
-        </div>
-        <button id="t1Btn3" type="submit">Click me to complete</button>
-    </div>
+    <div class="col-xs-2"></div>
 </div>
 
-<br />
-
-<!--Second Section Demos / Show how its done-->
-<div class="row" style="height:auto">
-    <h1 style="color:orange; text-align: center"><b><u>Demos & Examples</u></b></h1>
-    <div class="col-xs-4" style="border:solid; height:100%">
+<!--Second Section Demos / Showing theory in a graphical way (This aids imagery / visual learners)-->
+<div class="row" style="height:500px">
+    <h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
+    <!--Demo One-->
+    <div class="col-xs-4" style="border:solid; height:auto">
         <h2>Create HTML documents</h2>
         <h3>HTML Templates</h3>
         <p>As HTML is a mark-up language, it follows a very simple structure which in-turn can be expanded upon if the user so needs it!</p>
-
     </div>
-
-    <div class="col-xs-4" style="border:solid; height:100%">
+    <!--Demo Two-->
+    <div class="col-xs-4" style="border:solid; height:auto">
         <h2>Find out more about us</h2>
         <p>We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more</p>
         <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
-
-    <div class="col-xs-4" style="border:solid; height:100%">
+    <!--Demo Three-->
+    <div class="col-xs-4" style="border:solid; height:auto">
         <h2>For the Coding Veterans</h2>
         <p>Here are some practice questions and test your knowledge quizzes to see where you're at</p>
         <p><a class="btn btn-default" href="">Got it! &raquo;</a></p>
     </div>
 </div>
+
+<br>
+
 <!--Row 4 - 1 box Helpful HTML guides / Add-Ons-->
-<h1 style="color: orange; text-align: center"><b><u>Useful HTML/CSS Plug-ins & Frameworks</u></b></h1>
 <div class="row" style="text-align: center; height:300px">
+    <h1 style="text-align: center"><b><u>Useful HTML Extras & Frameworks</u></b></h1>
     <div class="col-xs-2">
         <div id="alertBox" style="margin-left: 15px; margin-top: 40px">
             <div>
@@ -221,13 +197,10 @@
         </div>
     </div>
     <div class="col-xs-8">
-        <h2 style="color:mediumpurple; text-align:center"><img class="topicLogos" alt="Bootstrap4 Logo" src="assets/img/bootstrap-solid.svg" ><b>Bootstrap</b></h2>
-
+        <h2 style="color:mediumpurple; text-align:center"><b> Bootstrap </b><a href="https://getbootstrap.com/"><img title="Download Bootstrap here!" alt="Bootstrap4 Logo" src="assets/img/bootstrap-solid.svg" class="topicLogos"></a></h2>
     </div>
     <div class="col-xs-2"></div>
 </div>
-
-
 
 </body>
 </html>
@@ -240,53 +213,38 @@
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
+                event:"mouseover",
+                heightStyle: true,
                 animate: 150,
+                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
 
             });
         $("#accordionH2").accordion(
             {
                 active: false,
                 collapsible: true,
-                heightStyle: "content",
-                animate: 150
+                event:"mouseover",
+                heightStyle: true,
+                animate: 150,
+                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
             });
-        $("#accordionH3").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: "content",
-                animate: 150
-            });
-        // Set 2 //
-        $("#accordionH4").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: "content",
-                animate: 150
-            });
-        $("#accordionH5").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: "content",
-                animate: 150
-            });
-        $("#accordionH6").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: "content",
-                animate: 150
-            });
+        // $("#accordionH3").accordion(
+        //     {
+        //         active: false,
+        //         collapsible: true,
+        //         heightStyle: true,
+        //         animate: 150,
+        //         icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
+        //     });
     }
     collapse();
 
 
     $(document).ready(function ($)
     {
-        $('#t1Btn1').button();
+        const t1Btn1 = $('#t1Btn1');
+
+        t1Btn1.button("enable");
         $('#progressBarH1').progressbar(
             {
                 value: 0,
@@ -294,78 +252,81 @@
                 {
                     $('#pb-label1').text($('#progressBarH1').progressbar("value") + "%");
                 },
-                complete: function ()
-                {
-                    $('#t1Btn1').button("disable"),
-                    $('#t1Btn1').text("Completed")
-                },
                 change: function ()
                 {
                     if ($(this).progressbar("value") < 100)
                     {
-                        $('#t1Btn1').button("enable")
+                        t1Btn1.button("enable")
                     }
                     $('#pb-label1').text($('#progressBarH1').progressbar("value") + "%");
                 },
-
-
+                complete: function ()
+                {
+                    t1Btn1.button("disable").text("Completed");
+                    t1Btn1.style.backgroundColor = "slategrey";
+                }
             });
         //Button click
-        $('#t1Btn1').click(function ()
+        t1Btn1.click(function ()
         {
             $('#progressBarH1').progressbar({ value: 100 });
         })
 
-        $(document).ready(function ($) {
+        $(document).ready(function ($)
+        {
+            const t1Btn2 = $('#t1Btn2');
+            t1Btn2.button("enable");
 
-
-            $('#t1Btn2').button();
             $('#progressBarH2').progressbar(
                 {
                     value: 0,
-                    create: function () {
+                    create: function ()
+                    {
                         $('#pb-label2').text($('#progressBarH2').progressbar("value") + "%");
                     },
-                    complete: function () {
-                        $('#t1Btn2').button("disable")
-                        $('#t1Btn2').text("Completed")
-                    }, change: function () {
+                    change: function ()
+                    {
                         if ($(this).progressbar("value") < 100) {
-                            $('#t1Btn2').button("enable")
+                            t1Btn2.button("enable")
                         }
                         $('#pb-label2').text($('#progressBarH2').progressbar("value") + "%");
-                    }
+                    },
+                    complete: function ()
+                    {
+                        t1Btn2.button("disable").text("Completed or is it?");
+                        t1Btn2.style.opacity ="0.2";
+                    },
                 });
             //Button click
-            $('#t1Btn2').click(function () {
+            t1Btn2.click(function () {
                 $('#progressBarH2').progressbar({ value: 100 });
             })
         });
 
-        $(document).ready(function ($) {
-
-
-            $('#t1Btn3').button();
-            $('#progressBarH3').progressbar(
-                {
-                    value: 0,
-                    create: function () {
-                        $('#pb-label3').text($('#progressBarH3').progressbar("value") + "%");
-                    },
-                    complete: function () {
-                        $('#t1Btn3').button("disable")
-                        $('#t1Btn3').text("Completed")
-                    }, change: function () {
-                        if ($(this).progressbar("value") < 100) {
-                            $('#t1Btn3').button("enable")
-                        }
-                        $('#pb-label3').text($('#progressBarH3').progressbar("value") + "%");
-                    }
-                });
-            //Button click
-            $('#t1Btn3').click(function (e) {
-                $('#progressBarH3').progressbar({ value: 100 });
-            })
-        });
+        // $(document).ready(function ($) {
+        //
+        //
+        //     $('#t1Btn3').button();
+        //     $('#progressBarH3').progressbar(
+        //         {
+        //             value: 0,
+        //             create: function () {
+        //                 $('#pb-label3').text($('#progressBarH3').progressbar("value") + "%");
+        //             },
+        //             complete: function () {
+        //                 $('#t1Btn3').button("disable")
+        //                 $('#t1Btn3').text("Completed")
+        //             }, change: function () {
+        //                 if ($(this).progressbar("value") < 100) {
+        //                     $('#t1Btn3').button("enable")
+        //                 }
+        //                 $('#pb-label3').text($('#progressBarH3').progressbar("value") + "%");
+        //             }
+        //         });
+        //     //Button click
+        //     $('#t1Btn3').click(function (e) {
+        //         $('#progressBarH3').progressbar({ value: 100 });
+        //     })
+        // });
     });
 </script>

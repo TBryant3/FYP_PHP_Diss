@@ -160,7 +160,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     unset($dbConnection);
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

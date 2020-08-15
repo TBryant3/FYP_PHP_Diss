@@ -12,8 +12,11 @@
     <script src="assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
+
+
     <!--Personal Icons-->
-    <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
 
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -25,7 +28,7 @@
     <style>
         .formContainer {
             padding: 1%;
-            background-color: white;
+
         }
 
         input[type=text] {
@@ -86,8 +89,8 @@
 
 
 
-<h1 style="text-align:center"><u>Contact CoJo</u></h1>
-<h2 style="text-align:center">This is the space to get in contact to ask questions and or to find out more information about any of the topics included in this application</h2>
+<h1 style="text-align:center"><u><b>Contact CoJō</b></u></h1>
+<h2 style="text-align:center">This is the area to get in contact to ask questions and or to find out more information about any of the topics included in this application</h2>
 <h3 style="text-align:center">The following form asks for the details used for your account as to help get a more tailored response for you!</h3>
 <form method="post" id="contactForm" action="">
     <div class="formContainer">
@@ -126,28 +129,37 @@
             <div class="col-md-4"></div>
         </div>
     </div>
+    <div class="row" style="text-align:center">
+    <h1 style="text-align: center"><i><b>Alternatively</b></i></h1>
+    <h1 style="text-align: center"><u><b>Find us on Social Media</b></u></h1>
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6" style="color: dodgerblue">
+            <a  href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-9x" style="cursor: pointer"></i></a>
+            <a  href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-9x" style="cursor: pointer"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-9x" style="cursor: pointer"></i></a>
+        </div>
+        <div class="col-xs-3"></div>
+    </div>
+    <br>
+    <br>
 
     <div id="formContainer">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-5">
-                <h2><u>Where we are:</u></h2>
+        <div class="row" style="text-align:center">
+            <h1><u><b>Where we are</b></u></h1>
                 <address>
-                    <br />
-                    <abbr title="Office Address" style="font-size: large"><b>Address:</b></abbr>
-                    <p>123 Carendan Road<br />
+                    <br>
+                    <abbr title="Office Address" style="font-size: x-large"><b>Address:</b></abbr>
+                    <p style="font-size: medium">123 Carendan Road<br />
                     London, EC1A 4NT</p><br />
-                    <abbr title="Telephone Number" style="font-size: large"><b>Telephone:</b></abbr>
-                    <p>0118 999 881 999 119 725 3</p>
+                    <abbr title="Telephone Number" style="font-size: x-large"><b>Telephone:</b></abbr>
+                    <p style="font-size: medium">0118 999 881 999 119 725 3</p>
                 </address>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.5132215270094!2d-0.06746489616339846!3d51.50794376357336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760357196b5e3d%3A0xb885ac56e90836e!2sIpsos%20MORI!5e0!3m2!1sen!2suk!4v1585769091840!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:solid" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
-
-
                 <address>
                     <strong>Support:</strong>   <a href="mailto:CoJoSupport@cojo.com">CoJoSupport@cojo.com</a><br />
                 </address>
-            </div>
-            <div class="col-md-4"></div>
+
+
             
 
         </div>

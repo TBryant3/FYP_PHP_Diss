@@ -1,4 +1,4 @@
-<!--@*REMOVE THE 'LEARN MORE' BUTTONS FOR SOMETHING MORE APPEALING*@-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -68,9 +68,9 @@
 </div>
 
 <div class="Welcoming">
-    <h1 style="text-align:center; color:grey"><strong>CoJō Test Centre</strong></h1>
+    <h1 style="text-align:center"><strong>CoJō Test Centre</strong></h1>
     <h3 style="text-align:center">Welcome to our Test Centre where you can check your progress on different topics and also test your knowledge on the areas you have learnt from our main Topic Languages</h3>
-    <h3 style="text-align:center">Each test has been created with the intention to help build on your knowledge and expand further with each previous tests experience, this is to help show how each component comes together ona  grander scale</h3>
+    <h3 style="text-align:center">Each test has been created with the intention to help build on your knowledge and expand further with each previous tests experience, this is to help show how each component comes together to give you a more coherent understanding of what you are accomplishing </h3>
 </div>
 <br>
 <!--First Section - Beginner-->
@@ -86,10 +86,10 @@
     </div>
     <!-- HTML/CSS -->
     <div class="col-xs-4" style="border-style:solid; height:100%; border-radius:5%; ">
-        <span style="cursor: pointer; color: lightgrey" id="favTest1" onclick="TestAlert.favTestHTML('<b>HTML/CSS Tests:</b> <br> Favourite settings have changed!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTest1" onclick="testAlert.favTestHTML('<b>HTML & CSS Tests:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color:orange; text-align:center"><b>HTML & CSS Tests <img class="topicLogos" alt="HTML Logo" src="assets/img/HTML5_logo.png" /><img class="CSS_logo"  alt="CSS Logo" src="assets/img/CSS3_logo.png"  /></b></h2>
+        <h2 style="text-align:center"><b style="color:orange">HTML</b><img class="topicLogos" alt="HTML Logo"  src="assets/img/HTML5_logo.png"  /><b style="color: blue"> CSS </b><img class="CSS_logo"  alt="CSS Logo" src="assets/img/CSS3_logo.png"  /> <b style="color: orange">Tes</b><b style="color: blue">ts</b></h2>
         <p style="text-align:center"><i>Web Development Mark-up language used to produce web pages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
         <p><a class="btn btn-default" href="htmlTestPage.php" style="color:orange"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
@@ -99,7 +99,7 @@
     </div>
     <!-- JavaScript -->
     <div class="col-xs-4" style="border-style:solid; height:100%; border-radius:5%;">
-        <span style="cursor: pointer; color: lightgrey" id="favTest2" onclick="TestAlert.favTestJS('<b>JavaScript Tests:</b> <br> Favourite settings have changed!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTest2" onclick="testAlert.favTestJS('<b>JavaScript Tests:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:goldenrod; text-align:center"><b>JavaScript Tests<img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></b></h2>
@@ -134,7 +134,7 @@
     </div>
     <!-- CPlusPlus -->
     <div class="col-xs-4" style="border-style:solid; height:100%; border-radius: 5%;">
-        <span style="cursor: pointer; color: lightgrey" id="favTest3" onclick="TestAlert.favTestPlus('<b>C++ Tests: </b><br> Favourite settings have changed!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTest3" onclick="testAlert.favTestPlus('<b>C++ Tests: </b><br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:deepskyblue; text-align:center"><b>C++ Tests <img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></b></h2>
@@ -147,7 +147,7 @@
     </div>
     <!-- C-Sharp -->
     <div class="col-xs-4" style="border-style: solid; height:100%; border-radius: 5%;">
-        <span style="cursor: pointer; color: lightgrey" id="favTest4" onclick="TestAlert.favTestSharp('<b>C# Tests:</b> <br> favourite settings have been updated!')">
+        <span style="cursor: pointer; color: lightgrey" id="favTest4" onclick="testAlert.favTestSharp('<b>C# Tests:</b> <br> favourite settings have been updated!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:rebeccapurple; text-align:center"><b>C# Tests <img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></b></h2>
@@ -202,21 +202,21 @@
 
 <script>
     // Countdown date
-    var countDownDate = new Date("Nov 3, 2021 12:30:10").getTime();
+    let countDownDate = new Date("Nov 3, 2021 12:30:10").getTime();
     //Function for counting down
-    var countDownFunc = setInterval(function()
+    let countDownFunc = setInterval(function()
     {
         // Setting today's date
-        var current = new Date().getTime();
+        let current = new Date().getTime();
         // Time difference between countdown date and now
-        var difference = countDownDate - current;
+        let difference = countDownDate - current;
         //Setting time variables
-        var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        // Output the result in an element with id="demo"
+      // Output the result in an element with id="demo"
         document.getElementById("countDownArea").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
@@ -228,17 +228,17 @@
 
     }, 1000);
 
-    var favTest1 = document.getElementById("favTest1");
-    var favTest2 = document.getElementById("favTest2");
-    var favTest3 = document.getElementById("favTest3");
-    var favTest4 = document.getElementById("favTest4");
+    let favTest1 = document.getElementById("favTest1");
+    let favTest2 = document.getElementById("favTest2");
+    let favTest3 = document.getElementById("favTest3");
+    let favTest4 = document.getElementById("favTest4");
 
     function favTestAlert()
     {
         // First (HTML/CSS) Tests Alert Settings //
         this.favTestHTML = function(dialog)
         {
-            var alertBox1 = document.getElementById('alertBox1');
+            let alertBox1 = document.getElementById('alertBox1');
 
             if (favTest1.click && favTest1.style.color === 'lightgrey')
             {
@@ -276,7 +276,7 @@
         // Second (JS) Alert Settings //
         this.favTestJS = function(dialog2)
         {
-            var alertBox2 = document.getElementById('alertBox2');
+            let alertBox2 = document.getElementById('alertBox2');
 
             if (favTest2.click && favTest2.style.color === 'lightgrey')
             {
@@ -316,7 +316,7 @@
         // Third (C++) Tests Alert Settings //
         this.favTestPlus = function(dialog3)
         {
-            var alertBox3 = document.getElementById('alertBox3');
+            let alertBox3 = document.getElementById('alertBox3');
 
             if (favTest3.click && favTest3.style.color === 'lightgrey')
             {
@@ -354,7 +354,7 @@
         // Fourth (C#) Tests Alert Settings //
         this.favTestSharp = function(dialog4)
         {
-            var alertBox4 = document.getElementById('alertBox4');
+            let alertBox4 = document.getElementById('alertBox4');
 
             if (favTest4.click && favTest4.style.color === 'lightgrey')
             {
@@ -391,109 +391,64 @@
         }
     }
 
-
-
-    // function favourite1()
-    // {
-    //     if (favTest1.style.color === 'lightgrey') {
-    //         favTest1.style.color = 'green';
-    //         alert("HTML Tests added to Favourites!");
-    //     } else if (favTest1.style.color === 'green') {
-    //         favTest1.style.color = 'lightgrey';
-    //         alert("HTML Tests removed from Favourites!");
-    //     }
-    //     // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-    // }
-    // function favourite2()
-    // {
-    //     if (favTest2.style.color === 'lightgrey') {
-    //         favTest2.style.color = 'green';
-    //     } else if (favTest2.style.color === 'green') {
-    //         favTest2.style.color = 'lightgrey';
-    //     }
-    //     // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-    // }
-    // function favourite3() {
-    //     if (favTest3.style.color === 'lightgrey') {
-    //         favTest3.style.color = 'green';
-    //     } else if (favTest3.style.color === 'green') {
-    //         favTest3.style.color = 'lightgrey';
-    //     }
-    //     // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-    // }
-    // function favourite4()
-    // {
-    //     if (favTest4.style.color === 'lightgrey')
-    //     {
-    //         favTest4.style.color = 'green';
-    //     }
-    //     else if (favTest4.style.color === 'green')
-    //     {
-    //         favTest4.style.color = 'lightgrey';
-    //     }
-    //     // PUSH TO DB ON FAV CLICK /////////////////////////////////////
-    // }
-
-    var TestAlert = new favTestAlert();
-
+    let testAlert = new favTestAlert();
 
 
     // Progress Bar Scripts ///
     $(document).ready(function ($)
     {
         $('#pbTest1').progressbar(
-            {
-                value: false,
-                create: function () {
-                    $('#htmlTest-label').text($('#pbTest1').progressbar("value"));
-                },
-                complete: function () {
-                    $('#htmlTest-label').append("Completed")
-                },
-                change: function () {
-                    $('#htmlTest-label').text($('#pbTest1').progressbar("value"));
-                }
-            });
+        {
+            value: 0,
+            create: function () {
+                $('#htmlTest-label').text($('#pbTest1').progressbar("value") + "%");
+            },
+            change: function () {
+                $('#htmlTest-label').text($('#pbTest1').progressbar("value") + "%");
+            },
+            complete: function () {
+                $('#htmlTest-label').append("Completed")
+            }
+        });
         $('#pbTest2').progressbar(
-            {
-                value: false,
-                create: function () {
-                    $('#csharpTest-label').text($('#pbTest2').progressbar("value"));
-                },
-                complete: function () {
-                    $('#csharpTest-label').text("Completed!")
-                },
-                change: function () {
-                    $('#csharpTest-label').text($('#pbTest2').progressbar("value"));
-                }
-            });
+        {
+            value: 0,
+            create: function () {
+                $('#csharpTest-label').text($('#pbTest2').progressbar("value") + "%");
+            },
+            change: function () {
+                $('#csharpTest-label').text($('#pbTest2').progressbar("value") + "%");
+            },
+            complete: function () {
+                $('#csharpTest-label').text("Completed!")
+            }
+        });
         $('#pbTest3').progressbar(
-            {
-                value: false,
-                create: function () {
-                    $('#cplusTest-label').text($('#pbTest3').progressbar("value"));
-                },
-                complete: function () {
-                    $('#cplusTest-label').text("Completed!")
-                },
-                change: function () {
-                    $('#cplusTest-label').text($('#pbTest3').progressbar("value"));
-                }
-            });
-
+        {
+            value: 0,
+            create: function () {
+                $('#cplusTest-label').text($('#pbTest3').progressbar("value") + "%");
+            },
+            change: function () {
+                $('#cplusTest-label').text($('#pbTest3').progressbar("value") + "%");
+            },
+            complete: function () {
+                $('#cplusTest-label').text("Completed!")
+            }
+        });
         $('#pbTest4').progressbar(
-            {
-                value: false,
-                create: function () {
-                    $('#jsTest-label').text($('#pbTest4').progressbar("value"));
-                },
-                complete: function () {
-                    $('#jsTest-label').text("Completed!")
-                },
-                change: function () {
-                    $('#jsTest-label').text($('#pbTest4').progressbar("value"));
-                }
-            });
+        {
+            value: 0,
+            create: function () {
+                $('#jsTest-label').text($('#pbTest4').progressbar("value") + "%");
+            },
+            change: function () {
+                $('#jsTest-label').text($('#pbTest4').progressbar("value") + "%");
+            },
+            complete: function () {
+                $('#jsTest-label').text("Completed!")
+            }
+        });
     });
     </script>
 </body>
