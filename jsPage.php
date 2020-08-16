@@ -13,6 +13,9 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
 
+    <script src="assets/js/CustomScripts/accordionScripts.js"></script>
+
+
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
@@ -24,7 +27,7 @@
     <style>
         .accordions
         {
-            padding-left: 5%;
+            height: 250px;
         }
     </style>
 </head>
@@ -172,7 +175,7 @@
             </p>
             <h3 class="learnTitles">JavaScript Referencing </h3>
             <p>
-                In this example, it is showing you that firstly you need to specify the script tag, then specify where the file is, and then finally, specify what the file type is -> <b>< script src="~/Scripts/javascriptFile.js" type="text/javascript"> < /script ></b>
+                In this example, it is showing you that firstly you need to specify the script tag, then specify where the file is, and then finally, specify what the file type is.
             </p>
         </div>
         <br />
@@ -186,7 +189,7 @@
 <br>
 
 <!--------------------------------------------------------------More Learning Modules-------------------------------------------------------------->
-<div class="row" style="height:500px">
+<div class="row" style="height:350px">
     <h1 style="text-align: center"><b><u>More Modules</u></b></h1>
     <!--Part 4 - Introduction to JS variables-->
     <div class="col-xs-4" style="border:solid; height:auto; background-color:lightgreen">
@@ -219,9 +222,9 @@
             <h3 class="learnTitles">Why use JS over other languages?</h3>
             <p>
                 JavaScript is a scripting language and so you will need to know what exactly a 'Scripting Language' is to fully understand what this entails.
-                By 'Scripting Language' what we mean is that the code that is carried out by your IDE is read in a seperate way to your usual HTML or CSS.
+                By 'Scripting Language' what we mean is that the code that is carried out by your IDE is read in a separate way to your usual HTML or CSS.
             </p>            
-            <h3 class="learnTitles">JavaScript Applications</h3>
+            <h3 class="learnTitles">JavaScript Applications</h3 class="learnTitles">
             <p>JavaScript is a recognised language world-wide and so most development environments would be compatible with it. There is also.................... </p>
             <h3 class="learnTitles">Example use of Script Tags</h3>
             <p>
@@ -263,25 +266,43 @@
 
 <br>
 
-<!--Second Section Demos / Showing theory in a graphical way (This aids imagery / visual learners)-->
-<div class="row" style="height:500px">
+
+
+
+
+
+<!-------------------Second Section Demos / Showing theory in a graphical way (This aids imagery / visual learners)------------------------->
+<div class="row" style="height:550px; text-align: center">
     <h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
     <!--Demo One-->
-    <div class="col-xs-3" style="border:solid; height:100%">
-        <h2><u>Key JS Variables</u></h2>
+    <div class="col-xs-4" style="border:solid; height:90%">
+        <h2><u>Including JavaScript on a Web App</u></h2>
+        <div id="accordionP7" class="accordions">
+            <h3 class="learnTitles">Step 1:</h3>
+            <p>Ensure that you are developing using an IDE or software that supports JavaScript! The most commonly used platforms would be that of Visual Studio, WebStorm, Atom and Brackets. All of which have free versions that include a variety of tools to give you the capabilities you are looking for! </p>
+            <h3 class="learnTitles">Step 2:</h3>
+            <p>Load up your IDE and create a new project. Most web development applications are developed within either a HTML or PHP base as these languages allow for JavaScript integration. Once done, create a new file and select the JavaScript option from the provided list, you should now you should have a '.js' file.</p>
+            <h3 class="learnTitles">Step 3:</h3>
+            <p>Now you can create JavaScript functions, classes and more without getting them mixed up within your main file. Have no fear, you can link this JS file to your main application document by using the following:
+                <br>
+                <img src="assets/img/Screenshots/ScriptTags.png">
+            </p>
+            <h3 class="learnTitles">Step 4:</h3>
+            <p>Using these Script Tags, we are able to include external JavaScript files to our documents. Internal JavaScript is included by simply using the Script tags with no parameters and simply writing your JS code in between the opening and closing tags like so:
+                <img src="assets/img/Screenshots/singleScriptTags.png">
+            </p>
+        </div>
+        <div style="position: relative">
+            Be sure you remember to use BOTH opening and closing script tags as this will throw errors within your application if not done so!
+        </div>
     </div>
     <!--Demo Two-->
-    <div class="col-xs-3" style="border:solid; height:100%">
-        <h2><u>Including JavaScript on a Web App</u></h2>
-        <p>We at CoJō want to give you the best possible experience and so you'll want to understand what a coding language is! Click here to find out more</p>
+    <div class="col-xs-4" style="border:solid; height:100%">
+        <h2><u>JavaScript Events</u></h2>
+        <button>Click me!</button>
     </div>
     <!--Demo Three-->
-    <div class="col-xs-3" style="border:solid; height:100%">
-        <h2><u>JavaScript Events</u></h2>
-        <p></p>
-    </div>
-    <!--Demo Four-->
-    <div class="col-xs-3" style="border:solid; height:100%">
+    <div class="col-xs-4" style="border:solid; height:100%">
         <h2><u>For the Coding Veterans</u></h2>
         <p></p>
     </div>
@@ -324,82 +345,24 @@
 
 
 <script>
-    //Function for collapsing the Accordion information //
-    function collapse()
-    {
-        // Set 1 //
-        $("#accordionP1").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-
-            });
-        $("#accordionP2").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-            });
-        $("#accordionP3").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-            });
-        // Set 2 //
-        $("#accordionP4").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-            });
-        $("#accordionP5").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-            });
-        $("#accordionP6").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-            });
-    }
-    collapse();
-
     // Progress Bars Scripts //
 
     $(document).ready(function ($)    
     {
         // 1 //
         // Initialise Button //
-        // $('#t4Btn1').button();
         $('#progressBarJ1').progressbar(
             {
                 value: 0,
-                create: function (e)
+                create: function ()
                 {
                     $('#pbj-label1').text($('#progressBarJ1').progressbar("value"));
                 },
-                complete: function (e) {
+                complete: function () {
                     $('#t4Btn1').button("disable"),
                         $('#t4Btn1').text("Completed")
                 },
-                change: function (e)
+                change: function ()
                 {
                     if ($(this).progressbar("value") < 100)
                     {
@@ -409,12 +372,11 @@
                 }
             });
             //Button click //
-        $('#t4Btn1').click(function (e) {
+        $('#t4Btn1').click(function () {
             $('#progressBarJ1').progressbar({ value: 100 });
         });               
         // 2 // 
         // Initialise Button //
-        $('#t4Btn2').button();
         $('#progressBarJ2').progressbar(
             {
                 value: 0,
@@ -438,7 +400,6 @@
 
         // 3 //
         // Initialise Button //
-        $('#t4Btn3').button();
         $('#progressBarJ3').progressbar(
             {
                 value: 0,
@@ -462,7 +423,6 @@
                 
         // 4 //
         // Initialise Button //
-        $('#t4Btn4').button();
         $('#progressBarJ4').progressbar(
             {
                 value: 0,
@@ -488,7 +448,6 @@
             
         // 5 //
         // Initialise Button //
-        $('#t4Btn5').button();
         $('#progressBarJ5').progressbar(
             {
                 value: 0,
@@ -512,7 +471,6 @@
                 
             // 6 //  
             // Initialise Button //
-        $('#t4Btn6').button();
         $('#progressBarJ6').progressbar(
             {
                 value: 0,

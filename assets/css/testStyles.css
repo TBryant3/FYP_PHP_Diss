@@ -1,7 +1,7 @@
 /*//////////////////////////*/
 /*First set of questions*/
 /*//////////////////////////*/
-#question1
+#HTMLquestion1
 {
     width: 100%;
     height:10%;
@@ -11,12 +11,12 @@
     padding-bottom: 1%;
     padding-top: 4%;
 }
-#answers1
+#HTMLanswers1
 {
     width: 100%;
     padding: 2%;
 }
-.choices1
+.HTMLchoices1
 {
     display: inline-block;
     width : 32%;
@@ -26,20 +26,20 @@
     cursor: pointer;
     padding : 5px;
 }
-.choices1:hover
+.HTMLchoices1:hover
 {
     border : 4px solid white;
     font-weight: bold;
 }
 
-#resultProgress1
+#HTMLresultProgress1
 {
     position: relative;
     padding:5px;
     width: 65%;
     margin-left: 35%;
 }
-.prog1
+.HTMLprog1
 {
     width: 35px;
     height: 35px;
@@ -48,7 +48,7 @@
     border-radius: 50%;
     margin-left: 5px;
 }
-#scoreContainer1
+#HTMLscoreContainer1
 {
 
     background-color: white;
@@ -56,7 +56,7 @@
     border-radius: 5px;
     position: relative;
 }
-#scoreContainer1 p
+#HTMLscoreContainer1 p
 {
     width : 100%;
     font-size: 1.5em;
@@ -70,7 +70,7 @@
 /*//////////////////////////*/
 /*Second set of questions*/
 /*//////////////////////////*/
-#question2
+#HTMLquestion2
 {
     width: 100%;
     height:10%;
@@ -80,12 +80,12 @@
     padding-bottom: 1%;
     padding-top: 4%;
 }
-#answers2
+#HTMLanswers2
 {
     width: 100%;
     padding: 5%;
 }
-.choices2
+.HTMLchoices2
 {
     display: inline-block;
     width : 32%;
@@ -95,20 +95,20 @@
     cursor: pointer;
     padding : 5px;
 }
-.choices2:hover
+.HTMLchoices2:hover
 {
     border : 4px solid white;
     font-weight: bold;
 }
 
-#resultProgress2
+#HTMLresultProgress2
 {
     position: relative;
     padding:5px;
     width: 65%;
     margin-left: 33%;
 }
-.prog2
+.HTMLprog2
 {
     width: 35px;
     height: 35px;
@@ -117,7 +117,7 @@
     border-radius: 50%;
     margin-left: 5px;
 }
-#scoreContainer2
+#HTMLscoreContainer2
 {
 
     background-color: white;
@@ -127,7 +127,7 @@
 
 }
 
-#scoreContainer2 p
+#HTMLscoreContainer2 p
 {
     width : 100%;
     font-size: 1.5em;
@@ -141,7 +141,7 @@
 /*//////////////////////////*/
 /*Third set of questions*/
 /*//////////////////////////*/
-#question3
+#HTMLquestion3
 {
     width: 100%;
     height:10%;
@@ -151,12 +151,12 @@
     padding-bottom: 1%;
     padding-top: 4%;
 }
-#answers3
+#HTMLanswers3
 {
     width: 100%;
     padding: 2%;
 }
-.choices3
+.HTMLchoices3
 {
     display: inline-block;
     width : 32%;
@@ -166,20 +166,20 @@
     cursor: pointer;
     padding : 5px;
 }
-.choices3:hover
+.HTMLchoices3:hover
 {
     border : 4px solid white;
     font-weight: bold;
 }
 
-#resultProgress3
+#HTMLresultProgress3
 {
     position: relative;
     padding:5px;
     width: 65%;
     margin-left: 33%;
 }
-.prog3
+.HTMLprog3
 {
     width: 35px;
     height: 35px;
@@ -188,7 +188,7 @@
     border-radius: 50%;
     margin-left: 5px;
 }
-#scoreContainer3
+#HTMLscoreContainer3
 {
 
     background-color: white;
@@ -196,7 +196,7 @@
     border-radius: 5px;
     position: relative;
 }
-#scoreContainer3 p
+#HTMLscoreContainer3 p
 {
     width : 100%;
     font-size: 1.5em;

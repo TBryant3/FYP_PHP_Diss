@@ -89,9 +89,10 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>Question 1:</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
 
@@ -115,9 +116,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -141,9 +142,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -167,9 +168,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -194,9 +195,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -221,43 +222,43 @@
 <!--Scripts-->
 <script>
 
-    const question = document.getElementById("question");
-    const answerA = document.getElementById("A");
-    const answerB = document.getElementById("B");
-    const answerC = document.getElementById("C");
-
-    let whiteQuestions = [
-        {
-            question : "Which of these tags do you need to add JavaScript to a HTML document?",
-            answerA : "Script",
-            answerB : "Div",
-            answerC : "Style",
-            correctAnswer : "A"
-        },
-        {
-            question : "What type of computing language is JavaScript?",
-            answerA : "Mark-Up",
-            answerB : "StyleSheet",
-            answerC : "Scripting",
-            correctAnswer : "C"
-        },
-        {
-            question : "JavaScript can be used to create webpages instead of HTML?",
-            answerA : "True",
-            answerB : "False",
-            answerC : "Sometimes",
-            correctAnswer : "B"
-        },
-    ];
-
-    function correctAnswer()
-    {
-
-    }
-    function wrongAnswer()
-    {
-
-    }
+    // const question = document.getElementById("question");
+    // const answerA = document.getElementById("A");
+    // const answerB = document.getElementById("B");
+    // const answerC = document.getElementById("C");
+    //
+    // let whiteQuestions = [
+    //     {
+    //         question : "Which of these tags do you need to add JavaScript to a HTML document?",
+    //         answerA : "Script",
+    //         answerB : "Div",
+    //         answerC : "Style",
+    //         correctAnswer : "A"
+    //     },
+    //     {
+    //         question : "What type of computing language is JavaScript?",
+    //         answerA : "Mark-Up",
+    //         answerB : "StyleSheet",
+    //         answerC : "Scripting",
+    //         correctAnswer : "C"
+    //     },
+    //     {
+    //         question : "JavaScript can be used to create webpages instead of HTML?",
+    //         answerA : "True",
+    //         answerB : "False",
+    //         answerC : "Sometimes",
+    //         correctAnswer : "B"
+    //     },
+    // ];
+    //
+    // function correctAnswer()
+    // {
+    //
+    // }
+    // function wrongAnswer()
+    // {
+    //
+    // }
 
 
 
@@ -294,16 +295,6 @@
 
             });
 
-    }
-
-
-    function showHint1()
-    {
-        document.getElementById("hintText1").innerHTML = "Remember that adding values is the same as in maths equations";
-    }
-    function checkAnswer1()
-    {
-        // if (){};
     }
 
 

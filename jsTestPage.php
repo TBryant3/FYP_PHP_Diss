@@ -15,8 +15,11 @@
 <script src="assets/js/bootstrap.js"></script>
 
 <!-- External Test Scripts -->
-<script src="assets/js/whiteTierQuestions.js"></script>
-<script src="assets/js/orangeTierQuestions.js"></script>
+<script src="assets/js/CustomScripts/whiteTierQuestions.js"></script>
+<script src="assets/js/CustomScripts/orangeTierQuestions.js"></script>
+<script src="assets/js/CustomScripts/countDownScript.js"></script>
+
+
 
 <!--Personal Icons-->
 <link href="assets/css/all.min.css" rel="stylesheet" />
@@ -200,63 +203,9 @@
     <!------------------------------------Test Tier 5------------------------------------------------------------------->
     <div class="container" style="border: dashed; color: black">
         <h1 style="text-align:center"><b> Black Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
-        <h3 style="text-align:center">These tests are designed to take the information that you have learnt from the JavaScript Topic Page and apply it to see how the code works for yourself.</h3>
-
+            <h2 style="color:black; text-align:center"><b>Coming Soon</b></h2>
+            <p id="countDownArea" style="text-align:center; font-size: x-large"></p>
     </div>
-
-<!--Scripts-->
-<script>
-
-    /
-
-
-
-
-
-
-
-    //Function for collapsing the Accordion information //
-    function collapse()
-    {
-
-        // Set 1 //
-        $("#accordJTW1").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-
-            });
-        $("#accordJTW2").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-
-            });
-        $("#accordJTW3").accordion(
-            {
-                active: false,
-                collapsible: true,
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-
-            });
-
-    }
-
-
-
-
-
-    collapse();
-
-</script>
 </body>
 </html>
 

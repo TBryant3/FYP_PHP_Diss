@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/CSS Page</title>
-
     <!--Browser version support-->
     <script src="assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
@@ -13,6 +12,9 @@
     <script src="assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/CustomScripts/accordionScripts.js"></script>
 
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -94,7 +96,7 @@
             <b style="text-align: center; font-size: x-large"><i>
                 Developed by Hakon Wium Lie in 1994,
                 <br>
-                First standard published in 1996 by W3C!</i>
+                First standard published in 1996 by W3!</i>
             </b>
         </h1>
         <br>
@@ -201,50 +203,12 @@
     </div>
     <div class="col-xs-2"></div>
 </div>
-
-</body>
-</html>
 <script>
-    //Function for collapsing the Accordion information //
-    function collapse()
-    {
-        // Set 1 //
-        $("#accordionH1").accordion(
-            {
-                active: false,
-                collapsible: true,
-                event:"mouseover",
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-
-            });
-        $("#accordionH2").accordion(
-            {
-                active: false,
-                collapsible: true,
-                event:"mouseover",
-                heightStyle: true,
-                animate: 150,
-                icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-            });
-        // $("#accordionH3").accordion(
-        //     {
-        //         active: false,
-        //         collapsible: true,
-        //         heightStyle: true,
-        //         animate: 150,
-        //         icons:{header: "ui-icon-circle-plus", activeHeader: "ui-icon-circle-minus"}
-        //     });
-    }
-    collapse();
-
-
-    $(document).ready(function ($)
+    $(document).ready(function ()
     {
         const t1Btn1 = $('#t1Btn1');
-
         t1Btn1.button("enable");
+
         $('#progressBarH1').progressbar(
             {
                 value: 0,
@@ -263,70 +227,42 @@
                 complete: function ()
                 {
                     t1Btn1.button("disable").text("Completed");
-                    t1Btn1.style.backgroundColor = "slategrey";
                 }
             });
         //Button click
         t1Btn1.click(function ()
         {
             $('#progressBarH1').progressbar({ value: 100 });
-        })
-
-        $(document).ready(function ($)
-        {
-            const t1Btn2 = $('#t1Btn2');
-            t1Btn2.button("enable");
-
-            $('#progressBarH2').progressbar(
-                {
-                    value: 0,
-                    create: function ()
-                    {
-                        $('#pb-label2').text($('#progressBarH2').progressbar("value") + "%");
-                    },
-                    change: function ()
-                    {
-                        if ($(this).progressbar("value") < 100) {
-                            t1Btn2.button("enable")
-                        }
-                        $('#pb-label2').text($('#progressBarH2').progressbar("value") + "%");
-                    },
-                    complete: function ()
-                    {
-                        t1Btn2.button("disable").text("Completed or is it?");
-                        t1Btn2.style.opacity ="0.2";
-                    },
-                });
-            //Button click
-            t1Btn2.click(function () {
-                $('#progressBarH2').progressbar({ value: 100 });
-            })
         });
 
-        // $(document).ready(function ($) {
-        //
-        //
-        //     $('#t1Btn3').button();
-        //     $('#progressBarH3').progressbar(
-        //         {
-        //             value: 0,
-        //             create: function () {
-        //                 $('#pb-label3').text($('#progressBarH3').progressbar("value") + "%");
-        //             },
-        //             complete: function () {
-        //                 $('#t1Btn3').button("disable")
-        //                 $('#t1Btn3').text("Completed")
-        //             }, change: function () {
-        //                 if ($(this).progressbar("value") < 100) {
-        //                     $('#t1Btn3').button("enable")
-        //                 }
-        //                 $('#pb-label3').text($('#progressBarH3').progressbar("value") + "%");
-        //             }
-        //         });
-        //     //Button click
-        //     $('#t1Btn3').click(function (e) {
-        //         $('#progressBarH3').progressbar({ value: 100 });
-        //     })
-        // });
+        const t1Btn2 = $('#t1Btn2');
+        t1Btn2.button("enable");
+
+        $('#progressBarH2').progressbar(
+            {
+                value: 0,
+                create: function ()
+                {
+                    $('#pb-label2').text($('#progressBarH2').progressbar("value") + "%");
+                },
+                change: function ()
+                {
+                    if ($(this).progressbar("value") < 100) {
+                        t1Btn2.button("enable")
+                    }
+                    $('#pb-label2').text($('#progressBarH2').progressbar("value") + "%");
+                },
+                complete: function ()
+                {
+                    t1Btn2.button("disable").text("Completed or is it?");
+                },
+            });
+        //Button click
+        t1Btn2.click(function ()
+        {
+            $('#progressBarH2').progressbar({ value: 100 });
+        });
     });
 </script>
+</body>
+</html>
