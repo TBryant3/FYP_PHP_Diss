@@ -21,4 +21,5 @@ Other Tools
 - Trello Board (https://trello.com/invite/b/91klsOYf/d1c768cbade37dee09058eb832941879/dissertation-project)
 - Visual Studio 2019
 - PHP Storm
+-  WAMP Server
 - Github Repository
