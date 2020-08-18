@@ -1,5 +1,4 @@
 
-
     $(document).ready(function () {
         // Countdown date
         let countDownDate = new Date("Nov 3, 2021 12:30:10").getTime();
@@ -28,11 +27,4 @@
         }, 1000);
     });
 
-    $(document).ready(function ()
-    {
-        document.getElementById("example").innerHTML = "This is the Output in plain English";
 
-
-
-
-    });

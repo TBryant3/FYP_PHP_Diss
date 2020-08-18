@@ -176,7 +176,8 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
     <!--Personal Icons-->
-    <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
 
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />

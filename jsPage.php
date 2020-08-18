@@ -27,7 +27,7 @@
     <!--Styling to be moved to CSS file-->
 
     <script>
-        let image1 = 'assets/img/Screenshots/calculationCode.png';
+        let image1 = 'assets/img/Screenshots/calculationCode_Commented.png';
         function customPopImage()
         {
             this.imageRender1 = function ()
@@ -369,18 +369,29 @@
 
 
 
-            // Code for Theory explanations //
+            // Code for Theory explanation //
+            //This line of code obtains a button named 'btnEvent' with which we've attached
+            // an EventListener allowing for multiple types of interaction by the user.
+            // In this example we are using the parameters of a mouse 'click' to run the function 'displayText().
             document.getElementById("btnEvent").addEventListener("click", displayText);
-            function displayText()
-            {
-                document.getElementById("eventText").innerHTML = "<i>You just activated an event!! By clicking the button, you have triggered some JavaScript code was ran to display this message to you</i>";
+            //This is the function which showed you the text after the 'click' event!
+            function displayText() {
+                //This obtains the element which holds said text, the '.innerHTML' suffix
+                // points the JS function towards the string within the HTML DOM.
+                document.getElementById("eventText").innerHTML =
+                    //Plain text can be indicated using double or single quote marks
+                "You just activated an event!! By clicking that button, you have " +
+                'triggered some JavaScript code to run and display this message to you!';
             }
-
+            // In this example we are activating the event through a 'mouseover' action which
+            // means the event triggers when the cursor is placed over the element rather then clicking it.
             document.getElementById("btnEvent2").addEventListener("mouseover", displayMoreText);
+
             document.getElementById("btnEvent2").addEventListener("click", displayImage);
             function displayMoreText()
             {
                 document.getElementById("eventText2").innerHTML = "<i>You've just activated another event, Click the same button to show an image and see how can create your own Event Listener</i>";
+                document.getElementById("btnEvent2").innerHTML = "Now click me again!"
             }
 
             function displayImage()
@@ -594,15 +605,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 <!--------------------------------------------------------------More Learning Modules-------------------------------------------------------------->
 <div class="row" style="height:450px">
     <h1 style="text-align: center"><b><u>Theory Modules Part 2</u></b></h1>
@@ -689,6 +691,9 @@
 
 
 
+
+
+
 <!-------------------Second Section Demos / Showing theory in a graphical way (This aids imagery / visual learners)------------------------->
 <div class="row" style="height:600px; text-align: center">
     <h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
@@ -700,7 +705,7 @@
         </div>
     </div>
     <!--Demo One-->
-    <div class="col-xs-4" style="border:solid; height:90%">
+    <div class="col-xs-4" style="height:90%">
         <h2><u>Including JavaScript on a Web App</u></h2>
         <div id="accordionP7" class="accordions">
             <h3 class="learnTitles">Step 1:</h3>
@@ -725,20 +730,19 @@
 
 
     <!--Demo Two-->
-    <div class="col-xs-4" style="border:solid; height:100%">
+    <div class="col-xs-4" style="height:100%">
         <h2><u>JavaScript Functions</u></h2>
         <p>JavaScript functions are a block of code designed to be triggered when a specific action is carried out by the user, application, browser or when a certain parameter is met</p>
         <p>Functions can be used to create mathematical equations such as the following button and following function: <button id="funcBtn">Input two numbers to add them together</button></p>
 
-
-
         <div id="funcBox" style="display: none">
             <label for="userInput1">First Value:</label>
-            <input type="text" id="userInput1" style="width: 10%"> +
-            <label for="userInput2">Second Value: </label>
+            <input type="text" id="userInput1" style="width: 10%"> + <label for="userInput2">Second Value: </label>
             <input type="text" id="userInput2" style="width: 10%"> =
             <b id="funcResult" style="font-size: medium"></b>
                 <br>
+            <br>
+
             <button id="btnCalc">Calculate</button> <button id="btnClear">Clear Values</button>
             <br>
             <br>
@@ -749,31 +753,34 @@
         </div>
     </div>
     <!--Demo Three-->
-    <div class="col-xs-4" style="border:solid; height:100%">
+    <div class="col-xs-4" style="height:100%">
         <h2><u>JavaScript Events</u></h2>
         <p>There are many different events within JavaScript such as mouse clicks and actions that the user can carry out then then trigger such events.</p>
         <p>Here are just a few examples!</p>
-        <p><b><u>Event 1: Event Listeners - Example through button click</u></b></p>
+        <p><b><u>Event Listeners - Example through button click</u></b></p>
         <button id="btnEvent">Click me!</button>
         <p id="eventText"></p>
-
+        <br>
         <button id="btnEvent2">Move your mouse cursor over this instead!</button>
         <p id="eventText2"></p>
-        <img id="eventScreenshot" src="assets/img/Screenshots/eventListener1.png" alt="Event Listener image" style="display: none; width: 100%; height: 15%" />
+        <img id="eventScreenshot" src="assets/img/Screenshots/eventListener_Commented.png" alt="Event Listener image" style="display: none; width: 100%; height: 100%" />
         <br>
         <p>All events can be customised to adapt to how the user interacts within the HTML DOM or Browser and so changing the options for these with JavaScript can lead to many different possibilities and outcomes within your programming of web applications. </p>
     </div>
 </div>
 <div class="row" style="height:255px">
     <div class="col-xs-2" style="height:100%"></div>
-        <div class="col-xs-8" style="border:solid; height:100%; text-align: center">
-            <h2 style="text-align: center"><b>For the Coding Veterans</b></h2>
+        <div class="col-xs-8" style="text-align: center">
+            <h2 style="text-align: center"><b>For the Coding Sensei in-training!</b></h2>
             <h3>Are you ready to Test Your Knowledge on what you have learnt?</h3>
+            <h3 style="color: goldenrod; text-align:center">Let's get started with some tests!<a class="btn-link" href="jsTestPage.php"><b><i style="color: lightblue">JavaScript Test Page HERE</i></b></a> </h3>
         </div>
     <div class="col-xs-2" style="height:100%"></div>
 </div>
+<br>
+<br>
 <!--Row 4 - 1 box Helpful JavaScript guides / Add-Ons-->
-<h1 style="color: goldenrod; text-align: center; font-family: "><b><u>Useful JavaScript Extras and Libraries</u></b></h1>
+<h1 style="text-align: center"><b><u> Useful JavaScript Extras and Libraries</u></b></h1>
 <br>
 <div class="row" style="text-align: center">
     <div class="col-xs-2">

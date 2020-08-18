@@ -322,9 +322,12 @@
     display: none;
     position: relative;
     background-color: lightgreen;
-    border-radius: 3%;
-    width: 50%;
-    z-index: 9;
+    border-radius: 1%;
+    width: 100%;
+    height: auto;
+    z-index: 8;
+    padding: 0.5%;
+    float: top;
 }
 #popImageBox1 > div
 {
@@ -334,6 +337,9 @@
 #popImageBox1 > div > #popImageBoxHeader1
 {
     background-color: #333333;
+    border-radius: 2%;
+    width: 100%;
+    z-index: 9;
     color: green;
     text-align: center;
     font-weight: bold;
@@ -343,21 +349,24 @@
 #popImageBox1 > div > #popImageBoxBody1
 {
     background-color: #666666;
+    border-radius: 1%;
+    z-index: 9;
     color: black;
     text-align: center;
-    padding:20px;
+    /*padding:5px;*/
 }
 #popImageBox1 > div > #popImageBoxBody1 > #testImg
 {
     background-color: #666666;
     color: black;
     text-align: center;
-    padding:20px;
+    padding:10px;
 }
 #popImageBox1 > div > #popImageBoxFooter1
 {
     background-color: #333333;
     text-align: right;
+    z-index: 9;
     font-weight: bold;
     font-size: large;
     padding:10px;

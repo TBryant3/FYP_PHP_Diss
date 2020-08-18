@@ -112,7 +112,8 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
     <!--Personal Icons-->
-    <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
 
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -123,21 +124,23 @@
     <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
-
-
         input[type=text], input[type=password] {
-            width: 100%;
+            width: 50%;
             padding: 1%;
+            margin: 0;
         }
 
         input[type=text]:focus, input[type=password]:focus {
             background-color: #ddd;
         }
+        #projectLogo
+        {
+            width:15%;
+            height:15%;
+
+        }
 
 
-        /*.submit:hover {*/
-        /*    background-color: darkgray;*/
-        /*}*/
     </style>
 </head>
 
@@ -186,23 +189,38 @@
     <div class="formContainer">
         <h2 style="text-align:center"><strong>Login to access your Inner Warrior!</strong></h2>
         <br>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4">
+                <div class="text-center">
+                    <img src="assets/img/CoJo_Logo.png" alt="Cojo Logo" id="projectLogo">
+                </div>
+            </div>
+            <div class="col-xs-4"></div>
+
+        </div>
         <h4 style="text-align:center">Login to unlock all of the features exclusive to your account!</h4>
         <h4 style="text-align: center ">See your total progress within each Topic and be able to track your test scores and progress from your <a href="account.php">Account </a>page!</h4>
         <br />
         <div class="row" style="vertical-align: center">
             <div class="col-xs-4"></div>
             <div class="col-xs-4">
-                <div class="row" style="vertical-align: center">
-                    <i class="fa fa-user"></i>
-                    <label for="username" style="width:25%">Username:</label>
-                    <input type="text" name="username" placeholder="Insert username..." class="form-control" required />
+                <div class="row">
+                    <div class="text-center">
+                        <i class="fa fa-user"></i>
+                        <label for="username" style="width:25%">Username:
+
+                            <input type="text" name="username" placeholder="Insert username..." class="form-control" required />
+                        </label>
+                    </div>
                 </div>
                 <br />
-                <div class="row" style="vertical-align: center">
-                    <i class="fa fa-key"></i>
-                    <label for="psw" style="width:24.5%">Password:</label>
-                    <input type="password" name="password" placeholder="Insert password..." class="form-control" style="margin: 0" required />
-                    <p>Forgotten your password? <a href="forgotPsw.php">Click me to recover</a>!</p>
+                <div class="row">
+                    <div class="text-center">
+                        <i class="fa fa-key"></i><label for="psw" style="width:24.5%">Password:</label>
+                        <input type="password" name="password" placeholder="Insert password..." class="form-control" style="margin: 0" required />
+                        <p>Forgotten your password? <a href="forgotPsw.php">Click me to recover</a>!</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-4"></div>

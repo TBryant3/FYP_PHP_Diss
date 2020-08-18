@@ -205,11 +205,11 @@
     color: black;
     font-family: monospace;
 }
-/*///////////////////////////////////*/
-/*///////////////////////////////////*/
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
 /*///////Test set 4 ORANGE 1////////////*/
 
-#question4
+#HTMLquestion4
 {
     width: 100%;
     height:10%;
@@ -219,12 +219,12 @@
     padding-bottom: 1%;
     padding-top: 4%;
 }
-#answers4
+#HTMLanswers4
 {
     width: 100%;
     padding: 2%;
 }
-.choices4
+.HTMLchoices4
 {
     display: inline-block;
     width : 32%;
@@ -234,20 +234,20 @@
     cursor: pointer;
     padding : 5px;
 }
-.choices4:hover
+.HTMLchoices4:hover
 {
     border : 4px solid white;
     font-weight: bold;
 }
 
-#resultProgress4
+#HTMLresultProgress4
 {
     position: relative;
     padding:5px;
     width: 65%;
     margin-left: 35%;
 }
-.prog4
+.HTMLprog4
 {
     width: 35px;
     height: 35px;
@@ -256,7 +256,7 @@
     border-radius: 50%;
     margin-left: 5px;
 }
-#scoreContainer4
+#HTMLscoreContainer4
 {
 
     background-color: white;
@@ -264,7 +264,7 @@
     border-radius: 5px;
     position: relative;
 }
-#scoreContainer4 p
+#HTMLscoreContainer4 p
 {
     width : 100%;
     font-size: 1.5em;
@@ -276,6 +276,208 @@
 
 
 
+
+
+
+
+/*//////////////////////////////////////////////*/
+/*//////////////////////////////////////////////*/
+/*////// JAVASCRIPT WHITE Test set 1////////////*/
+
+#jsQuestion1
+{
+    width: 100%;
+    height:10%;
+    position: relative;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+}
+#jsAnswers1
+{
+    width: 100%;
+    padding: 2%;
+}
+.choices1
+{
+    display: inline-block;
+    width : 32%;
+    text-align: center;
+    border : 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choices1:hover
+{
+    border : 4px solid white;
+    font-weight: bold;
+}
+
+#jsResultProgress1
+{
+    position: relative;
+    padding:5px;
+    width: 65%;
+    margin-left: 35%;
+}
+.prog1
+{
+    width: 35px;
+    height: 35px;
+    border: 3px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#jsScoreContainer1
+{
+
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    position: relative;
+}
+#jsScoreContainer1 p
+{
+    width : 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+}
+/*JS WHITE Test set 2 */
+#jsQuestion2
+{
+    width: 100%;
+    height:10%;
+    position: relative;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+}
+#answers2
+{
+    width: 100%;
+    padding: 2%;
+}
+.choices2
+{
+    display: inline-block;
+    width : 32%;
+    text-align: center;
+    border : 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choices2:hover
+{
+    border : 4px solid white;
+    font-weight: bold;
+}
+
+#jsResultProgress2
+{
+    position: relative;
+    padding:5px;
+    width: 65%;
+    margin-left: 35%;
+}
+.prog2
+{
+    width: 35px;
+    height: 35px;
+    border: 3px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#jsScoreContainer2
+{
+
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    position: relative;
+}
+#jsScoreContainer2 p
+{
+    width : 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+}
+ /*JS WHITE Test set 3 */
+#jsQuestion3
+{
+    width: 100%;
+    height:10%;
+    position: relative;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+}
+#answers3
+{
+    width: 100%;
+    padding: 2%;
+}
+.choices3
+{
+    display: inline-block;
+    width : 32%;
+    text-align: center;
+    border : 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choices3:hover
+{
+    border : 4px solid white;
+    font-weight: bold;
+}
+
+#jsResultProgress3
+{
+    position: relative;
+    padding:5px;
+    width: 65%;
+    margin-left: 35%;
+}
+.prog3
+{
+    width: 35px;
+    height: 35px;
+    border: 3px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#jsScoreContainer3
+{
+
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    position: relative;
+}
+#jsScoreContainer3 p
+{
+    width : 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+}
 
 
 

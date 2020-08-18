@@ -90,46 +90,46 @@
         <h3 style="text-align:center">The following tests are short and more straight forward which allow for you to answer in confidence and build up your overall approach to the rest of the tests!</h3>
         <div class="col-xs-4">
             <div class="container1" style="border-style: solid">
-                <div id="test1" style="display: none">
-                    <div id="question1"></div>
-                    <div id="answers1">
-                        <div class="choices1" id="A1" onclick="checkAnswer1('A')"></div>
-                        <div class="choices1" id="B1" onclick="checkAnswer1('B')"></div>
-                        <div class="choices1" id="C1" onclick="checkAnswer1('C')"></div>
+                <div id="jsTest1" style="display: none">
+                    <div id="jsQuestion1"></div>
+                    <div id="jsAnswers1">
+                        <div class="choices1" id="A1" onclick="jsCheckAnswer1('A')"></div>
+                        <div class="choices1" id="B1" onclick="jsCheckAnswer1('B')"></div>
+                        <div class="choices1" id="C1" onclick="jsCheckAnswer1('C')"></div>
                     </div>
-                    <div id="resultProgress1"></div>
+                    <div id="jsResultProgress1"></div>
                 </div>
-                <div id="scoreContainer1" style="display: none"></div>
+                <div id="jsScoreContainer1" style="display: none"></div>
             </div>
         </div>
         <!-- Second set of questions-->
         <div class="col-xs-4">
             <div class="container2" style="border-style: solid">
-                <div id="test2" style="display: none">
-                    <div id="question2"></div>
-                    <div id="answers2">
-                        <div class="choices2" id="A2" onclick="checkAnswer2('A')"></div>
-                        <div class="choices2" id="B2" onclick="checkAnswer2('B')"></div>
-                        <div class="choices2" id="C2" onclick="checkAnswer2('C')"></div>
+                <div id="jsTest2" style="display: none">
+                    <div id="jsQuestion2"></div>
+                    <div id="jsAnswers2">
+                        <div class="choices2" id="A2" onclick="jsCheckAnswer2('A')"></div>
+                        <div class="choices2" id="B2" onclick="jsCheckAnswer2('B')"></div>
+                        <div class="choices2" id="C2" onclick="jsCheckAnswer2('C')"></div>
                     </div>
-                    <div id="resultProgress2"></div>
+                    <div id="jsResultProgress2"></div>
                 </div>
-                <div id="scoreContainer2" style="display: none"> </div>
+                <div id="jsScoreContainer2" style="display: none"> </div>
             </div>
         </div>
         <!-- Third set of questions-->
         <div class="col-xs-4">
             <div class="container3" style="border-style: solid">
-                <div id="test3" style="display: none">
-                    <div id="question3"></div>
-                    <div id="answers3"> <!-- This is 'choices' in video-->
-                        <div class="choices3" id="A3" onclick="checkAnswer3('A')"></div>
-                        <div class="choices3" id="B3" onclick="checkAnswer3('B')"></div>
-                        <div class="choices3" id="C3" onclick="checkAnswer3('C')"></div>
+                <div id="jsTest3" style="display: none">
+                    <div id="jsQuestion3"></div>
+                    <div id="jsAnswers3">
+                        <div class="choices3" id="A3" onclick="jsCheckAnswer3('A')"></div>
+                        <div class="choices3" id="B3" onclick="jsCheckAnswer3('B')"></div>
+                        <div class="choices3" id="C3" onclick="jsCheckAnswer3('C')"></div>
                     </div>
-                    <div id="resultProgress3"></div>
+                    <div id="jsResultProgress3"></div>
                 </div>
-                <div id="scoreContainer3" style="display: none"> </div>
+                <div id="jsScoreContainer3" style="display: none"> </div>
             </div>
         </div>
     </div>
@@ -142,48 +142,50 @@
         <h1 style="text-align:center"><b> Orange Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
         <h3>Orange tier tests will be similar to Tier 1 but will use more technical terminology</h3>
         <div class="col-xs-4">
-            <div class="container4" style="border-style: solid">
-                <div id="test4" style="display: none">
-                    <div id="question4"></div>
-                    <div id="answers4">
-                        <div class="choices4" id="A4" onclick="checkAnswer4('A')"></div>
-                        <div class="choices4" id="B4" onclick="checkAnswer4('B')"></div>
-                        <div class="choices4" id="C4" onclick="checkAnswer4('C')"></div>
+            <div class="jsContainer4" style="border-style: solid">
+                <div id="jsTest4" style="display: none">
+                    <div id="jsQuestion4"></div>
+                    <div id="jsAnswers4">
+                        <div class="jsChoices4" id="A4" onclick="checkAnswer4('A')"></div>
+                        <div class="jsChoices4" id="B4" onclick="checkAnswer4('B')"></div>
+                        <div class="jsChoices4" id="C4" onclick="checkAnswer4('C')"></div>
                     </div>
-                    <div id="resultProgress4"></div>
+                    <div id="jsResultProgress4"></div>
                 </div>
-                <div id="scoreContainer4" style="display: none"> </div>
+                <div id="jsScoreContainer4" style="display: none"> </div>
             </div>
         </div>
         <div class="col-xs-4">
-            <div class="container5" style="border-style: solid">
-                <div id="test5" style="display: none">
-                    <div id="question5"></div>
-                    <div id="answers5">
-                        <div class="choice5" id="A5" onclick="checkAnswer5('A')"></div>
-                        <div class="choice5" id="B5" onclick="checkAnswer5('B')"></div>
-                        <div class="choice5" id="C5" onclick="checkAnswer5('C')"></div>
+            <div class="jsContainer5" style="border-style: solid">
+                <div id="jsTest5" style="display: none">
+                    <div id="jQsuestion5"></div>
+                    <div id="jAsnswers5">
+                        <div class="jsChoice5" id="A5" onclick="checkAnswer5('A')"></div>
+                        <div class="jsChoice5" id="B5" onclick="checkAnswer5('B')"></div>
+                        <div class="jsChoice5" id="C5" onclick="checkAnswer5('C')"></div>
                     </div>
-                    <div id="resultProgress5"></div>
+                    <div id="jsResultProgress5"></div>
                 </div>
-                <div id="scoreContainer5" style="display: none"> </div>
+                <div id="jsScoreContainer5" style="display: none"> </div>
             </div>
         </div>
         <div class="col-xs-4">
-            <div class="container6" style="border-style: solid">
-                <div id="test6" style="display: none">
-                    <div id="question6"></div>
-                    <div id="answers6">
-                        <div class="choices6" id="A6" onclick="checkAnswer6('A')"></div>
-                        <div class="choices6" id="B6" onclick="checkAnswer6('B')"></div>
-                        <div class="choices6" id="C6" onclick="checkAnswer6('C')"></div>
+            <div class="jsContainer6" style="border-style: solid">
+                <div id="jsTest6" style="display: none">
+                    <div id="jsQuestion6"></div>
+                    <div id="jsAnswers6">
+                        <div class="jsChoices6" id="A6" onclick="checkAnswer6('A')"></div>
+                        <div class="jsChoices6" id="B6" onclick="checkAnswer6('B')"></div>
+                        <div class="jsChoices6" id="C6" onclick="checkAnswer6('C')"></div>
                     </div>
-                    <div id="resultProgress6"></div>
+                    <div id="jsResultProgress6"></div>
                 </div>
-                <div id="scoreContainer6" style="display: none"> </div>
+                <div id="jsScoreContainer6" style="display: none"> </div>
             </div>
         </div>
     </div>
+
+
     <!------------------------------END OF ORANGE TESTS------------------------------------------------------------------------->
     <br>
     <!------------------------------------Test Tier 3 Yellow------------------------------------------------------------------->
