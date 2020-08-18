@@ -13,6 +13,7 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
 
+    <!--Custom Accordion Script-->
     <script src="assets/js/CustomScripts/accordionScripts.js"></script>
 
 
@@ -24,14 +25,413 @@
     <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
     <!--Styling to be moved to CSS file-->
-    <style>
-        .accordions
-        {
-            height: 250px;
-        }
-    </style>
-</head>
 
+    <script>
+        let image1 = 'assets/img/Screenshots/calculationCode.png';
+        function customPopImage()
+        {
+            this.imageRender1 = function ()
+            {
+                let popImageBox1 = document.getElementById('popImageBox1');
+
+                let winH = window.innerHeight;
+                let popImageOverlay = document.getElementById('popImageOverlay');
+                popImageOverlay.style.display = "block";
+                popImageOverlay.style.height = winH + "px";
+
+                popImageBox1.style.top = (winH / 2) + "px";
+                popImageBox1.style.display = "block";
+                document.getElementById('popImageBoxHeader1').innerHTML = "How the function works!";
+                document.getElementById('testImg').src = image1;
+                document.getElementById('popImageBoxFooter1').innerHTML = '<button onclick="popUpImage.ok()">OK</button>';
+            }
+            this.ok = function()
+            {
+                document.getElementById('popImageOverlay').style.display = "none";
+                document.getElementById('popImageBox1').style.display = "none";
+            }
+        }
+        let popUpImage = new customPopImage();
+
+        $(document).ready(function ()
+        {
+            ////////////////////// Theory Modules Part 1 ////////////////////
+            // 1 //
+            // Initialise Button //
+            $('#progressBarJ1').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-label1').text($('#progressBarJ1').progressbar("value"));
+                    },
+                    complete: function () {
+                        $('#t4Btn1').button("disable"),
+                            $('#t4Btn1').text("Completed")
+                    },
+                    change: function ()
+                    {
+                        $('#pbj-label1').text($('#progressBarJ1').progressbar("value"));
+                    }
+                });
+            //Button click //
+            $('#t4Btn1').click(function ()
+            {
+                this.style.background = "lightgreen";
+
+                $('#progressBarJ1').progressbar({ value: 100 });
+
+
+                switch($('#progressBarJOverallP1').progressbar("value"))
+                {
+                    case 0:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 33 })
+                        break;
+                    }
+                    case 33:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 66 })
+                        break;
+                    }
+                    case 66:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 100 })
+                        break;
+                    }
+                }
+
+            });
+            // 2 //
+            // Initialise Button //
+            $('#progressBarJ2').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-label2').text($('#progressBarJ2').progressbar("value"));
+                    },
+                    complete: function ()
+                    {
+                        $('#t4Btn2').button("disable"),
+                            $('#t4Btn2').text("Completed")
+                    },
+                    change: function ()
+                    {
+                        $('#pbj-label2').text($('#progressBarJ2').progressbar("value"));
+                    }
+                });
+            //Button click //
+            $('#t4Btn2').click(function () {
+                $('#progressBarJ2').progressbar({ value: 100 });
+
+                switch($('#progressBarJOverallP1').progressbar("value"))
+                {
+                    case 0:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 33 })
+                        break;
+                    }
+                    case 33:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 66 })
+                        break;
+                    }
+                    case 66:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 100 })
+                        break;
+                    }
+                }
+            });
+
+            // 3 //
+            // Initialise Button //
+            $('#progressBarJ3').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-label3').text($('#progressBarJ3').progressbar("value"));
+                    },
+                    complete: function ()
+                    {
+                        $('#t4Btn3').button("disable"),
+                            $('#t4Btn3').text("Completed")
+                    },
+                    change: function ()
+                    {
+                        $('#pbj-label3').text($('#progressBarJ3').progressbar("value"));
+                    }
+                });
+            //Button click //
+            $('#t4Btn3').click(function () {
+                $('#progressBarJ3').progressbar({ value: 100 });
+
+                switch($('#progressBarJOverallP1').progressbar("value"))
+                {
+                    case 0:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 33 })
+                        break;
+                    }
+                    case 33:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 66 })
+                        break;
+                    }
+                    case 66:
+                    {
+                        $('#progressBarJOverallP1').progressbar({ value: 100 })
+                        break;
+                    }
+                }
+            });
+
+
+
+            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////OVERALL PART 1/////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
+            $('#progressBarJOverallP1').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-labelOverall1').text($('#progressBarJOverallP1').progressbar("value"));
+                    },
+                    complete: function ()
+                    {
+                        $('#pbj-labelOverall1').text("Introduction 1 Complete!"),
+                            alert('Learning Modules 1 Completed')
+                    },
+                    change: function ()
+                    {
+                        $('#pbj-labelOverall1').text($('#progressBarJOverallP1').progressbar("value"));
+                    }
+                });
+
+
+
+
+            ///////////////////// Theory Modules Part 2 ////////////////////
+            // 4 //
+            // Initialise Button //
+
+            $('#progressBarJ4').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-label4').text($('#progressBarJ4').progressbar("value"));
+                    },
+                    complete: function ()
+                    {
+                        $('#t4Btn4').button("disable"),
+                            $('#t4Btn4').text("Completed")
+                    }, change: function ()
+                    {
+                        $('#pbj-label4').text($('#progressBarJ4').progressbar("value"));
+                    }
+                });
+            //Button click
+            $('#t4Btn4').click(function () {
+                $('#progressBarJ4').progressbar({ value: 100 });
+
+                switch($('#progressBarJOverallP2').progressbar("value"))
+                {
+                    case 0:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 33 })
+                        break;
+                    }
+                    case 33:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 66 })
+                        break;
+                    }
+                    case 66:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 100 })
+                        break;
+                    }
+                }
+            });
+
+
+            // 5 //
+            // Initialise Button //
+            $('#progressBarJ5').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-label5').text($('#progressBarJ5').progressbar("value"));
+                    },
+                    complete: function ()
+                    {
+                        $('#t4Btn5').button("disable"),
+                            $('#t4Btn5').text("Completed")
+                    }, change: function ()
+                    {
+                        $('#pbj-label5').text($('#progressBarJ5').progressbar("value"));
+                    }
+                });
+            //Button click
+            $('#t4Btn5').click(function () {
+                $('#progressBarJ5').progressbar({ value: 100 });
+
+
+                switch($('#progressBarJOverallP2').progressbar("value"))
+                {
+                    case 0:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 33 })
+                        break;
+                    }
+                    case 33:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 66 })
+                        break;
+                    }
+                    case 66:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 100 })
+                        break;
+                    }
+                }
+            })
+
+            // 6 //
+            // Initialise Button //
+            $('#progressBarJ6').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-label6').text($('#progressBarJ6').progressbar("value"));
+                    },
+                    complete: function ()
+                    {
+                        $('#t4Btn6').button("disable"),
+                            $('#t4Btn6').text("Completed")
+                    }, change: function ()
+                    {
+                        $('#pbj-label6').text($('#progressBarJ6').progressbar("value"));
+                    }
+                });
+            //Button click
+            $('#t4Btn6').click(function () {
+                $('#progressBarJ6').progressbar({ value: 100 });
+
+                switch($('#progressBarJOverallP2').progressbar("value"))
+                {
+                    case 0:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 33 })
+                        break;
+                    }
+                    case 33:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 66 })
+                        break;
+                    }
+                    case 66:
+                    {
+                        $('#progressBarJOverallP2').progressbar({ value: 100 })
+                        break;
+                    }
+                }
+            })
+
+            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////OVERALL PART 2/////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
+            $('#progressBarJOverallP2').progressbar(
+                {
+                    value: 0,
+                    create: function ()
+                    {
+                        $('#pbj-labelOverall2').text($('#progressBarJOverallP2').progressbar("value"));
+                    },
+                    complete: function ()
+                    {
+                        $('#pbj-labelOverall2').text("Introduction 2 Complete!"),
+                            alert('Learning Modules 2 Completed')
+                    },
+                    change: function ()
+                    {
+                        $('#pbj-labelOverall2').text($('#progressBarJOverallP2').progressbar("value"));
+                    }
+                });
+
+
+
+
+
+            // Code for Theory explanations //
+            document.getElementById("btnEvent").addEventListener("click", displayText);
+            function displayText()
+            {
+                document.getElementById("eventText").innerHTML = "<i>You just activated an event!! By clicking the button, you have triggered some JavaScript code was ran to display this message to you</i>";
+            }
+
+            document.getElementById("btnEvent2").addEventListener("mouseover", displayMoreText);
+            document.getElementById("btnEvent2").addEventListener("click", displayImage);
+            function displayMoreText()
+            {
+                document.getElementById("eventText2").innerHTML = "<i>You've just activated another event, Click the same button to show an image and see how can create your own Event Listener</i>";
+            }
+
+            function displayImage()
+            {
+                let img = document.getElementById("eventScreenshot");
+                img.style.display = "block";
+            }
+
+            document.getElementById("btnClear").addEventListener("click", clearCalc);
+            function clearCalc()
+            {
+                document.getElementById("userInput1").value = null;
+                document.getElementById("userInput2").value = null;
+                document.getElementById("funcResult").innerHTML = "";
+            }
+
+            document.getElementById("funcBtn").addEventListener("click", openCalc);
+            function openCalc()
+            {
+                document.getElementById("funcBox").style.display = "block";
+            }
+
+            //This line gets the button we are using to calculate the maths and adds an EventListener which takes
+            // the parameters of (Interaction on the button , Function in response to this action)
+            document.getElementById("btnCalc").addEventListener("click", funcCalc);
+            //Creating the function to be activated by the button
+            function funcCalc(){
+                //Declaring JS variables which are linked to their HTML counterparts
+                //These are then extended to obtain the value within these variables via the '.value' suffix.
+                let input1 = document.getElementById("userInput1").value;
+                let input2 = document.getElementById("userInput2").value;
+                // The 'result' variable takes the two statements above and uses the 'parseFloat()' function
+                // to then convert them into a floating point number (2 decimal places - 64 bits for each)
+                let result = parseFloat(input1) + parseFloat(input2);
+                // These IF statements are to check if the 'result' is NotANumber(NaN)
+                // If the 'result' is a number then the first IF statement is executed
+                if(!isNaN(result)) {
+                    //Get the element that matches the Id specified, access it's contents via '.innerHTML'
+                    //Output 'result' and some text indicated by the quote marks
+                    document.getElementById("funcResult").innerHTML = result + " is the answer";
+                }
+                // If the 'result' is NotANumber then the second IF statement is executed
+                if(isNaN(result)) {
+                    //Output 'result' is not shown here as the 'result' was NaN
+                    //The <i> </i> tags output the text in italics
+                    document.getElementById("funcResult").innerHTML = "<i>Please enter only numbers to test this function</i>";
+                }
+            }
+        });
+    </script>
+</head>
 <body>
 <!------------------NAV BAR SETTINGS------------------------>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -74,14 +474,17 @@
         </div>
     </div>
 </div>
+<!-- Creates Pop up overlay to prevent background inputs when pop-ups are shown-->
+<div id="popImageOverlay"></div>
+
 <!--Introduction information about the Topic-->
 <div class="row">
     <h1 style="text-align:center; color: goldenrod;font-family: monospace">
         <u><b> JavaScript</b></u>
         <img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" />
-        <p style="text-align: center; font-size: medium">
-            <i>Founded in 1995 by Brendan Eich</i>
-        </p>
+        <span style="text-align: center; font-size: medium">
+            <b style="text-align: center; font-size: x-large"> <i>Founded in 1995 by Brendan Eich</i></b>
+        </span>
     </h1>
     <p class="topicDesc" style="font-size: large">
         JavaScript is a Scripting Language that is used alongside web development tools to produce dynamic and responsive webpages
@@ -92,11 +495,13 @@
         Finally, JavaScript is a flexible language to work with as it incorporates multi-paradigm support and can be tested fairly easily (code dependent) with the use of the Mocha and Chia testing frameworks.
     </p>
 </div>
+
+
 <!--First Section Teaching Element and Theory-->
-<div class="row" style="height:500px">
-    <h1 style="text-align: center"><b><u>Learning Modules</u></b></h1>
+<div class="row" style="height:450px">
+    <h1 style="text-align: center"><b><u>Theory Modules Part 1</u></b></h1>
     <!--Part 1 - Introduction to JS-->
-    <div class="col-xs-4" style="border:solid; height:auto; background-color:lightgreen">
+    <div class="col-xs-4" style="border:solid; background-color:lightgreen">
         <h2 style="text-align: center"><b>Introduction to JavaScript</b></h2>
         <!--First Accordion Widget-->
         <div id="accordionP1" class="accordions">
@@ -113,24 +518,18 @@
             <p>
                 JavaScript is currently on update 1.8.5 which doesn't seem that updated but JavaScript is helping developers create applications rapidly and to a very high-level of complexity therfore making JavaScript a programming language that will most likely continue on this path due to how efficent and flexible the language is 
             </p>
-            <h3 class="learnTitles">Summary of JavaScript</h3>
-            <p>
-                JavaScript is a Scripting Language used for many reasons such as making websites dynamic but can also be integrated with other languages to add more functionality
-                <b>///</b> The extension for JavaScript is .js
-                <b>///</b> The language is easy to pick up but can be difficult to master
-                <b>///</b> Be aware that JavaScript and Java are completely different languages, JS has its code run in browser whilst Java is usualy developeed into an application and then it's code is then executed by this application.
-            </p>
         </div>
-        <br />
+        <br>
         <!--JS Progress Bar 1-->
-        <div id="progressBarJ1" style="position:relative; width: 75%">
+        <div id="progressBarJ1" style="width: 75%">
             Progress Completed: <strong><span id="pbj-label1" style="position:relative"></span></strong>
         </div>
         <button id="t4Btn1" style="margin-bottom:1%">Click me to complete</button>
+        <br>
     </div>
 
     <!--Part 2 - Explaining Script Tags-->
-    <div class="col-xs-4" style="border:solid; height:auto; background-color:lightgoldenrodyellow">
+    <div class="col-xs-4" style="border:solid; background-color:lightgoldenrodyellow">
         <h2 style="text-align: center"><b>JavaScript Expanded</b></h2>
         <div id="accordionP2" class="accordions">
             <h3 class="learnTitles">What is JavaScript?</h3>
@@ -151,12 +550,13 @@
         <br />
         <!--JS Progress Bar 2-->
         <div id="progressBarJ2" style="position:relative">
-            Progress Completed: <strong><span id="pbj-label2" style="position:relative"></span></strong>
+            Progress Completed: <b><span id="pbj-label2" style="position:relative"></span></b>
         </div>
         <button id="t4Btn2" style="margin-bottom:1%">Click me to complete</button>
     </div>
+
     <!--Part 3 - JavaScript for people with some JS experience-->
-    <div class="col-xs-4" style="border:solid; height:auto; background-color:lightcoral">
+    <div class="col-xs-4" style="border:solid; background-color:lightcoral">
         <h2 style="text-align: center"><b>JavaScript for the Pros</b></h2>
         <div id="accordionP3" class="accordions">
             <h3 class="learnTitles">Recap of JavaScript</h3>
@@ -178,7 +578,8 @@
                 In this example, it is showing you that firstly you need to specify the script tag, then specify where the file is, and then finally, specify what the file type is.
             </p>
         </div>
-        <br />
+        <br>
+        <br>
         <!--JS Progress Bar 3-->
         <div id="progressBarJ3" style="position:relative">
             Progress Completed: <strong><span id="pbj-label3" style="position:relative"></span></strong>
@@ -186,13 +587,27 @@
         <button id="t4Btn3" style="margin-bottom:1%">Click me to complete</button>
     </div>
 </div>
-<br>
+<h3><u><i>Overall Progress for Theory Modules Part 1</i></u></h3>
+<div id="progressBarJOverallP1" style="position:relative">
+    Progress Completed: <strong><span id="pbj-labelOverall1" style="position:relative"></span></strong>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 <!--------------------------------------------------------------More Learning Modules-------------------------------------------------------------->
-<div class="row" style="height:350px">
-    <h1 style="text-align: center"><b><u>More Modules</u></b></h1>
+<div class="row" style="height:450px">
+    <h1 style="text-align: center"><b><u>Theory Modules Part 2</u></b></h1>
     <!--Part 4 - Introduction to JS variables-->
-    <div class="col-xs-4" style="border:solid; height:auto; background-color:lightgreen">
+    <div class="col-xs-4" style="border:solid; background-color:lightgreen">
         <h2 style="text-align: center">JavaScript: Variables</h2>
         <div id="accordionP4" class="accordions">
             <h3 class="learnTitles">Types of Variables</h3>
@@ -216,7 +631,7 @@
     </div>
 
     <!--Part 5 - Explaining core functions and variables-->
-    <div class="col-xs-4" style="border:solid; height:auto; background-color:lightgoldenrodyellow">
+    <div class="col-xs-4" style="border:solid; background-color:lightgoldenrodyellow">
         <h2 style="text-align: center">JavaScript: Integration</h2>
         <div id="accordionP5" class="accordions">
             <h3 class="learnTitles">Why use JS over other languages?</h3>
@@ -239,7 +654,7 @@
         <button id="t4Btn5" style="margin-bottom:1%">Click me to complete</button>
     </div>
     <!--Part 6 - Final Learning Module-->
-    <div class="col-xs-4" style="border:solid; height:auto; background-color:lightcoral">
+    <div class="col-xs-4" style="border:solid; background-color:lightcoral">
         <h2 style="text-align: center">JavaScript: Extension Libraries</h2>
         <div id="accordionP6" class="accordions">
             <h3 class="learnTitles">Final JS Module</h3>
@@ -263,8 +678,11 @@
         <button id="t4Btn6" style="margin-bottom:1%">Click me to complete</button>
     </div>
 </div>
+<h3><u><i>Overall Progress for Theory Modules Part 2</i></u></h3>
+<div id="progressBarJOverallP2" style="position:relative">
+    Progress Completed: <strong><span id="pbj-labelOverall2" style="position:relative"></span></strong>
+</div>
 
-<br>
 
 
 
@@ -272,8 +690,15 @@
 
 
 <!-------------------Second Section Demos / Showing theory in a graphical way (This aids imagery / visual learners)------------------------->
-<div class="row" style="height:550px; text-align: center">
+<div class="row" style="height:600px; text-align: center">
     <h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
+    <div id="popImageBox1">
+        <div>
+            <div id="popImageBoxHeader1"></div>
+            <div id="popImageBoxBody1"><img id='testImg'/></div>
+            <div id="popImageBoxFooter1"></div>
+        </div>
+    </div>
     <!--Demo One-->
     <div class="col-xs-4" style="border:solid; height:90%">
         <h2><u>Including JavaScript on a Web App</u></h2>
@@ -285,26 +710,58 @@
             <h3 class="learnTitles">Step 3:</h3>
             <p>Now you can create JavaScript functions, classes and more without getting them mixed up within your main file. Have no fear, you can link this JS file to your main application document by using the following:
                 <br>
-                <img src="assets/img/Screenshots/ScriptTags.png">
+                <img src="assets/img/Screenshots/ScriptTags.png" alt="External Script Tag Image">
             </p>
             <h3 class="learnTitles">Step 4:</h3>
             <p>Using these Script Tags, we are able to include external JavaScript files to our documents. Internal JavaScript is included by simply using the Script tags with no parameters and simply writing your JS code in between the opening and closing tags like so:
-                <img src="assets/img/Screenshots/singleScriptTags.png">
+                <img src="assets/img/Screenshots/singleScriptTags.png" alt="Internal Script Tag Image">
             </p>
         </div>
         <div style="position: relative">
             Be sure you remember to use BOTH opening and closing script tags as this will throw errors within your application if not done so!
         </div>
     </div>
+
+
+
     <!--Demo Two-->
     <div class="col-xs-4" style="border:solid; height:100%">
-        <h2><u>JavaScript Events</u></h2>
-        <button>Click me!</button>
+        <h2><u>JavaScript Functions</u></h2>
+        <p>JavaScript functions are a block of code designed to be triggered when a specific action is carried out by the user, application, browser or when a certain parameter is met</p>
+        <p>Functions can be used to create mathematical equations such as the following button and following function: <button id="funcBtn">Input two numbers to add them together</button></p>
+
+
+
+        <div id="funcBox" style="display: none">
+            <label for="userInput1">First Value:</label>
+            <input type="text" id="userInput1" style="width: 10%"> +
+            <label for="userInput2">Second Value: </label>
+            <input type="text" id="userInput2" style="width: 10%"> =
+            <b id="funcResult" style="font-size: medium"></b>
+                <br>
+            <button id="btnCalc">Calculate</button> <button id="btnClear">Clear Values</button>
+            <br>
+            <br>
+            <p>A breakdown on how the code</p>
+            <div>
+                <a class="btn btn-info" onclick="popUpImage.imageRender1()"> Show Code</a>
+            </div>
+        </div>
     </div>
     <!--Demo Three-->
     <div class="col-xs-4" style="border:solid; height:100%">
-        <h2><u>For the Coding Veterans</u></h2>
-        <p></p>
+        <h2><u>JavaScript Events</u></h2>
+        <p>There are many different events within JavaScript such as mouse clicks and actions that the user can carry out then then trigger such events.</p>
+        <p>Here are just a few examples!</p>
+        <p><b><u>Event 1: Event Listeners - Example through button click</u></b></p>
+        <button id="btnEvent">Click me!</button>
+        <p id="eventText"></p>
+
+        <button id="btnEvent2">Move your mouse cursor over this instead!</button>
+        <p id="eventText2"></p>
+        <img id="eventScreenshot" src="assets/img/Screenshots/eventListener1.png" alt="Event Listener image" style="display: none; width: 100%; height: 15%" />
+        <br>
+        <p>All events can be customised to adapt to how the user interacts within the HTML DOM or Browser and so changing the options for these with JavaScript can lead to many different possibilities and outcomes within your programming of web applications. </p>
     </div>
 </div>
 <div class="row" style="height:255px">
@@ -313,20 +770,19 @@
             <h2 style="text-align: center"><b>For the Coding Veterans</b></h2>
             <h3>Are you ready to Test Your Knowledge on what you have learnt?</h3>
         </div>
-    <div class="col-xs-2" style="height:100%""></div>
-    </div>
+    <div class="col-xs-2" style="height:100%"></div>
 </div>
 <!--Row 4 - 1 box Helpful JavaScript guides / Add-Ons-->
 <h1 style="color: goldenrod; text-align: center; font-family: "><b><u>Useful JavaScript Extras and Libraries</u></b></h1>
 <br>
 <div class="row" style="text-align: center">
     <div class="col-xs-2">
-        <div id="alertBox" style="margin-left: 15px; margin-top: 40px">
-            <div>
-                <div id="alertBoxHeader"><b></b></div>
-                <div id="alertBoxBody"></div>
-            </div>
-        </div>
+<!--        <div id="alertBox" style="margin-left: 15px; margin-top: 40px">-->
+<!--            <div>-->
+<!--                <div id="alertBoxHeader"><b></b></div>-->
+<!--                <div id="alertBoxBody"></div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
     <div class="col-xs-8">
         <span style="text-align:center">
@@ -339,157 +795,8 @@
     </div>
     <div class="col-xs-2"></div>
 </div>
-
 </body>
 </html>
 
 
-<script>
-    // Progress Bars Scripts //
 
-    $(document).ready(function ($)    
-    {
-        // 1 //
-        // Initialise Button //
-        $('#progressBarJ1').progressbar(
-            {
-                value: 0,
-                create: function ()
-                {
-                    $('#pbj-label1').text($('#progressBarJ1').progressbar("value"));
-                },
-                complete: function () {
-                    $('#t4Btn1').button("disable"),
-                        $('#t4Btn1').text("Completed")
-                },
-                change: function ()
-                {
-                    if ($(this).progressbar("value") < 100)
-                    {
-                        $('#t4Btn1').button("enable")
-                    }
-                    $('#pbj-label1').text($('#progressBarJ1').progressbar("value"));
-                }
-            });
-            //Button click //
-        $('#t4Btn1').click(function () {
-            $('#progressBarJ1').progressbar({ value: 100 });
-        });               
-        // 2 // 
-        // Initialise Button //
-        $('#progressBarJ2').progressbar(
-            {
-                value: 0,
-                create: function (e) {
-                    $('#pbj-label2').text($('#progressBarJ2').progressbar("value"));
-                },
-                complete: function (e) {
-                    $('#t4Btn2').button("disable"),
-                        $('#t4Btn2').text("Completed")
-                }, change: function (e) {
-                    if ($(this).progressbar("value") < 100) {
-                        $('#t4Btn2').button("enable")
-                    }
-                    $('#pbj-label2').text($('#progressBarJ2').progressbar("value"));
-                }
-            });
-            //Button click //
-        $('#t4Btn2').click(function (e) {
-            $('#progressBarJ2').progressbar({ value: 100 });
-        });
-
-        // 3 //
-        // Initialise Button //
-        $('#progressBarJ3').progressbar(
-            {
-                value: 0,
-                create: function (e) {
-                    $('#pbj-label3').text($('#progressBarJ3').progressbar("value"));
-                },
-                complete: function (e) {
-                    $('#t4Btn3').button("disable"),
-                        $('#t4Btn3').text("Completed")
-                }, change: function (e) {
-                    if ($(this).progressbar("value") < 100) {
-                        $('#t4Btn3').button("enable")
-                    }
-                    $('#pbj-label3').text($('#progressBarJ3').progressbar("value"));
-                }
-            });
-            //Button click //
-        $('#t4Btn3').click(function (e) {
-            $('#progressBarJ3').progressbar({ value: 100 });
-        });
-                
-        // 4 //
-        // Initialise Button //
-        $('#progressBarJ4').progressbar(
-            {
-                value: 0,
-                create: function (e)
-                {
-                    $('#pbj-label4').text($('#progressBarJ4').progressbar("value"));
-                },
-                complete: function (e) {
-                    $('#t4Btn4').button("disable"),
-                        $('#t4Btn4').text("Completed")
-                }, change: function (e) {
-                    if ($(this).progressbar("value") < 100) {
-                        $('#t4Btn4').button("enable")
-                    }
-                    $('#pbj-label4').text($('#progressBarJ4').progressbar("value"));
-                }
-            });
-            //Button click
-        $('#t4Btn4').click(function (e) {
-            $('#progressBarJ4').progressbar({ value: 100 });
-        });
-               
-            
-        // 5 //
-        // Initialise Button //
-        $('#progressBarJ5').progressbar(
-            {
-                value: 0,
-                create: function (e) {
-                    $('#pbj-label5').text($('#progressBarJ5').progressbar("value"));
-                },
-                complete: function (e) {
-                    $('#t4Btn5').button("disable"),
-                        $('#t4Btn5').text("Completed")
-                }, change: function (e) {
-                    if ($(this).progressbar("value") < 100) {
-                        $('#t4Btn5').button("enable")
-                    }
-                    $('#pbj-label5').text($('#progressBarJ5').progressbar("value"));
-                }
-            });
-            //Button click
-            $('#t4Btn5').click(function (e) {
-                $('#progressBarJ5').progressbar({ value: 100 });
-            })
-                
-            // 6 //  
-            // Initialise Button //
-        $('#progressBarJ6').progressbar(
-            {
-                value: 0,
-                create: function (e) {
-                    $('#pbj-label6').text($('#progressBarJ6').progressbar("value"));
-                },
-                complete: function (e) {
-                    $('#t4Btn6').button("disable"),
-                        $('#t4Btn6').text("Completed")
-                }, change: function (e) {
-                    if ($(this).progressbar("value") < 100) {
-                        $('#t4Btn6').button("enable")
-                    }
-                    $('#pbj-label6').text($('#progressBarJ6').progressbar("value"));
-                }
-            });
-            //Button click
-            $('#t4Btn6').click(function (e) {
-                $('#progressBarJ6').progressbar({ value: 100 });
-            })
-    });                    
-</script>

@@ -40,9 +40,6 @@
             background-color: #ddd;
         }
 
-        .submit:hover {
-            background-color: darkgray;
-        }
     </style>
 </head>
 
@@ -129,6 +126,7 @@
             <div class="col-md-4"></div>
         </div>
     </div>
+</form>
     <div class="row" style="text-align:center">
     <h1 style="text-align: center"><i><b>Alternatively</b></i></h1>
     <h1 style="text-align: center"><u><b>Find us on Social Media</b></u></h1>
@@ -158,13 +156,8 @@
                 <address>
                     <strong>Support:</strong>   <a href="mailto:CoJoSupport@cojo.com">CoJoSupport@cojo.com</a><br />
                 </address>
-
-
-            
-
         </div>
     </div>
-</form>
 </body>
 </html>
 

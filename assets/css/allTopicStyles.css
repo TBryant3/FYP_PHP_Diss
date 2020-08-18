@@ -296,3 +296,69 @@
     font-size: large;
     padding:10px;
 }
+
+
+
+
+
+
+/*Image Pop Up Box*/
+#popImageOverlay
+{
+    display: none;
+    opacity: 0.75;
+    position: fixed;
+    background-color: lightgrey;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    z-index: 7;
+    overflow: hidden;
+}
+/*Index Step 1 box settings*/
+#popImageBox1
+{
+    display: none;
+    position: relative;
+    background-color: lightgreen;
+    border-radius: 3%;
+    width: 50%;
+    z-index: 9;
+}
+#popImageBox1 > div
+{
+    background-color: grey;
+    margin: 6px;
+}
+#popImageBox1 > div > #popImageBoxHeader1
+{
+    background-color: #333333;
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding:1px;
+}
+#popImageBox1 > div > #popImageBoxBody1
+{
+    background-color: #666666;
+    color: black;
+    text-align: center;
+    padding:20px;
+}
+#popImageBox1 > div > #popImageBoxBody1 > #testImg
+{
+    background-color: #666666;
+    color: black;
+    text-align: center;
+    padding:20px;
+}
+#popImageBox1 > div > #popImageBoxFooter1
+{
+    background-color: #333333;
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+    padding:10px;
+}

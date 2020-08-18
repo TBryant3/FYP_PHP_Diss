@@ -1,165 +1,165 @@
 <?php
-
-require_once "config/dbFunctions.php";
-
-//Initialising variables with blank values
-$firstName = $lastName = $username = $email = $psw = $confirm_psw = $country = "";
-$firstName_err = $lastName_err  = $username_err  = $email_err  = $psw_err  = $confirm_psw_err  = $country_err  = "";
-
-// On form submit - Process data
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    // Username Validation
-    if(empty(trim($_POST["username"])))
-    {
-        $username_err = "Please enter a username";
-    }
-    else
-    {
-        $sql = "SELECT userID FROM users WHERE username = :username";
-
-        if ($stmt = $dbConnection->prepare($sql))
-        {
-            //Bind parameters to prepared statement ($stmt)
-            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
-
-            // Set username parameter
-            $param_username = trim($_POST["username"]);
-
-            //Execute prepared statement
-            if ($stmt->execute())
-            {
-                if ($stmt->rowCount() == 1)
-                {
-                    $username_err = "This username is already taken!";
-                }
-                else
-                {
-                    $username = trim($_POST["username"]);
-                }
-            }
-            else
-            {
-                echo "Sorry! Something has gone wrong, please try again!";
-            }
-            //Close statement
-            unset($stmt);
-        }
-    }
-    //First Name Validation
-    if (empty(trim($_POST["firstName"])))
-    {
-        $firstName_err = "Please enter your First Name";
-    }
-    elseif (!preg_match("/^[a-zA-Z ]*$/", $firstName))
-    {
-        $firstName_err = "Only letters and spaces are allowed";
-    }
-    else
-    {
-        $firstName = trim($_POST["firstName"]);
-    }
-
-    //Last Name Validation
-    if (empty(trim($_POST["lastName"])))
-    {
-        $lastName_err = "Please enter your Last Name";
-    }
-    elseif (!preg_match("/^[a-zA-Z ]*$/", $lastName))
-    {
-        $lastName_err = "Only letters and spaces are allowed";
-    }
-    else
-    {
-        $lastName = trim($_POST["lastName"]);
-    }
-
-    // Password Validation
-    if(empty(trim($_POST["psw"])))
-    {
-        $psw_err = "Please enter a password.";
-    }
-    elseif(strlen(trim($_POST["psw"])) < 5)
-    {
-        $psw_err = "Password must be at least  5 characters.";
-    }
-    else
-    {
-        $psw = trim($_POST["psw"]);
-    }
-
-    // Confirm Password Validation
-    if (empty(trim($_POST["confirm_psw"])))
-    {
-        $confirm_psw_err = "Please confirm your password";
-    }
-    else
-    {
-        $confirm_psw = trim($_POST["confirm_psw"]);
-        if (empty($psw_err) && ($psw != $confirm_psw))
-        {
-            $confirm_psw_err =  "Passwords do not match!";
-        }
-    }
-
-    // Email Validation
-    if (empty(trim($_POST["email"])))
-    {
-        $email_err = "Please enter your Email address";
-    }
-    else
-    {
-        $email = trim($_POST["email"]);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-        {
-            $email_err = "Invalid email format";
-        }
-    }
-
-
-
-    // Check for errors before database insertion
-    if (empty($username_err) && empty($firstName_err) && empty($lastName_err) && empty($psw_err) && empty($confirm_psw_err) &&empty($email_err) && empty($country_err))
-    {
-        $sql = "INSERT INTO users (username, firstName, lastName, psw, email, country) VALUES (:username,:firstName,:lastName,:psw,:email,:country)";
-
-        if ($stmt = $dbConnection->prepare($sql))
-        {
-            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
-            $stmt->bindParam(":firstName", $param_firstName, PDO::PARAM_STR);
-            $stmt->bindParam(":lastName", $param_lastName, PDO::PARAM_STR);
-            $stmt->bindParam(":psw", $param_password, PDO::PARAM_STR);
-            $stmt->bindParam(":email", $param_email, PDO::PARAM_STR);
-            $stmt->bindParam(":country", $param_country, PDO::PARAM_STR);
-
-
-            //Set Parameters
-            $param_username = $username;
-            $param_firstName = $firstName;
-            $param_lastName = $lastName;
-            $param_email = $email;
-            $param_country = $country;
-            //Create psw hash
-            $param_password = password_hash($psw, PASSWORD_DEFAULT);
-
-            //Execute statement
-            if ($stmt->execute())
-            {
-                header("location: Login.php");
-            }
-            else
-            {
-                echo "Whoops, seems like something has gone wrong! Please try again.";
-            }
-
-            //Close statement
-            unset($stmt);
-        }
-    }
-    //Close connection
-    unset($dbConnection);
-}
-?>
+//
+//require_once "config/dbFunctions.php";
+//
+////Initialising variables with blank values
+//$firstName = $lastName = $username = $email = $psw = $confirm_psw = $country = "";
+//$firstName_err = $lastName_err  = $username_err  = $email_err  = $psw_err  = $confirm_psw_err  = $country_err  = "";
+//
+//// On form submit - Process data
+//if ($_SERVER["REQUEST_METHOD"] == "POST")
+//{
+//    // Username Validation
+//    if(empty(trim($_POST["username"])))
+//    {
+//        $username_err = "Please enter a username";
+//    }
+//    else
+//    {
+//        $sql = "SELECT userID FROM users WHERE username = :username";
+//
+//        if ($stmt = $dbConnection->prepare($sql))
+//        {
+//            //Bind parameters to prepared statement ($stmt)
+//            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
+//
+//            // Set username parameter
+//            $param_username = trim($_POST["username"]);
+//
+//            //Execute prepared statement
+//            if ($stmt->execute())
+//            {
+//                if ($stmt->rowCount() == 1)
+//                {
+//                    $username_err = "This username is already taken!";
+//                }
+//                else
+//                {
+//                    $username = trim($_POST["username"]);
+//                }
+//            }
+//            else
+//            {
+//                echo "Sorry! Something has gone wrong, please try again!";
+//            }
+//            //Close statement
+//            unset($stmt);
+//        }
+//    }
+//    //First Name Validation
+//    if (empty(trim($_POST["firstName"])))
+//    {
+//        $firstName_err = "Please enter your First Name";
+//    }
+//    elseif (!preg_match("/^[a-zA-Z ]*$/", $firstName))
+//    {
+//        $firstName_err = "Only letters and spaces are allowed";
+//    }
+//    else
+//    {
+//        $firstName = trim($_POST["firstName"]);
+//    }
+//
+//    //Last Name Validation
+//    if (empty(trim($_POST["lastName"])))
+//    {
+//        $lastName_err = "Please enter your Last Name";
+//    }
+//    elseif (!preg_match("/^[a-zA-Z ]*$/", $lastName))
+//    {
+//        $lastName_err = "Only letters and spaces are allowed";
+//    }
+//    else
+//    {
+//        $lastName = trim($_POST["lastName"]);
+//    }
+//
+//    // Password Validation
+//    if(empty(trim($_POST["psw"])))
+//    {
+//        $psw_err = "Please enter a password.";
+//    }
+//    elseif(strlen(trim($_POST["psw"])) < 5)
+//    {
+//        $psw_err = "Password must be at least  5 characters.";
+//    }
+//    else
+//    {
+//        $psw = trim($_POST["psw"]);
+//    }
+//
+//    // Confirm Password Validation
+//    if (empty(trim($_POST["confirm_psw"])))
+//    {
+//        $confirm_psw_err = "Please confirm your password";
+//    }
+//    else
+//    {
+//        $confirm_psw = trim($_POST["confirm_psw"]);
+//        if (empty($psw_err) && ($psw != $confirm_psw))
+//        {
+//            $confirm_psw_err =  "Passwords do not match!";
+//        }
+//    }
+//
+//    // Email Validation
+//    if (empty(trim($_POST["email"])))
+//    {
+//        $email_err = "Please enter your Email address";
+//    }
+//    else
+//    {
+//        $email = trim($_POST["email"]);
+//        if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+//        {
+//            $email_err = "Invalid email format";
+//        }
+//    }
+//
+//
+//
+//    // Check for errors before database insertion
+//    if (empty($username_err) && empty($firstName_err) && empty($lastName_err) && empty($psw_err) && empty($confirm_psw_err) &&empty($email_err) && empty($country_err))
+//    {
+//        $sql = "INSERT INTO users (username, firstName, lastName, psw, email, country) VALUES (:username,:firstName,:lastName,:psw,:email,:country)";
+//
+//        if ($stmt = $dbConnection->prepare($sql))
+//        {
+//            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
+//            $stmt->bindParam(":firstName", $param_firstName, PDO::PARAM_STR);
+//            $stmt->bindParam(":lastName", $param_lastName, PDO::PARAM_STR);
+//            $stmt->bindParam(":psw", $param_password, PDO::PARAM_STR);
+//            $stmt->bindParam(":email", $param_email, PDO::PARAM_STR);
+//            $stmt->bindParam(":country", $param_country, PDO::PARAM_STR);
+//
+//
+//            //Set Parameters
+//            $param_username = $username;
+//            $param_firstName = $firstName;
+//            $param_lastName = $lastName;
+//            $param_email = $email;
+//            $param_country = $country;
+//            //Create psw hash
+//            $param_password = password_hash($psw, PASSWORD_DEFAULT);
+//
+//            //Execute statement
+//            if ($stmt->execute())
+//            {
+//                header("location: Login.php");
+//            }
+//            else
+//            {
+//                echo "Whoops, seems like something has gone wrong! Please try again.";
+//            }
+//
+//            //Close statement
+//            unset($stmt);
+//        }
+//    }
+//    //Close connection
+//    unset($dbConnection);
+//}
+//?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -310,7 +310,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     </div>
 
                         <div class="form-group">
-                            <p> By creating an account you agree to our <a href="contactUs.php">Terms & Privacy Policy</a>!</p>
+                            <p> By creating an account you agree to our <a href="Terms_Conditions.php">Terms & Privacy Policy</a>!</p>
                             <input type="submit" value="Register" class="btn btn-primary" style="margin-right: 1%;border-radius:3%; height:5%; width:10%"><input type="reset" value="Reset" class="btn btn-default" style="margin-right: 1%;border-radius:3%; height:5%; width:10%">
                             <p><b style="font-size:medium"> OR  </b> Already have an account? <a href="Login.php" style="font-size:medium">Sign In here</a>!</p>
                         </div>

@@ -139,6 +139,10 @@
             <button id="t1Btn1" type="submit" style="margin-bottom:1%">Click me to complete</button>
         </div>
     </div>
+
+
+
+
     <!--Part 2 - Explaining Tags-->
     <div class="col-xs-4" style="border:solid; height:auto; background-color:lightgoldenrodyellow">
         <h2 style="text-align: center"><b>Styling with CSS</b></h2>
@@ -161,6 +165,17 @@
     </div>
     <div class="col-xs-2"></div>
 </div>
+
+
+
+<br>
+<h3><u><i>Overall Progress for Theory Modules</i></u></h3>
+<div id="progressBarHTMLOverallP1" style="position:relative">
+    Progress Completed: <strong><span id="pbHTML-labelOverall1" style="position:relative"></span></strong>
+</div>
+
+
+
 
 <!--Second Section Demos / Showing theory in a graphical way (This aids imagery / visual learners)-->
 <div class="row" style="height:500px">
@@ -233,6 +248,20 @@
         t1Btn1.click(function ()
         {
             $('#progressBarH1').progressbar({ value: 100 });
+
+            switch($('#progressBarHTMLOverallP1').progressbar("value"))
+            {
+                case 0:
+                {
+                    $('#progressBarHTMLOverallP1').progressbar({ value: 50 })
+                    break;
+                }
+                case 50:
+                {
+                    $('#progressBarHTMLOverallP1').progressbar({ value: 100 })
+                    break;
+                }
+            }
         });
 
         const t1Btn2 = $('#t1Btn2');
@@ -261,7 +290,41 @@
         t1Btn2.click(function ()
         {
             $('#progressBarH2').progressbar({ value: 100 });
+            switch($('#progressBarHTMLOverallP1').progressbar("value"))
+            {
+                case 0:
+                {
+                    $('#progressBarHTMLOverallP1').progressbar({ value: 50 })
+                    break;
+                }
+                case 50:
+                {
+                    $('#progressBarHTMLOverallP1').progressbar({ value: 100 })
+                    break;
+                }
+            }
         });
+
+        //////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////OVERALL PART 1/////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////
+        $('#progressBarHTMLOverallP1').progressbar(
+            {
+                value: 0,
+                create: function ()
+                {
+                    $('#pbHTML-labelOverall1').text($('#progressBarHTMLOverallP1').progressbar("value"));
+                },
+                complete: function ()
+                {
+                    $('#pbHTML-labelOverall1').text("Introduction 1 Complete!"),
+                        alert('Learning Modules 1 Completed')
+                },
+                change: function ()
+                {
+                    $('#pbHTML-labelOverall1').text($('#progressBarHTMLOverallP1').progressbar("value"));
+                }
+            });
     });
 </script>
 </body>

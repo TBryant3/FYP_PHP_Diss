@@ -1,7 +1,3 @@
-<?php
-//
-//include 'config/dbFunctions.php';
-//?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,7 +113,7 @@
         <h1 style="text-align:center"><b>CoJō - A Code Learning Dōjō</b></h1>
         <p style="text-align:center; font-size: x-large">Welcome to this Code Learning Dōjō application where you're the one in control of how and what you learn!</p>
     </div>
-    <!-- Steps Pop up overlay to prevent background inputs when pop-ups are shown-->
+    <!-- Creates Pop up overlay to prevent background inputs when pop-ups are shown-->
         <div id="popOverlay"></div>
     <!--Row 1 - 1 box -->
     <div class="row" style="text-align: center">
