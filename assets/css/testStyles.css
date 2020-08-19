@@ -1,7 +1,7 @@
 /*//////////////////////////*/
-/*First set of questions*/
+/*HTML question classes */
 /*//////////////////////////*/
-#HTMLquestion1
+.htmlQuestion
 {
     width: 100%;
     height:10%;
@@ -11,12 +11,13 @@
     padding-bottom: 1%;
     padding-top: 4%;
 }
-#HTMLanswers1
+.htmlAnswers
 {
     width: 100%;
-    padding: 2%;
+    text-align: center;
 }
-.HTMLchoices1
+
+.htmlChoices
 {
     display: inline-block;
     width : 32%;
@@ -26,20 +27,18 @@
     cursor: pointer;
     padding : 5px;
 }
-.HTMLchoices1:hover
+.htmlChoices:hover
 {
     border : 4px solid white;
     font-weight: bold;
 }
-
-#HTMLresultProgress1
+.htmlResultProgress
 {
     position: relative;
     padding:5px;
-    width: 65%;
-    margin-left: 35%;
+    width: 100%;
 }
-.HTMLprog1
+.htmlProg
 {
     width: 35px;
     height: 35px;
@@ -48,7 +47,7 @@
     border-radius: 50%;
     margin-left: 5px;
 }
-#HTMLscoreContainer1
+.htmlScoreContainer
 {
 
     background-color: white;
@@ -56,223 +55,284 @@
     border-radius: 5px;
     position: relative;
 }
-#HTMLscoreContainer1 p
+.htmlScoreContainer p
 {
     width : 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-family: monospace;
-}
-
-
-/*//////////////////////////*/
-/*Second set of questions*/
-/*//////////////////////////*/
-#HTMLquestion2
-{
-    width: 100%;
-    height:10%;
-    position: relative;
     font-size: large;
-    text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
-}
-#HTMLanswers2
-{
-    width: 100%;
-    padding: 5%;
-}
-.HTMLchoices2
-{
-    display: inline-block;
-    width : 32%;
-    text-align: center;
-    border : 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    padding : 5px;
-}
-.HTMLchoices2:hover
-{
-    border : 4px solid white;
-    font-weight: bold;
-}
-
-#HTMLresultProgress2
-{
-    position: relative;
-    padding:5px;
-    width: 65%;
-    margin-left: 33%;
-}
-.HTMLprog2
-{
-    width: 35px;
-    height: 35px;
-    border: 3px solid white;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
-}
-#HTMLscoreContainer2
-{
-
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 5px;
-    position: relative;
-
-}
-
-#HTMLscoreContainer2 p
-{
-    width : 100%;
-    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     color: black;
     font-family: monospace;
 }
+/*#htmlQuestion1*/
+/*{*/
+/*    width: 100%;*/
+/*    height:10%;*/
+/*    position: relative;*/
+/*    font-size: large;*/
+/*    text-align: center;*/
+/*    padding-bottom: 1%;*/
+/*    padding-top: 4%;*/
+/*}*/
+/*#htmlAnswers1*/
+/*{*/
+/*    width: 100%;*/
+/*    padding: 2%;*/
+/*}*/
+/*.htmlChoices1*/
+/*{*/
+/*    display: inline-block;*/
+/*    width : 32%;*/
+/*    text-align: center;*/
+/*    border : 2px solid white;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    padding : 5px;*/
+/*}*/
+/*.htmlChoices1:hover*/
+/*{*/
+/*    border : 4px solid white;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#htmlResultProgress1*/
+/*{*/
+/*    position: relative;*/
+/*    padding:5px;*/
+/*    width: 65%;*/
+/*    margin-left: 35%;*/
+/*}*/
+/*.htmlProg1*/
+/*{*/
+/*    width: 35px;*/
+/*    height: 35px;*/
+/*    border: 3px solid white;*/
+/*    display: inline-block;*/
+/*    border-radius: 50%;*/
+/*    margin-left: 5px;*/
+/*}*/
+/*#htmlScoreContainer1*/
+/*{*/
+
+/*    background-color: white;*/
+/*    opacity: 0.8;*/
+/*    border-radius: 5px;*/
+/*    position: relative;*/
+/*}*/
+/*#htmlScoreContainer1 p*/
+/*{*/
+/*    width : 100%;*/
+/*    font-size: 1.5em;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    color: black;*/
+/*    font-family: monospace;*/
+/*}*/
 
 
-/*//////////////////////////*/
-/*Third set of questions*/
-/*//////////////////////////*/
-#HTMLquestion3
-{
-    width: 100%;
-    height:10%;
-    position: relative;
-    font-size: large;
-    text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
-}
-#HTMLanswers3
-{
-    width: 100%;
-    padding: 2%;
-}
-.HTMLchoices3
-{
-    display: inline-block;
-    width : 32%;
-    text-align: center;
-    border : 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    padding : 5px;
-}
-.HTMLchoices3:hover
-{
-    border : 4px solid white;
-    font-weight: bold;
-}
 
-#HTMLresultProgress3
-{
-    position: relative;
-    padding:5px;
-    width: 65%;
-    margin-left: 33%;
-}
-.HTMLprog3
-{
-    width: 35px;
-    height: 35px;
-    border: 3px solid white;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
-}
-#HTMLscoreContainer3
-{
+/*!*Second set of questions*!*/
 
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 5px;
-    position: relative;
-}
-#HTMLscoreContainer3 p
-{
-    width : 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-family: monospace;
-}
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/*///////Test set 4 ORANGE 1////////////*/
+/*#htmlQuestion2*/
+/*{*/
+/*    width: 100%;*/
+/*    height:10%;*/
+/*    position: relative;*/
+/*    font-size: large;*/
+/*    text-align: center;*/
+/*    padding-bottom: 1%;*/
+/*    padding-top: 4%;*/
+/*}*/
+/*#htmlAnswers2*/
+/*{*/
+/*    width: 100%;*/
+/*    padding: 5%;*/
+/*}*/
+/*.htmlChoices2*/
+/*{*/
+/*    display: inline-block;*/
+/*    width : 32%;*/
+/*    text-align: center;*/
+/*    border : 2px solid white;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    padding : 5px;*/
+/*}*/
+/*.htmlChoices2:hover*/
+/*{*/
+/*    border : 4px solid white;*/
+/*    font-weight: bold;*/
+/*}*/
 
-#HTMLquestion4
-{
-    width: 100%;
-    height:10%;
-    position: relative;
-    font-size: large;
-    text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
-}
-#HTMLanswers4
-{
-    width: 100%;
-    padding: 2%;
-}
-.HTMLchoices4
-{
-    display: inline-block;
-    width : 32%;
-    text-align: center;
-    border : 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    padding : 5px;
-}
-.HTMLchoices4:hover
-{
-    border : 4px solid white;
-    font-weight: bold;
-}
+/*#htmlResultProgress2*/
+/*{*/
+/*    position: relative;*/
+/*    padding:5px;*/
+/*    width: 65%;*/
+/*    margin-left: 33%;*/
+/*}*/
+/*.htmlProg2*/
+/*{*/
+/*    width: 35px;*/
+/*    height: 35px;*/
+/*    border: 3px solid white;*/
+/*    display: inline-block;*/
+/*    border-radius: 50%;*/
+/*    margin-left: 5px;*/
+/*}*/
+/*#htmlScoreContainer2*/
+/*{*/
 
-#HTMLresultProgress4
-{
-    position: relative;
-    padding:5px;
-    width: 65%;
-    margin-left: 35%;
-}
-.HTMLprog4
-{
-    width: 35px;
-    height: 35px;
-    border: 3px solid white;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
-}
-#HTMLscoreContainer4
-{
+/*    background-color: white;*/
+/*    opacity: 0.8;*/
+/*    border-radius: 5px;*/
+/*    position: relative;*/
 
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 5px;
-    position: relative;
-}
-#HTMLscoreContainer4 p
-{
-    width : 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-family: monospace;
-}
+/*}*/
+
+/*#htmlScoreContainer2 p*/
+/*{*/
+/*    width : 100%;*/
+/*    font-size: 1.5em;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    color: black;*/
+/*    font-family: monospace;*/
+/*}*/
+
+
+
+/*!*Third set of questions*!*/
+
+/*#htmlQuestion3*/
+/*{*/
+/*    width: 100%;*/
+/*    height:10%;*/
+/*    position: relative;*/
+/*    font-size: large;*/
+/*    text-align: center;*/
+/*    padding-bottom: 1%;*/
+/*    padding-top: 4%;*/
+/*}*/
+/*#htmlAnswers3*/
+/*{*/
+/*    width: 100%;*/
+/*    padding: 2%;*/
+/*}*/
+/*.htmlChoices3*/
+/*{*/
+/*    display: inline-block;*/
+/*    width : 32%;*/
+/*    text-align: center;*/
+/*    border : 2px solid white;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    padding : 5px;*/
+/*}*/
+/*.htmlChoices3:hover*/
+/*{*/
+/*    border : 4px solid white;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#htmlResultProgress3*/
+/*{*/
+/*    position: relative;*/
+/*    padding:5px;*/
+/*    width: 65%;*/
+/*    margin-left: 33%;*/
+/*}*/
+/*.htmlProg3*/
+/*{*/
+/*    width: 35px;*/
+/*    height: 35px;*/
+/*    border: 3px solid white;*/
+/*    display: inline-block;*/
+/*    border-radius: 50%;*/
+/*    margin-left: 5px;*/
+/*}*/
+/*#htmlScoreContainer3*/
+/*{*/
+
+/*    background-color: white;*/
+/*    opacity: 0.8;*/
+/*    border-radius: 5px;*/
+/*    position: relative;*/
+/*}*/
+/*#htmlScoreContainer3 p*/
+/*{*/
+/*    width : 100%;*/
+/*    font-size: 1.5em;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    color: black;*/
+/*    font-family: monospace;*/
+/*}*/
+/*//////////Test set 4 ORANGE 1///////////*/
+/*#htmlQuestion4*/
+/*{*/
+/*    width: 100%;*/
+/*    height:10%;*/
+/*    position: relative;*/
+/*    font-size: large;*/
+/*    text-align: center;*/
+/*    padding-bottom: 1%;*/
+/*    padding-top: 4%;*/
+/*}*/
+/*#htmlAnswers4*/
+/*{*/
+/*    width: 100%;*/
+/*    padding: 2%;*/
+/*}*/
+/*.htmlChoices4*/
+/*{*/
+/*    display: inline-block;*/
+/*    width : 32%;*/
+/*    text-align: center;*/
+/*    border : 2px solid white;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    padding : 5px;*/
+/*}*/
+/*.htmlChoices4:hover*/
+/*{*/
+/*    border : 4px solid white;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#htmlResultProgress4*/
+/*{*/
+/*    position: relative;*/
+/*    padding:5px;*/
+/*    width: 65%;*/
+/*    margin-left: 35%;*/
+/*}*/
+/*.htmlProg4*/
+/*{*/
+/*    width: 35px;*/
+/*    height: 35px;*/
+/*    border: 3px solid white;*/
+/*    display: inline-block;*/
+/*    border-radius: 50%;*/
+/*    margin-left: 5px;*/
+/*}*/
+/*#htmlScoreContainer4*/
+/*{*/
+
+/*    background-color: white;*/
+/*    opacity: 0.8;*/
+/*    border-radius: 5px;*/
+/*    position: relative;*/
+/*}*/
+/*#htmlScoreContainer4 p*/
+/*{*/
+/*    width : 100%;*/
+/*    font-size: 1.5em;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    color: black;*/
+/*    font-family: monospace;*/
+/*}*/
 
 
 
@@ -282,24 +342,63 @@
 
 /*//////////////////////////////////////////////*/
 /*//////////////////////////////////////////////*/
-/*////// JAVASCRIPT WHITE Test set 1////////////*/
+/*////// JAVASCRIPT WHITE Classes ////////////*/
+.jsWContainer
+{
+    height: 185px;
+}
+.jsOContainer
+{
+    height: 200px;
+}
 
-#jsQuestion1
+
+
+
+.jsQuestions
+{
+width: 100%;
+height:10%;
+position: relative;
+font-size: large;
+text-align: center;
+padding-bottom: 10%;
+padding-top: 4%;
+}
+.jsAnswers
 {
     width: 100%;
-    height:10%;
-    position: relative;
-    font-size: large;
     text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
+    padding-top: 7%;
 }
-#jsAnswers1
+.jsResultProgress
 {
+    position: relative;
+    text-align: center;
+    padding:5px;
     width: 100%;
-    padding: 2%;
 }
-.choices1
+.jsScoreContainer
+{
+
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    position: relative;
+}
+.jsScoreContainer p
+{
+    width : 100%;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+}
+
+
+/*JS WHITE Tests*/
+.jsWChoices
 {
     display: inline-block;
     width : 32%;
@@ -309,20 +408,13 @@
     cursor: pointer;
     padding : 5px;
 }
-.choices1:hover
+
+.jsWChoices:hover
 {
     border : 4px solid white;
     font-weight: bold;
 }
-
-#jsResultProgress1
-{
-    position: relative;
-    padding:5px;
-    width: 65%;
-    margin-left: 35%;
-}
-.prog1
+.jsWProg
 {
     width: 35px;
     height: 35px;
@@ -330,163 +422,33 @@
     display: inline-block;
     border-radius: 50%;
     margin-left: 5px;
+    padding-top: 5%;
 }
-#jsScoreContainer1
-{
 
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 5px;
-    position: relative;
-}
-#jsScoreContainer1 p
-{
-    width : 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-family: monospace;
-}
-/*JS WHITE Test set 2 */
-#jsQuestion2
-{
-    width: 100%;
-    height:10%;
-    position: relative;
-    font-size: large;
-    text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
-}
-#answers2
-{
-    width: 100%;
-    padding: 2%;
-}
-.choices2
+
+/*JS ORANGE Tests*/
+.jsOChoices
 {
     display: inline-block;
     width : 32%;
     text-align: center;
-    border : 2px solid white;
+    border : 2px solid orange;
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
 }
-.choices2:hover
+.jsOChoices:hover
 {
-    border : 4px solid white;
+    border : 4px solid orange;
     font-weight: bold;
 }
-
-#jsResultProgress2
-{
-    position: relative;
-    padding:5px;
-    width: 65%;
-    margin-left: 35%;
-}
-.prog2
+.jsOProg
 {
     width: 35px;
     height: 35px;
-    border: 3px solid white;
+    border: 3px solid orange;
+    text-align: center;
     display: inline-block;
     border-radius: 50%;
     margin-left: 5px;
 }
-#jsScoreContainer2
-{
-
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 5px;
-    position: relative;
-}
-#jsScoreContainer2 p
-{
-    width : 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-family: monospace;
-}
- /*JS WHITE Test set 3 */
-#jsQuestion3
-{
-    width: 100%;
-    height:10%;
-    position: relative;
-    font-size: large;
-    text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
-}
-#answers3
-{
-    width: 100%;
-    padding: 2%;
-}
-.choices3
-{
-    display: inline-block;
-    width : 32%;
-    text-align: center;
-    border : 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    padding : 5px;
-}
-.choices3:hover
-{
-    border : 4px solid white;
-    font-weight: bold;
-}
-
-#jsResultProgress3
-{
-    position: relative;
-    padding:5px;
-    width: 65%;
-    margin-left: 35%;
-}
-.prog3
-{
-    width: 35px;
-    height: 35px;
-    border: 3px solid white;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
-}
-#jsScoreContainer3
-{
-
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 5px;
-    position: relative;
-}
-#jsScoreContainer3 p
-{
-    width : 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-family: monospace;
-}
-
-
-
-
-
-
-
-
-
-
-
-

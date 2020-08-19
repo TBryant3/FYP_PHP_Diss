@@ -14,12 +14,6 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
 
-    <!-- External Test Scripts -->
-    <script src="assets/js/CustomScripts/accordionScripts.js"></script>
-    <script src="assets/js/CustomScripts/countDownScript.js"></script>
-    <script src="assets/js/CustomScripts/whiteTierQuestions.js"></script>
-    <script src="assets/js/CustomScripts/orangeTierQuestions.js"></script>
-
     <!--Personal Icons-->
     <link href="assets/css/all.min.css" rel="stylesheet" />
     <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
@@ -90,84 +84,80 @@
     <h1 style="text-align:center"> <b> White Belt Tests </b> <i class="fas fa-ribbon fa-1x"></i></h1>
     <h3 style="text-align:center">The following tests are short and more straight forward which allow for you to answer in confidence and build up your overall approach to the rest of the tests!</h3>
     <div class="col-xs-4">
-        <div class="HTMLcontainer1" style="border-style: solid">
-            <div id="HTMLtest1" style="display: none">
-                <div id="HTMLquestion1"></div>
-                <div id="HTMLanswers1">
-                    <div class="HTMLchoices1" id="HTMLA1" onclick="checkHTMLAnswer1('A')"></div>
-                    <div class="HTMLchoices1" id="HTMLB1" onclick="checkHTMLAnswer1('B')"></div>
-                    <div class="HTMLchoices1" id="HTMLC1" onclick="checkHTMLAnswer1('C')"></div>
+        <div class="htmlContainer1" style="border-style: solid">
+                <div id="htmlQuestion1"></div>
+                <div id="htmlAnswers1">
+                    <div class="htmlChoices1" id="htmlA1" onclick="checkHTMLAnswer1('A')"></div>
+                    <div class="htmlChoices1" id="htmlB1" onclick="checkHTMLAnswer1('B')"></div>
+                    <div class="htmlChoices1" id="htmlC1" onclick="checkHTMLAnswer1('C')"></div>
                 </div>
-                <div id="HTMLresultProgress1"></div>
-            </div>
-            <div id="HTMLscoreContainer1" style="display: none"></div>
+                <div id="htmlResultProgress1"></div>
+            <div id="htmlScoreContainer1" style="display: none"></div>
         </div>
     </div>
-
-
     <!-- Second set of questions-->
     <div class="col-xs-4">
-        <div class="HTMLcontainer2" style="border-style: solid">
-            <div id="HTMLtest2" style="display: none">
-                <div id="HTMLquestion2"></div>
-                <div id="HTMLanswers2">
-                    <div class="HTMLchoices2" id="HTMLA2" onclick="checkHTMLAnswer2('A')"></div>
-                    <div class="HTMLchoices2" id="HTMLB2" onclick="checkHTMLAnswer2('B')"></div>
-                    <div class="HTMLchoices2" id="HTMLC2" onclick="checkHTMLAnswer2('C')"></div>
+        <div class="htmlContainer2" style="border-style: solid">
+                <div id="htmlQuestion2"></div>
+                <div id="htmlAnswers2">
+                    <div class="htmlChoices2" id="htmlA2" onclick="checkHTMLAnswer2('A')"></div>
+                    <div class="htmlChoices2" id="htmlB2" onclick="checkHTMLAnswer2('B')"></div>
+                    <div class="htmlChoices2" id="htmlC2" onclick="checkHTMLAnswer2('C')"></div>
                 </div>
-                <div id="HTMLresultProgress2"></div>
-            </div>
-            <div id="HTMLscoreContainer2" style="display: none"> </div>
+                <div id="htmlResultProgress2"></div>
+            <div id="htmlScoreContainer2" style="display: none"> </div>
         </div>
     </div>
     <!-- Third set of questions-->
     <div class="col-xs-4">
-        <div class="HTMLcontainer3" style="border-style: solid">
-            <div id="HTMLtest3" style="display: none">
-                <div id="HTMLquestion3"></div>
-                <div id="HTMLanswers3"> <!-- This is 'choices' in video-->
-                    <div class="HTMLchoices3" id="HTMLA3" onclick="checkHTMLAnswer3('A')"></div>
-                    <div class="HTMLchoices3" id="HTMLB3" onclick="checkHTMLAnswer3('B')"></div>
-                    <div class="HTMLchoices3" id="HTMLC3" onclick="checkHTMLAnswer3('C')"></div>
+        <div class="htmlContainer3" style="border-style: solid">
+                <div id="htmlQuestion3"></div>
+                <div id="htmlAnswers3"> <!-- This is 'choices' in video-->
+                    <div class="htmlChoices3" id="htmlA3" onclick="checkHTMLAnswer3('A')"></div>
+                    <div class="htmlChoices3" id="htmlB3" onclick="checkHTMLAnswer3('B')"></div>
+                    <div class="htmlChoices3" id="htmlC3" onclick="checkHTMLAnswer3('C')"></div>
                 </div>
-                <div id="HTMLresultProgress3"></div>
-            </div>
-            <div id="HTMLscoreContainer3" style="display: none"> </div>
+                <div id="htmlResultProgress3"></div>
+            <div id="htmlScoreContainer3" style="display: none"> </div>
         </div>
     </div>
 </div>
 <br>
 <!------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------Test Tier 2 ORANGE------------------------------------------------------------------------->
-<div class="row" style="border: dashed; color: orange">
-    <h1 style="text-align:center"><b> Orange Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
-    <h3>Orange tier tests will be similar to Tier 1 but will use more technical terminology</h3>
-    <div class="col-xs-4">
-        <div class="HTMLcontainer4" style="height: 30%">
-            <div id="HTMLquestion4"><h3>QUESTION</h3></div>
-            <div id="HTMLanswers4">
-                <div class="HTMLchoices4" id="HTMLA4" onclick="checkHTMLAnswer4('A')">Script</div>
-                <div class="HTMLchoices4" id="HTMLB4" onclick="checkHTMLAnswer4('B')">Div</div>
-                <div class="HTMLchoices4" id="HTMLC4" onclick="checkHTMLAnswer4('C')">Style</div>
+        <div class="row" style="border: dashed; color: orange">
+            <h1 style="text-align:center"><b> Orange Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
+            <h3>Orange tier tests will be similar to Tier 1 but will use more technical terminology</h3>
+            <div class="col-xs-4">
+                <div class="htmlContainer4" style="border-style: solid">
+                    <div id="htmlQuestion4"></div>
+                    <div id="htmlAnswers4">
+                        <div class="htmlChoices4" id="htmlA4" onclick="checkHTMLAnswer4('A')"></div>
+                        <div class="htmlChoices4" id="htmlB4" onclick="checkHTMLAnswer4('B')"></div>
+                        <div class="htmlChoices4" id="htmlC4" onclick="checkHTMLAnswer4('C')"></div>
+                    </div>
+                    <div id="htmlResultProgress4"></div>
+                    <div id="htmlScoreContainer4" style="display: none"> </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<br>
-<!------------------------------------Test Tier 3 YELLOW------------------------------------------------------------------->
-<div class="row" style="border: dashed; color: gold">
-    <h1 style="text-align:center"><b> Yellow Belt Tests </b> <i class="fas fa-ribbon fa-1x"></i></h1>
-    <p style="text-align:center">Yellow tier tests will now introduce a new way to answer questions as to keep your mind engaged</p>
-    <div class="HTMLcontainer5" style="height: 30%">
-        <div id="HTMLquestion5"><h3>QUESTION</h3></div>
-        <div id="HTMLanswers5">
-            <div class="HTMLchoices5" id="HTMLA5" onclick="checkAnswer5('A')">Script</div>
-            <div class="HTMLchoices5" id="HTMLB5" onclick="checkAnswer5('B')">Div</div>
-            <div class="HTMLchoices5" id="HTMLC5" onclick="checkAnswer5('C')">Style</div>
-        </div>
-    </div>
-</div>
-<br />
+        <br>
+        <!------------------------------------Test Tier 3 YELLOW------------------------------------------------------------------->
+        <!--<div class="row" style="border: dashed; color: gold">-->
+        <!--    <h1 style="text-align:center"><b> Yellow Belt Tests </b> <i class="fas fa-ribbon fa-1x"></i></h1>-->
+        <!--    <p style="text-align:center">Yellow tier tests will now introduce a new way to answer questions as to keep your mind engaged</p>-->
+        <!--    <div class="htmlContainer5" style="border-style: solid">-->
+        <!--        <div id="htmlQuestion5"></div>-->
+        <!--        <div id="htmlAnswers5"> -->
+        <!--            <div class="htmlChoices5" id="htmlA5" onclick="checkHTMLAnswer5('A')"></div>-->
+        <!--            <div class="htmlChoices5" id="htmlB5" onclick="checkHTMLAnswer5('B')"></div>-->
+        <!--            <div class="htmlChoices5" id="htmlC5" onclick="checkHTMLAnswer5('C')"></div>-->
+        <!--        </div>-->
+        <!--        <div id="htmlResultProgress5"></div>-->
+        <!--        <div id="htmlScoreContainer5" style="display: none"> </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<br />-->
 <!------------------------------------Test Tier 4 BROWN------------------------------------------------------------------->
 <!--<div class="row" style="border: dashed; color: saddlebrown">-->
 <!--    <h1 style="text-align:center"><b> Brown Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>-->
@@ -200,10 +190,10 @@
     <h2 style="color:black; text-align:center"><b>Coming Soon</b></h2>
     <p id="countDownArea" style="text-align:center; font-size: x-large"></p>
 </div>
-</div>
+
+<script src="assets/js/CustomScripts/htmlWhiteQuestions.js"></script>
+<!--<script src="assets/js/CustomScripts/orangeTierQuestions.js"></script>-->
+<script src="assets/js/CustomScripts/countDownScript.js"></script>
 
 </body>
 </html>
-
-
-

@@ -14,13 +14,6 @@
 <!-- Bootstrap -->
 <script src="assets/js/bootstrap.js"></script>
 
-<!-- External Test Scripts -->
-<script src="assets/js/CustomScripts/whiteTierQuestions.js"></script>
-<script src="assets/js/CustomScripts/orangeTierQuestions.js"></script>
-<script src="assets/js/CustomScripts/countDownScript.js"></script>
-
-
-
 <!--Personal Icons-->
 <link href="assets/css/all.min.css" rel="stylesheet" />
 <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
@@ -84,52 +77,52 @@
     <h3>Each test set is colour coded similar to that of Martial Art belts as this hopes to give yourself more sense of progression as you move up the tiers </h3>
     <h3 style="text-align:center">You can check out our <a class="btn-link" href="jsPage.php"><b><i style="color: lightblue">JavaScript Page HERE</i></b></a> if you need a refresher</h3>
 </div>
+<br>
     <!--------------------------Test Tier 1 WHITE----------------------------------------------------------------------------->
-    <div class="row" style="border: dashed; color: papayawhip; height: 350px">
-        <h1 style="text-align:center"> <b> White Belt Tests </b> <i class="fas fa-ribbon fa-1x"></i></h1>
+    <div class="row" style="color: papayawhip; height: auto">
+        <h1 style="text-align:center"><b> White Belt Tests </b> <i class="fas fa-ribbon fa-1x" id="whiteBelt"></i></h1>
         <h3 style="text-align:center">The following tests are short and more straight forward which allow for you to answer in confidence and build up your overall approach to the rest of the tests!</h3>
-        <div class="col-xs-4">
-            <div class="container1" style="border-style: solid">
-                <div id="jsTest1" style="display: none">
-                    <div id="jsQuestion1"></div>
-                    <div id="jsAnswers1">
-                        <div class="choices1" id="A1" onclick="jsCheckAnswer1('A')"></div>
-                        <div class="choices1" id="B1" onclick="jsCheckAnswer1('B')"></div>
-                        <div class="choices1" id="C1" onclick="jsCheckAnswer1('C')"></div>
-                    </div>
-                    <div id="jsResultProgress1"></div>
+        <div class="row" id="whiteGlobal">
+            <div class="col-xs-4">
+                <h3 style="text-align: center"><u>Test 1</u></h3>
+                <div class="jsWContainer" style="border-style: solid">
+                        <div class="jsQuestions" id="jsQuestion1"></div>
+                        <div class="jsAnswers" id="jsAnswers1">
+                            <div class="jsWChoices" id="A1" onclick="jsCheckAnswer1('A')"></div>
+                            <div class="jsWChoices" id="B1" onclick="jsCheckAnswer1('B')"></div>
+                            <div class="jsWChoices" id="C1" onclick="jsCheckAnswer1('C')"></div>
+                        </div>
+                        <div class="jsResultProgress" id="jsResultProgress1"></div>
+                    <div class="jsScoreContainer" id="jsScoreContainer1" style="display: none"></div>
                 </div>
-                <div id="jsScoreContainer1" style="display: none"></div>
             </div>
-        </div>
-        <!-- Second set of questions-->
-        <div class="col-xs-4">
-            <div class="container2" style="border-style: solid">
-                <div id="jsTest2" style="display: none">
-                    <div id="jsQuestion2"></div>
-                    <div id="jsAnswers2">
-                        <div class="choices2" id="A2" onclick="jsCheckAnswer2('A')"></div>
-                        <div class="choices2" id="B2" onclick="jsCheckAnswer2('B')"></div>
-                        <div class="choices2" id="C2" onclick="jsCheckAnswer2('C')"></div>
-                    </div>
-                    <div id="jsResultProgress2"></div>
+            <!-- Second set of questions-->
+            <div class="col-xs-4">
+                <h3 style="text-align: center"><u>Test 2</u></h3>
+                <div class="jsWContainer" style="border-style: solid">
+                        <div class="jsQuestions" id="jsQuestion2"></div>
+                        <div class="jsAnswers" id="jsAnswers2">
+                            <div class="jsWChoices" id="A2" onclick="jsCheckAnswer2('A')"></div>
+                            <div class="jsWChoices" id="B2" onclick="jsCheckAnswer2('B')"></div>
+                            <div class="jsWChoices" id="C2" onclick="jsCheckAnswer2('C')"></div>
+                        </div>
+                        <div class="jsResultProgress" id="jsResultProgress2"></div>
+                    <div class="jsScoreContainer" id="jsScoreContainer2" style="display: none"> </div>
                 </div>
-                <div id="jsScoreContainer2" style="display: none"> </div>
             </div>
-        </div>
-        <!-- Third set of questions-->
-        <div class="col-xs-4">
-            <div class="container3" style="border-style: solid">
-                <div id="jsTest3" style="display: none">
-                    <div id="jsQuestion3"></div>
-                    <div id="jsAnswers3">
-                        <div class="choices3" id="A3" onclick="jsCheckAnswer3('A')"></div>
-                        <div class="choices3" id="B3" onclick="jsCheckAnswer3('B')"></div>
-                        <div class="choices3" id="C3" onclick="jsCheckAnswer3('C')"></div>
-                    </div>
-                    <div id="jsResultProgress3"></div>
+            <!-- Third set of questions-->
+            <div class="col-xs-4">
+                <h3 style="text-align: center"><u>Test 3</u></h3>
+                <div class="jsWContainer" style="border-style: solid">
+                        <div class="jsQuestions" id="jsQuestion3"></div>
+                        <div class="jsAnswers" id="jsAnswers3">
+                            <div class="jsWChoices" id="A3" onclick="jsCheckAnswer3('A')"></div>
+                            <div class="jsWChoices" id="B3" onclick="jsCheckAnswer3('B')"></div>
+                            <div class="jsWChoices" id="C3" onclick="jsCheckAnswer3('C')"></div>
+                        </div>
+                        <div class="jsResultProgress" id="jsResultProgress3"></div>
+                    <div class="jsScoreContainer" id="jsScoreContainer3" style="display: none"> </div>
                 </div>
-                <div id="jsScoreContainer3" style="display: none"> </div>
             </div>
         </div>
     </div>
@@ -138,78 +131,162 @@
     <br>
 
     <!------------------------------Test Tier 2 ORANGE------------------------------------------------------------------------->
-    <div class="row" style="border: dashed; color: orange">
-        <h1 style="text-align:center"><b> Orange Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
-        <h3>Orange tier tests will be similar to Tier 1 but will use more technical terminology</h3>
-        <div class="col-xs-4">
-            <div class="jsContainer4" style="border-style: solid">
-                <div id="jsTest4" style="display: none">
-                    <div id="jsQuestion4"></div>
-                    <div id="jsAnswers4">
-                        <div class="jsChoices4" id="A4" onclick="checkAnswer4('A')"></div>
-                        <div class="jsChoices4" id="B4" onclick="checkAnswer4('B')"></div>
-                        <div class="jsChoices4" id="C4" onclick="checkAnswer4('C')"></div>
-                    </div>
-                    <div id="jsResultProgress4"></div>
+    <div class="row" style="color: orange">
+        <h1 style="text-align:center"><b> Orange Belt Tests </b><i class="fas fa-ribbon fa-1x" id="orangeBelt"></i></h1>
+        <h3 style="text-align:center">Orange Belt tests will be similar to White Belt but will use more technical terminology</h3>
+        <div class="row" id="orangeGlobal">
+            <div class="col-xs-4">
+                <div class="jsOContainer" style="border-style: solid">
+                        <div class="jsQuestions" id="jsQuestion4"></div>
+                        <div class="jsAnswers" id="jsAnswers4">
+                            <div class="jsOChoices" id="A4" onclick="jsCheckAnswer4('A')"></div>
+                            <div class="jsOChoices" id="B4" onclick="jsCheckAnswer4('B')"></div>
+                            <div class="jsOChoices" id="C4" onclick="jsCheckAnswer4('C')"></div>
+                        </div>
+                        <div class="jsResultProgress" id="jsResultProgress4"></div>
+                    <div class="jsScoreContainer" id="jsScoreContainer4" style="display: none"> </div>
                 </div>
-                <div id="jsScoreContainer4" style="display: none"> </div>
             </div>
-        </div>
-        <div class="col-xs-4">
-            <div class="jsContainer5" style="border-style: solid">
-                <div id="jsTest5" style="display: none">
-                    <div id="jQsuestion5"></div>
-                    <div id="jAsnswers5">
-                        <div class="jsChoice5" id="A5" onclick="checkAnswer5('A')"></div>
-                        <div class="jsChoice5" id="B5" onclick="checkAnswer5('B')"></div>
-                        <div class="jsChoice5" id="C5" onclick="checkAnswer5('C')"></div>
-                    </div>
-                    <div id="jsResultProgress5"></div>
+            <div class="col-xs-4">
+                <div class="jsOContainer" style="border-style: solid">
+                        <div class="jsQuestions" id="jsQuestion5"></div>
+                        <div class="jsAnswers" id="jsAnswers5">
+                            <div class="jsOChoices" id="A5" onclick="jsCheckAnswer5('A')"></div>
+                            <div class="jsOChoices" id="B5" onclick="jsCheckAnswer5('B')"></div>
+                            <div class="jsOChoices" id="C5" onclick="jsCheckAnswer5('C')"></div>
+                        </div>
+                        <div class="jsResultProgress" id="jsResultProgress5"></div>
+                    <div class="jsScoreContainer" id="jsScoreContainer5" style="display: none"> </div>
                 </div>
-                <div id="jsScoreContainer5" style="display: none"> </div>
             </div>
-        </div>
-        <div class="col-xs-4">
-            <div class="jsContainer6" style="border-style: solid">
-                <div id="jsTest6" style="display: none">
-                    <div id="jsQuestion6"></div>
-                    <div id="jsAnswers6">
-                        <div class="jsChoices6" id="A6" onclick="checkAnswer6('A')"></div>
-                        <div class="jsChoices6" id="B6" onclick="checkAnswer6('B')"></div>
-                        <div class="jsChoices6" id="C6" onclick="checkAnswer6('C')"></div>
-                    </div>
-                    <div id="jsResultProgress6"></div>
+            <div class="col-xs-4">
+                <div class="jsOContainer" style="border-style: solid">
+                        <div class="jsQuestions" id="jsQuestion6"></div>
+                        <div class="jsAnswers" id="jsAnswers6">
+                            <div class="jsOChoices" id="A6" onclick="jsCheckAnswer6('A')"></div>
+                            <div class="jsOChoices" id="B6" onclick="jsCheckAnswer6('B')"></div>
+                            <div class="jsOChoices" id="C6" onclick="jsCheckAnswer6('C')"></div>
+                        </div>
+                        <div class="jsResultProgress" id="jsResultProgress6"></div>
+                    <div class="jsScoreContainer" id="jsScoreContainer6" style="display: none"> </div>
                 </div>
-                <div id="jsScoreContainer6" style="display: none"> </div>
             </div>
         </div>
     </div>
 
 
-    <!------------------------------END OF ORANGE TESTS------------------------------------------------------------------------->
-    <br>
-    <!------------------------------------Test Tier 3 Yellow------------------------------------------------------------------->
-    <div class="container" style="border: dashed; color: gold">
-        <h1 style="text-align:center"><b> Yellow Belt Tests </b> <i class="fas fa-ribbon fa-1x"></i></h1>
-        <h3 style="text-align:center">Yellow tier tests will now introduce a new way to answer questions as to keep your mind engaged</h3>
+    <!-----------------------------------------END OF ORANGE TESTS------------------------------------------------------------>
 
+    <br>
+
+    <!------------------------------------Test Tier 3 Yellow------------------------------------------------------------------->
+    <div class="row" style="color: gold">
+        <h1 style="text-align:center"><b> Yellow Belt Tests </b> <i class="fas fa-ribbon fa-1x" id="yellowBelt"></i></h1>
+        <h3 style="text-align:center">Yellow tier tests will now introduce a new way to answer questions as to keep your mind thinking!</h3>
+        <div class="row" id="yellowGlobal">
+        <h3 style="text-align:center">Try and complete these equations with the provided pieces of code!</h3>
+            <div class="row" id="equations" style="text-align: center">
+                <div class="col-xs-4">
+                    <h4><b><u>Equation 1:</u></b><br>Complete the function</h4>
+                    <p>function changeColour(){
+                        document.<div ondragover="allowDrop(e)"><div class="dropZone" ondrop="drop(e)" ___________ </div>"(colourBox).style.backgroundColor = "green";
+                        }
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <h4><b><u>Equation 2:</u></b><br> Complete the EventListener</h4>
+
+                </div>
+                <div class="col-xs-4">
+                    <h4><b><u>Equation 3:</u></b><br> Which variable would work best here</h4>
+
+                </div>
+            </div>
+
+            <div class="row" id="codePieces">
+                <div class="col-xs-4">
+                    <h4>Equation 1 Pieces:</h4>
+                    <div id="jsPieces1">
+                        <div id="p1Frag1">
+                            <img src="assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip1" ondragstart="drag(e)">
+                        </div>
+                        <div id="p1Frag2">
+                            <img src="assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip2" ondragstart="drag(e)">
+                        </div>
+                        <div id="p1Frag3">
+                            <img src="assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip3" ondragstart="drag(e)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <h4>Equation 2 Pieces:</h4>
+                    <div id="jsPieces2">
+                        <div id="p2Frag1">
+                            <p>img</p>
+                        </div>
+                        <div id="p2Frag2">
+                            <p>img</p>
+                        </div>
+                        <div id="p2Frag3">
+                            <p>img</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-4">
+                    <h4>Equation 3 Pieces:</h4>
+                    <div id="jsPieces3">
+                        <div id="p3Frag1">
+                            <p>img</p>
+                        </div>
+                        <div id="p3Frag2">
+                            <p>img</p>
+                        </div>
+                        <div id="p3Frag3">
+                            <p>img</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" id="equationResults">
+                <div class="col-xs-4">
+                    <h4>Result 1:</h4>
+                    <p>Placeholder</p>
+                </div>
+                <div class="col-xs-4">
+                    <h4>Result 2:</h4>
+                    <p>Placeholder</p>
+                </div>
+                <div class="col-xs-4">
+                    <h4>Result 3:</h4>
+                    <p>Placeholder</p>
+                </div>
+            </div>
+        </div>
     </div>
     <br>
     <!------------------------------------Test Tier 4 Brown------------------------------------------------------------------->
     <div class="container" style="border: dashed; color: saddlebrown">
         <h1 style="text-align:center"><b> Brown Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
         <h3 style="text-align:center">These tests are designed to take the information that you have learnt from the JavaScript Topic Page and apply it to see how the code works for yourself.</h3>
-
+        <h2 style="color:saddlebrown; text-align:center"><b><i>Coming Soon</i></b></h2>
+        <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
     </div>
     <br>
     <!------------------------------------Test Tier 5------------------------------------------------------------------->
     <div class="container" style="border: dashed; color: black">
         <h1 style="text-align:center"><b> Black Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
-            <h2 style="color:black; text-align:center"><b>Coming Soon</b></h2>
-            <p id="countDownArea" style="text-align:center; font-size: x-large"></p>
+            <h2 style="color:black; text-align:center"><b><i>Coming Soon</i></b></h2>
+            <p id="countDownArea2" style="text-align:center; font-size: x-large"></p>
     </div>
+
+<!-- External Test Scripts -->
+<script src="assets/js/CustomScripts/jsWhiteQuestions.js"></script>
+<script src="assets/js/CustomScripts/jsOrangeQuestions.js"></script>
+<script src="assets/js/CustomScripts/jsYellowQuestions.js"></script>
+
+<script src="assets/js/CustomScripts/countDownScript.js"></script>
 </body>
 </html>
-
-
-
