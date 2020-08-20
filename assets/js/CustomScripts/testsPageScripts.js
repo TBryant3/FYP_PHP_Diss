@@ -1,12 +1,10 @@
-$(document).ready(function ($)
-{
-    let favTest1 = document.getElementById("favTest1");
-    let favTest2 = document.getElementById("favTest2");
-    let favTest3 = document.getElementById("favTest3");
-    let favTest4 = document.getElementById("favTest4");
 
+let favTest1 = document.getElementById("favTest1");
+let favTest2 = document.getElementById("favTest2");
+let favTest3 = document.getElementById("favTest3");
+let favTest4 = document.getElementById("favTest4");
 
-    function favTestAlert()
+    function FavTestAlert()
     {
         // First (HTML/CSS) Tests Alert Settings //
         this.favTestHTML = function(dialog)
@@ -163,8 +161,10 @@ $(document).ready(function ($)
             }
         }
     }
-    let testAlert = new favTestAlert();
-    favTestAlert();
+    let testAlert = new FavTestAlert();
+    FavTestAlert();
+
+
 
 
 
@@ -221,4 +221,4 @@ $(document).ready(function ($)
                 $('#jsTest-label').text("Completed!")
             }
         });
-});
+

@@ -6,24 +6,24 @@
     <title>About CoJō</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-
+    <script src="../assets/js/bootstrap.js"></script>
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<!------------------NAV BAR SETTINGS------------------------>
+<<!------------------NAV BAR SETTINGS------------------------>
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -32,8 +32,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -42,6 +42,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="testsPage.php" style="font-size: medium">Tests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.php" style="font-size: medium">About CoJō</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contactUs.php" style="font-size: medium">Contact Us</a>

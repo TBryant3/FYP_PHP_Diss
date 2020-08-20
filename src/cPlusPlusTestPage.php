@@ -6,29 +6,21 @@
     <title>CoJō Home Page</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-
-    <!--Personal Icons-->
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-
+    <script src="../assets/js/bootstrap.js"></script>
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
-    <style>
-
-    </style>
 </head>
 
 <body style="background-color: lightslategrey">
@@ -41,8 +33,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -76,10 +68,10 @@
 
 
 <div class="Welcoming">
-    <h1 style="text-align:center"><b>C# Tests </b><img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></h1>
+    <h1 style="text-align:center"><b>C++ Tests </b><img class="topicLogos" alt="C_Plus_Logo" src="../assets/img/Cplusplus_logo.png" /></h1>
     <h2 style="text-align:center">These tests are designed to take the information that you have learnt about HTML and apply it to see how the language works for yourself!</h2>
     <h3>Each test set is colour coded similar to that of Martial Art belts as this hopes to give yourself more sense of progression as you move up the tiers </h3>
-    <h3 style="text-align:center">You can check out our <a class="btn-link" href="cSharpPage.php"><b><i style="color: lightblue">C# Page HERE</i></b></a> if you need a refresher</h3>
+    <h3 style="text-align:center">You can check out our <a class="btn-link" href="cPlusPlusPage.php"><b><i style="color: lightblue">C++ Page HERE</i></b></a> if you need a refresher</h3>
 </div>
 <!--------------------------Test Tier 1----------------------------------------------------------------------------->
 <div class="container" style="border: dashed; color: papayawhip">
@@ -89,9 +81,10 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>Question 1:</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkCSAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkCSAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkCSAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
 
@@ -115,9 +108,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkCSAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkCSAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkCSAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -141,9 +134,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkCSAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkCSAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkCSAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -167,9 +160,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkCSAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkCSAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkCSAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -194,9 +187,9 @@
     <div class="row" style="height: 30%">
         <div id="question"><h3>QUESTION</h3></div>
         <div id="answers">
-            <div class="choices" id="A" onclick="checkCSAnswer1('A')">Script</div>
-            <div class="choices" id="B" onclick="checkCSAnswer1('B')">Div</div>
-            <div class="choices" id="C" onclick="checkCSAnswer1('C')">Style</div>
+            <div class="choices" id="A" onclick="checkCPAnswer1('A')">Script</div>
+            <div class="choices" id="B" onclick="checkCPAnswer1('B')">Div</div>
+            <div class="choices" id="C" onclick="checkCPAnswer1('C')">Style</div>
         </div>
     </div>
     <div class="row" style="height: 30%">
@@ -212,7 +205,6 @@
     </div>
     <br>
 </div>
-</div>
 
 </body>
 </html>
@@ -220,44 +212,44 @@
 
 <!--Scripts-->
 <script>
-//
-//    const question = document.getElementById("question");
-//    const answerA = document.getElementById("A");
-//    const answerB = document.getElementById("B");
-//    const answerC = document.getElementById("C");
-//
-//    let whiteQuestions = [
-//        {
-//            question : "Which of these tags do you need to add JavaScript to a HTML document?",
-//            answerA : "Script",
-//            answerB : "Div",
-//            answerC : "Style",
-//            correctAnswer : "A"
-//        },
-//        {
-//            question : "What type of computing language is JavaScript?",
-//            answerA : "Mark-Up",
-//            answerB : "StyleSheet",
-//            answerC : "Scripting",
-//            correctAnswer : "C"
-//        },
-//        {
-//            question : "JavaScript can be used to create webpages instead of HTML?",
-//            answerA : "True",
-//            answerB : "False",
-//            answerC : "Sometimes",
-//            correctAnswer : "B"
-//        },
-//    ];
-//
-//    function correctAnswer()
-//    {
-//
-//    }
-//    function wrongAnswer()
-//    {
-//
-//    }
+
+    // const question = document.getElementById("question");
+    // const answerA = document.getElementById("A");
+    // const answerB = document.getElementById("B");
+    // const answerC = document.getElementById("C");
+    //
+    // let whiteQuestions = [
+    //     {
+    //         question : "Which of these tags do you need to add JavaScript to a HTML document?",
+    //         answerA : "Script",
+    //         answerB : "Div",
+    //         answerC : "Style",
+    //         correctAnswer : "A"
+    //     },
+    //     {
+    //         question : "What type of computing language is JavaScript?",
+    //         answerA : "Mark-Up",
+    //         answerB : "StyleSheet",
+    //         answerC : "Scripting",
+    //         correctAnswer : "C"
+    //     },
+    //     {
+    //         question : "JavaScript can be used to create webpages instead of HTML?",
+    //         answerA : "True",
+    //         answerB : "False",
+    //         answerC : "Sometimes",
+    //         correctAnswer : "B"
+    //     },
+    // ];
+    //
+    // function correctAnswer()
+    // {
+    //
+    // }
+    // function wrongAnswer()
+    // {
+    //
+    // }
 
 
 
@@ -295,6 +287,7 @@
             });
 
     }
+
 
     collapse();
 

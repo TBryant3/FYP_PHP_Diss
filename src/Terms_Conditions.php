@@ -6,20 +6,23 @@
     <title>CoJō Home Page</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-
+    <script src="../assets/js/bootstrap.js"></script>
+    <!--Personal Icons-->
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
 </head>
     <body>

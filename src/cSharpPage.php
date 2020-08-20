@@ -6,21 +6,20 @@
     <title>HTML/CSS Page</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-
+    <script src="../assets/js/bootstrap.js"></script>
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -33,8 +32,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -70,14 +69,15 @@
 <div class="row">
         <h1 style="text-align:center; color: rebeccapurple">
             <u><b>C# (C-Sharp)</b></u>
-            <img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" />
-            <p style="text-align: center; font-size: medium">
-                <i>Founded in 2000 by Anders Hejlsberg</i>
-            </p>
+            <img class="topicLogos" alt="C_Sharp_Logo" src="../assets/img/Csharp_logo.png" />
         </h1>
+        <p style="text-align: center; font-size: medium">
+            <i>Founded in 2000 by Anders Hejlsberg</i>
+        </p>
+
         <br>
         <!--Short description of HTML-->
-        <p alt="C# Description" class="topicDesc" style="font-size: large">
+        <p class="topicDesc" style="font-size: large">
             ADD INTRO TEXT
         </p>
 </div>
@@ -121,7 +121,7 @@
             <h3 class="learnTitles">C# Integration</h3>
             <p>ADD TEXT</p>
         </div>
-        </br>
+        <br>
         <div id="progressBarCS2" style="position:relative">
             Progress Completed: <b><span id="pb-label2" style="position:relative"></span></b>
         </div>
@@ -218,7 +218,7 @@
                 },
                 complete: function ()
                 {
-                    $('#t4Btn1').button("disable"),
+                    $('#t4Btn1').button("disable")
                         $('#t4Btn1').text("Completed")
                 },
                 change: function ()

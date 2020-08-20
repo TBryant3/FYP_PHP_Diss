@@ -6,23 +6,24 @@
     <title>Account Page</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
     <!--Personal Icons-->
-    <script src="https://kit.fontawesome.com/70ac388725.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
 
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
         p
@@ -34,6 +35,7 @@
             margin: 5px;
         }
     </style>
+
 </head>
 
 <body>
@@ -46,8 +48,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -134,40 +136,40 @@
             <h2 style="text-align:center"><strong>Test Yourself</strong></h2>
             <div id="testAccordion">
                 <h3>HTML Tests</h3>
-                <div id="htmltestAcc">
+                <div id="htmlTestAcc">
                     <h3>Test 1</h3>
-                    <p> DXDDDD</p>
+                    <p> Test Result</p>
                     <h3>Test 2</h3>
-                    <p> FDFFSF</p>
+                    <p> Test Result</p>
                     <h3>Test 3</h3>
-                    <p>FVGDGDG</p>
+                    <p>Test Result</p>
                 </div>
                 <h3>C#</h3>
-                <div id="cSharptestAcc">
+                <div id="cSharpTestAcc">
                     <h3>Test 1</h3>
-                    <p> DXDDDD</p>
+                    <p> Test Result</p>
                     <h3>Test 2</h3>
-                    <p> FDFFSF</p>
+                    <p> Test Result</p>
                     <h3>Test 3</h3>
-                    <p>FVGDGDG</p>
+                    <p>Test Result</p>
                 </div>
                 <h3>C++</h3>
-                <div id="cPlustestAcc">
+                <div id="cPlusTestAcc">
                     <h3>Test 1</h3>
-                    <p> DXDDDD</p>
+                    <p> Test Result</p>
                     <h3>Test 2</h3>
-                    <p> FDFFSF</p>
+                    <p> Test Result</p>
                     <h3>Test 3</h3>
-                    <p>FVGDGDG</p>
+                    <p>Test Result</p>
                 </div>
                 <h3>JavaScript</h3>
-                <div id="javaScripttestAcc">
+                <div id="javaScriptTestAcc">
                     <h3>Test 1</h3>
-                    <p> DXDDDD</p>
+                    <p> Test Result</p>
                     <h3>Test 2</h3>
-                    <p> FDFFSF</p>
+                    <p> Test Result</p>
                     <h3>Test 3</h3>
-                    <p>FVGDGDG</p>
+                    <p>Test Result</p>
                 </div>
             </div>
         </div>
@@ -212,7 +214,7 @@
 
         <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 1</h4>
-            <span id="badge1"><i class="fab fa-html5 fa-3x" alt="Obtain this badge by..."></i></span>
+            <span id="badge1"><i class="fab fa-html5 fa-3x"></i></span>
             <h5 class="isObtained" style="text-align:center; font-style:oblique">Not Obtained</h5>
         </div>
         <div class="col-md-2" style="text-align:center">
@@ -273,7 +275,7 @@
 <script>
     // Function which sets the options for the accordion elements //
     function collapseHeadings()
-    {        // Topics main Accodion element
+    {        // Topics main Accordion element
         $("#topicAccordion").accordion(
             {
                 active: false, // Is not open on load //
@@ -318,28 +320,28 @@
                 heightStyle: "content",
                 animate: 150,
             });
-        $("#htmltestAcc").accordion(
+        $("#htmlTestAcc").accordion(
             {
                 active: false,
                 collapsible: true,
                 heightStyle: "content",
                 animate: 150,
             });
-        $("#cSharptestAcc").accordion(
+        $("#cSharpTestAcc").accordion(
             {
                 active: false,
                 collapsible: true,
                 heightStyle: "content",
                 animate: 150,
             });
-        $("#cPlustestAcc").accordion(
+        $("#cPlusTestAcc").accordion(
             {
                 active: false,
                 collapsible: true,
                 heightStyle: "content",
                 animate: 150,
             });
-        $("#javaScripttestAcc").accordion(
+        $("#javaScriptTestAcc").accordion(
             {
                 active: false,
                 collapsible: true,

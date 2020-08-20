@@ -6,29 +6,24 @@
     <title>CoJō Test Centre</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
 
-
-    <!-- Custom Scripts -->
-    <script src="assets/js/CustomScripts/testsPageScripts.js"></script>
-    <script src="assets/js/CustomScripts/countDownScript.js"></script>
-
-    <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <!--Personal Icons-->
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <!--Custom CSS-->
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -42,8 +37,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -94,7 +89,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTest1" onclick="testAlert.favTestHTML('<b>HTML & CSS Tests:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="text-align:center"><b style="color:orange">HTML</b><img class="topicLogos" alt="HTML Logo"  src="assets/img/HTML5_logo.png"  /><b style="color: blue"> CSS </b><img class="CSS_logo"  alt="CSS Logo" src="assets/img/CSS3_logo.png"  /> <b style="color: orange">Tes</b><b style="color: blue">ts</b></h2>
+        <h2 style="text-align:center"><b style="color:orange">HTML</b><img class="topicLogos" alt="HTML Logo"  src="../assets/img/HTML5_logo.png"  /><b style="color: blue"> CSS </b><img class="CSS_logo"  alt="CSS Logo" src="../assets/img/CSS3_logo.png"  /> <b style="color: orange">Tes</b><b style="color: blue">ts</b></h2>
         <p style="text-align:center"><i>Web Development Mark-up language used to produce web pages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
         <p><a class="btn btn-default" href="htmlTestPage.php" style="color:orange"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
@@ -107,7 +102,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTest2" onclick="testAlert.favTestJS('<b>JavaScript Tests:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color:goldenrod; text-align:center"><b>JavaScript Tests<img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></b></h2>
+        <h2 style="color:goldenrod; text-align:center"><b>JavaScript Tests<img class="topicLogos" alt="JavaScript_Logo"  src="../assets/img/js-logo.png" /></b></h2>
         <p style="text-align:center"><i>These tests will go through the basics through to more complicated JavaScript functions with a well-rounded approach against what you have learnt from using this application</i></p>
         <p><a class="btn btn-default" href="jsTestPage.php" style="color:goldenrod"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
@@ -142,7 +137,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTest3" onclick="testAlert.favTestPlus('<b>C++ Tests: </b><br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color:deepskyblue; text-align:center"><b>C++ Tests <img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></b></h2>
+        <h2 style="color:deepskyblue; text-align:center"><b>C++ Tests <img class="topicLogos" alt="C_Plus_Logo"  src="../assets/img/Cplusplus_logo.png" /></b></h2>
         <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
         <p><a class="btn btn-default" href="cPlusPlusTestPage.php" style="color:deepskyblue"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
@@ -155,7 +150,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTest4" onclick="testAlert.favTestSharp('<b>C# Tests:</b> <br> favourite settings have been updated!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color:rebeccapurple; text-align:center"><b>C# Tests <img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></b></h2>
+        <h2 style="color:rebeccapurple; text-align:center"><b>C# Tests <img class="topicLogos" alt="C_Sharp_Logo" src="../assets/img/Csharp_logo.png" /></b></h2>
         <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
         <p><a class="btn btn-default" href="cSharpTestPage.php" style="color:rebeccapurple"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
@@ -205,6 +200,9 @@
     </div>
 </div>
 
+<!-- Custom Scripts -->
+<script src="../assets/js/CustomScripts/testsPageScripts.js"></script>
+<script src="../assets/js/CustomScripts/countDownScript.js"></script>
 
 </body>
 </html>

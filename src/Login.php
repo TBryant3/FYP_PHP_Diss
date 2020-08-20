@@ -104,43 +104,39 @@
     <title>Login Page</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
     <!--Personal Icons-->
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
-        input[type=text], input[type=password] {
-            width: 50%;
+        input[type=text], input[type=password]
+        {
+            width: 100%;
             padding: 1%;
-            margin: 0;
         }
-
-        input[type=text]:focus, input[type=password]:focus {
+        input[type=text]:focus, input[type=password]:focus
+        {
             background-color: #ddd;
         }
         #projectLogo
         {
             width:15%;
             height:15%;
-
         }
-
-
     </style>
 </head>
 
@@ -154,8 +150,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -177,7 +173,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Register.php" style="font-size: medium">Register</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -185,51 +180,48 @@
 </div>
 
 
-<form method="post" id="loginForm" runat="server">
+<form method="post" id="loginForm">
     <div class="formContainer">
-        <h2 style="text-align:center"><strong>Login to access your Inner Warrior!</strong></h2>
+        <h2 style="text-align:center"><b>Login to access your Inner Warrior!</b></h2>
         <br>
         <div class="row">
             <div class="col-xs-4"></div>
             <div class="col-xs-4">
                 <div class="text-center">
-                    <img src="assets/img/CoJo_Logo.png" alt="Cojo Logo" id="projectLogo">
+                    <img src="../assets/img/CoJo_Logo.png" alt="Cojo Logo" id="projectLogo">
                 </div>
             </div>
             <div class="col-xs-4"></div>
-
         </div>
         <h4 style="text-align:center">Login to unlock all of the features exclusive to your account!</h4>
         <h4 style="text-align: center ">See your total progress within each Topic and be able to track your test scores and progress from your <a href="account.php">Account </a>page!</h4>
-        <br />
-        <div class="row" style="vertical-align: center">
+        <br>
+        <div class="row" style="text-align: center">
             <div class="col-xs-4"></div>
             <div class="col-xs-4">
-                <div class="row">
-                    <div class="text-center">
-                        <i class="fa fa-user"></i>
-                        <label for="username" style="width:25%">Username:
-
-                            <input type="text" name="username" placeholder="Insert username..." class="form-control" required />
-                        </label>
-                    </div>
-                </div>
-                <br />
-                <div class="row">
-                    <div class="text-center">
-                        <i class="fa fa-key"></i><label for="psw" style="width:24.5%">Password:</label>
-                        <input type="password" name="password" placeholder="Insert password..." class="form-control" style="margin: 0" required />
-                        <p>Forgotten your password? <a href="forgotPsw.php">Click me to recover</a>!</p>
-                    </div>
-                </div>
+                <i class="fa fa-user"></i>
+                <label for="username" style="width:35%">
+                    Username:<input type="text" name="username" placeholder="Insert username..." class="form-control" required />
+                </label>
             </div>
             <div class="col-xs-4"></div>
         </div>
-        <div class="row">
+        <div class="row" style="text-align: center">
             <div class="col-xs-4"></div>
             <div class="col-xs-4">
-                <div id="signin-container" style="padding-left:5%">
-                    <p><input type="submit" value="Login" class="btn btn-info" style="border-radius:3%"><b style="font-size:medium"> OR </b> Don't already have an account? <a href="Register.php" style="font-size:medium" >Register here</a>!</p>
+                <i class="fa fa-key"></i>
+                <label for="password" style="width:35%">
+                    Password:<input type="password" name="password" placeholder="Insert password..." class="form-control" required />
+                </label>
+                <p>Forgotten your password? <a href="forgotPsw.php"> Click me to recover</a>!</p>
+            </div>
+            <div class="col-xs-4"></div>
+        </div>
+        <div class="row" style="text-align: center">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4">
+                <div id="signin-container" style="text-align: center">
+                    <p><input type="submit" value="Login" class="btn btn-info" style="border-radius:3%"> <br><br> <b style="font-size:large"> OR </b> <br><br> Don't already have an account?<br> <a href="Register.php" style="font-size:medium" >Register here</a>!</p>
                 </div>
             </div>
             <div class="col-xs-4"></div>

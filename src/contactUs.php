@@ -5,25 +5,20 @@
     <title>Contact Page</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-
-
-    <!--Personal Icons-->
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-
+    <script src="../assets/js/bootstrap.js"></script>
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
         .formContainer {
@@ -53,8 +48,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -96,26 +91,30 @@
             <div class="col-md-5">
                 <div class="row" style="width:100%">
                     <i class="fa fa-user"></i>
-                    <label for="username" style="width:25%">Username:</label>
+                    <label for="username" style="width:25%">Username:
                     <input type="text" id="usernameInput" name="username" placeholder="Insert Username...." required>
+                    </label>
                 </div>
                 <br />
                 <div class="row" style="width:100%">
                     <i class="fa fa-envelope"></i>
-                    <label for="email" style="width:25%">Email:</label>
+                    <label for="email" style="width:25%">Email:
                     <input type="text" id="emailInput" name="email" placeholder="_________.co.uk" required>
+                    </label>
                 </div>
                 <br />
                 <div class="row" style="width:100%">
                     <i class="fa fa-book"></i>
-                    <label for="subject" style="width:25%">Subject:</label>
+                    <label for="subject" style="width:25%">Subject:
                     <input type="text" id="subjectInput" name="subject" placeholder="Insert your subject matter..." required>
+                    </label>
                 </div>
                 <br />
                 <div class="row" style="width:100%">                    
                     <i class="fa fa-info"></i>
-                    <label for="extraInfo" style="width:26%">Extra Information:</label>
+                    <label for="extraInfo" style="width:26%">Extra Information:
                     <input type="text" id="infoInput" name="extraInfo" placeholder="Any more details can go here..." >
+                    </label>
                 </div>
                 <br />
                 <div class="row">
@@ -152,7 +151,7 @@
                     <abbr title="Telephone Number" style="font-size: x-large"><b>Telephone:</b></abbr>
                     <p style="font-size: medium">0118 999 881 999 119 725 3</p>
                 </address>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.5132215270094!2d-0.06746489616339846!3d51.50794376357336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760357196b5e3d%3A0xb885ac56e90836e!2sIpsos%20MORI!5e0!3m2!1sen!2suk!4v1585769091840!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:solid" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.5132215270094!2d-0.06746489616339846!3d51.50794376357336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760357196b5e3d%3A0xb885ac56e90836e!2sIpsos%20MORI!5e0!3m2!1sen!2suk!4v1585769091840!5m2!1sen!2suk" width="600" height="450" style="border:solid" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
                 <address>
                     <strong>Support:</strong>   <a href="mailto:CoJoSupport@cojo.com">CoJoSupport@cojo.com</a><br />
                 </address>
@@ -168,11 +167,10 @@
     function confirmMessage()
     {
         window.alert("Thank you!" + "\n" + "This feature is not functional but is to show the form submission");
-    };
+    }
 
-    if ($("#usernameInput").Text == null)
+    if ($("#usernameInput").text == null)
     {
         $('#submitBtn').button("disable");
-    };
-
+    }
 </script>

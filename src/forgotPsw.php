@@ -6,20 +6,20 @@
     <title>Forgotten Password</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-
+    <script src="../assets/js/bootstrap.js"></script>
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
         input[type=text]{
@@ -55,8 +55,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -104,16 +104,18 @@
             <div class="col-md-6">
                 <h4 style="text-align:center">Either input the Username of your account...</h4>
                 <div class="row" style="width:100%; padding-left:10%">
-                    <label for="username" style="width:25%; text-align:right">Username:</label>
+                    <label for="username" style="width:25%; text-align:right">Username:
                     <input type="text" name="username" placeholder="E.g: cojoUser1..." required />
+                    </label>
                 </div>
                 <br />
                 <h1 style="text-align:center"><b>OR</b></h1>
                 <br />
                 <h4 style="text-align:center">Input the email address that is linked to your account</h4>
                 <div class="row" style="width:100%; padding-left:10%">
-                    <label for="email" style="width:25%; text-align:right; padding-left:5%"><b>Email:</b></label>
+                    <label for="email" style="width:25%; text-align:right; padding-left:5%"><b>Email:</b>
                     <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required />
+                    </label>
                 </div>
                 <br />
                 <div class="row" style="width:100%">

@@ -168,23 +168,23 @@
     <title>CoJō Register Page</title>
 
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
     <!--Personal Icons-->
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
         .formContainer {
@@ -213,8 +213,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -250,50 +250,56 @@
         <h4 style="text-align:center">Here you can register an account with us!</h4>
         <h4 style="text-align: center ">Its quick and easy and comes with a variety of <a id="benefitsLink" href="aboutUs.php">Benefits</a></h4>
         <br />
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="registerForm">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="registerForm">
             <div class="row">
                 <div class="col-xs-5"></div>
                 <div class="col-xs-7">
                     <!-- Username field -->
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                         <i class="far fa-id-card"></i>
-                        <label for="username" style="width:25%">Username:</label>
+                        <label for="username" style="width:25%">Username:
                         <input type="text" name="username" placeholder="E.g: CoJoUser1..." class="form-control" value="<?php echo $username; ?>">
+                        </label>
                         <span class="help-block"><?php echo $username_err; ?> </span>
                     </div>
                     <!-- First name field -->
                     <div class="form-group <?php echo (!empty($firstName_err)) ? 'has-error' : ''; ?>">
                         <i class="fa fa-user"></i>
-                            <label for="firstName" style="width:25%">First Name:</label>
+                            <label for="firstName" style="width:25%">First Name:
                         <input type="text" name="firstName" placeholder="E.g: Tyler" class="form-control" value="<?php echo $firstName; ?>">
+                            </label>
                             <span class="help-block"><?php echo $firstName_err; ?></span>
                     </div>
                     <!-- Last Name field -->
                     <div class="form-group <?php echo (!empty($lastName_err)) ? 'has-error' : ''; ?>">
                         <i class="fa fa-user"></i>
-                            <label for="lastName" style="width:25%">Last Name:</label>
+                            <label for="lastName" style="width:25%">Last Name:
                         <input type="text" name="lastName" placeholder="E.g: Bryant" class="form-control" value="<?php echo $lastName; ?>">
+                            </label>
                             <span class="help-block"><?php echo $lastName_err; ?></span>
                     </div>
                     <!-- Email field -->
                     <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
                         <i class="fa fa-envelope"></i>
-                            <label for="email" style="width:25%">Email:</label>
+                            <label for="email" style="width:25%">Email:
                         <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." class="form-control" value="<?php echo $email; ?>">
+                            </label>
                             <span class="help-block"><?php echo $email_err; ?> </span>
                     </div>
                     <!-- Password field -->
                     <div class="form-group <?php echo (!empty($psw_err)) ? 'has-error' : ''; ?>">
                         <i class="fa fa-key"></i>
-                            <label for="psw" style="width:25%">Password:</label>
+                            <label for="psw" style="width:25%">Password:
                         <input type="password" name="psw" placeholder="Insert password..." class="form-control" value="<?php echo $psw; ?>">
+                            </label>
                             <span class="help-block"><?php echo $psw_err; ?> </span>
                     </div>
                     <!-- Confirm Password field -->
                     <div class="form-group <?php echo (!empty($confirm_psw_err)) ? 'has-error' : ''; ?>">
                         <i class="fa fa-key"></i>
-                            <label for="confirm_psw" style="width:25%">Confirm Password:</label>
+                            <label for="confirm_psw" style="width:25%">Confirm Password:
                         <input type="password" name="confirm_psw" placeholder="Re-type password..." class="form-control" value="<?php echo $confirm_psw; ?>">
+                            </label>
                             <span class="help-block"><?php echo $confirm_psw_err; ?> </span>
                     </div>
                     <div class="form-group <?php echo (!empty($country_err)) ? 'has-error' : ''; ?>">
@@ -318,7 +324,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
 </body>
 </html>

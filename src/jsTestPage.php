@@ -5,27 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CoJō Home Page</title>
 
-<!--Browser version support-->
-<script src="assets/js/modernizr-2.8.3.js"></script>
-<!--jQuery Link-->
-<script src="assets/js/jquery-3.4.1.js"></script>
-<!--jQuery-UI Link-->
-<script src="assets/js/jquery-ui-1.12.1.js"></script>
-<!-- Bootstrap -->
-<script src="assets/js/bootstrap.js"></script>
-
-<!--Personal Icons-->
-<link href="assets/css/all.min.css" rel="stylesheet" />
-<link href="assets/css/fontawesome.min.css" rel="stylesheet" />
-
-<!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet"/>
-<link href="assets/css/bootstrap-theme.css" rel="stylesheet"/>
-<link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet"/>
-<link href="assets/css/Site.css" rel="stylesheet"/>
-<link href="assets/css/allTopicStyles.css" rel="stylesheet" />
-<link href="assets/css/themes/base/accordion.css" rel="stylesheet"/>
-<link href="assets/css/testStyles.css" rel="stylesheet" />
+    <!--Browser version support-->
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
+    <!--jQuery Link-->
+    <script src="../assets/js/jquery-3.4.1.js"></script>
+    <!--jQuery-UI Link-->
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
+    <!-- Bootstrap -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <!--Personal Icons-->
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -39,8 +36,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -72,7 +69,7 @@
     </div>
 </nav>
 <div class="Welcoming">
-    <h1 style="text-align:center;font-family: monospace"><b>JavaScript Tests</b><img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></h1>
+    <h1 style="text-align:center;font-family: monospace"><b>JavaScript Tests</b><img class="topicLogos" alt="JavaScript_Logo"  src="../assets/img/js-logo.png" /></h1>
     <h2 style="text-align:center">These tests are designed to take the information that you have learnt about JavaScript and apply it to see how the language works for yourself!</h2>
     <h3>Each test set is colour coded similar to that of Martial Art belts as this hopes to give yourself more sense of progression as you move up the tiers </h3>
     <h3 style="text-align:center">You can check out our <a class="btn-link" href="jsPage.php"><b><i style="color: lightblue">JavaScript Page HERE</i></b></a> if you need a refresher</h3>
@@ -188,10 +185,11 @@
             <div class="row" id="equations" style="text-align: center">
                 <div class="col-xs-4">
                     <h4><b><u>Equation 1:</u></b><br>Complete the function</h4>
-                    <p>function changeColour(){
-                        document.<div ondragover="allowDrop(e)"><div class="dropZone" ondrop="drop(e)" ___________ </div>"(colourBox).style.backgroundColor = "green";
+                    <div>
+                        function changeColour(){
+                        document.<div ondragover="allowDrop(e)"><div class="dropZone" ondrop="drop(e)"></div> ___________ </div>"(colourBox).style.backgroundColor = "green";
                         }
-                    </p>
+                    </div>
                 </div>
                 <div class="col-xs-4">
                     <h4><b><u>Equation 2:</u></b><br> Complete the EventListener</h4>
@@ -208,13 +206,13 @@
                     <h4>Equation 1 Pieces:</h4>
                     <div id="jsPieces1">
                         <div id="p1Frag1">
-                            <img src="assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip1" ondragstart="drag(e)">
+                            <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip1" ondragstart="drag(e)" alt="First droppable item">
                         </div>
                         <div id="p1Frag2">
-                            <img src="assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip2" ondragstart="drag(e)">
+                            <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip2" ondragstart="drag(e)" alt="Second droppable item">
                         </div>
                         <div id="p1Frag3">
-                            <img src="assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip3" ondragstart="drag(e)">
+                            <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip3" ondragstart="drag(e)" alt="Third droppable item">
                         </div>
                     </div>
                 </div>
@@ -272,21 +270,21 @@
         <h1 style="text-align:center"><b> Brown Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
         <h3 style="text-align:center">These tests are designed to take the information that you have learnt from the JavaScript Topic Page and apply it to see how the code works for yourself.</h3>
         <h2 style="color:saddlebrown; text-align:center"><b><i>Coming Soon</i></b></h2>
-        <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
+        <p id="countDownArea" style="text-align:center; font-size: x-large"></p>
     </div>
     <br>
     <!------------------------------------Test Tier 5------------------------------------------------------------------->
     <div class="container" style="border: dashed; color: black">
         <h1 style="text-align:center"><b> Black Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
             <h2 style="color:black; text-align:center"><b><i>Coming Soon</i></b></h2>
-            <p id="countDownArea2" style="text-align:center; font-size: x-large"></p>
+            <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
     </div>
 
 <!-- External Test Scripts -->
-<script src="assets/js/CustomScripts/jsWhiteQuestions.js"></script>
-<script src="assets/js/CustomScripts/jsOrangeQuestions.js"></script>
-<script src="assets/js/CustomScripts/jsYellowQuestions.js"></script>
+<script src="../assets/js/CustomScripts/jsWhiteQuestions.js"></script>
+<script src="../assets/js/CustomScripts/jsOrangeQuestions.js"></script>
+<script src="../assets/js/CustomScripts/jsYellowQuestions.js"></script>
 
-<script src="assets/js/CustomScripts/countDownScript.js"></script>
+<script src="../assets/js/CustomScripts/countDownScript.js"></script>
 </body>
 </html>

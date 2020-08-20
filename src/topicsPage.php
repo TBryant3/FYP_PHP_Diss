@@ -6,29 +6,29 @@
         <title>CoJō Topics</title>
 
         <!--Browser version support-->
-        <script src="assets/js/modernizr-2.8.3.js"></script>
+        <script src="../assets/js/modernizr-2.8.3.js"></script>
         <!--jQuery Link-->
-        <script src="assets/js/jquery-3.4.1.js"></script>
+        <script src="../assets/js/jquery-3.4.1.js"></script>
         <!--jQuery-UI Link-->
-        <script src="assets/js/jquery-ui-1.12.1.js"></script>
+        <script src="../assets/js/jquery-ui-1.12.1.js"></script>
         <!-- Bootstrap -->
-        <script src="assets/js/bootstrap.js"></script>
+        <script src="../assets/js/bootstrap.js"></script>
 
         <!-- Custom Scripts -->
-        <script src="assets/js/CustomScripts/topicPageScripts.js"></script>
-        <script src="assets/js/CustomScripts/countDownScript.js"></script>
+        <script src="../assets/js/CustomScripts/topicPageScripts.js"></script>
+        <script src="../assets/js/CustomScripts/countDownScript.js"></script>
 
 
         <!-- Stylesheets -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" />
-        <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
-        <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" />
-        <link href="assets/css/Site.css" rel="stylesheet" />
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" />
+        <link href="../assets/css/Site.css" rel="stylesheet" />
         <!--Personal Icons-->
-        <link href="assets/css/all.min.css" rel="stylesheet" />
-        <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="../assets/css/all.min.css" rel="stylesheet" />
+        <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
         <!--Custom CSS-->
-        <link href="assets/css/allTopicStyles.css" rel="stylesheet" />
+        <link href="../assets/css/allTopicStyles.css" rel="stylesheet" />
     </head>
     <body>
     <!--UNIVERSAL NAV BAR-->
@@ -41,8 +41,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-                <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+                <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+                <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -93,7 +93,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTop1" onclick="Alert.favHTML('<b>HTML & CSS Topic:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="text-align:center"><b style="color:orange">HTML</b><img class="topicLogos" alt="HTML Logo"  src="assets/img/HTML5_logo.png"  /><b style="color: blue"> CSS </b><img class="CSS_logo"  alt="CSS Logo" src="assets/img/CSS3_logo.png"  /> </h2>
+        <h2 style="text-align:center"><b style="color:orange">HTML</b><img class="topicLogos" alt="HTML Logo"  src="../assets/img/HTML5_logo.png"  /><b style="color: blue"> CSS </b><img class="CSS_logo"  alt="CSS Logo" src="../assets/img/CSS3_logo.png"  /> </h2>
         <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure your webpages and then CSS to style them and stand out from the crowd! This topic will include <b>What</b>, <b>How</b> and <b>Why</b> this language is used. </i></p>
         <br>
         <p><a class="btn btn-default" href="htmlPage.php" style="color:orange"><b>Learn more &raquo;</b></a><b>*Recommended for beginners</b></p>
@@ -107,7 +107,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTop2" onclick="Alert.favJS('<b>JavaScript Topic:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color: goldenrod; text-align: center"><b>JavaScript </b><img class="topicLogos" alt="JavaScript_Logo"  src="assets/img/js-logo.png" /></h2>
+        <h2 style="color: goldenrod; text-align: center"><b>JavaScript </b><img class="topicLogos" alt="JavaScript_Logo"  src="../assets/img/js-logo.png" /></h2>
         <p style="text-align:center"><i>In this topic we shall we exploring the high-level scripting language JavaScript. We will go through: <b>What</b> JavaScript is, <b>How</b> it is used, and <b>Why</b> JavaScript is so important especially in the web development industry. </i></p>
         <br>
         <p><a class="btn btn-default" href="jsPage.php" style="color:goldenrod"><b>Learn more &raquo;</b></a><b>*Recommended after completing HTML & CSS</b></p>
@@ -143,7 +143,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTop3" onclick="Alert.favPlus('<b>C++ Topic:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color:deepskyblue; text-align:center"><b> C-Plus-Plus </b><img class="topicLogos" alt="C_Plus_Logo"  src="assets/img/Cplusplus_logo.png" /></h2>
+        <h2 style="color:deepskyblue; text-align:center"><b> C-Plus-Plus </b><img class="topicLogos" alt="C_Plus_Logo"  src="../assets/img/Cplusplus_logo.png" /></h2>
         <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm.  We will go through: <b>What</b> C++ is, <b>How</b> it is used, and <b>Why</b> C++ is used over certain other programming languages</i></p>
         <br>
         <p><a class="btn btn-default" href="cPlusPlusPage.php" style="color:deepskyblue"><b>Learn more &raquo;</b></a></p>
@@ -157,7 +157,7 @@
         <span style="cursor: pointer; color: lightgrey" id="favTop4" onclick="Alert.favSharp('<b>C# Topic:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
-        <h2 style="color:rebeccapurple; text-align:center"><b>C-Sharp </b><img class="topicLogos" alt="C_Sharp_Logo" src="assets/img/Csharp_logo.png" /></h2>
+        <h2 style="color:rebeccapurple; text-align:center"><b>C-Sharp </b><img class="topicLogos" alt="C_Sharp_Logo" src="../assets/img/Csharp_logo.png" /></h2>
         <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm. In this topic we will delve into <b>What</b> C# is used for, <b>How</b> it is used and <b>Why</b> the programming language was developed</i></p>
         <br>
         <p><a class="btn btn-default" href="cSharpPage.php" style="color:rebeccapurple"><b>Learn more &raquo;</b></a></p>
@@ -213,7 +213,7 @@
 
 
     // Favourite Topic notification alerts
-    function favTopicAlert()
+    function FavTopicAlert()
     {
         // First (HTML/CSS) Alert Settings //
         this.favHTML = function(dialog1)
@@ -369,7 +369,7 @@
             }
         }
     }
-    let Alert = new favTopicAlert()
+    let Alert = new FavTopicAlert()
 </script>
 
 </html>

@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/CSS Page</title>
     <!--Browser version support-->
-    <script src="assets/js/modernizr-2.8.3.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.js"></script>
     <!--jQuery Link-->
-    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/jquery-3.4.1.js"></script>
     <!--jQuery-UI Link-->
-    <script src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-
-    <!-- Custom Scripts -->
-    <script src="assets/js/CustomScripts/accordionScripts.js"></script>
-
+    <script src="../assets/js/bootstrap.js"></script>
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/Site.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -35,8 +31,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
-            <a class="navbar-brand" href="index.php" style="font-size: large">CoJō Home</a>
+            <img src="../assets/img/CoJo_Logo.png"  title="CoJō Logo" alt="CoJō Home - Click to return to the home page" style="width:7%; float:left" />
+            <a class="navbar-brand" href="../index.php" style="font-size: large">CoJō Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -73,7 +69,7 @@
     <div class="col-xs-6">
         <h1 style="text-align:center; color: orange; font-family: monospace">
             <u><b>Hypertext Markup Language</b></u>
-            <img class="topicLogos" alt="HTML_Logo" src="assets/img/HTML5_logo.png" />
+            <img class="topicLogos" alt="HTML_Logo" src="../assets/img/HTML5_logo.png" />
             <br>
             <b style="text-align: center; font-size: x-large"><i>Founded in 1993 by Tim Berners-Lee</i></b>
         </h1>
@@ -91,7 +87,7 @@
     <div class="col-xs-6">
         <h1 style="text-align:center; color: blue; font-family: monospace">
             <u><b>Cascading Style Sheets</b></u>
-            <img class="CSS_logo" alt="CSS_Logo" src="assets/img/CSS3_logo.png" />
+            <img class="CSS_logo" alt="CSS_Logo" src="../assets/img/CSS3_logo.png" />
             <br>
             <b style="text-align: center; font-size: x-large"><i>
                 Developed by Hakon Wium Lie in 1994,
@@ -214,9 +210,32 @@
         </div>
     </div>
     <div class="col-xs-8">
-        <h2 style="color:mediumpurple; text-align:center"><b> Bootstrap </b><a href="https://getbootstrap.com/"><img title="Download Bootstrap here!" alt="Bootstrap4 Logo" src="assets/img/bootstrap-solid.svg" class="topicLogos"></a></h2>
+        <h2 style="color:mediumpurple; text-align:center"><b> Bootstrap </b><a href="https://getbootstrap.com/"><img title="Download Bootstrap here!" alt="Bootstrap4 Logo" src="../assets/img/bootstrap-solid.svg" class="topicLogos"></a></h2>
     </div>
     <div class="col-xs-2"></div>
+</div>
+<br>
+<div class="row" id="shortcuts" style="text-align: center">
+    <h1 style="text-align: center"><b><u>Useful keyboard shortcuts! Do you know them all?!</u></b></h1>
+    <br>
+    <div class="col-xs-4">
+        <h3 style="text-align: center"> The <b>'<i>TAB</i>'</b> key on your keyboard will indent the line of code by 1 unit</h3>
+        <h3 style="text-align: center"> Similarly, <b>'<i>SHIFT</i>'</b> and <b>'<i>TAB</i>'</b> together will indent the code line backwards 1 unit</h3>
+        <h3 style="text-align: center"> Using <b>'<i>SHIFT</i>'</b> and <b>'<i>END</i>'</b> keys together will highlight the line of code that the cursor is currently on </h3>
+    </div>
+    <div class="col-xs-4">
+        <h3 style="text-align: center"> <b>'<i>CTRL</i>'</b> + <b>'<i>S</i>'</b> will save the active document</h3>
+        <h3 style="text-align: center"> <b>'<i>CTRL</i>'</b> + <b>'<i>A</i>'</b> will highlight all code on the active document</h3>
+        <h3 style="text-align: center"> <b>'<i>CTRL</i>'</b> + <b>'<i>X</i>'</b> will cut out the selected code</h3>
+        <h3 style="text-align: center"> <b>'<i>CTRL</i>'</b> + <b>'<i>C</i>'</b> will copy the selected code</h3>
+        <h3 style="text-align: center"> <b>'<i>CTRL</i>'</b> + <b>'<i>V</i>'</b> will paste out code that has been copied or cut</h3>
+        <h3 style="text-align: center"> <b>'<i>CTRL</i>'</b> + <b>'<i>Z</i>'</b> will undo your last change to your code - This is similar to the undo button in most word processor based software's </h3>
+        <h3 style="text-align: center"> <b>'<i>CTRL</i>'</b> + <b>'<i>Y</i>'</b> will redo the last change you made to your code if <b>'<i>CTRL</i>'</b> + <b>'<i>Z</i>'</b> have been pressed beforehand</h3>
+    </div>
+    <div class="col-xs-4">
+        <h3 style="text-align: center"> Pressing <b>'<i>CTRL</i>'</b> key and the <b> ' / ' </b>(<i>Forward Slash</i>) key on your keyboard will comment out the entire line of code</h3>
+        <h3 style="text-align: center"> Pressing both the <b><i>CTRL</i></b> and the <b>'<i>TAB</i>'</b> keys together will allow you to change the active document you are working on to another that is already open. This is useful when quickly switching between multiple files. </h3>
+    </div>
 </div>
 <script>
     $(document).ready(function ()
@@ -317,7 +336,7 @@
                 },
                 complete: function ()
                 {
-                    $('#pbHTML-labelOverall1').text("Introduction 1 Complete!"),
+                    $('#pbHTML-labelOverall1').text("Introduction 1 Complete!")
                         alert('Learning Modules 1 Completed')
                 },
                 change: function ()
