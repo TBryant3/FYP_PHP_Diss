@@ -350,72 +350,13 @@
     /*padding:5px;*/
 }
 #popImageBox > div > #popImageBoxBody > #testImg
-{
-    background-color: #666666;
-    color: black;
-    text-align: center;
-    padding:10px;
-}
+ {
+     background-color: #666666;
+     color: black;
+     text-align: center;
+     padding:10px;
+ }
 #popImageBox > div > #popImageBoxFooter
-{
-    background-color: #333333;
-    text-align: right;
-    z-index: 9;
-    font-weight: bold;
-    font-size: large;
-    padding:10px;
-}
-
-
-
-
-/*Index Step 1 box settings*/
-#popImageBox2
-{
-    display: none;
-    position: relative;
-    background-color: lightgreen;
-    border-radius: 1%;
-    width: 100%;
-    height: auto;
-    z-index: 8;
-    padding: 0.5%;
-    float: top;
-}
-#popImageBox2 > div
-{
-    background-color: grey;
-    margin: 6px;
-}
-#popImageBox2 > div > #popImageBoxHeader2
-{
-    background-color: #333333;
-    border-radius: 2%;
-    width: 100%;
-    z-index: 9;
-    color: green;
-    text-align: center;
-    font-weight: bold;
-    font-size: x-large;
-    padding:1px;
-}
-#popImageBox2 > div > #popImageBoxBody2
-{
-    background-color: #666666;
-    border-radius: 1%;
-    z-index: 9;
-    color: black;
-    text-align: center;
-    /*padding:5px;*/
-}
-#popImageBox2 > div > #popImageBoxBody2 > #testImg2
-{
-    background-color: #666666;
-    color: black;
-    text-align: center;
-    padding:10px;
-}
-#popImageBox2 > div > #popImageBoxFooter2
 {
     background-color: #333333;
     text-align: right;

@@ -23,6 +23,7 @@
     <link href="../assets/css/Site.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/allTopicStyles.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/testStyles.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -62,7 +63,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Register.php" style="font-size: medium">Register</a>
                     </li>
-
                 </ul>
             </div>
         </div>

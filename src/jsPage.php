@@ -174,11 +174,12 @@
 </div>
 <br>
 <br>
-<h3><u><i>Overall Progress for Theory Modules Part 1</i></u></h3>
-<div id="progressBarJOverallP1" style="position:relative">
-    Progress Completed: <strong><span id="pbj-labelOverall1" style="position:relative"></span></strong>
+<div style="margin-top: 3%; margin-bottom: 1%">
+    <h3><u><i>Overall Progress for Theory Modules Part 1</i></u></h3>
+    <div id="progressBarJOverallP1" style="position:relative">
+        Progress Completed: <strong><span id="pbj-labelOverall1" style="position:relative"></span></strong>
+    </div>
 </div>
-
 
 
 <!--------------------------------------------------------------More Learning Modules-------------------------------------------------------------->
@@ -242,20 +243,29 @@
     </div>
     <!--Part 6 - Final Learning Module-->
     <div class="col-xs-4" style="border:solid; background-color:lightcoral; height:100%">
-        <h2 style="text-align: center"><b>JavaScript: Extension Libraries</b></h2>
+        <h2 style="text-align: center"><b>JavaScript: Parameters</b></h2>
         <div id="accordionP6" class="accordions">
             <h3 class="learnTitles">Final JS Module</h3>
             <p>
-                If you've got this far then congratulations! You now know more about JavaScript then most! JavaScript can be a pain when it comes to putting the right variable in the right place at the right time but the next tab will be a quick run down as a recap.
-            </p>            
-            <h3 class="learnTitles">Server-Side JS</h3>
-            <p>
-                JavaScript uses <b>SCRIPT</b> tags to help the IDE know where the code language is different and so your programming code can be executed at the right time.
-                JavaScript code is put inside a Script Tag in HTML at the bottom of the webpage as this is after the webpage itself has loaded and therefore the JS can be executed upon these elements.
-                It is also good to point out that JavaScript <b>SCRIPT</b> tags can be seen in the HEAD section of a HTML page, this is purely for linking any external JS file to your project usually like this:
+                If you've got this far then congratulations! You now know more about JavaScript then most! JavaScript can be a pain when it comes to putting the right variable in the right place at the right time and so the next tab explains the way of understanding how parameter parsing works within procedures and functions to make that more understandable.
             </p>
-            <h3 class="learnTitles">JavaScript Referencing </h3>
-            <p> In this example, it is showing you that firstly you need to specify the script tag, then specify where the file is, and then finally, specify what the file type is -> <b>< script src="~/Scripts/javascriptFile.js" type="text/javascript"> < /script ></b></p>
+            <h3 class="learnTitles">Parameter Parsing in Functions</h3>
+            <p>
+                Communication between procedures or functions tends to be associated in two ways, Formal Parameters and Actual Parameters. Formal parameters are when the variables are declared within the function's parentheses(), Actual parameters are when these variables are specified in the called function as its arguments such as when defining variables within a function and calling another function within this, using the previously defined variables within this function's parentheses.
+
+            </p>
+            <h3 class="learnTitles">Parsing Techniques</h3>
+            <p>
+                Typically there are 4 different types of parameter parsing techniques; <b>Parse-by-value </b>, <b>Parse-by-reference</b>, <b>Parse-by-CopyRestore</b> and <b>Pass-by-name</b>.
+                <br>
+                <b>Parse-by-value:</b> This is when the parameter values are copied into another variable and then this new object is then what is passed. This is beneficial when the variable has a long name or is that of a file path, shortened down to save re-typing the same line multiple times.
+                <br>
+                <b>Parse-by-reference:</b> Unlike parse-by-value, this technique is used to pass the reference of the argument in the calling function into the formal parameter of the called function. In doing so, the called function is able to use this reference to modify the value of the argument.
+                <br>
+                <b>Parse-by-Copy-Restore:</b> Similar to pass-by-reference, as the argument address is still passed to the function, this technique has a protocol which requires it to make a copy of the argument before execution. This copy is then what is used within the function body.
+                <br>
+                <b>Pass-by-name:</b> This technique isn't very common and only a limited amount of languages use it, such as Algol, but ultimately what this parsing technique does is that it replaces the name of the called procedure and uses its body element instead. This textually substitutes the argument expressions so the procedure uses the actual parameters similar to that of the parse-by-reference technique.
+            </p>
         </div>
         <br />
         <!--JS Progress Bar 6-->
@@ -264,23 +274,25 @@
         </div>
         <button id="t4Btn6" style="margin-bottom:1%">Click me to complete</button>
     </div>
-    <br>
-</div>
-<h3><u><i>Overall Progress for Theory Modules Part 2</i></u></h3>
-<div id="progressBarJOverallP2" style="position:relative">
-    Progress Completed: <strong><span id="pbj-labelOverall2" style="position:relative"></span></strong>
 </div>
 <br>
+<br>
+<div style="margin-top: 3%; margin-bottom: 1%">
+    <h3><u><i>Overall Progress for Theory Modules Part 2</i></u></h3>
+    <div id="progressBarJOverallP2" style="position:relative">
+        Progress Completed: <strong><span id="pbj-labelOverall2" style="position:relative"></span></strong>
+    </div>
+</div>
 <!-------------------Second Section Demos / Showing theory in a graphical way (This aids imagery / visual learners)------------------------->
 <h1 style="text-align: center"><b><u>Demos & Examples</u></b></h1>
 <div class="row" style="text-align: center; height:50%">
-    <div id="popImageBox1">
+    <div id="popImageBox">
         <div>
-            <div id="popImageBoxHeader1"></div>
-            <div id="popImageBoxBody1">
-                <div id='testImg1'></div>
+            <div id="popImageBoxHeader"></div>
+            <div id="popImageBoxBody">
+                <img id="popImg" />
             </div>
-            <div id="popImageBoxFooter1"></div>
+            <div id="popImageBoxFooter"></div>
         </div>
     </div>
     <!--Demo One-->
@@ -327,7 +339,7 @@
             <br>
             <p>A breakdown on how the code</p>
             <div>
-                <a class="btn btn-info" onclick="popUpImage.imageRender1()"> Show Code </a>
+                <a class="btn btn-info" onclick="popUpImage.imageRender(imageCalc, 'This is how a function works!')"> Show Code </a>
             </div>
         </div>
     </div>
@@ -342,16 +354,8 @@
         <br>
         <button id="btnEvent2">Move your mouse cursor over this instead!</button>
         <p id="eventText2"></p>
-        <a class="btn btn-info" id="btnShowCode" onclick="popUpImage.imageRender2()" style="display: none">Show Code</a>
-        <div id="popImageBox2" style="width: 30%">
-            <div>
-                <div id="popImageBoxHeader2"></div>
-                <div id="popImageBoxBody2">
-                    <div id="testImg2"></div>
-                </div>
-                <div id="popImageBoxFooter2"></div>
-            </div>
-        </div>
+        <a class="btn btn-info" id="btnShowCode" onclick="popUpImage.imageRender(imageEvent, 'This is how an Event Listener works!')" style="display: none">Show Code</a>
+
         <img id="eventScreenshot" src="../assets/img/Screenshots/singleScriptTags.png" alt="Event Listener image" style="display: none; width: 100%; height: 100%" />
         <br>
         <p>All events can be customised to adapt to how the user interacts within the HTML DOM or Browser and so changing the options for these with JavaScript can lead to many different possibilities and outcomes within your programming of web applications. </p>
@@ -417,13 +421,13 @@
 <script src="../assets/js/CustomScripts/accordionScripts.js"></script>
 <!--Custom Pop-up Script-->
 <script>
-    let image1 = 'assets/img/Screenshots/calculationCode_Commented.png';
-    let image2 = 'assets/img/Screenshots/eventListener_Commented.png';
+    let imageCalc = '../assets/img/Screenshots/calculationCode_Commented.png';
+    let imageEvent = '../assets/img/Screenshots/eventListener_Commented.png';
     function CustomPopImage()
     {
-        this.imageRender1 = function ()
+        this.imageRender = function (img, commentString)
         {
-            let popImageBox1 = document.getElementById('popImageBox1');
+            let popImageBox1 = document.getElementById('popImageBox');
 
             let winH = window.innerHeight;
             let popImageOverlay = document.getElementById('popImageOverlay');
@@ -432,36 +436,20 @@
 
             popImageBox1.style.top = (winH / 2 )- 555 + "px";
             popImageBox1.style.display = "block";
-            document.getElementById('popImageBoxHeader1').innerHTML = "How the function works!";
-            document.getElementById('testImg1').src = image1;
-            document.getElementById('popImageBoxFooter1').innerHTML = '<button onclick="popUpImage.ok()">OK</button>';
-        }
-        this.imageRender2 = function ()
-        {
-            let popImageBox2 = document.getElementById('popImageBox2');
-
-            let winH = window.innerHeight;
-            let popImageOverlay = document.getElementById('popImageOverlay');
-            popImageOverlay.style.display = "block";
-            popImageOverlay.style.height = winH + "px";
-
-            popImageBox2.style.top = (winH / 2 ) + "px";
-            popImageBox2.style.display = "block";
-            document.getElementById('popImageBoxHeader2').innerHTML = "How the code works!";
-            document.getElementById('testImg2').src = image2;
-            document.getElementById('popImageBoxFooter2').innerHTML = '<button onclick="popUpImage.ok()">OK</button>';
+            document.getElementById('popImageBoxHeader').innerHTML = commentString;
+            document.getElementById('popImg').src = img;
+            document.getElementById('popImageBoxFooter').innerHTML = '<button onclick="popUpImage.ok()">OK</button>';
         }
         this.ok = function()
         {
             document.getElementById('popImageOverlay').style.display = "none";
-            document.getElementById('popImageBox1').style.display = "none";
-            document.getElementById('popImageBox2').style.display = "none";
+            document.getElementById('popImageBox').style.display = "none";
         }
     }
     let popUpImage = new CustomPopImage();
 
-    $(document).ready(function ()
-    {
+    // $(document).ready(function ()
+    // {
         ////////////////////// Theory Modules Part 1 ////////////////////
         // 1 //
         // Initialise Button //
@@ -853,7 +841,7 @@
                 document.getElementById("funcResult").innerHTML = "<i>Please enter only numbers to test this function</i>";
             }
         }
-    });
+    // });
 </script>
 
 

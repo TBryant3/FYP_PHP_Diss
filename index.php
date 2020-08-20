@@ -80,25 +80,25 @@
             <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="topicsPage.php" style="font-size: medium">Topics</a>
+                    <a class="nav-link" href="src/topicsPage.php" style="font-size: medium">Topics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="testsPage.php" style="font-size: medium">Tests</a>
+                    <a class="nav-link" href="src/testsPage.php" style="font-size: medium">Tests</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutUs.php" style="font-size: medium">About CoJō</a>
+                    <a class="nav-link" href="src/aboutUs.php" style="font-size: medium">About CoJō</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactUs.php" style="font-size: medium">Contact Us</a>
+                    <a class="nav-link" href="src/contactUs.php" style="font-size: medium">Contact Us</a>
                 </li>
             </ul>
                 <div class="nav navbar-nav navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="Login.php" style="font-size: medium">Log in</a>
+                            <a class="nav-link" href="src/Login.php" style="font-size: medium">Log in</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Register.php" style="font-size: medium">Register</a>
+                            <a class="nav-link" href="src/Register.php" style="font-size: medium">Register</a>
                         </li>
 
                     </ul>
@@ -172,7 +172,7 @@
                 To be able to carry out computer programming, you will need to be able to design and create an executable with which the computer uses to then accomplish the specific task set out for it.
             </p>
             <div>
-                <a class="btn btn-warning" onclick="popUp.step2Render('The act of <b>Coding</b> is in turn the process of assigning code instructions and then submitting them to a computer in a specific language that the computer then compiles and reads to carry out said instructions. <br> Generally speaking, computer code is usually broken down into <b>5</b> main sections: <br> <b>Inputs:</b> This is the data / commands used to control the computer and programs. <br> <b>Outputs:</b> These are the results of what the computer was told to do or the outcome of specific tests committed <br> <b>Arithmetic:</b> These are the mathematical equations and calculations put to the computer to analyse and/or process data inputs <br> <b>Conditions:</b> This is the element in which the computer tests, and is tested, based on certain elements defined by either the coding language or by the developer to see if the datas conditions have been met or not <br> & <b>Looping:</b> The act of going through multiple rounds, cycling, of instructions set out by the developer to see if certain conditions and or required fields are met.')" style="font">Tell me more &raquo;</a>
+                <a class="btn btn-warning" onclick="popUp.step2Render('The act of <b>Coding</b> is in turn the process of assigning code instructions and then submitting them to a computer in a specific language that the computer then compiles and reads to carry out said instructions. <br> Generally speaking, computer code is usually broken down into <b>5</b> main sections: <br> <b>Inputs:</b> This is the data / commands used to control the computer and programs. <br> <b>Outputs:</b> These are the results of what the computer was told to do or the outcome of specific tests committed <br> <b>Arithmetic:</b> These are the mathematical equations and calculations put to the computer to analyse and/or process data inputs <br> <b>Conditions:</b> This is the element in which the computer tests, and is tested, based on certain elements defined by either the coding language or by the developer to see if the data conditions have been met or not <br> & <b>Looping:</b> The act of going through multiple rounds, cycling, of instructions set out by the developer to see if certain conditions and or required fields are met.')" style="font">Tell me more &raquo;</a>
             </div>
         </div>
         <div class="col-xs-4" style="height: 100%">
@@ -181,7 +181,7 @@
                 Alongside the educational element, we include tests to practice what you've learnt and help you where you may have been going wrong. The learning curve begins now, click below or from the navigation bar above to get your coding journey started!
             </p>
             <div>
-                <a class="btn btn-danger" href="topicsPage.php">Take me there &raquo;</a>
+                <a class="btn btn-danger" href="src/topicsPage.php">Take me there &raquo;</a>
             </div>
         </div>
     </div>
@@ -199,7 +199,7 @@
                 If you feel confident enough, you can jump into our Tests and see how you fair! Each Topic has their own accompanying sets of Tests which uses a progressive difficulty system to slowly build-up your confidence and familiarity with the testing methods.
             </p>
             <p>
-                <a class="btn btn-info" href="testsPage.php" style="color: purple"><b>I'm Ready! &raquo;</b></a>
+                <a class="btn btn-info" href="src/testsPage.php" style="color: purple"><b>I'm Ready! &raquo;</b></a>
             </p>
         </div>
         <div class="col-xs-4">
