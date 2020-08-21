@@ -842,6 +842,11 @@
             document.getElementById("btnEvent2").innerHTML = "Now click me again!"
         }
 
+
+
+
+
+
         function displayButton()
         {
             document.getElementById("btnShowEvent").style.display = "block";

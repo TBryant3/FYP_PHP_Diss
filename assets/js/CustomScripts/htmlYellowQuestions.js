@@ -19,3 +19,5 @@ $("#yellowBelt").click(function()
 {
     $("#yellowGlobal").toggle("slide");
 });
+
+

@@ -151,10 +151,10 @@ let jsOrangeQuestions2 = [
     },
     {
         jsQuestion5: "Which of these functions are incorrect?",
-        jsAnswerA5: "function changeColour() { document.getElementById(textBox).style.backgroundColor = 'blue'; }",
+        jsAnswerA5: "function changeColour() {(textBox).Color = 'blue'; }",
         jsAnswerB5: "function addValues(x, y) { return x + y; }",
-        jsAnswerC5: "function alertFunction() { alert(Hello world) }",
-        jsCorrectAnswer5: "C"
+        jsAnswerC5: "function alertFunction() { alert('Hello world'); }",
+        jsCorrectAnswer5: "A"
     },
     {
         jsQuestion5: "Either Internally or Externally",

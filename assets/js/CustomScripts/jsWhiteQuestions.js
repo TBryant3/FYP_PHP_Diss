@@ -48,7 +48,7 @@ let jsScore3 = 0;
                 jsCorrectAnswer1: "C"
             },
             {
-                jsQuestion1: "JavaScript can be used to create webpages instead of HTML?",
+                jsQuestion1: "JavaScript can be used to as a HTML alternative?",
                 jsAnswerA1: "True",
                 jsAnswerB1: "False",
                 jsAnswerC1: "Sometimes",
@@ -270,25 +270,25 @@ function jsScoreRender2()
 //Set 3
 let jsWhiteQuestions3 = [
     {
-        jsQuestion3: "Which of these tags do you need to add JavaScript to a HTML document?",
-        jsAnswerA3: "< script >",
-        jsAnswerB3: "< div >",
-        jsAnswerC3: "< style >",
+        jsQuestion3: "What was the name of JavaScript's predecessor?",
+        jsAnswerA3: "LiveScript",
+        jsAnswerB3: "CoffeeScript",
+        jsAnswerC3: "TypeScript",
         jsCorrectAnswer3: "A"
     },
     {
-        jsQuestion3: "What type of computing language is JavaScript?",
-        jsAnswerA3: "Mark-Up",
-        jsAnswerB3: "StyleSheet",
-        jsAnswerC3: "Scripting",
-        jsCorrectAnswer3: "C"
+        jsQuestion3: "How many parameters can be parsed through a JS function at one time?",
+        jsAnswerA3: "Two",
+jsAnswerB3: "No limit",
+        jsAnswerC3: "10",
+        jsCorrectAnswer3: "B"
     },
     {
-        jsQuestion3: "JavaScript can be used to create webpages instead of HTML?",
+        jsQuestion3: "JS is able to generate HTML if the HTML tags are defined within the JS script function. CSS also be done this way.",
         jsAnswerA3: "True",
         jsAnswerB3: "False",
-        jsAnswerC3: "Sometimes",
-        jsCorrectAnswer3: "B"
+        jsAnswerC3: "Only in certain cases",
+        jsCorrectAnswer3: "A"
     },
 ];
 //Declaring the question the test is on
