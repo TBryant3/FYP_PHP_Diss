@@ -74,8 +74,8 @@
 </div>
 <br>
 <!--First Section - Beginner-->
-<h2 style="text-align:center"><b>Test Set - White</b></h2>
-<div class="row" style="height:275px">
+<h2 style="text-align:center; color: grey"><b>Test Set - White</b></h2>
+<div class="row" style="height:225px">
     <div class="col-xs-2">
         <div id="alertBox1" style="margin-left: 15px; margin-top: 40px">
             <div>
@@ -93,9 +93,9 @@
         <p style="text-align:center"><i>Web Development Mark-up language used to produce web pages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
         <p><a class="btn btn-default" href="htmlTestPage.php" style="color:orange"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
-        <div id="pbTest1" style="margin-bottom:1%;">
-            Tests Completed: <b><span id="htmlTest-label" style="position:relative;"></span></b>
-        </div>
+<!--        <div id="pbTest1" style="margin-bottom:1%;">-->
+<!--            Tests Completed: <b><span id="htmlTest-label" style="position:relative;"></span></b>-->
+<!--        </div>-->
     </div>
     <!-- JavaScript -->
     <div class="col-xs-4" style="border-style:solid; height:100%; border-radius:5%;">
@@ -106,9 +106,9 @@
         <p style="text-align:center"><i>These tests will go through the basics through to more complicated JavaScript functions with a well-rounded approach against what you have learnt from using this application</i></p>
         <p><a class="btn btn-default" href="jsTestPage.php" style="color:goldenrod"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
-        <div id="pbTest4" style="margin-bottom:1%;">
-            Tests Completed: <b><span id="jsTest-label" style="position:relative;"></span></b>
-        </div>
+<!--        <div id="pbTest4" style="margin-bottom:1%;">-->
+<!--            Tests Completed: <b><span id="jsTest-label" style="position:relative;"></span></b>-->
+<!--        </div>-->
     </div>
     <div class="col-xs-2">
         <div id="alertBox2" style="margin-top: 40px">
@@ -122,8 +122,8 @@
 <br>
 
 <!-- Second Section - Intermediate-->
-<h2 style="text-align:center"><strong>Test Set - Brown</strong></h2>
-<div class="row" style="height:275px">
+<h2 style="text-align:center; color: orange"><strong>Test Set - Orange</strong></h2>
+<div class="row" style="height:225px">
     <div class="col-xs-2">
         <div id="alertBox3" style="margin-left: 15px; margin-top: 40px">
             <div>
@@ -141,9 +141,9 @@
         <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
         <p><a class="btn btn-default" href="cPlusPlusTestPage.php" style="color:deepskyblue"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
-        <div id="pbTest3" style="margin-bottom:1%;">
-            Tests Completed: <b><span id="cplusTest-label" style="position:relative;"></span></b>
-        </div>
+<!--        <div id="pbTest3" style="margin-bottom:1%;">-->
+<!--            Tests Completed: <b><span id="cplusTest-label" style="position:relative;"></span></b>-->
+<!--        </div>-->
     </div>
     <!-- C-Sharp -->
     <div class="col-xs-4" style="border-style: solid; height:100%; border-radius: 5%;">
@@ -154,9 +154,9 @@
         <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
         <p><a class="btn btn-default" href="cSharpTestPage.php" style="color:rebeccapurple"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
-        <div id="pbTest2" style="margin-bottom:1%;">
-            Tests Completed: <b><span id="csharpTest-label" style="position:relative;"></span></b>
-        </div>
+<!--        <div id="pbTest2" style="margin-bottom:1%;">-->
+<!--            Tests Completed: <b><span id="csharpTest-label" style="position:relative;"></span></b>-->
+<!--        </div>-->
     </div>
     <div class="col-xs-2">
         <div id="alertBox4" style="margin-top: 40px">
@@ -168,13 +168,24 @@
     </div>
 </div>
 <br>
+<h2 style="text-align:center; color: goldenrod"><strong>Test Set - Yellow</strong></h2>
+<div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4" style="border-style: solid; border-radius: 3%;">
+        <h2 style="text-align:center; color: goldenrod"><b>Coming Soon</b></h2>
+        <p id="countDownArea" style="text-align:center; font-size: x-large; color: goldenrod"></p>
+    </div>
+    <div class="col-xs-4"></div>
+</div>
+<br>
 <h2 style="text-align:center"><strong>Test Set - Black</strong></h2>
 <div class="row">
-    <div class="col-xs-2"></div>
-    <div class="col-xs-8" style="border-style: solid; border-radius: 3%;">
-        <h2 style="color:green; text-align:center"><b>Coming Soon</b></h2>
-        <p id="countDownArea" style="text-align:center; font-size: x-large"></p>
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4" style="border-style: solid; border-radius: 3%;">
+        <h2 style="text-align:center"><b>Coming Soon</b></h2>
+        <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
     </div>
+    <div class="col-xs-4"></div>
 </div>
 <br>
 <!--Support-->

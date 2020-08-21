@@ -37,7 +37,7 @@ let htmlScore3 = 0;
 ///////////////////////////////////////////////////////////////////////////
 
 // White test set 1 Question Creation
-let whiteHTMLQuestions1 = [
+let htmlWhiteQuestions1 = [
     {
         htmlQuestion1 : "Which of these HTML tags do you need to add JavaScript to a HTML document?",
         htmlAnswerA1 : "< script >",
@@ -61,12 +61,12 @@ let whiteHTMLQuestions1 = [
     },
 ];
 //Declaring the question the test is on
-const lastHTMLWhiteQuestion1 = whiteHTMLQuestions1.length - 1;
+const lastHTMLWhiteQuestion1 = htmlWhiteQuestions1.length - 1;
 let currentHTMLWhiteQuestion1 = 0;
 //This loads in the test's questions
-function loadWhiteHTMLQuestion1()
+function loadHTMLWhiteQuestion1()
 {
-    let wq1 = whiteHTMLQuestions1[currentHTMLWhiteQuestion1];
+    let wq1 = htmlWhiteQuestions1[currentHTMLWhiteQuestion1];
 
     htmlQuestion1.innerHTML = "<p>"+ wq1.htmlQuestion1 +"</p>";
     htmlAnswerA1.innerHTML = wq1.htmlAnswerA1;
@@ -74,13 +74,13 @@ function loadWhiteHTMLQuestion1()
     htmlAnswerC1.innerHTML = wq1.htmlAnswerC1;
 }
 //Execute function to load questions and show the test area
-loadWhiteHTMLQuestion1();
+loadHTMLWhiteQuestion1();
 
 function htmlProgressRender1()
 {
     for(let qIndex1 = 0; qIndex1 <= lastHTMLWhiteQuestion1; qIndex1++)
     {
-        htmlResultProgress1.innerHTML += "<div class='htmlProg1' id="+ qIndex1 +"></div>";
+        htmlResultProgress1.innerHTML += "<div class='htmlWProg' id=htmlWProg1"+ qIndex1 +"></div>";
     }
 }
 htmlProgressRender1();
@@ -88,18 +88,18 @@ htmlProgressRender1();
 //Turns marker green if correct
 function correctHTMLAnswer1()
 {
-    document.getElementById(currentHTMLWhiteQuestion1).style.backgroundColor = "green";
+    document.getElementById("htmlWProg1" + currentHTMLWhiteQuestion1).style.backgroundColor = "green";
 }
 //Turns marker red if wrong
 function wrongHTMLAnswer1()
 {
-    document.getElementById(currentHTMLWhiteQuestion1).style.backgroundColor = "red";
+    document.getElementById("htmlWProg1" +currentHTMLWhiteQuestion1).style.backgroundColor = "red";
 }
 
 // Function to check if the user has input the right answer
 function checkHTMLAnswer1(htmlAnswer1)
 {
-    if (htmlAnswer1 === whiteHTMLQuestions1[currentHTMLWhiteQuestion1].htmlCorrectAnswer1)
+    if (htmlAnswer1 === htmlWhiteQuestions1[currentHTMLWhiteQuestion1].htmlCorrectAnswer1)
     {
         htmlScore1++;
         // Turns user input into an immediate feedback system
@@ -115,25 +115,45 @@ function checkHTMLAnswer1(htmlAnswer1)
     if (currentHTMLWhiteQuestion1 < lastHTMLWhiteQuestion1)
     {
         currentHTMLWhiteQuestion1++;
-        loadWhiteHTMLQuestion1();
+        loadHTMLWhiteQuestion1();
     }
     else
     {
         htmlScoreRender1();
+        document.getElementById('htmlAnswers1').style.display = 'none';
     }
 }
 // Functions to show the score percentage at end of test
 function htmlScoreRender1()
 {
     htmlScoreContainer1.style.display = "block";
-    const htmlScorePercent1 = Math.round(100 * htmlScore1/whiteHTMLQuestions1.length);
-    if (htmlScorePercent1.value >= 100)
-    {
-        htmlScorePercent1.value = 100;
-        alert('Test 1: You completed the test with a perfect score!' )
-    }
+    const htmlScorePercent1 = Math.round(100 * htmlScore1/htmlWhiteQuestions1.length);
 
     htmlScoreContainer1.innerHTML = "<p>"+ htmlScorePercent1 +"%</p>";
+
+    switch(htmlScorePercent1)
+    {
+        case 0:
+        {
+            htmlQuestion1.innerHTML = "Maybe consider revising more?!";
+            break;
+        }
+        case 33:
+        {
+            htmlQuestion1.innerHTML = "Nearly there, try again!";
+            break;
+        }
+        case 67:
+        {
+            htmlQuestion1.innerHTML = "Test Completed! So close!";
+            break;
+        }
+        case 100:
+        {
+            htmlQuestion1.innerHTML = "Test Completed with a Perfect Score well done!";
+            break;
+        }
+    }
 }
 
 
@@ -142,7 +162,7 @@ function htmlScoreRender1()
 
 ////////////////////////////////////////////////////////////
 // Tier 2 Question Creation/////////////////////////////////
-let whiteHTMLQuestions2 =
+let htmlWhiteQuestions2 =
     [
         {
             htmlQuestion2: "Which of these were developed first?",
@@ -167,13 +187,13 @@ let whiteHTMLQuestions2 =
         },
     ];
 //Declaring the 2nd set of questions
-const lastHTMLWhiteQuestion2 = whiteHTMLQuestions2.length - 1;
+const lastHTMLWhiteQuestion2 = htmlWhiteQuestions2.length - 1;
 let currentHTMLWhiteQuestion2 = 0;
 
 //This loads in the test's questions
-function loadWhiteHTMLQuestion2()
+function loadHTMLWhiteQuestion2()
 {
-    let wq2 = whiteHTMLQuestions2[currentHTMLWhiteQuestion2];
+    let wq2 = htmlWhiteQuestions2[currentHTMLWhiteQuestion2];
 
     htmlQuestion2.innerHTML = "<p>"+ wq2.htmlQuestion2 +"</p>";
     htmlAnswerA2.innerHTML = wq2.htmlAnswerA2;
@@ -182,36 +202,34 @@ function loadWhiteHTMLQuestion2()
 }
 
 //NEED IF STATEMENT FOR IF THE TIER 1 SCORE IS SHOWN
-loadWhiteHTMLQuestion2();
+loadHTMLWhiteQuestion2();
 
 // Second set of progress indicators
 function htmlProgressRender2()
 {
     for(let qIndex2 = 0; qIndex2 <= lastHTMLWhiteQuestion2; qIndex2++)
     {
-        htmlResultProgress2.innerHTML += "<div class='htmlProg2' id="+ qIndex2 +"></div>";
+        htmlResultProgress2.innerHTML += "<div class='htmlWProg' id=htmlWProg2"+ qIndex2 +"></div>";
     }
 }
 htmlProgressRender2();
-
-
 //Turns marker green if correct
 function correctHTMLAnswer2()
 {
-    document.getElementById(currentHTMLWhiteQuestion2).style.backgroundColor = "green";
+    document.getElementById("htmlWProg2" + currentHTMLWhiteQuestion2).style.backgroundColor = "green";
 }
 //Turns marker red if wrong
 function wrongHTMLAnswer2()
 {
-    document.getElementById(currentHTMLWhiteQuestion2).style.backgroundColor = "red";
+    document.getElementById("htmlWProg2" + currentHTMLWhiteQuestion2).style.backgroundColor = "red";
 }
 
 
 
 //Second Answer renderer
-function checkHTMLAnswer2(htmlAnswer2)
+function checkHTMLAnswer2(htmlWhiteAnswer2)
 {
-    if (htmlAnswer2 === whiteHTMLQuestions2[currentHTMLWhiteQuestion2].htmlCorrectAnswer2)
+    if (htmlWhiteAnswer2 === htmlWhiteQuestions2[currentHTMLWhiteQuestion2].htmlCorrectAnswer2)
     {
         htmlScore2++;
         // Turns user input into an immediate feedback system
@@ -227,27 +245,50 @@ function checkHTMLAnswer2(htmlAnswer2)
     if (currentHTMLWhiteQuestion2 < lastHTMLWhiteQuestion2)
     {
         currentHTMLWhiteQuestion2++;
-        loadWhiteHTMLQuestion2();
+        loadHTMLWhiteQuestion2();
     }
     else
     {
         htmlScoreRender2();
+        document.getElementById('htmlAnswers2').style.display = 'none';
     }
 }
 
 function htmlScoreRender2()
 {
     htmlScoreContainer2.style.display = "block";
-    const scoreHTMLPercent2 = Math.round(100 * htmlScore2/whiteHTMLQuestions2.length);
+    const htmlScorePercent2 = Math.round(100 * htmlScore2/htmlWhiteQuestions2.length);
 
 
-    htmlScoreContainer2.innerHTML = "<p>"+ scoreHTMLPercent2 +"%</p>";
+    htmlScoreContainer2.innerHTML = "<p>"+ htmlScorePercent2 +"%</p>";
+
+    switch(htmlScorePercent2)
+    {
+        case 0:
+        {
+            htmlQuestion2.innerHTML = "Maybe consider revising more?!";
+            break;
+        }
+        case 33:
+        {
+            htmlQuestion2.innerHTML = "Nearly there, try again!";
+            break;
+        }
+        case 67:
+        {
+            htmlQuestion2.innerHTML = "Test Completed! So close!";
+            break;
+        }
+        case 100:
+        {
+            htmlQuestion2.innerHTML = "Test Completed with a Perfect Score well done!";
+            break;
+        }
+    }
 }
-
-
 ///////////////////////////////////////////////
 //////// Third question set //////////////////
-let whiteHTMLQuestions3 = [
+let htmlWhiteQuestions3 = [
     {
         htmlQuestion3 : "Which of these tags do you need to add JavaScript to a HTML document?",
         htmlAnswerA3 : "< script >",
@@ -271,12 +312,12 @@ let whiteHTMLQuestions3 = [
     },
 ];
 //Declaring the question the test is on
-const lastHTMLWhiteQuestion3 = whiteHTMLQuestions3.length - 1;
+const lastHTMLWhiteQuestion3 = htmlWhiteQuestions3.length - 1;
 let currentHTMLWhiteQuestion3 = 0;
 //This loads in the test's questions
 function loadWhiteHTMLQuestion3()
 {
-    let wq3 = whiteHTMLQuestions3[currentHTMLWhiteQuestion3];
+    let wq3 = htmlWhiteQuestions3[currentHTMLWhiteQuestion3];
 
     htmlQuestion3.innerHTML = "<p>"+ wq3.htmlQuestion3 +"</p>";
     htmlAnswerA3.innerHTML = wq3.htmlAnswerA3;
@@ -290,7 +331,7 @@ function htmlProgressRender3()
 {
     for(let qIndex3 = 0; qIndex3 <= lastHTMLWhiteQuestion3; qIndex3++)
     {
-        htmlResultProgress3.innerHTML += "<div class='htmlProg3' id="+ qIndex3 +"></div>";
+        htmlResultProgress3.innerHTML += "<div class='htmlWProg' id=htmlWProg3"+ qIndex3 +"></div>";
     }
 }
 htmlProgressRender3();
@@ -298,18 +339,18 @@ htmlProgressRender3();
 //Turns marker green if correct
 function correctHTMLAnswer3()
 {
-    document.getElementById(currentHTMLWhiteQuestion3).style.backgroundColor = "green";
+    document.getElementById("jsWProg3" + currentHTMLWhiteQuestion3).style.backgroundColor = "green";
 }
 //Turns marker red if wrong
 function wrongHTMLAnswer3()
 {
-    document.getElementById(currentHTMLWhiteQuestion3).style.backgroundColor = "red";
+    document.getElementById("jsWProg3" + currentHTMLWhiteQuestion3).style.backgroundColor = "red";
 }
 
 // Function to check if the user has input the right answer
 function checkHTMLAnswer3(htmlAnswer3)
 {
-    if (htmlAnswer3 === whiteHTMLQuestions3[currentHTMLWhiteQuestion3].htmlCorrectAnswer3)
+    if (htmlAnswer3 === htmlWhiteQuestions3[currentHTMLWhiteQuestion3].htmlCorrectAnswer3)
     {
         htmlScore3++;
         // Turns user input into an immediate feedback system
@@ -329,17 +370,45 @@ function checkHTMLAnswer3(htmlAnswer3)
     }
     else
     {
-        scoreHTMLRender3();
+        htmlScoreRender3();
+        document.getElementById('htmlAnswers3').style.display = 'none';
     }
 }
 // Functions to show the score percentage at end of test
-function scoreHTMLRender3()
+function htmlScoreRender3()
 {
     htmlScoreContainer3.style.display = "block";
-    const scoreHTMLPercent3 = Math.round(100 * htmlScore3/whiteHTMLQuestions3.length);
+    const htmlScorePercent3 = Math.round(100 * htmlScore3/htmlWhiteQuestions3.length);
 
-    htmlScoreContainer3.innerHTML = "<p>"+ scoreHTMLPercent3 +"%</p>";
+    htmlScoreContainer3.innerHTML = "<p>"+ htmlScorePercent3 +"%</p>";
+
+    switch(htmlScorePercent3)
+    {
+        case 0:
+        {
+            htmlQuestion3.innerHTML = "Maybe consider revising more?!";
+            break;
+        }
+        case 33:
+        {
+            htmlQuestion3.innerHTML = "Nearly there, try again!";
+            break;
+        }
+        case 67:
+        {
+            htmlQuestion3.innerHTML = "Test Completed! So close!";
+            break;
+        }
+        case 100:
+        {
+            htmlQuestion3.innerHTML = "Test Completed with a Perfect Score well done!";
+            break;
+        }
+    }
 }
-
+$("#whiteBelt").click(function()
+{
+    $("#whiteGlobal").toggle("slide");
+});
 
 

@@ -1,6 +1,6 @@
 <?php
 // Server and db declarations
-const DB_SERVER = 'fyphost';
+const DB_SERVER = 'localhost';
 const DB_DATABASE = 'fypdb';
 const DB_USER = 'root';
 const DB_PASSWORD = '';

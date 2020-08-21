@@ -68,12 +68,12 @@
     border-radius: 3%;
     transition: opacity 0.6s;
 }
-#alertBox1 > div
+#alertBox1 div
 {
     background-color: saddlebrown;
     padding:5px;
 }
-#alertBox1 > div > #alertBoxHeader1
+#alertBox1 div #alertBoxHeader1
 {
     background-color: #ecbd72;
     color: firebrick;
@@ -82,7 +82,7 @@
     font-size: x-large;
     padding:1px;
 }
-#alertBox1 > div > #alertBoxBody1
+#alertBox1 div #alertBoxBody1
 {
     background-color: #caa472;
     color: black;
@@ -104,12 +104,12 @@
     border-radius: 3%;
     transition: opacity 0.6s;
 }
-#alertBox2 > div
+#alertBox2 div
 {
     background-color: saddlebrown;
     padding:5px;
 }
-#alertBox2 > div > #alertBoxHeader2
+#alertBox2 div #alertBoxHeader2
 {
     background-color: #ecbd72;
     color: firebrick;
@@ -118,7 +118,7 @@
     font-size: x-large;
     padding:1px;
 }
-#alertBox2 > div > #alertBoxBody2
+#alertBox2 div #alertBoxBody2
 {
     background-color: #caa472;
     color: black;
@@ -140,12 +140,12 @@
     border-radius: 3%;
     transition: opacity 0.6s;
 }
-#alertBox3 > div
+#alertBox3 div
 {
     background-color: saddlebrown;
     padding:5px;
 }
-#alertBox3 > div > #alertBoxHeader3
+#alertBox3 div #alertBoxHeader3
 {
     background-color: #ecbd72;
     color: firebrick;
@@ -154,7 +154,7 @@
     font-size: x-large;
     padding:1px;
 }
-#alertBox3 > div > #alertBoxBody3
+#alertBox3 div #alertBoxBody3
 {
     background-color: #caa472;
     color: black;
@@ -176,12 +176,12 @@
     border-radius: 3%;
     transition: opacity 0.6s;
 }
-#alertBox4 > div
+#alertBox4 div
 {
     background-color: saddlebrown;
     padding:5px;
 }
-#alertBox4 > div > #alertBoxHeader4
+#alertBox4 div #alertBoxHeader4
 {
     background-color: #ecbd72;
     color: firebrick;
@@ -190,7 +190,7 @@
     font-size: x-large;
     padding:1px;
 }
-#alertBox4 > div > #alertBoxBody4
+#alertBox4 div #alertBoxBody4
 {
     background-color: #caa472;
     color: black;
@@ -200,7 +200,7 @@
 
 
 
-/*Index Page pop-up box settings*/
+/*Index Page pop-up overlay box settings*/
 #popOverlay
 {
     display: none;
@@ -222,12 +222,12 @@
     width: 50%;
     z-index: 10;
 }
-#popBox1 > div
+#popBox1 div
 {
     background-color: grey;
     margin: 6px;
 }
-#popBox1 > div > #popBoxHeader1
+#popBox1 div #popBoxHeader1
 {
     background-color: #333333;
     color: green;
@@ -236,14 +236,14 @@
     font-size: x-large;
     padding:1px;
 }
-#popBox1 > div > #popBoxBody1
+#popBox1 div #popBoxBody1
 {
     background-color: #666666;
     color: black;
     text-align: center;
     padding:20px;
 }
-#popBox1 > div > #popBoxFooter1
+#popBox1 div #popBoxFooter1
 {
     background-color: #333333;
     text-align: right;
@@ -261,12 +261,12 @@
     width: 50%;
     z-index: 10;
 }
-#popBox2 > div
+#popBox2 div
 {
     background-color: grey;
     margin: 6px;
 }
-#popBox2 > div > #popBoxHeader2
+#popBox2 div #popBoxHeader2
 {
     background-color: #333333;
     color: goldenrod;
@@ -275,14 +275,14 @@
     font-size: x-large;
     padding:1px;
 }
-#popBox2 > div > #popBoxBody2
+#popBox2 div #popBoxBody2
 {
     background-color: #666666;
     color: black;
     text-align: center;
     padding:20px;
 }
-#popBox2 > div > #popBoxFooter2
+#popBox2 div #popBoxFooter2
 {
     background-color: #333333;
     text-align: right;
@@ -323,45 +323,125 @@
     padding: 0.5%;
     float: top;
 }
-#popImageBox > div
+#popImageBox div
 {
     background-color: grey;
     margin: 6px;
 }
-#popImageBox > div > #popImageBoxHeader
+#popImageBox div #popImageBoxHeader
 {
     background-color: #333333;
     border-radius: 2%;
-    width: 100%;
-    z-index: 9;
+    width: 99%;
+    z-index: 8;
     color: green;
     text-align: center;
     font-weight: bold;
     font-size: x-large;
-    padding:1px;
 }
-#popImageBox > div > #popImageBoxBody
+#popImageBox div #popImageBoxBody
 {
     background-color: #666666;
     border-radius: 1%;
     z-index: 9;
     color: black;
     text-align: center;
-    /*padding:5px;*/
 }
-#popImageBox > div > #popImageBoxBody > #testImg
+#popImageBox div #popImageBoxBody #testImg
  {
      background-color: #666666;
      color: black;
      text-align: center;
      padding:10px;
  }
-#popImageBox > div > #popImageBoxFooter
+#popImageBox div #popImageBoxFooter
 {
     background-color: #333333;
-    text-align: right;
+    text-align: center;
     z-index: 9;
     font-weight: bold;
     font-size: large;
     padding:10px;
 }
+/*Style for JS Function code button*/
+#btnShowFunc
+{
+    background: goldenrod;
+    border-color: goldenrod;
+}
+#btnShowFunc:hover
+{
+    background: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+/*Style for JS Event code button*/
+#btnShowEvent
+{
+    background: goldenrod;
+    border-color: goldenrod;
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#btnShowEvent:hover
+{
+    background: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+
+/*Style for HTML layout button*/
+#btnShowLayout
+{
+    background: orange;
+    border-color: orange;
+    margin-bottom: 5px;
+}
+#btnShowLayout:hover
+{
+    background: orangered;
+    border-color: orangered;
+}
+
+/*Style for CSS layout button*/
+#btnShowCSS
+{
+    background: blue;
+    border-color: blue;
+    margin-bottom: 5px;
+}
+
+.ui-progressbar .ui-widget-header
+{
+    background: green;
+}
+
+/*EXAMPLE FOR SCREENSHOT AND IMAGE SHOWING LAYOUT*/
+/*#demoCSS {*/
+/*    !*Colour Values can be of*/
+/*    plain text or of hex-value*!*/
+/*    color: black;*/
+/*    background-color: #333333;*/
+/*    !*Adjusts where the text appears*/
+/*    within the area it is placed*!*/
+/*    text-align: center;*/
+/*    !*Applies the effects on fonts and texts*/
+/*    such as Bold, Italics & Underline*!*/
+/*    font-weight: bold;*/
+/*    !*Pre-defined font sizes*!*/
+/*    font-size: large;*/
+/*    !*Padding is applied to the area*/
+/*    from the element outwards, this*/
+/*    applies OVER other elements (preventing clicking)*!*/
+/*    padding:10px 10px 10px 10px;*/
+/*    !*A margin is applied to the area*/
+/*    from the element outwards, this*/
+/*    DOES NOT apply over other elements*/
+/*    (can be clicked through)*!*/
+/*    margin: 5% 4% 2% 5%;*/
+/*    !*Th z-index represents the layer the element resides,*!*/
+/*    !*The higher this value the higher on the element stack*!*/
+/*    z-index: 9;}*/
+
+

@@ -1,51 +1,38 @@
 /*//////////////////////////*/
 /*HTML question classes */
 /*//////////////////////////*/
-.htmlQuestion
+.htmlWContainer
+{
+    height: 200px;
+    z-index: 1;
+}
+.htmlQuestions
 {
     width: 100%;
-    height:10%;
+    height:7%;
     position: relative;
     font-size: large;
     text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    z-index: 5;
 }
 .htmlAnswers
 {
     width: 100%;
+    height:7%;
     text-align: center;
+    margin-top: 5%;
+    z-index: 7;
 }
 
-.htmlChoices
-{
-    display: inline-block;
-    width : 32%;
-    text-align: center;
-    border : 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    padding : 5px;
-}
-.htmlChoices:hover
-{
-    border : 4px solid white;
-    font-weight: bold;
-}
 .htmlResultProgress
 {
     position: relative;
-    padding:5px;
+    text-align: center;
     width: 100%;
-}
-.htmlProg
-{
-    width: 35px;
-    height: 35px;
-    border: 3px solid white;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
+    margin-top: 11%;
+    z-index: 2;
 }
 .htmlScoreContainer
 {
@@ -54,286 +41,82 @@
     opacity: 0.8;
     border-radius: 5px;
     position: relative;
+    z-index: 3;
 }
 .htmlScoreContainer p
 {
     width : 100%;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     text-align: center;
     color: black;
     font-family: monospace;
+    z-index: 3;
 }
-/*#htmlQuestion1*/
-/*{*/
-/*    width: 100%;*/
-/*    height:10%;*/
-/*    position: relative;*/
-/*    font-size: large;*/
-/*    text-align: center;*/
-/*    padding-bottom: 1%;*/
-/*    padding-top: 4%;*/
-/*}*/
-/*#htmlAnswers1*/
-/*{*/
-/*    width: 100%;*/
-/*    padding: 2%;*/
-/*}*/
-/*.htmlChoices1*/
-/*{*/
-/*    display: inline-block;*/
-/*    width : 32%;*/
-/*    text-align: center;*/
-/*    border : 2px solid white;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*    padding : 5px;*/
-/*}*/
-/*.htmlChoices1:hover*/
-/*{*/
-/*    border : 4px solid white;*/
-/*    font-weight: bold;*/
-/*}*/
+.htmlWChoices
+{
+    display: inline-block;
+    width : 32%;
+    text-align: center;
+    border : 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    z-index: 9;
+}
+.htmlWChoices:hover
+{
+    border : 4px solid white;
+    font-weight: bold;
+}
+.htmlWProg
+{
+    width: 35px;
+    height: 35px;
+    border: 3px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+    padding-top: 2%;
+}
 
-/*#htmlResultProgress1*/
-/*{*/
-/*    position: relative;*/
-/*    padding:5px;*/
-/*    width: 65%;*/
-/*    margin-left: 35%;*/
-/*}*/
-/*.htmlProg1*/
-/*{*/
-/*    width: 35px;*/
-/*    height: 35px;*/
-/*    border: 3px solid white;*/
-/*    display: inline-block;*/
-/*    border-radius: 50%;*/
-/*    margin-left: 5px;*/
-/*}*/
-/*#htmlScoreContainer1*/
-/*{*/
-
-/*    background-color: white;*/
-/*    opacity: 0.8;*/
-/*    border-radius: 5px;*/
-/*    position: relative;*/
-/*}*/
-/*#htmlScoreContainer1 p*/
-/*{*/
-/*    width : 100%;*/
-/*    font-size: 1.5em;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-/*    color: black;*/
-/*    font-family: monospace;*/
-/*}*/
-
-
-
-/*!*Second set of questions*!*/
-
-/*#htmlQuestion2*/
-/*{*/
-/*    width: 100%;*/
-/*    height:10%;*/
-/*    position: relative;*/
-/*    font-size: large;*/
-/*    text-align: center;*/
-/*    padding-bottom: 1%;*/
-/*    padding-top: 4%;*/
-/*}*/
-/*#htmlAnswers2*/
-/*{*/
-/*    width: 100%;*/
-/*    padding: 5%;*/
-/*}*/
-/*.htmlChoices2*/
-/*{*/
-/*    display: inline-block;*/
-/*    width : 32%;*/
-/*    text-align: center;*/
-/*    border : 2px solid white;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*    padding : 5px;*/
-/*}*/
-/*.htmlChoices2:hover*/
-/*{*/
-/*    border : 4px solid white;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*#htmlResultProgress2*/
-/*{*/
-/*    position: relative;*/
-/*    padding:5px;*/
-/*    width: 65%;*/
-/*    margin-left: 33%;*/
-/*}*/
-/*.htmlProg2*/
-/*{*/
-/*    width: 35px;*/
-/*    height: 35px;*/
-/*    border: 3px solid white;*/
-/*    display: inline-block;*/
-/*    border-radius: 50%;*/
-/*    margin-left: 5px;*/
-/*}*/
-/*#htmlScoreContainer2*/
-/*{*/
-
-/*    background-color: white;*/
-/*    opacity: 0.8;*/
-/*    border-radius: 5px;*/
-/*    position: relative;*/
-
-/*}*/
-
-/*#htmlScoreContainer2 p*/
-/*{*/
-/*    width : 100%;*/
-/*    font-size: 1.5em;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-/*    color: black;*/
-/*    font-family: monospace;*/
-/*}*/
-
-
-
-/*!*Third set of questions*!*/
-
-/*#htmlQuestion3*/
-/*{*/
-/*    width: 100%;*/
-/*    height:10%;*/
-/*    position: relative;*/
-/*    font-size: large;*/
-/*    text-align: center;*/
-/*    padding-bottom: 1%;*/
-/*    padding-top: 4%;*/
-/*}*/
-/*#htmlAnswers3*/
-/*{*/
-/*    width: 100%;*/
-/*    padding: 2%;*/
-/*}*/
-/*.htmlChoices3*/
-/*{*/
-/*    display: inline-block;*/
-/*    width : 32%;*/
-/*    text-align: center;*/
-/*    border : 2px solid white;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*    padding : 5px;*/
-/*}*/
-/*.htmlChoices3:hover*/
-/*{*/
-/*    border : 4px solid white;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*#htmlResultProgress3*/
-/*{*/
-/*    position: relative;*/
-/*    padding:5px;*/
-/*    width: 65%;*/
-/*    margin-left: 33%;*/
-/*}*/
-/*.htmlProg3*/
-/*{*/
-/*    width: 35px;*/
-/*    height: 35px;*/
-/*    border: 3px solid white;*/
-/*    display: inline-block;*/
-/*    border-radius: 50%;*/
-/*    margin-left: 5px;*/
-/*}*/
-/*#htmlScoreContainer3*/
-/*{*/
-
-/*    background-color: white;*/
-/*    opacity: 0.8;*/
-/*    border-radius: 5px;*/
-/*    position: relative;*/
-/*}*/
-/*#htmlScoreContainer3 p*/
-/*{*/
-/*    width : 100%;*/
-/*    font-size: 1.5em;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-/*    color: black;*/
-/*    font-family: monospace;*/
-/*}*/
-/*//////////Test set 4 ORANGE 1///////////*/
-/*#htmlQuestion4*/
-/*{*/
-/*    width: 100%;*/
-/*    height:10%;*/
-/*    position: relative;*/
-/*    font-size: large;*/
-/*    text-align: center;*/
-/*    padding-bottom: 1%;*/
-/*    padding-top: 4%;*/
-/*}*/
-/*#htmlAnswers4*/
-/*{*/
-/*    width: 100%;*/
-/*    padding: 2%;*/
-/*}*/
-/*.htmlChoices4*/
-/*{*/
-/*    display: inline-block;*/
-/*    width : 32%;*/
-/*    text-align: center;*/
-/*    border : 2px solid white;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*    padding : 5px;*/
-/*}*/
-/*.htmlChoices4:hover*/
-/*{*/
-/*    border : 4px solid white;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*#htmlResultProgress4*/
-/*{*/
-/*    position: relative;*/
-/*    padding:5px;*/
-/*    width: 65%;*/
-/*    margin-left: 35%;*/
-/*}*/
-/*.htmlProg4*/
-/*{*/
-/*    width: 35px;*/
-/*    height: 35px;*/
-/*    border: 3px solid white;*/
-/*    display: inline-block;*/
-/*    border-radius: 50%;*/
-/*    margin-left: 5px;*/
-/*}*/
-/*#htmlScoreContainer4*/
-/*{*/
-
-/*    background-color: white;*/
-/*    opacity: 0.8;*/
-/*    border-radius: 5px;*/
-/*    position: relative;*/
-/*}*/
-/*#htmlScoreContainer4 p*/
-/*{*/
-/*    width : 100%;*/
-/*    font-size: 1.5em;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-/*    color: black;*/
-/*    font-family: monospace;*/
-/*}*/
-
+/*HTML ORANGE Tests*/
+.htmlOContainer
+{
+    height: 200px;
+    z-index: 1;
+}
+.htmlOChoices
+{
+    display: inline-block;
+    width : 32%;
+    text-align: center;
+    border : 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    z-index: 9;
+}
+.htmlOChoices:hover
+{
+    border : 4px solid orange;
+    font-weight: bold;
+}
+.htmlOProg
+{
+    width: 35px;
+    height: 35px;
+    border: 3px solid orange;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+/*///////////////////////*/
+/*///////////////////////*/
+/*END OF HTML STYLES*/
+/*///////////////////////*/
+/*///////////////////////*/
 
 
 
@@ -353,8 +136,7 @@
     height: 200px;
     z-index: 1;
 }
-
-
+/*General Question Layout*/
 .jsQuestions
 {
     width: 100%;
@@ -401,8 +183,6 @@
     font-family: monospace;
     z-index: 3;
 }
-
-
 /*JS WHITE Tests*/
 .jsWChoices
 {
@@ -433,6 +213,8 @@
 }
 
 
+
+
 /*JS ORANGE Tests*/
 .jsOChoices
 {
@@ -445,6 +227,7 @@
     padding : 5px;
     z-index: 9;
 }
+
 .jsOChoices:hover
 {
     border : 4px solid orange;
@@ -460,3 +243,15 @@
     border-radius: 50%;
     margin-left: 5px;
 }
+
+
+
+
+
+
+
+
+
+/*HTML TEST STYLES*/
+
+

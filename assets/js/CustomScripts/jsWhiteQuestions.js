@@ -147,242 +147,242 @@ let jsScore3 = 0;
         }
 
 
-        ////////////////////////////////////////////////////////////
-        // Tier 2 Question Creation/////////////////////////////////
-        //Set 2
+////////////////////////////////////////////////////////////
+// Tier 2 Question Creation/////////////////////////////////
+//Set 2
 
-        let jsWhiteQuestions2 = [
-            {
-                jsQuestion2: "Which of these were developed first?",
-                jsAnswerA2: "HTML",
-                jsAnswerB2: "CSS",
-                jsAnswerC2: "JavaScript",
-                jsCorrectAnswer2: "A"
-            },
-            {
-                jsQuestion2: "Which of these elements are used to reference a decimal value?",
-                jsAnswerA2: "var",
-                jsAnswerB2: "number",
-                jsAnswerC2: "value",
-                jsCorrectAnswer2: "A"
-            },
-            {
-                jsQuestion2: "Where can JavaScript reference tags be placed in a HTML document?",
-                jsAnswerA2: "head",
-                jsAnswerB2: "body",
-                jsAnswerC2: "both",
-                jsCorrectAnswer2: "C"
-            },
-        ];
-        //Declaring the 2nd set of questions
-        const lastJSWhiteQuestion2 = jsWhiteQuestions2.length - 1;
-        let currentJSWhiteQuestion2 = 0;
+let jsWhiteQuestions2 =
+[
+    {
+        jsQuestion2: "Which of these were developed first?",
+        jsAnswerA2: "HTML",
+        jsAnswerB2: "CSS",
+        jsAnswerC2: "JavaScript",
+        jsCorrectAnswer2: "A"
+    },
+    {
+        jsQuestion2: "Which of these elements are used to reference a decimal value?",
+        jsAnswerA2: "var",
+        jsAnswerB2: "number",
+        jsAnswerC2: "value",
+        jsCorrectAnswer2: "A"
+    },
+    {
+        jsQuestion2: "Where can JavaScript reference tags be placed in a HTML document?",
+        jsAnswerA2: "head",
+        jsAnswerB2: "body",
+        jsAnswerC2: "both",
+        jsCorrectAnswer2: "C"
+    },
+];
+//Declaring the 2nd set of questions
+const lastJSWhiteQuestion2 = jsWhiteQuestions2.length - 1;
+let currentJSWhiteQuestion2 = 0;
 
-        //This loads in the test's questions
-        function loadJSWhiteQuestion2() {
-            let wq2 = jsWhiteQuestions2[currentJSWhiteQuestion2];
+//This loads in the test's questions
+function loadJSWhiteQuestion2() {
+    let wq2 = jsWhiteQuestions2[currentJSWhiteQuestion2];
 
-            jsQuestion2.innerHTML = "<p>" + wq2.jsQuestion2 + "</p>";
-            jsAnswerA2.innerHTML = wq2.jsAnswerA2;
-            jsAnswerB2.innerHTML = wq2.jsAnswerB2;
-            jsAnswerC2.innerHTML = wq2.jsAnswerC2;
-        }
+    jsQuestion2.innerHTML = "<p>" + wq2.jsQuestion2 + "</p>";
+    jsAnswerA2.innerHTML = wq2.jsAnswerA2;
+    jsAnswerB2.innerHTML = wq2.jsAnswerB2;
+    jsAnswerC2.innerHTML = wq2.jsAnswerC2;
+}
 
-        //NEED IF STATEMENT FOR IF THE TIER 1 SCORE IS SHOWN
+//NEED IF STATEMENT FOR IF THE TIER 1 SCORE IS SHOWN
+loadJSWhiteQuestion2();
+// Second set of progress indicators
+function jsProgressRender2()
+{
+    for (let qIndex2 = 0; qIndex2 <= lastJSWhiteQuestion2; qIndex2++)
+    {
+        jsResultProgress2.innerHTML += "<div class='jsWProg' id=jsWProg2" + qIndex2 + "></div>";
+    }
+}
+jsProgressRender2();
+//Turns marker green if correct
+function jsCorrectAnswer2()
+{
+    document.getElementById("jsWProg2" + currentJSWhiteQuestion2).style.backgroundColor = "green";
+}
+//Turns marker red if wrong
+function jsWrongAnswer2()
+{
+    document.getElementById("jsWProg2" + currentJSWhiteQuestion2).style.backgroundColor = "red";
+}
+
+//// Second Answer renderer ////
+function jsCheckAnswer2(jsWhiteAnswer2) {
+    if (jsWhiteAnswer2 === jsWhiteQuestions2[currentJSWhiteQuestion2].jsCorrectAnswer2) {
+        jsScore2++;
+        // Turns user input into an immediate feedback system
+        // Turn answer green
+        jsCorrectAnswer2();
+    } else {
+        // Turns user input into an immediate feedback system
+        // Turn answer red
+        jsWrongAnswer2();
+    }
+    if (currentJSWhiteQuestion2 < lastJSWhiteQuestion2)
+    {
+        currentJSWhiteQuestion2++;
         loadJSWhiteQuestion2();
-        // Second set of progress indicators
-        function jsProgressRender2()
+    }
+    else
+    {
+        jsScoreRender2();
+        document.getElementById('jsAnswers2').style.display = 'none';
+    }
+}
+function jsScoreRender2()
+{
+    jsScoreContainer2.style.display = "block";
+    const jsScorePercent2 = Math.round(100 * jsScore2 / jsWhiteQuestions2.length);
+
+    jsScoreContainer2.innerHTML = "<p>" + jsScorePercent2 + "%</p>";
+
+    switch(jsScorePercent2)
+    {
+        case 0:
         {
-            for (let qIndex2 = 0; qIndex2 <= lastJSWhiteQuestion2; qIndex2++)
-            {
-                jsResultProgress2.innerHTML += "<div class='jsWProg' id=jsWProg2" + qIndex2 + "></div>";
-            }
+            jsQuestion2.innerHTML = "Maybe consider revising more?!";
+            break;
         }
-        jsProgressRender2();
-        //Turns marker green if correct
-        function jsCorrectAnswer2()
+        case 33:
         {
-            document.getElementById("jsWProg2" + currentJSWhiteQuestion2).style.backgroundColor = "green";
+            jsQuestion2.innerHTML = "Nearly there, try again!";
+            break;
         }
-        //Turns marker red if wrong
-        function jsWrongAnswer2()
+        case 67:
         {
-            document.getElementById("jsWProg2" + currentJSWhiteQuestion2).style.backgroundColor = "red";
+            jsQuestion2.innerHTML = "Test Completed! So close!";
+            break;
         }
-
-        //// Second Answer renderer ////
-        function jsCheckAnswer2(jsWhiteAnswer2) {
-            if (jsWhiteAnswer2 === jsWhiteQuestions2[currentJSWhiteQuestion2].jsCorrectAnswer2) {
-                jsScore2++;
-                // Turns user input into an immediate feedback system
-                // Turn answer green
-                jsCorrectAnswer2();
-            } else {
-                // Turns user input into an immediate feedback system
-                // Turn answer red
-                jsWrongAnswer2();
-            }
-            if (currentJSWhiteQuestion2 < lastJSWhiteQuestion2)
-            {
-                currentJSWhiteQuestion2++;
-                loadJSWhiteQuestion2();
-            }
-            else
-            {
-                jsScoreRender2();
-                document.getElementById('jsAnswers2').style.display = 'none';
-            }
-        }
-        function jsScoreRender2()
+        case 100:
         {
-            jsScoreContainer2.style.display = "block";
-            const jsScorePercent2 = Math.round(100 * jsScore2 / jsWhiteQuestions2.length);
-
-            jsScoreContainer2.innerHTML = "<p>" + jsScorePercent2 + "%</p>";
-
-            switch(jsScorePercent2)
-            {
-                case 0:
-                {
-                    jsQuestion2.innerHTML = "Maybe consider revising more?!";
-                    break;
-                }
-                case 33:
-                {
-                    jsQuestion2.innerHTML = "Nearly there, try again!";
-                    break;
-                }
-                case 67:
-                {
-                    jsQuestion2.innerHTML = "Test Completed! So close!";
-                    break;
-                }
-                case 100:
-                {
-                    jsQuestion2.innerHTML = "Test Completed with a Perfect Score well done!";
-                    break;
-                }
-            }
-
+            jsQuestion2.innerHTML = "Test Completed with a Perfect Score well done!";
+            break;
         }
-        ///////////////////////////////////////////////
-        //////// Third question set //////////////////
-        //Set 3
-        let jsWhiteQuestions3 = [
-            {
-                jsQuestion3: "Which of these tags do you need to add JavaScript to a HTML document?",
-                jsAnswerA3: "< script >",
-                jsAnswerB3: "< div >",
-                jsAnswerC3: "< style >",
-                jsCorrectAnswer3: "A"
-            },
-            {
-                jsQuestion3: "What type of computing language is JavaScript?",
-                jsAnswerA3: "Mark-Up",
-                jsAnswerB3: "StyleSheet",
-                jsAnswerC3: "Scripting",
-                jsCorrectAnswer3: "C"
-            },
-            {
-                jsQuestion3: "JavaScript can be used to create webpages instead of HTML?",
-                jsAnswerA3: "True",
-                jsAnswerB3: "False",
-                jsAnswerC3: "Sometimes",
-                jsCorrectAnswer3: "B"
-            },
-        ];
-        //Declaring the question the test is on
-        const lastJSWhiteQuestion3 = jsWhiteQuestions3.length - 1;
-        let currentJSWhiteQuestion3 = 0;
+    }
+}
+///////////////////////////////////////////////
+//////// Third question set //////////////////
+//Set 3
+let jsWhiteQuestions3 = [
+    {
+        jsQuestion3: "Which of these tags do you need to add JavaScript to a HTML document?",
+        jsAnswerA3: "< script >",
+        jsAnswerB3: "< div >",
+        jsAnswerC3: "< style >",
+        jsCorrectAnswer3: "A"
+    },
+    {
+        jsQuestion3: "What type of computing language is JavaScript?",
+        jsAnswerA3: "Mark-Up",
+        jsAnswerB3: "StyleSheet",
+        jsAnswerC3: "Scripting",
+        jsCorrectAnswer3: "C"
+    },
+    {
+        jsQuestion3: "JavaScript can be used to create webpages instead of HTML?",
+        jsAnswerA3: "True",
+        jsAnswerB3: "False",
+        jsAnswerC3: "Sometimes",
+        jsCorrectAnswer3: "B"
+    },
+];
+//Declaring the question the test is on
+const lastJSWhiteQuestion3 = jsWhiteQuestions3.length - 1;
+let currentJSWhiteQuestion3 = 0;
 
-        //This loads in the test's questions
-        function loadJSWhiteQuestion3() {
-            let wq3 = jsWhiteQuestions3[currentJSWhiteQuestion3];
+//This loads in the test's questions
+function loadJSWhiteQuestion3() {
+    let wq3 = jsWhiteQuestions3[currentJSWhiteQuestion3];
 
-            jsQuestion3.innerHTML = "<p>" + wq3.jsQuestion3 + "</p>";
-            jsAnswerA3.innerHTML = wq3.jsAnswerA3;
-            jsAnswerB3.innerHTML = wq3.jsAnswerB3;
-            jsAnswerC3.innerHTML = wq3.jsAnswerC3;
-        }
+    jsQuestion3.innerHTML = "<p>" + wq3.jsQuestion3 + "</p>";
+    jsAnswerA3.innerHTML = wq3.jsAnswerA3;
+    jsAnswerB3.innerHTML = wq3.jsAnswerB3;
+    jsAnswerC3.innerHTML = wq3.jsAnswerC3;
+}
 
-        //Execute function to load questions and show the test area
+//Execute function to load questions and show the test area
+loadJSWhiteQuestion3();
+// jsTest3.style.display = "block";
+function jsProgressRender3()
+{
+    for (let qIndex3 = 0; qIndex3 <= lastJSWhiteQuestion3; qIndex3++)
+    {
+        jsResultProgress3.innerHTML += "<div class='jsWProg' id=jsWProg3" + qIndex3 + "></div>";
+    }
+}
+jsProgressRender3();
+//Turns marker green if correct
+function jsCorrectAnswer3()
+{
+    document.getElementById("jsWProg3" + currentJSWhiteQuestion3).style.backgroundColor = "green";
+}
+//Turns marker red if wrong
+function jsWrongAnswer3() {
+    document.getElementById("jsWProg3" + currentJSWhiteQuestion3).style.backgroundColor = "red";
+}
+
+// Function to check if the user has input the right answer
+function jsCheckAnswer3(jsWhiteAnswer3)
+{
+    if (jsWhiteAnswer3 === jsWhiteQuestions3[currentJSWhiteQuestion3].jsCorrectAnswer3)
+    {
+        jsScore3++;
+        // Turns user input into an immediate feedback system
+        // Turn answer green
+        jsCorrectAnswer3();
+    } else {
+        // Turns user input into an immediate feedback system
+        // Turn answer red
+        jsWrongAnswer3();
+    }
+    if (currentJSWhiteQuestion3 < lastJSWhiteQuestion3)
+    {
+        currentJSWhiteQuestion3++;
         loadJSWhiteQuestion3();
-        // jsTest3.style.display = "block";
-        function jsProgressRender3() {
-            for (let qIndex3 = 0; qIndex3 <= lastJSWhiteQuestion3; qIndex3++) {
-                jsResultProgress3.innerHTML += "<div class='jsWProg' id=jsWProg3" + qIndex3 + "></div>";
-            }
-        }
-        jsProgressRender3();
-        //Turns marker green if correct
-        function jsCorrectAnswer3()
+    }
+    else
+    {
+        jsScoreRender3();
+        document.getElementById('jsAnswers3').style.display = 'none';
+    }
+}
+
+// Functions to show the score percentage at end of test
+function jsScoreRender3() {
+    jsScoreContainer3.style.display = "block";
+    const jsScorePercent3 = Math.round(100 * jsScore3 / jsWhiteQuestions3.length);
+
+    jsScoreContainer3.innerHTML = "<p>" + jsScorePercent3 + "%</p>";
+
+    switch(jsScorePercent3)
+    {
+        case 0:
         {
-            document.getElementById("jsWProg3" + currentJSWhiteQuestion3).style.backgroundColor = "green";
+            jsQuestion3.innerHTML = "Maybe consider revising more?!";
+            break;
         }
-        //Turns marker red if wrong
-        function jsWrongAnswer3() {
-            document.getElementById("jsWProg3" + currentJSWhiteQuestion3).style.backgroundColor = "red";
-        }
-
-        // Function to check if the user has input the right answer
-        function jsCheckAnswer3(jsWhiteAnswer3)
+        case 33:
         {
-            if (jsWhiteAnswer3 === jsWhiteQuestions3[currentJSWhiteQuestion3].jsCorrectAnswer3)
-            {
-                jsScore3++;
-                // Turns user input into an immediate feedback system
-                // Turn answer green
-                jsCorrectAnswer3();
-            } else {
-                // Turns user input into an immediate feedback system
-                // Turn answer red
-                jsWrongAnswer3();
-            }
-            if (currentJSWhiteQuestion3 < lastJSWhiteQuestion3)
-            {
-                currentJSWhiteQuestion3++;
-                loadJSWhiteQuestion3();
-            }
-            else
-                {
-                jsScoreRender3();
-
-                    document.getElementById('jsAnswers3').style.display = 'none';
-            }
+            jsQuestion3.innerHTML = "Nearly there, try again!";
+            break;
         }
-
-        // Functions to show the score percentage at end of test
-        function jsScoreRender3() {
-            jsScoreContainer3.style.display = "block";
-            const jsScorePercent3 = Math.round(100 * jsScore3 / jsWhiteQuestions3.length);
-
-            jsScoreContainer3.innerHTML = "<p>" + jsScorePercent3 + "%</p>";
-
-            switch(jsScorePercent3)
-            {
-                case 0:
-                {
-                    jsQuestion3.innerHTML = "Maybe consider revising more?!";
-                    break;
-                }
-                case 33:
-                {
-                    jsQuestion3.innerHTML = "Nearly there, try again!";
-                    break;
-                }
-                case 67:
-                {
-                    jsQuestion3.innerHTML = "Test Completed! So close!";
-                    break;
-                }
-                case 100:
-                {
-                    jsQuestion3.innerHTML = "Test Completed with a Perfect Score well done!";
-                    break;
-                }
-            }
+        case 67:
+        {
+            jsQuestion3.innerHTML = "Test Completed! So close!";
+            break;
         }
-
+        case 100:
+        {
+            jsQuestion3.innerHTML = "Test Completed with a Perfect Score well done!";
+            break;
+        }
+    }
+}
 $("#whiteBelt").click(function()
 {
     $("#whiteGlobal").toggle("slide");

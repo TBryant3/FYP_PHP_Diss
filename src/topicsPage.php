@@ -78,7 +78,7 @@
 </div>
 <br>
 <!--First Section - Beginner-->
-<h2 style="text-align:center"><strong>Stage 1 - White Belt</strong></h2>
+<h2 style="text-align:center; color: grey"><strong>Stage 1 - White Belt</strong></h2>
 <div class="row" style="height:35%">
     <div class="col-xs-2">
         <div id="alertBox1" style="margin-left: 15px; margin-top: 40px">
@@ -97,10 +97,6 @@
         <p style="text-align:center"><i>Web Development Mark-up language used to produce web  pages for websites. Use HTML to structure your webpages and then CSS to style them and stand out from the crowd! This topic will include <b>What</b>, <b>How</b> and <b>Why</b> this language is used. </i></p>
         <br>
         <p><a class="btn btn-default" href="htmlPage.php" style="color:orange"><b>Learn more &raquo;</b></a><b>*Recommended for beginners</b></p>
-        <!--Progress Bar-->
-        <div id="pbTopic1" style="margin-bottom: 1%; ">
-            Topic Completion: <b><span id="html-label" style="position:relative;"></span></b>
-        </div>
     </div>
     <!-- JavaScript -->
     <div class="col-xs-4" style="border-style:solid; border-radius:5%; height:auto">
@@ -111,10 +107,6 @@
         <p style="text-align:center"><i>In this topic we shall we exploring the high-level scripting language JavaScript. We will go through: <b>What</b> JavaScript is, <b>How</b> it is used, and <b>Why</b> JavaScript is so important especially in the web development industry. </i></p>
         <br>
         <p><a class="btn btn-default" href="jsPage.php" style="color:goldenrod"><b>Learn more &raquo;</b></a><b>*Recommended after completing HTML & CSS</b></p>
-        <!--Progress Bar-->
-        <div id="pbTopic2" style="margin-bottom:1%;">
-            Topic Completion: <b><span id="js-label" style="position:relative"></span></b>
-        </div>
     </div>
     <div class="col-xs-2">
         <div id="alertBox2" style="margin-top: 40px">
@@ -128,7 +120,7 @@
 <br>
 
 <!-- Second Section - Intermediate-->
-<h2 style="text-align: center"><b>Stage 2 - Brown Belt</b></h2>
+<h2 style="text-align: center; color: orange"><b>Stage 2 - Orange Belt</b></h2>
 <!-- CPlusPlus -->
 <div class="row" style="height:35%">
     <div class="col-xs-2">
@@ -147,10 +139,6 @@
         <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm.  We will go through: <b>What</b> C++ is, <b>How</b> it is used, and <b>Why</b> C++ is used over certain other programming languages</i></p>
         <br>
         <p><a class="btn btn-default" href="cPlusPlusPage.php" style="color:deepskyblue"><b>Learn more &raquo;</b></a></p>
-        <!--Progress Bar-->
-        <div id="pbTopic3" style="margin-bottom:1%;">
-            Topic Completion: <b><span id="cplus-label" style="position:relative"></span></b>
-        </div>
     </div>
     <!-- C-Sharp -->
     <div class="col-xs-4" style="border-style: solid; border-radius: 5%; height:auto">
@@ -161,10 +149,6 @@
         <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm. In this topic we will delve into <b>What</b> C# is used for, <b>How</b> it is used and <b>Why</b> the programming language was developed</i></p>
         <br>
         <p><a class="btn btn-default" href="cSharpPage.php" style="color:rebeccapurple"><b>Learn more &raquo;</b></a></p>
-        <!--Progress Bar-->
-        <div id="pbTopic4" style="margin-bottom:1%;">
-            Topic Completion: <b><span id="csharp-label" style="position:relative;"></span></b>
-        </div>
     </div>
     <div class="col-xs-2">
         <div id="alertBox4" style="margin-top: 40px">
@@ -176,16 +160,25 @@
     </div>
 </div>
 <br>
-<br>
-    <!-- Coming Soon Section -->
-<h2 style="text-align:center"><b>Stage 3 - Black Belt</b></h2>
+<!-- Coming Soon Section -->
+<h2 style="text-align:center; color: goldenrod"><strong>Stage 3 - Yellow</strong></h2>
 <div class="row">
-    <div class="col-xs-2"></div>
-    <div class="col-xs-8" style="border-style: solid; border-radius: 5%;">
-        <h2 style="color:green; text-align:center"><b>Coming Soon</b></h2>
-        <p id="countDownArea" style="text-align:center; font-size: x-large"></p>
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4" style="border-style: solid; border-radius: 3%;">
+        <h2 style="text-align:center; color: goldenrod"><b>Coming Soon</b></h2>
+        <p id="countDownArea" style="text-align:center; font-size: x-large; color: goldenrod"></p>
     </div>
-    <div class="col-xs-2"></div>
+    <div class="col-xs-4"></div>
+</div>
+<br>
+<h2 style="text-align:center"><b>Stage 4 - Black Belt</b></h2>
+<div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
+        <h2 style="text-align:center"><b>Coming Soon</b></h2>
+        <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
+    </div>
+    <div class="col-xs-4"></div>
 </div>
 <!-- Support Section -->
 <h2 style="text-align:center"><strong>Support</strong></h2>
