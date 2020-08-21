@@ -125,22 +125,22 @@ let jsScore3 = 0;
             {
                 case 0:
                 {
-                    jsQuestion1.innerHTML = "Maybe consider revising more?!";
+                    jsQuestion1.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
                     break;
                 }
                 case 33:
                 {
-                    jsQuestion1.innerHTML = "Nearly there, try again!";
+                    jsQuestion1.innerHTML = "Nearly there, try again! :(";
                     break;
                 }
                 case 67:
                 {
-                    jsQuestion1.innerHTML = "Test Completed! So close!";
+                    jsQuestion1.innerHTML = "Almost had it! So close! :|";
                     break;
                 }
                 case 100:
                 {
-                    jsQuestion1.innerHTML = "Test Completed with a Perfect Score well done!";
+                    jsQuestion1.innerHTML = "Test Completed with a Perfect Score well done! :)";
                     break;
                 }
             }
@@ -245,22 +245,22 @@ function jsScoreRender2()
     {
         case 0:
         {
-            jsQuestion2.innerHTML = "Maybe consider revising more?!";
+            jsQuestion2.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            jsQuestion2.innerHTML = "Nearly there, try again!";
+            jsQuestion2.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            jsQuestion2.innerHTML = "Test Completed! So close!";
+            jsQuestion2.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
         {
-            jsQuestion2.innerHTML = "Test Completed with a Perfect Score well done!";
+            jsQuestion2.innerHTML = "Test Completed with a Perfect Score well done! :)";
             break;
         }
     }
@@ -363,22 +363,22 @@ function jsScoreRender3() {
     {
         case 0:
         {
-            jsQuestion3.innerHTML = "Maybe consider revising more?!";
+            jsQuestion3.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            jsQuestion3.innerHTML = "Nearly there, try again!";
+            jsQuestion3.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            jsQuestion3.innerHTML = "Test Completed! So close!";
+            jsQuestion3.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
         {
-            jsQuestion3.innerHTML = "Test Completed with a Perfect Score well done!";
+            jsQuestion3.innerHTML = "Test Completed with a Perfect Score well done! :)";
             break;
         }
     }

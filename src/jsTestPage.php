@@ -189,14 +189,14 @@
                     <br>
                     <br>
                     <br>
-                       <div ondragover="allowDrop(e)" style="width: 100%; text-align: center"><div class="dropZone" ondrop="drop(e)">_________________</div></div>"(colourBox).style.backgroundColor = "green";
+                       <div style="width: 100%; text-align: center"><div class="dropZone" ondragover="allowDrop(e)" ondrop="drop(e)">_________________</div></div>"(colourBox).style.backgroundColor = "green";
                     }
                 </div>
             </div>
             <div class="col-md-4">
                 <h3><b><u>Equation 2:</u></b><br> Complete the EventListener</h3>
                 <div>
-                    btnEvent.addEventListener("click",<br><br><br><div ondragover="allowDrop(e)" style="width: 100%; text-align: center"><div class="dropZone" ondrop="drop(e)">_________________);</div></div>
+                    btnEvent.addEventListener("click",<br><br><br><div style="width: 100%; text-align: center"><div class="dropZone" ondragover="allowDrop(e)" ondrop="drop(e)">_________________);</div></div>
                     function displayAlert()
                     {
                         alert('Hello World')
@@ -224,15 +224,15 @@
             <div class="col-md-4">
                 <h3><b><u>Equation 1 Pieces:</u></b></h3>
                 <div id="jsPieces1">
-                    <div id="p1Frag1">
+                    <div id="p1Frag1" class="dragzone">
                         <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:20px; width: 200px" id="e1Snip1" ondragstart="drag(e)" alt="First droppable item">
                     </div>
                     <br>
-                    <div id="p1Frag2">
+                    <div id="p1Frag2" class="dragzone">
                         <img src="../assets/img/Screenshots/getElementClassNameSnip.png" style = "height:25px; width: 200px" id="e1Snip2" ondragstart="drag(e)" alt="Second droppable item">
                     </div>
                     <br>
-                    <div id="p1Frag3">
+                    <div id="p1Frag3" class="dragzone">
                         <img src="../assets/img/Screenshots/getElementTagNameSnip.png" style = "height:25px; width: 200px" id="e1Snip3" ondragstart="drag(e)" alt="Third droppable item">
                     </div>
                 </div>

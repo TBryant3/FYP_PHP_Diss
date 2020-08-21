@@ -280,12 +280,12 @@
             </p>
             <h3 class="learnTitles">Parameter Parsing in Functions</h3>
             <p>
-                Communication between procedures or functions tends to be associated in two ways, Formal Parameters and Actual Parameters. Formal parameters are when the variables are declared within the function's parentheses(), Actual parameters are when these variables are specified in the called function as its arguments such as when defining variables within a function and calling another function within this, using the previously defined variables within this function's parentheses.
+                Communication between procedures or functions tends to be associated in two ways, <b>Formal parameters</b> and <b>Actual parameters</b>. <i>Formal</i> parameters are when the variables are declared within the function's parentheses(), <i>Actual</i> parameters are when these variables are specified in the called function as its arguments such as when defining variables within a function and calling another function within this, using the previously defined variables within this function's parentheses.
 
             </p>
             <h3 class="learnTitles">Parsing Techniques</h3>
             <p>
-                Typically there are 4 different types of parameter parsing techniques; <b>Parse-by-value </b>, <b>Parse-by-reference</b>, <b>Parse-by-CopyRestore</b> and <b>Pass-by-name</b>.
+                Typically there are 4 different types of parameter parsing techniques; <br><b>Parse-by-value </b>, <b>Parse-by-reference</b>, <b>Parse-by-CopyRestore</b> and <b>Pass-by-name</b>.
                 <br>
                 <b>Parse-by-value:</b> This is when the parameter values are copied into another variable and then this new object is then what is passed. This is beneficial when the variable has a long name or is that of a file path, shortened down to save re-typing the same line multiple times.
                 <br>

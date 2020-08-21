@@ -39,24 +39,24 @@ let htmlScore3 = 0;
 // White test set 1 Question Creation
 let htmlWhiteQuestions1 = [
     {
-        htmlQuestion1 : "Which of these HTML tags do you need to add JavaScript to a HTML document?",
-        htmlAnswerA1 : "< script >",
-        htmlAnswerB1 : "< div >",
-        htmlAnswerC1 : "< style >",
+        htmlQuestion1 : "What does HTML stand for?",
+        htmlAnswerA1 : "HyperText Markdown Language",
+        htmlAnswerB1 : "HyperText Markup Language",
+        htmlAnswerC1 : "HyperText Marking Language",
+        htmlCorrectAnswer1 : "B"
+    },
+    {
+        htmlQuestion1 : "What is the purpose of HTML?",
+        htmlAnswerA1 : "To enable the creation of documents to be displayed in web browsers",
+        htmlAnswerB1 : "To connect other applications to websites",
+        htmlAnswerC1 : "To produce applications that can run JavaScript",
         htmlCorrectAnswer1 : "A"
     },
     {
-        htmlQuestion1 : "What type of computing language is JavaScript?",
-        htmlAnswerA1 : "Mark-Up",
-        htmlAnswerB1 : "StyleSheet",
-        htmlAnswerC1 : "Scripting",
-        htmlCorrectAnswer1 : "C"
-    },
-    {
-        htmlQuestion1 : "JavaScript can be used to create webpages instead of HTML?",
+        htmlQuestion1 : "HTML can style itself, it doesn't need CSS",
         htmlAnswerA1 : "True",
         htmlAnswerB1 : "False",
-        htmlAnswerC1 : "Sometimes",
+        htmlAnswerC1 : "True but using CSS enables better styling options",
         htmlCorrectAnswer1 : "B"
     },
 ];
@@ -135,22 +135,22 @@ function htmlScoreRender1()
     {
         case 0:
         {
-            htmlQuestion1.innerHTML = "Maybe consider revising more?!";
+            htmlQuestion1.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion1.innerHTML = "Nearly there, try again!";
+            htmlQuestion1.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            htmlQuestion1.innerHTML = "Test Completed! So close!";
+            htmlQuestion1.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
         {
-            htmlQuestion1.innerHTML = "Test Completed with a Perfect Score well done!";
+            htmlQuestion1.innerHTML = "Test Completed with a Perfect Score well done! :)";
             break;
         }
     }
@@ -165,24 +165,24 @@ function htmlScoreRender1()
 let htmlWhiteQuestions2 =
     [
         {
-            htmlQuestion2: "Which of these were developed first?",
+            htmlQuestion2: "What language was developed in 1996?",
             htmlAnswerA2: "HTML",
-            htmlAnswerB2: "CSS",
-            htmlAnswerC2: "JavaScript",
+            htmlAnswerB2: "LiveScript",
+            htmlAnswerC2: "CSS",
+            htmlCorrectAnswer2: "C"
+        },
+        {
+            htmlQuestion2: "HTML documents can have JavaScript script tags included outside its html tags?",
+            htmlAnswerA2: "True and the browser isn't affected by this",
+            htmlAnswerB2: "False, the browser will throw an error",
+            htmlAnswerC2: "True but placing script tags outside html tags will result in errors being thrown",
             htmlCorrectAnswer2: "A"
         },
         {
-            htmlQuestion2: "Which of these elements are used to reference a decimal value?",
-            htmlAnswerA2: "var",
-            htmlAnswerB2: "number",
-            htmlAnswerC2: "value",
-            htmlCorrectAnswer2: "A"
-        },
-        {
-            htmlQuestion2: "Where can JavaScript reference tags be placed in a HTML document?",
-            htmlAnswerA2: "head",
-            htmlAnswerB2: "body",
-            htmlAnswerC2: "both",
+            htmlQuestion2: "External code files have to be in the same folder as the HTML document to be accessible",
+            htmlAnswerA2: "True, the browser cannot read past the root folder",
+            htmlAnswerB2: "False, the browser can read from any location on the system drive",
+            htmlAnswerC2: "Both, as long as the file path is specified, documents can be accessed from anywhere",
             htmlCorrectAnswer2: "C"
         },
     ];
@@ -266,22 +266,22 @@ function htmlScoreRender2()
     {
         case 0:
         {
-            htmlQuestion2.innerHTML = "Maybe consider revising more?!";
+            htmlQuestion2.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion2.innerHTML = "Nearly there, try again!";
+            htmlQuestion2.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            htmlQuestion2.innerHTML = "Test Completed! So close!";
+            htmlQuestion2.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
         {
-            htmlQuestion2.innerHTML = "Test Completed with a Perfect Score well done!";
+            htmlQuestion2.innerHTML = "Test Completed with a Perfect Score well done! :)";
             break;
         }
     }
@@ -290,24 +290,24 @@ function htmlScoreRender2()
 //////// Third question set //////////////////
 let htmlWhiteQuestions3 = [
     {
-        htmlQuestion3 : "Which of these tags do you need to add JavaScript to a HTML document?",
-        htmlAnswerA3 : "< script >",
-        htmlAnswerB3 : "< div >",
-        htmlAnswerC3 : "< style >",
+        htmlQuestion3 : "CSS is a coding language devised to allow HTML to produce more efficient web content?",
+        htmlAnswerA3 : "False, CSS is a stylesheet language using a set of properties to style specified HTML elements",
+        htmlAnswerB3 : "True, CSS was developed to allow for more HTML content to be delivered on a single webpage",
+        htmlAnswerC3 : "Both, CSS is a stylesheet language which allows for HTML content to be delivered more efficiently",
         htmlCorrectAnswer3 : "A"
     },
     {
-        htmlQuestion3 : "What type of computing language is JavaScript?",
-        htmlAnswerA3 : "Mark-Up",
-        htmlAnswerB3 : "StyleSheet",
-        htmlAnswerC3 : "Scripting",
-        htmlCorrectAnswer3 : "C"
+        htmlQuestion3 : "HTML is written as a plain english markup, can other coding languages be used within HTML?",
+        htmlAnswerA3 : "Yes, many languages can be integrated",
+        htmlAnswerB3 : "HTML only allows only JavaScript and CSS integration",
+        htmlAnswerC3 : "HTML5 was developed to allow integration of the C-based languages",
+        htmlCorrectAnswer3 : "B"
     },
     {
-        htmlQuestion3 : "JavaScript can be used to create webpages instead of HTML?",
-        htmlAnswerA3 : "True",
-        htmlAnswerB3 : "False",
-        htmlAnswerC3 : "Sometimes",
+        htmlQuestion3 : "Example CSS properties include...",
+        htmlAnswerA3 : "border-color, padding, margin, font-size",
+        htmlAnswerB3 : "page-color, margin-size, scripts, headings",
+        htmlAnswerC3 : "display, z-index, margin, vertical-align ",
         htmlCorrectAnswer3 : "B"
     },
 ];
@@ -386,22 +386,22 @@ function htmlScoreRender3()
     {
         case 0:
         {
-            htmlQuestion3.innerHTML = "Maybe consider revising more?!";
+            htmlQuestion3.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion3.innerHTML = "Nearly there, try again!";
+            htmlQuestion3.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            htmlQuestion3.innerHTML = "Test Completed! So close!";
+            htmlQuestion3.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
         {
-            htmlQuestion3.innerHTML = "Test Completed with a Perfect Score well done!";
+            htmlQuestion3.innerHTML = "Test Completed with a Perfect Score well done! :)";
             break;
         }
     }

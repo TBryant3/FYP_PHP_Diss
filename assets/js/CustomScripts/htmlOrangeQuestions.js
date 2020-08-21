@@ -110,7 +110,7 @@ function htmlCheckAnswer4(htmlOrangeAnswer1)
 // Functions to show the score percentage at end of test
 function htmlScoreRender4() {
     htmlScoreContainer4.style.display = "block";
-    const htmlScorePercent4 = Math.round(100 * htmlhtmlScore4 / htmlOrangeQuestions1.length);
+    const htmlScorePercent4 = Math.round(100 * htmlScore4 / htmlOrangeQuestions1.length);
 
     htmlScoreContainer4.innerHTML = "<p>" + htmlScorePercent4 + "%</p>";
 
@@ -118,17 +118,17 @@ function htmlScoreRender4() {
     {
         case 0:
         {
-            htmlQuestion4.innerHTML = "Maybe consider revising some more?! You've got this!\ ";
+            htmlQuestion4.innerHTML = "Maybe consider revising some more?! You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion4.innerHTML = "Nearly there, try again!";
+            htmlQuestion4.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            htmlQuestion4.innerHTML = "Test Completed! So close!";
+            htmlQuestion4.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
@@ -232,17 +232,17 @@ function htmlScoreRender5() {
     {
         case 0:
         {
-            htmlQuestion5.innerHTML = "Maybe consider revising more?!";
+            htmlQuestion5.innerHTML = "Maybe consider revising some more?! You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion5.innerHTML = "Nearly there, try again!";
+            htmlQuestion5.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            htmlQuestion5.innerHTML = "Test Completed! So close!";
+            htmlQuestion5.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
@@ -345,22 +345,22 @@ function htmlScoreRender6() {
     {
         case 0:
         {
-            htmlQuestion6.innerHTML = "Maybe consider revising more?!";
+            htmlQuestion6.innerHTML = "Maybe consider revising some more?! You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion6.innerHTML = "Nearly there, try again!";
+            htmlQuestion6.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            htmlQuestion6.innerHTML = "Test Completed! So close!";
+            htmlQuestion6.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
         {
-            htmlQuestion6.innerHTML = "Test Completed with a Perfect Score well done!";
+            htmlQuestion6.innerHTML = "Test Completed with a Perfect Score well done! :)";
             break;
         }
     }

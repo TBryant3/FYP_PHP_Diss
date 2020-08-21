@@ -118,22 +118,22 @@ function jsScoreRender4() {
     {
         case 0:
         {
-            jsQuestion4.innerHTML = "Maybe consider revising some more?! You've got this!\ ";
+            jsQuestion4.innerHTML = "Maybe consider revising some more?! You've got this! ";
             break;
         }
         case 33:
         {
-            jsQuestion4.innerHTML = "Nearly there, try again!";
+            jsQuestion4.innerHTML = "Nearly there, try again! :(";
             break;
         }
         case 67:
         {
-            jsQuestion4.innerHTML = "Test Completed! So close!";
+            jsQuestion4.innerHTML = "Almost had it! So close! :|";
             break;
         }
         case 100:
         {
-            jsQuestion4.innerHTML = "Test Completed with a perfect score Well Done!  :) ";
+            jsQuestion4.innerHTML = "Test Completed with a perfect score Well Done! :) ";
             break;
         }
     }
@@ -232,22 +232,22 @@ function jsScoreRender5() {
     {
         case 0:
         {
-            jsQuestion5.innerHTML = "Maybe consider revising more?!";
+            jsQuestion5.innerHTML = "Maybe consider revising more?! You've got this!";
             break;
         }
         case 33:
         {
-            jsQuestion5.innerHTML = "Nearly there, try again!";
+            jsQuestion5.innerHTML = "Nearly there, try again! :( ";
             break;
         }
         case 67:
         {
-            jsQuestion5.innerHTML = "Test Completed! So close!";
+            jsQuestion5.innerHTML = "Almost had it!  So close! :| ";
             break;
         }
         case 100:
         {
-            jsQuestion5.innerHTML = "Test Completed with a Perfect Score well done!";
+            jsQuestion5.innerHTML = "Test Completed with a Perfect Score well done! :) ";
             break;
         }
     }
@@ -255,25 +255,25 @@ function jsScoreRender5() {
 // Orange test set 3
 let jsOrangeQuestions3 = [
     {
-        jsQuestion6: "Which of these tags do you need to add JavaScript to a HTML document?",
-        jsAnswerA6: "< script >",
-        jsAnswerB6: "< div >",
-        jsAnswerC6: "< style >",
+        jsQuestion6: "When parsing JS parameters, if you pass a variable from another file what is the parameter parsing type?",
+        jsAnswerA6: "parse-by-reference",
+        jsAnswerB6: "pass-by-name",
+        jsAnswerC6: "parse-by-value",
         jsCorrectAnswer6: "A"
     },
     {
-        jsQuestion6: "What type of computing language is JavaScript?",
-        jsAnswerA6: "Mark-Up",
-        jsAnswerB6: "StyleSheet",
-        jsAnswerC6: "Scripting",
-        jsCorrectAnswer6: "C"
+        jsQuestion6: "If you want to parse an integer into a string variable, how would you do this?",
+        jsAnswerA6: "var number = 45; \n var x = number.toString();",
+        jsAnswerB6: "var number = 45, convertToString(number);",
+        jsAnswerC6: "You can't convert a number to a string",
+        jsCorrectAnswer6: "A"
     },
     {
-        jsQuestion6: "JavaScript can be used to create webpages instead of HTML?",
-        jsAnswerA6: "True",
-        jsAnswerB6: "False",
-        jsAnswerC6: "Sometimes",
-        jsCorrectAnswer6: "B"
+        jsQuestion6: "The use of 'var' and 'let' are used in similar ways. What does 'const' do?",
+        jsAnswerA6: "This means the value that is defined can be change constantly",
+        jsAnswerB6: "There isn't a declaration called 'const'",
+        jsAnswerC6: "The declaration cannot be reassigned as it is set a constant value",
+        jsCorrectAnswer6: "C"
     },
 ];
 //Declaring the question the test is on
@@ -345,22 +345,22 @@ function jsScoreRender6() {
     {
         case 0:
         {
-            jsQuestion6.innerHTML = "Maybe consider revising more?!";
+            jsQuestion6.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            jsQuestion6.innerHTML = "Nearly there, try again!";
+            jsQuestion6.innerHTML = "Nearly there, try again! :( ";
             break;
         }
         case 67:
         {
-            jsQuestion6.innerHTML = "Test Completed! So close!";
+            jsQuestion6.innerHTML = "Almost had it! So close! :| ";
             break;
         }
         case 100:
         {
-            jsQuestion6.innerHTML = "Test Completed with a Perfect Score well done!";
+            jsQuestion6.innerHTML = "Test Completed with a Perfect Score well done! :) ";
             break;
         }
     }

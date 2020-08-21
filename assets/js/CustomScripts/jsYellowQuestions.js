@@ -5,9 +5,9 @@ function allowDrop(e)
     e.preventDefault();
 }
 // This sets the parameters of what is being dragged to the droppable area
-function drag(e)
+function drag(ev)
 {
-    e.dataTransfer.setData("text", e.target.id);
+    id= ev.target.id;
 }
 function drop(e)
 {

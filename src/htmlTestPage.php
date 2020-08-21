@@ -83,7 +83,7 @@
     <div class="row" id="whiteGlobal">
         <div class="col-md-4">
             <h3 style="text-align: center"><u>Test 1</u></h3>
-            <div class="htmlWContainer" style="border-style: solid">
+            <div class="htmlWContainer" style="border-style: solid; height: 250px;">
                     <div class="htmlQuestions" id="htmlQuestion1"></div>
                     <div class="htmlAnswers" id="htmlAnswers1">
                         <div class="htmlWChoices" id="htmlA1" onclick="checkHTMLAnswer1('A')"></div>
@@ -97,7 +97,7 @@
         <!-- Second set of questions-->
         <div class="col-md-4">
             <h3 style="text-align: center"><u>Test 2</u></h3>
-            <div class="htmlWContainer" style="border-style: solid">
+            <div class="htmlWContainer" style="border-style: solid; height: 250px;">
                     <div class="htmlQuestions" id="htmlQuestion2"></div>
                     <div class="htmlAnswers" id="htmlAnswers2">
                         <div class="htmlWChoices" id="htmlA2" onclick="checkHTMLAnswer2('A')"></div>
@@ -111,7 +111,7 @@
         <!-- Third set of questions-->
         <div class="col-md-4">
             <h3 style="text-align: center"><u>Test 3</u></h3>
-            <div class="htmlWContainer" style="border-style: solid">
+            <div class="htmlWContainer" style="border-style: solid; height: 250px;">
                     <div class="htmlQuestions" id="htmlQuestion3"></div>
                     <div class="htmlAnswers" id="htmlAnswers3"> <!-- This is 'choices' in video-->
                         <div class="htmlWChoices" id="htmlA3" onclick="checkHTMLAnswer3('A')"></div>
@@ -146,7 +146,7 @@
         <div class="col-md-4">
             <div class="htmlOContainer" style="border-style: solid">
                 <div class="htmlQuestions"  id="htmlQuestion5"></div>
-                    <div class="htmlAnswers" id="htmlAnswers4">
+                    <div class="htmlAnswers" id="htmlAnswers5">
                         <div class="htmlOChoices" id="htmlA5" onclick="htmlCheckAnswer5('A')"></div>
                         <div class="htmlOChoices" id="htmlB5" onclick="htmlCheckAnswer5('B')"></div>
                         <div class="htmlOChoices" id="htmlC5" onclick="htmlCheckAnswer5('C')"></div>
