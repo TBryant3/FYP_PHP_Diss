@@ -139,7 +139,7 @@
                     <div class="htmlOChoices" id="htmlB4" onclick="htmlCheckAnswer4('B')"></div>
                     <div class="htmlOChoices" id="htmlC4" onclick="htmlCheckAnswer4('C')"></div>
                 </div>
-                <div class="htmlOResultProgress"  id="htmlResultProgress4"></div>
+                <div class="htmlOResultProgress"  id="htmlResultProgress4" style="margin-top:18%"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer4" style="display: none"> </div>
             </div>
         </div>
@@ -151,7 +151,7 @@
                         <div class="htmlOChoices" id="htmlB5" onclick="htmlCheckAnswer5('B')"></div>
                         <div class="htmlOChoices" id="htmlC5" onclick="htmlCheckAnswer5('C')"></div>
                     </div>
-                    <div class="htmlOResultProgress"  id="htmlResultProgress5"></div>
+                    <div class="htmlOResultProgress"  id="htmlResultProgress5" style="margin-top: 18%"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer5" style="display: none"> </div>
             </div>
         </div>

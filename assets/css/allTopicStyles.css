@@ -382,7 +382,7 @@
     border-color: goldenrod;
     width:50%;
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right: 23%;
 }
 #btnShowEvent:hover
 {
@@ -392,15 +392,17 @@
 
 
 /*Style for 'HTML Layout' and button*/
-#htmlLayoutHeading
+#htmlTagsHeading
 {
     text-align: center;
     width: 50%;
-    margin-left: 25%;
+    margin-left: 23%;
     margin-right: 25%;
     color: orange;
+    border: 1px solid orange;
+    border-radius: 10%;
 }
-#htmlLayoutHeading:hover
+#htmlTagsHeading:hover
 {
     color:orangered;
     cursor: pointer;
@@ -426,7 +428,9 @@
     width:50%;
     margin-left: 25%;
     margin-right: 25%;
-    color: blue
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 10%;
 }
 #cssLayoutHeading:hover
 {

@@ -155,15 +155,15 @@
     <div class="col-md-4" style="border:solid; background-color:lightcoral; height:100%">
         <h2 style="text-align: center"><b>JavaScript: Integration</b></h2>
         <div id="accordionP3" class="accordions">
+            <h3 class="learnTitles">JavaScript Applications</h3 class="learnTitles">
+            <p>
+                JavaScript cannot be used to create content on its own, it would still require some form of other platform to output the information it generates such as a database table or HTML document. Other then this, JavaScript can do a lot of operations and can run multiple lines of code without needing to be capped out due to its flexibility and support across different platforms. Furthermore, JavaScript is integrated into most modern software and so to try and NOT use JavaScript would be a difficult task or would mean a longer method would need ot be used to achieve the same goal.
+            </p>
             <h3 class="learnTitles">Use JS over other languages?</h3>
             <p>
                 JavaScript is used alongside HTML and CSS to produce responsive and dynamic web content. There are a few alternatives but most of them have been developed using JS as their core concept and so using the original ensures compatibility with most modern browsers. Alternatives such as <b>Dart</b> (Developed by Google) and <b>TypeScript</b> (Developed by Microsoft) were developed to be an enhancement of JavaScript by being either a lighter option over JavaScript or to be used for specific reasons such as unique applications and/or specialist software's.
                 <br>
                 Ultimately, using JavaScript means to ensure a stable and more commonly supported programming language over one that is more situational and task/operation specific
-            </p>
-            <h3 class="learnTitles">JavaScript Applications</h3 class="learnTitles">
-            <p>
-                JavaScript cannot be used to create content on its own, it would still require some form of other platform to output the information it generates such as a database table or HTML document. Other then this, JavaScript can do a lot of operations and can run multiple lines of code without needing to be capped out due to its flexibility and support across different platforms. Furthermore, JavaScript is integrated into most modern software and so to try and NOT use JavaScript would be a difficult task or would mean a longer method would need ot be used to achieve the same goal.
             </p>
             <h3 class="learnTitles">Example use of Script Tags</h3>
             <p>

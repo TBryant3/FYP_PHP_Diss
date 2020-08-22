@@ -120,11 +120,11 @@
 
 <!--Teaching Element and Theory explaining HTML-->
 <div class="row" style="height:600px">
-    <h1 style="text-align: center"><b><u>Theory Modules HTML</u></b></h1>
+    <h1 style="text-align: center"><b><u>Theory Modules</u></b></h1>
     <div class="col-md-2" style="min-height:550px"></div>
         <!--Part 1 - Introduction to HTML-->
     <div class="col-md-4" style="border:solid; background-color:lightgreen; min-height:550px">
-        <h2 style="text-align: center"><b>"What is.." and "How to.."  HTML</b></h2>
+        <h2 style="text-align: center"><b>HTML Development</b></h2>
         <p style="text-align:center">
             This module gives you the background behind HTML, <u><b>Why</b></u> it was developed as well as
             <u><b>How</b></u> HTML has influenced web development over the years!
@@ -194,8 +194,7 @@
     </div>
     <div class="col-md-2"></div>
 </div>
-
-<div style="margin-top: 5%">
+<div style="margin-top: 6%">
     <h3 style="text-align: center"><u><i>Overall Progress for Theory Modules</i></u></h3>
     <div id="progressBarHTMLOverallP1" style="position:relative; width: 50%; text-align: center; margin-left: 25%; margin-right: 25%; background-color: lightgrey">
         Progress Completed: <b><span id="pbHTML-labelOverall1" style="position:relative"></span></b>
@@ -210,50 +209,52 @@
     <!--Demo One-->
     <div class="col-md-4" style="height:auto">
         <h2 style="text-align: center; color: orange"><b><u>How to use HTML documents</u></b></h2>
-            <h3 style="text-align: center"><b><u>HTML Special Tags</u></b></h3>
+            <h3 style="text-align: center"><b><u>HTML Layout</u></b></h3>
             <p style="text-align: center; font-size: medium">
-            There are special tags that can be used in HTML instead of styling with CSS and these are:
+                As HTML is a mark-up language, it follows a structure that is written in plain english and can be understood and broken down simply.
                 <br>
-                <b><u><i>Quote marks purely to show the tags in HTML! <br> They are NOT part of the tags themselves!</i></u></b>
+                Click the button below to see and example of this structure!
                 <br>
                 <br>
-                <b>Breakpoints:</b>
+                Most Coding IDE's that support HTML tend to have a feature in which they will automatically create a HTML template for you when you select HTML as a file type on creation, but this isn't always the case and so some applications have snippets which allow for HTML templates to be generated.
                 <br>
-                They are declared using <b><'br'></b> and are used to add a line from where the break is instigated just like how this line is below the above without reaching its full length. They do not require a closing tag.
                 <br>
-                <b>Bold:</b>
+                Here are some examples applications that can use these snippets:
                 <br>
-                They are declared using <b><'b'></b> and add the font-weight attribute of bold to anything held between its tags. They are closed using <b><'/b'></b>.
+                <b><i>Atom</i></b> - Run 'apm install html-template-generator' and then press 'CTRL'+'ALT'+'K' together.
                 <br>
-                <b><i>Italics:</i></b>
                 <br>
-                They are declared using <b><'i'></b> and add the font-weight attribute of italics to the contents between its tags. Closed using <b><'/i'></b>
+                <b><i>Sublime Text</i></b> - Press together 'CTRL' + 'SHIFT' + 'P', type 'Install' and select 'Install Package' then type html and select 'boilerplate'. You now have this snippet and so simply type 'html' and you're good to go.
                 <br>
-                <b><u>Underline:</u></b>
                 <br>
-                These are declared using <b><'u'></b> and apply, as their name suggests, an underlining to values between its tags. Again, closed using <b><'/u'></b>
-                <br>
+                <a class="btn btn-info" id="btnShowLayout" onclick="popUpHTML.htmlPopRender(htmlLayout, 'This is how a HTML document is structured')"> Show HTML Layout </a>
             </p>
         <div>
-            <h2 id="htmlLayoutHeading" title="Click here"><b>HTML Layout</b></h2>
-            <div id="htmlLayoutText" style="text-align: center; display: none">
-                <p style="font-size: medium">
-                    As HTML is a mark-up language, it follows a structure that is written in plain english and can be understood and broken down simply.
+        <h2 id="htmlTagsHeading" title="Click here"><b>HTML Special Tags</b></h2>
+            <div id="htmlTagsText" style="text-align: center; display: none">
+                <p style="text-align: center; font-size: medium">
+                    There are special tags that can be used in HTML instead of styling with CSS and these are:
                     <br>
-                    Click the button below to see and example of this structure!
-                    <br>
-                    <br>
-                    Most Coding IDE's that support HTML tend to have a feature in which they will automatically create a HTML template for you when you select HTML as a file type on creation, but this isn't always the case and so some applications have snippets which allow for HTML templates to be generated.
+                    <b><u><i>Quote marks purely to show the tags in HTML! <br> They are NOT part of the tags themselves!</i></u></b>
                     <br>
                     <br>
-                    Here are some examples applications that can use these snippets
+                    <b>Breakpoints:</b>
                     <br>
-                    <b>Atom</b> - Run 'apm install html-template-generator' and then press 'CTRL'+'ALT'+'K' together.
+                    They are declared using <b><'br'></b> and are used to add a line from where the break is instigated just like how this line is below the above without reaching its full length. They do not require a closing tag.
                     <br>
-                    <b>Sublime Text</b> - Press together 'CTRL' + 'SHIFT' + 'P', type 'Install' and select 'Install Package' then type html and select 'boilerplate'. You now have this snippet and so simply type 'html' and you're good to go.
+                    <b>Bold:</b>
                     <br>
+                    They are declared using <b><'b'></b> and add the font-weight attribute of bold to anything held between its tags. They are closed using <b><'/b'></b>.
                     <br>
-                <a class="btn btn-info" id="btnShowLayout" onclick="popUpHTML.htmlPopRender(htmlLayout, 'This is how a HTML document is structured')"> Show HTML Layout </a>
+                    <b><i>Italics:</i></b>
+                    <br>
+                    They are declared using <b><'i'></b> and add the font-weight attribute of italics to the contents between its tags. Closed using <b><'/i'></b>
+                    <br>
+                    <b><u>Underline:</u></b>
+                    <br>
+                    These are declared using <b><'u'></b> and apply, as their name suggests, an underlining to values between its tags. Again, closed using <b><'/u'></b>
+                    <br>
+                </p>
             </div>
         </div>
     </div>
@@ -263,15 +264,6 @@
         <h2 style="text-align: center; color: saddlebrown"><u><b><i style="font-size: xx-large">&</i></b></u></h2>
         <h2 style="text-align: center; color: saddlebrown"><u><b>What to Avoid</b></u></h2>
         <br>
-        <p style="text-align: center; font-size: large">
-            It is NOT possible to place the head tag below the body tag as this will cause an error to be thrown by your browser as it will not be able to identify the contents of your web document.
-            <br>
-            <br>
-            Similarly, it is NOT possible to place either the head or body within one another as the web browser will attempt to obtain the head or body when it is needed and will not be able to find them, throwing an error in the process in the browser console (this is accessible by pressing F12 when within your browser).
-            <br>
-            <br>
-            Another mistake to avoid would be to attempt to place the head or body tags outside of the html tags. This will mean the system will attempt to load the head or body data without the html document being attached leading to an out-of-scope scenario where the head or body element will have no connection to the html document leading to the document not loading as it should.
-        </p>
         <div id="popImageBox" style="background-color: saddlebrown;">
             <div>
                 <div id="popImageBoxHeader" style="color: saddlebrown;background: grey"></div>
@@ -282,6 +274,15 @@
                 </div>
             </div>
         </div>
+        <p style="text-align: center; font-size: large">
+            It is NOT possible to place the head tag below the body tag as this will cause an error to be thrown by your browser as it will not be able to identify the contents of your web document.
+            <br>
+            <br>
+            Similarly, it is NOT possible to place either the head or body within one another as the web browser will attempt to obtain the head or body when it is needed and will not be able to find them, throwing an error in the process in the browser console (this is accessible by pressing F12 when within your browser).
+            <br>
+            <br>
+            Another mistake to avoid would be to attempt to place the head or body tags outside of the html tags. This will mean the system will attempt to load the head or body data without the html document being attached leading to an out-of-scope scenario where the head or body element will have no connection to the html document leading to the document not loading as it should.
+        </p>
     </div>
     <!--Demo Three-->
     <div class="col-md-4" style="height:auto">
@@ -306,7 +307,16 @@
                 <br>
                 Finally, there can be a <b>title</b> attribute which is used to give a linked resource a name so the user knows where it comes from but if this is assigned then the browser reads it as default which is the root of the HTML and CSS files.
             </p>
-            <h2 id="cssLayoutHeading" title="Click here"><u><b>CSS Selectors</b></u></h2>
+            <h3 style="font-weight: bold"><u>CSS Assignment</u></h3>
+            <p>
+                When defining what element the CSS is to apply to, there are two identifiers that can be used: <i>Hashtags and Dots</i>.
+                <b>Hashtags</b> are used to call the <b>ID</b> of the element, this means that only that ID'd element will have the CSS applied.
+                <b>Dots</b> are used to denote that of a class, meaning that the CSS wil be applied to all elements that have this class name.s
+            </p>
+
+            <a class="btn btn-info" id="btnShowCSS" onclick="popUpHTML.htmlPopRender(cssLayout, 'This is how a CSS document is structured')"> Show CSS Layout </a>
+            <br>
+            <h2 id="cssLayoutHeading" title="Click here"><b>CSS Selectors</b></h2>
             <div id="cssLayoutText" style="text-align: center; display: none">
             <p style="font-size: medium">
                 CSS can also apply selector styles <b>:after</b> or <b>:before</b> selective actions are taken on specified elements and are defined by the target elements id, proceeded by a colon( : ) with the selector type.
@@ -322,7 +332,7 @@
                 <br>
             </p>
             <br>
-            <a class="btn btn-info" id="btnShowCSS" onclick="popUpHTML.htmlPopRender(cssLayout, 'This is how a CSS document is structured')"> Show CSS Layout </a>
+
             </div>
         </div>
     </div>
@@ -541,9 +551,9 @@ t1Btn2.click(function ()
 
 
 // Events to show and hide HTML Layout block of text to reduce amount on screen at one time
-document.getElementById("htmlLayoutHeading").addEventListener("click", displayHTMLText);
+document.getElementById("htmlTagsHeading").addEventListener("click", displayHTMLText);
 // Gets text block to be manipulated, set it to a variable
-let htmlLayoutText = document.getElementById("htmlLayoutText");
+let htmlTagsText = document.getElementById("htmlTagsText");
 // Function to display HTML text
 function displayHTMLText()
 {
@@ -553,13 +563,13 @@ function displayHTMLText()
     if (showHTMLText === true)
     {
         //Set CSS display value to show text
-        htmlLayoutText.style.display = "block";
+        htmlTagsText.style.display = "block";
     }
     // If boolean value is false, hide
     else
     {
         //Set CSS display value to hide text
-        htmlLayoutText.style.display = "none";
+        htmlTagsText.style.display = "none";
     }
 }
 // Declaring boolean variable to set the text state as hidden by default

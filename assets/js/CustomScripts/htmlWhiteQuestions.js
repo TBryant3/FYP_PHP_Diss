@@ -54,8 +54,8 @@ let htmlWhiteQuestions1 = [
     },
     {
         htmlQuestion1 : "HTML can style itself, it doesn't need CSS",
-        htmlAnswerA1 : "True",
-        htmlAnswerB1 : "False",
+        htmlAnswerA1 : "True, HTML has its own standalone styling principles",
+        htmlAnswerB1 : "False, but has certain tags which apply certain properties such as 'bold' to text",
         htmlAnswerC1 : "True but using CSS enables better styling options",
         htmlCorrectAnswer1 : "B"
     },
@@ -135,12 +135,12 @@ function htmlScoreRender1()
     {
         case 0:
         {
-            htmlQuestion1.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
+            htmlQuestion1.innerHTML = "Maybe consider revising more first?! \n It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion1.innerHTML = "Nearly there, try again! :(";
+            htmlQuestion1.innerHTML = "Nearly there, try again! :( Have you looked at the introduction text for HTML?";
             break;
         }
         case 67:
@@ -150,7 +150,7 @@ function htmlScoreRender1()
         }
         case 100:
         {
-            htmlQuestion1.innerHTML = "Test Completed with a Perfect Score well done! :)";
+            htmlQuestion1.innerHTML = "Test Completed with a Perfect Score! Well done! :)";
             break;
         }
     }
@@ -266,12 +266,12 @@ function htmlScoreRender2()
     {
         case 0:
         {
-            htmlQuestion2.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
+            htmlQuestion2.innerHTML = "Maybe consider revising more first?! \n It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion2.innerHTML = "Nearly there, try again! :(";
+            htmlQuestion2.innerHTML = "Nearly there, try again! :( \n Try looking through the Introduction text for HTML and CSS again";
             break;
         }
         case 67:
@@ -281,7 +281,7 @@ function htmlScoreRender2()
         }
         case 100:
         {
-            htmlQuestion2.innerHTML = "Test Completed with a Perfect Score well done! :)";
+            htmlQuestion2.innerHTML = "Test Completed with a Perfect Score! Well done! :)";
             break;
         }
     }
@@ -297,9 +297,9 @@ let htmlWhiteQuestions3 = [
         htmlCorrectAnswer3 : "A"
     },
     {
-        htmlQuestion3 : "HTML is written as a plain english markup, can other coding languages be used within HTML?",
+        htmlQuestion3 : "HTML is written as a plain text markup language, can other coding languages be used within HTML?",
         htmlAnswerA3 : "Yes, many languages can be integrated",
-        htmlAnswerB3 : "HTML only allows only JavaScript and CSS integration",
+        htmlAnswerB3 : "HTML only allows JavaScript and CSS integration",
         htmlAnswerC3 : "HTML5 was developed to allow integration of the C-based languages",
         htmlCorrectAnswer3 : "B"
     },
@@ -386,12 +386,12 @@ function htmlScoreRender3()
     {
         case 0:
         {
-            htmlQuestion3.innerHTML = "Maybe consider revising more?! It's okay, You've got this! ";
+            htmlQuestion3.innerHTML = "Maybe consider revising more first?! \n It's okay, You've got this! ";
             break;
         }
         case 33:
         {
-            htmlQuestion3.innerHTML = "Nearly there, try again! :(";
+            htmlQuestion3.innerHTML = "Nearly there, try again! :( \n Try looking through the history of CSS again for help ";
             break;
         }
         case 67:
@@ -401,7 +401,7 @@ function htmlScoreRender3()
         }
         case 100:
         {
-            htmlQuestion3.innerHTML = "Test Completed with a Perfect Score well done! :)";
+            htmlQuestion3.innerHTML = "Test Completed with a Perfect Score! Well done! :)";
             break;
         }
     }

@@ -27,27 +27,27 @@ const htmlResultProgress6 = document.getElementById("htmlResultProgress6");
 const htmlScoreContainer6 = document.getElementById("htmlScoreContainer6");
 let htmlScore6 = 0;
 
-
+//CSS Based questions
 let htmlOrangeQuestions1 = [
     {
         htmlQuestion4: "CSS can be generated as a separate file to it's HTML, how does this benefit the developer? ",
         htmlAnswerA4: "It doesn't, CSS needs to be on the same page as HTML to be readable by the browser",
-        htmlAnswerB4: "External StyleSheets allow for more concise and readable code to be written and also allows for style classes to be shared across multiple files as opposed to just the single HTML file it is written on",
-        htmlAnswerC4: "The developer can then maintain a larger website",
-        htmlCorrectAnswer4: "C" || "B"
-    },
-    {
-        htmlQuestion4: "Who developed JavaScript?",
-        htmlAnswerA4: "Tim Berners-Lee",
-        htmlAnswerB4: "Brendan Eich",
-        htmlAnswerC4: "Hakon Wium Lie",
+        htmlAnswerB4: "External StyleSheets allow for 'cleaner' code and also allows for style classes to be shared across multiple files.",
+        htmlAnswerC4: "The developer can then maintain a smaller  website but still needs to change it per HTML page",
         htmlCorrectAnswer4: "B"
     },
     {
-        htmlQuestion4: "JavaScript functions are limited to only 35 lines of code before they start throwing errors?",
-        htmlAnswerA4: "True",
-        htmlAnswerB4: "False",
-        htmlAnswerC4: "Sometimes",
+        htmlQuestion4: "Which of these is the correct format to link CSS?",
+        htmlAnswerA4: "< stylesheet = style.css, href='x.linkToFile' >",
+        htmlAnswerB4: "< link href='x/PathToFile.css/x' rel='stylesheet' >",
+        htmlAnswerC4: "< link src='x/PathToFile.css/x' type='text/css' >",
+        htmlCorrectAnswer4: "B"
+    },
+    {
+        htmlQuestion4: "When applying margin to an element, what is NOT a format to set a different size to each side of the element? ",
+        htmlAnswerA4: "margin: 5px 4px 20px 10px",
+        htmlAnswerB4: "margin: top=5px, right=4px \n bottom=20px left=10px",
+        htmlAnswerC4: "margin-top: 5px; margin-right:4px; \n margin-bottom:20px; margin-left:10px;",
         htmlCorrectAnswer4: "B"
     },
 ];
@@ -118,22 +118,22 @@ function htmlScoreRender4() {
     {
         case 0:
         {
-            htmlQuestion4.innerHTML = "Maybe consider revising some more?! You've got this! ";
+            htmlQuestion4.innerHTML = "Maybe consider revising some more?! You've got this! Have you looked at our CSS example under the 'CSS Layout' section?";
             break;
         }
         case 33:
         {
-            htmlQuestion4.innerHTML = "Nearly there, try again! :(";
+            htmlQuestion4.innerHTML = "Nearly there, try again! :( Try looking over our CSS section again";
             break;
         }
         case 67:
         {
-            htmlQuestion4.innerHTML = "Almost had it! So close! :|";
+            htmlQuestion4.innerHTML = "Almost had it! So close! :| ";
             break;
         }
         case 100:
         {
-            htmlQuestion4.innerHTML = "Test Completed with a perfect score Well Done!  :) ";
+            htmlQuestion4.innerHTML = "Test Completed with a perfect score! Well Done!  :) ";
             break;
         }
     }
@@ -143,24 +143,24 @@ function htmlScoreRender4() {
 // Orange Set 2
 let htmlOrangeQuestions2 = [
     {
-        htmlQuestion5: "What is the output of this statement if ran within a function: document.getElementBYId('btnEvent').addEventListener ('click', displayDiv); ",
-        htmlAnswerA5: "Nothing, an error will be thrown",
-        htmlAnswerB5: "Not enough information",
-        htmlAnswerC5: "The displayDiv function will be ran",
-        htmlCorrectAnswer5: "C"
+        htmlQuestion5: " In what order should the core HTML tags be placed? ",
+        htmlAnswerA5: " head - body - html - (external StyleSheets)",
+        htmlAnswerB5: "html - head - (external StyleSheets) - body ",
+        htmlAnswerC5: "head - html - (external StyleSheets) - body",
+        htmlCorrectAnswer5: "B"
     },
     {
-        htmlQuestion5: "Which of these functions are incorrect?",
-        htmlAnswerA5: "function changeColour() {(textBox).style.Color = 'blue'; }",
-        htmlAnswerB5: "function addValues(x, y) { return x + y; }",
-        htmlAnswerC5: "function alertFunction() { alert('Hello world'); }",
+        htmlQuestion5: "You have an h1 tag, how do you style this across all of your webpages efficiently?",
+        htmlAnswerA5: "Add style tags in an external CSS file named 'heading 1' with specified styling",
+        htmlAnswerB5: "Within an external CSS file, call: \n h1{ 'properties in here' } and ensure this css file is linked to each webpage",
+        htmlAnswerC5: " Write the css on a single HTML page using: h1{ 'properties in here' } and call this HTML page on other HTML pages",
         htmlCorrectAnswer5: "A"
     },
     {
-        htmlQuestion5: "Where can JavaScript files be called from?",
-        htmlAnswerA5: "Internally - Inside the HTMl document",
-        htmlAnswerB5: "Externally - Called to the HTML document through script tags linking to another file",
-        htmlAnswerC5: "Either Internally or Externally",
+        htmlQuestion5: "What is the name of the body which grants Recommendations for Web Standards? ",
+        htmlAnswerA5: "Netscape Ltd",
+        htmlAnswerB5: "Google Consortium",
+        htmlAnswerC5: "The World Wide Web Consortium",
         htmlCorrectAnswer5: "C"
     },
 ];
@@ -237,7 +237,7 @@ function htmlScoreRender5() {
         }
         case 33:
         {
-            htmlQuestion5.innerHTML = "Nearly there, try again! :(";
+            htmlQuestion5.innerHTML = "Nearly there, try again! :( Have you read all information about HTML and CSS history?";
             break;
         }
         case 67:
@@ -255,24 +255,24 @@ function htmlScoreRender5() {
 // Orange test set 3
 let htmlOrangeQuestions3 = [
     {
-        htmlQuestion6: "Which of these tags do you need to add JavaScript to a HTML document?",
-        htmlAnswerA6: "< script >",
-        htmlAnswerB6: "< div >",
-        htmlAnswerC6: "< style >",
-        htmlCorrectAnswer6: "A"
-    },
-    {
-        htmlQuestion6: "What type of computing language is JavaScript?",
-        htmlAnswerA6: "Mark-Up",
-        htmlAnswerB6: "StyleSheet",
-        htmlAnswerC6: "Scripting",
+        htmlQuestion6: "Which of these tags are not to apply font properties without the need for CSS?",
+        htmlAnswerA6: "< b >",
+        htmlAnswerB6: "< i >",
+        htmlAnswerC6: "< p >",
         htmlCorrectAnswer6: "C"
     },
     {
-        htmlQuestion6: "JavaScript can be used to create webpages instead of HTML?",
-        htmlAnswerA6: "True",
-        htmlAnswerB6: "False",
-        htmlAnswerC6: "Sometimes",
+        htmlQuestion6: "What is the definition of a class?",
+        htmlAnswerA6: "Class: Identified by a '.' in CSS and groups together like named elements, sharing CSS properties",
+        htmlAnswerB6: "Class: Identified by a '#' in CSS and applies to a single element that has the same name as the class",
+        htmlAnswerC6: "Class: This is the property used by CSS to link HTML documents together",
+        htmlCorrectAnswer6: "A"
+    },
+    {
+        htmlQuestion6: "Which of these statements would change the background colour of a button element red on on hover?",
+        htmlAnswerA6: "button{ onHover = color:red }",
+        htmlAnswerB6: "button:hover{ background-color:red }",
+        htmlAnswerC6: "button{ hover:red }",
         htmlCorrectAnswer6: "B"
     },
 ];
@@ -350,7 +350,7 @@ function htmlScoreRender6() {
         }
         case 33:
         {
-            htmlQuestion6.innerHTML = "Nearly there, try again! :(";
+            htmlQuestion6.innerHTML = "Nearly there, try again! :( Try looking though our HTML and CSS layouts for examples";
             break;
         }
         case 67:
