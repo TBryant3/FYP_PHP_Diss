@@ -76,7 +76,7 @@
 <!--First Section - Beginner-->
 <h2 style="text-align:center; color: grey"><b>Test Set - White</b></h2>
 <div class="row" style="height:225px">
-    <div class="col-xs-2">
+    <div class="col-md-2">
         <div id="alertBox1" style="margin-left: 15px; margin-top: 40px">
             <div>
                 <div id="alertBoxHeader1"><b></b></div>
@@ -85,12 +85,12 @@
         </div>
     </div>
     <!-- HTML/CSS -->
-    <div class="col-xs-4" style="border-style:solid; height:100%; border-radius:5%; ">
+    <div class="col-md-4" style="border-style:solid; height:100%; border-radius:5%; ">
         <span style="cursor: pointer; color: lightgrey" id="favTest1" onclick="testAlert.favTestHTML('<b>HTML & CSS Tests:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="text-align:center"><b style="color:orange">HTML</b><img class="topicLogos" alt="HTML Logo"  src="../assets/img/HTML5_logo.png"  /><b style="color: blue"> CSS </b><img class="CSS_logo"  alt="CSS Logo" src="../assets/img/CSS3_logo.png"  /> <b style="color: orange">Tes</b><b style="color: blue">ts</b></h2>
-        <p style="text-align:center"><i>Web Development Mark-up language used to produce web pages for websites. Use HTML to structure and then CSS to style your webpages and stand out from the crowd</i></p>
+        <p style="text-align:center"><i>Use your HTML structure theory and CSS knowledge to style your answers and see if you're worthy of a belt!</i></p>
         <p><a class="btn btn-default" href="htmlTestPage.php" style="color:orange"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
 <!--        <div id="pbTest1" style="margin-bottom:1%;">-->
@@ -98,19 +98,19 @@
 <!--        </div>-->
     </div>
     <!-- JavaScript -->
-    <div class="col-xs-4" style="border-style:solid; height:100%; border-radius:5%;">
+    <div class="col-md-4" style="border-style:solid; height:100%; border-radius:5%;">
         <span style="cursor: pointer; color: lightgrey" id="favTest2" onclick="testAlert.favTestJS('<b>JavaScript Tests:</b> <br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:goldenrod; text-align:center"><b>JavaScript Tests<img class="topicLogos" alt="JavaScript_Logo"  src="../assets/img/js-logo.png" /></b></h2>
-        <p style="text-align:center"><i>These tests will go through the basics through to more complicated JavaScript functions with a well-rounded approach against what you have learnt from using this application</i></p>
+        <p style="text-align:center"><i>These tests will go through the basics through to more complicated JavaScript questions with a well-rounded approach against what you have learnt from using this application!</i></p>
         <p><a class="btn btn-default" href="jsTestPage.php" style="color:goldenrod"><b>Test me &raquo;</b></a></p>
         <!--Progress Bar-->
 <!--        <div id="pbTest4" style="margin-bottom:1%;">-->
 <!--            Tests Completed: <b><span id="jsTest-label" style="position:relative;"></span></b>-->
 <!--        </div>-->
     </div>
-    <div class="col-xs-2">
+    <div class="col-md-2">
         <div id="alertBox2" style="margin-top: 40px">
             <div>
                 <div id="alertBoxHeader2"><b></b></div>
@@ -124,7 +124,7 @@
 <!-- Second Section - Intermediate-->
 <h2 style="text-align:center; color: orange"><strong>Test Set - Orange</strong></h2>
 <div class="row" style="height:225px">
-    <div class="col-xs-2">
+    <div class="col-md-2">
         <div id="alertBox3" style="margin-left: 15px; margin-top: 40px">
             <div>
                 <div id="alertBoxHeader3"><b></b></div>
@@ -133,32 +133,32 @@
         </div>
     </div>
     <!-- CPlusPlus -->
-    <div class="col-xs-4" style="border-style:solid; height:100%; border-radius: 5%;">
+    <div class="col-md-4" style="border-style:solid; height:100%; border-radius: 5%;">
         <span style="cursor: pointer; color: lightgrey" id="favTest3" onclick="testAlert.favTestPlus('<b>C++ Tests: </b><br> Favourite settings have changed!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:deepskyblue; text-align:center"><b>C++ Tests <img class="topicLogos" alt="C_Plus_Logo"  src="../assets/img/Cplusplus_logo.png" /></b></h2>
         <p style="text-align:center"><i>A high-level programming language extension of C that uses the Object-oriented paradigm</i></p>
-        <p><a class="btn btn-default" href="cPlusPlusTestPage.php" style="color:deepskyblue"><b>Test me &raquo;</b></a></p>
+        <p><a class="btn btn-default" href="cPlusPlusTestPage.php" style="color:deepskyblue"><b>Coming Soon!</b></a></p>
         <!--Progress Bar-->
 <!--        <div id="pbTest3" style="margin-bottom:1%;">-->
 <!--            Tests Completed: <b><span id="cplusTest-label" style="position:relative;"></span></b>-->
 <!--        </div>-->
     </div>
     <!-- C-Sharp -->
-    <div class="col-xs-4" style="border-style: solid; height:100%; border-radius: 5%;">
+    <div class="col-md-4" style="border-style: solid; height:100%; border-radius: 5%;">
         <span style="cursor: pointer; color: lightgrey" id="favTest4" onclick="testAlert.favTestSharp('<b>C# Tests:</b> <br> favourite settings have been updated!')">
             <i class="far fa-grin-stars fa-3x" style="float:left; padding:5px"></i>
         </span>
         <h2 style="color:rebeccapurple; text-align:center"><b>C# Tests <img class="topicLogos" alt="C_Sharp_Logo" src="../assets/img/Csharp_logo.png" /></b></h2>
         <p style="text-align:center"><i>A general multi-purpose programming language developed using the .NET Framework that uses the Object-oriented paradigm</i></p>
-        <p><a class="btn btn-default" href="cSharpTestPage.php" style="color:rebeccapurple"><b>Test me &raquo;</b></a></p>
+        <p><a class="btn btn-default" href="cSharpTestPage.php" style="color:rebeccapurple"><b>Coming Soon!</b></a></p>
         <!--Progress Bar-->
 <!--        <div id="pbTest2" style="margin-bottom:1%;">-->
 <!--            Tests Completed: <b><span id="csharpTest-label" style="position:relative;"></span></b>-->
 <!--        </div>-->
     </div>
-    <div class="col-xs-2">
+    <div class="col-md-2">
         <div id="alertBox4" style="margin-top: 40px">
             <div>
                 <div id="alertBoxHeader4"><b></b></div>
@@ -170,38 +170,38 @@
 <br>
 <h2 style="text-align:center; color: goldenrod"><strong>Test Set - Yellow</strong></h2>
 <div class="row">
-    <div class="col-xs-4"></div>
-    <div class="col-xs-4" style="border-style: solid; border-radius: 3%;">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="border-style: solid; border-radius: 3%;">
         <h2 style="text-align:center; color: goldenrod"><b>Coming Soon</b></h2>
         <p id="countDownArea" style="text-align:center; font-size: x-large; color: goldenrod"></p>
     </div>
-    <div class="col-xs-4"></div>
+    <div class="col-md-4"></div>
 </div>
 <br>
 <h2 style="text-align:center"><strong>Test Set - Black</strong></h2>
 <div class="row">
-    <div class="col-xs-4"></div>
-    <div class="col-xs-4" style="border-style: solid; border-radius: 3%;">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="border-style: solid; border-radius: 3%;">
         <h2 style="text-align:center"><b>Coming Soon</b></h2>
         <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
     </div>
-    <div class="col-xs-4"></div>
+    <div class="col-md-4"></div>
 </div>
 <br>
 <!--Support-->
 <div class="row">
-    <div class="col-xs-2"></div>
-    <div class="col-xs-4" style="border-style: solid; border-radius: 5%;">
+    <div class="col-md-2"></div>
+    <div class="col-md-4" style="border-style: solid; border-radius: 5%;">
         <h2 style="color:lightsalmon; text-align:center"><strong>FAQ</strong></h2>
         <p style="text-align:center"><i>See if anyone else has asked the same as you!</i></p>
         <p><a class="btn btn-default" href="aboutUs.php"><b>Learn more &raquo;</b></a></p>
     </div>
-    <div class="col-xs-4" style="border-style:solid; border-radius:5%;">
+    <div class="col-md-4" style="border-style:solid; border-radius:5%;">
         <h2 style="color:lightsalmon; text-align:center"><strong>Ask an expert!</strong></h2>
         <p style="text-align:center"><i>Still can't find what you're looking for? Ask Us!</i></p>
         <p><a class="btn btn-default" href="contactUs.php"><b>Learn more &raquo;</b></a></p>
     </div>
-    <div class="col-xs-2">
+    <div class="col-md-2">
         <div id="alertBox4" style="margin-top: 40px">
         <div>
             <div id="alertBoxHeader4"><b></b></div>

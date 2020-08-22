@@ -30,11 +30,11 @@ let htmlScore6 = 0;
 
 let htmlOrangeQuestions1 = [
     {
-        htmlQuestion4: "Which of these are NOT a part of JavaScript?",
-        htmlAnswerA4: "functions",
-        htmlAnswerB4: "events",
-        htmlAnswerC4: "stylesheets",
-        htmlCorrectAnswer4: "C"
+        htmlQuestion4: "CSS can be generated as a separate file to it's HTML, how does this benefit the developer? ",
+        htmlAnswerA4: "It doesn't, CSS needs to be on the same page as HTML to be readable by the browser",
+        htmlAnswerB4: "External StyleSheets allow for more concise and readable code to be written and also allows for style classes to be shared across multiple files as opposed to just the single HTML file it is written on",
+        htmlAnswerC4: "The developer can then maintain a larger website",
+        htmlCorrectAnswer4: "C" || "B"
     },
     {
         htmlQuestion4: "Who developed JavaScript?",
@@ -151,17 +151,17 @@ let htmlOrangeQuestions2 = [
     },
     {
         htmlQuestion5: "Which of these functions are incorrect?",
-        htmlAnswerA5: "function changeColour() { document.getElementById(textBox).style.backgroundColor = 'blue'; }",
+        htmlAnswerA5: "function changeColour() {(textBox).style.Color = 'blue'; }",
         htmlAnswerB5: "function addValues(x, y) { return x + y; }",
-        htmlAnswerC5: "function alertFunction() { alert(Hello world) }",
-        htmlCorrectAnswer5: "C"
+        htmlAnswerC5: "function alertFunction() { alert('Hello world'); }",
+        htmlCorrectAnswer5: "A"
     },
     {
-        htmlQuestion5: "Either Internally or Externally",
-        htmlAnswerA5: "Internal - Inside the HTMl document",
-        htmlAnswerB5: "Externally - Called to the HTML document through script tags ",
-        htmlAnswerC5: "Where can JavaScript files be called from?",
-        htmlCorrectAnswer5: "A"
+        htmlQuestion5: "Where can JavaScript files be called from?",
+        htmlAnswerA5: "Internally - Inside the HTMl document",
+        htmlAnswerB5: "Externally - Called to the HTML document through script tags linking to another file",
+        htmlAnswerC5: "Either Internally or Externally",
+        htmlCorrectAnswer5: "C"
     },
 ];
 //Declaring the question the test is on

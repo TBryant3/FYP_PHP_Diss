@@ -169,7 +169,39 @@
     <div class="col-xs-2"></div>
 </div>
 
-
+<br>
+<div class="row" id="shortcuts" style="text-align: center">
+    <h1 style="text-align: center"><b><u>Useful keyboard shortcuts! Do you know them all?!</u></b></h1>
+    <br>
+    <div class="col-md-4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 style="text-align: center"> The <b>' <i>TAB</i> '</b> key on your keyboard will indent the line of code by 1 unit</h3>
+        <h3 style="text-align: center"> Similarly, <b>' <i>SHIFT</i> '</b> and <b>' <i>TAB</i> '</b> together will indent the code line backwards 1 unit</h3>
+        <h3 style="text-align: center"> Using <b>' <i>SHIFT</i> '</b> and <b>' <i>END</i> '</b> keys together will highlight the line of code that the cursor is currently on </h3>
+    </div>
+    <div class="col-md-4">
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>S</i> '</b> will save the active document</h3>
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>A</i> '</b> will highlight all code on the active document</h3>
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>X</i> '</b> will cut out the selected code</h3>
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>C</i> '</b> will copy the selected code</h3>
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>V</i> '</b> will paste out code that has been copied or cut</h3>
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>Z</i> '</b> will undo your last change to your code - This is similar to the undo button in most word processor based software's </h3>
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>Y</i> '</b> will redo the last change you made to your code if <b>'<i>CTRL</i>'</b> + <b>'<i>Z</i>'</b> have been pressed beforehand</h3>
+        <br>
+        <br>
+        <h2>Most of these keyboard shortcuts are transferable into many different applications as well as general use of your computer! <br><br> Try them out and see what you think!</h2>
+    </div>
+    <div class="col-md-4">
+        <br>
+        <br>
+        <h3 style="text-align: center"> Pressing <b>' <i>CTRL</i>'</b> key and the <b> ' / ' </b>(<i>Forward Slash</i>) key on your keyboard will comment out the entire line of code</h3>
+        <h3 style="text-align: center"> Pressing both the <b>' <i>CTRL</i> '</b> and the <b>' <i>TAB</i> '</b> keys together will allow you to change the active document you are working on to another that is already open. This is useful when quickly switching between multiple files. </h3>
+        <h3 style="text-align: center"> Pressing <b>' <i>CTRL</i> '</b> and <b>' <i>ENTER</i> '</b> will create a new line underneath the current one BUT will keep the cursor on the current line rather then drop down to the next line </h3>
+    </div>
+</div>
 
 </body>
 </html>

@@ -176,7 +176,7 @@ let htmlWhiteQuestions2 =
             htmlAnswerA2: "True and the browser isn't affected by this",
             htmlAnswerB2: "False, the browser will throw an error",
             htmlAnswerC2: "True but placing script tags outside html tags will result in errors being thrown",
-            htmlCorrectAnswer2: "A"
+            htmlCorrectAnswer2: "C"
         },
         {
             htmlQuestion2: "External code files have to be in the same folder as the HTML document to be accessible",
@@ -307,7 +307,7 @@ let htmlWhiteQuestions3 = [
         htmlQuestion3 : "Example CSS properties include...",
         htmlAnswerA3 : "border-color, padding, margin, font-size",
         htmlAnswerB3 : "page-color, margin-size, scripts, headings",
-        htmlAnswerC3 : "display, z-index, margin, vertical-align ",
+        htmlAnswerC3 : "display, z-index, margin, vertical-align",
         htmlCorrectAnswer3 : "B"
     },
 ];

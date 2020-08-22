@@ -157,11 +157,11 @@ let jsOrangeQuestions2 = [
         jsCorrectAnswer5: "A"
     },
     {
-        jsQuestion5: "Either Internally or Externally",
-        jsAnswerA5: "Internal - Inside the HTMl document",
-        jsAnswerB5: "Externally - Called to the HTML document through script tags ",
-        jsAnswerC5: "Where can JavaScript files be called from?",
-        jsCorrectAnswer5: "A"
+        jsQuestion5: "Where can JavaScript files be called from in a HTML document?",
+        jsAnswerA5: "Internally - Inside the HTMl document",
+        jsAnswerB5: "Externally - Called to the HTML document through script tags linking out of the HTML file ",
+        jsAnswerC5: "Either Internally or Externally",
+        jsCorrectAnswer5: "C"
     },
 ];
 //Declaring the question the test is on

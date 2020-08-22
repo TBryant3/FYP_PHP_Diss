@@ -391,7 +391,21 @@
 }
 
 
-/*Style for HTML layout button*/
+/*Style for 'HTML Layout' and button*/
+#htmlLayoutHeading
+{
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: orange;
+}
+#htmlLayoutHeading:hover
+{
+    color:orangered;
+    cursor: pointer;
+    border: 3px solid orangered;
+}
 #btnShowLayout
 {
     background: orange;
@@ -404,13 +418,36 @@
     border-color: orangered;
 }
 
-/*Style for CSS layout button*/
+
+/*Style for 'CSS Layout' and button*/
+#cssLayoutHeading
+{
+    text-align: center;
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: blue
+}
+#cssLayoutHeading:hover
+{
+    color: lightseagreen;
+    cursor: pointer;
+    border: 3px solid lightseagreen;
+}
 #btnShowCSS
 {
     background: blue;
     border-color: blue;
     margin-bottom: 5px;
 }
+#btnShowCSS:hover
+{
+    background: lightseagreen;
+    border-color: lightseagreen;
+
+}
+
+
 
 .ui-progressbar .ui-widget-header
 {

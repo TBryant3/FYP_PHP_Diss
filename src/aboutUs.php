@@ -76,19 +76,19 @@
 </div>
 <!--Intro about Plymouth University-->
 <div class="row">
-    <div class="col-xs-6">
+    <div class="col-md-6">
 
     </div>
-    <div class="col-xs-6">
+    <div class="col-md-6">
 
     </div>
 </div>
 <!--Code Example to show what the website will be able to show-->
 <div class="row">
-    <div class="col-xs-6">
+    <div class="col-md-6">
 
     </div>
-    <div class="col-xs-6">
+    <div class="col-md-6">
 
     </div>
 </div>

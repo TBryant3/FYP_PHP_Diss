@@ -129,13 +129,13 @@
     <div class="row" style="text-align:center">
     <h1 style="text-align: center"><i><b>Alternatively</b></i></h1>
     <h1 style="text-align: center"><u><b>Find us on Social Media</b></u></h1>
-        <div class="col-xs-3"></div>
-        <div class="col-xs-6" style="color: dodgerblue">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="color: dodgerblue">
             <a  href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-9x" style="cursor: pointer"></i></a>
             <a  href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-9x" style="cursor: pointer"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-9x" style="cursor: pointer"></i></a>
         </div>
-        <div class="col-xs-3"></div>
+        <div class="col-md-3"></div>
     </div>
     <br>
     <br>

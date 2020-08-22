@@ -94,7 +94,7 @@
 <div class="row" style="height:475px">
     <h1 style="text-align: center; color: goldenrod"><b><u>Theory Modules Part 1</u></b></h1>
     <!--Part 1 - Introduction to JS-->
-    <div class="col-xs-4" style="border:solid; background-color:lightgreen; height:100%">
+    <div class="col-md-4" style="border:solid; background-color:lightgreen; height:100%">
         <h2 style="text-align: center"><b>Chronology to JavaScript</b></h2>
         <!--First Accordion Widget-->
         <div id="accordionP1" class="accordions">
@@ -124,7 +124,7 @@
     </div>
 
     <!--Part 2 - Explaining Script Tags-->
-    <div class="col-xs-4" style="border:solid; background-color:lightgoldenrodyellow; height:100%">
+    <div class="col-md-4" style="border:solid; background-color:lightgoldenrodyellow; height:100%">
         <h2 style="text-align: center"><b>Introduction to JavaScript</b></h2>
         <div id="accordionP2" class="accordions">
             <h3 class="learnTitles">What is JavaScript?</h3>
@@ -152,7 +152,7 @@
         <button id="t4Btn2" style="margin-bottom:1%">Click me to complete</button>
     </div>
     <!--Part 3 - JavaScript for people with some JS experience-->
-    <div class="col-xs-4" style="border:solid; background-color:lightcoral; height:100%">
+    <div class="col-md-4" style="border:solid; background-color:lightcoral; height:100%">
         <h2 style="text-align: center"><b>JavaScript: Integration</b></h2>
         <div id="accordionP3" class="accordions">
             <h3 class="learnTitles">Use JS over other languages?</h3>
@@ -193,7 +193,7 @@
 <div class="row" style="height:510px">
     <h1 style="text-align: center; color: goldenrod"><b><u>Theory Modules Part 2</u></b></h1>
     <!--Part 4 - Introduction to JS variables-->
-    <div class="col-xs-4" style="border:solid; background-color:lightgreen; height:100%">
+    <div class="col-md-4" style="border:solid; background-color:lightgreen; height:100%">
         <h2 style="text-align: center"><b>JavaScript: Variables</b></h2>
         <div id="accordionP4" class="accordions">
             <h3 class="learnTitles">Types of Variables</h3>
@@ -235,7 +235,7 @@
     </div>
 
     <!--Part 5 - Explaining core functions and variables-->
-    <div class="col-xs-4" style="border:solid; background-color:lightgoldenrodyellow; height:100%">
+    <div class="col-md-4" style="border:solid; background-color:lightgoldenrodyellow; height:100%">
         <h2 style="text-align: center"><b>JavaScript Recap and Referencing</b></h2>
         <div id="accordionP5" class="accordions">
             <h3 class="learnTitles">Recap of JavaScript</h3>
@@ -271,7 +271,7 @@
         <button id="t4Btn5" style="margin-bottom:1%">Click me to complete</button>
     </div>
     <!--Part 6 - Final Learning Module-->
-    <div class="col-xs-4" style="border:solid; background-color:lightcoral; height:100%">
+    <div class="col-md-4" style="border:solid; background-color:lightcoral; height:100%">
         <h2 style="text-align: center"><b>JavaScript: Parameters</b></h2>
         <div id="accordionP6" class="accordions">
             <h3 class="learnTitles">Final JS Module</h3>
@@ -326,7 +326,7 @@
         </div>
     </div>
     <!--Demo One-->
-    <div class="col-xs-4">
+    <div class="col-md-4">
         <h2><u>Including JavaScript on a Web App</u></h2>
         <div id="accordionP7" class="accordions">
             <h3 class="learnTitles">Step 1:</h3>
@@ -352,7 +352,7 @@
 
 
     <!--Demo Two-->
-    <div class="col-xs-4">
+    <div class="col-md-4">
         <h2><u>JavaScript Functions</u></h2>
         <p>JavaScript functions are a block of code designed to be triggered when a specific action is carried out by the user, application, browser or when a certain parameter is met</p>
         <p>Functions can be used to create mathematical equations such as the following button and following function:
@@ -377,7 +377,7 @@
         </div>
     </div>
     <!--Demo Three-->
-    <div class="col-xs-4">
+    <div class="col-md-4">
         <h2><u>JavaScript Events</u></h2>
         <p>There are many different events within JavaScript such as mouse clicks and actions that the user can carry out then then trigger such events.</p>
         <p>Here are just a few examples!</p>
@@ -399,15 +399,15 @@
 
 <!--End of theory -> Go to tests-->
 <div class="row" style="height:255px">
-    <div class="col-xs-2" style="height:100%"></div>
-        <div class="col-xs-8" style="text-align: center">
+    <div class="col-md-2" style="height:100%"></div>
+        <div class="col-md-8" style="text-align: center">
             <h2 style="text-align: center"><b>For the Coding Sensei in-training!</b></h2>
             <h3>Are you ready to Test Your Knowledge on what you have learnt?</h3>
             <h3 style="text-align:center">Let's get started with some tests!</h3>
                 <br>
                 <a class="btn-link" href="jsTestPage.php"><b style="font-size: xx-large"><i style="color: goldenrod"><u>JavaScript Test Page HERE<u></i></b></a>
         </div>
-    <div class="col-xs-2" style="height:100%"></div>
+    <div class="col-md-2" style="height:100%"></div>
 </div>
 <br>
 <br>
@@ -418,24 +418,24 @@
 <h1 style="text-align: center"><b><u> Useful external JavaScript libraries</u></b></h1>
 <br>
 <div class="row" style="text-align: center">
-    <div class="col-xs-2">
+    <div class="col-md-2">
 
     </div>
-    <div class="col-xs-8">
+    <div class="col-md-8">
         <span style="text-align:center">
             <a href="https://jquery.com/"><img class="topicAddons" alt="jQuery Logo" title="Click Me for jQuery" src="../assets/img/jquery.jpg" style="cursor: pointer; margin-right: 3%"></a>
             <a href="https://jqueryui.com/"><img class="topicAddons" alt="jQuery-ui Logo" title="Click Me for jQuery-UI Logo" src="../assets/img/jqueryui.jpg" style="cursor: pointer"></a>
         </span>
         <h2 style="text-align:center"></h2>
     </div>
-    <div class="col-xs-2"></div>
+    <div class="col-md-2"></div>
 </div>
 <br>
 <br>
 <div class="row" id="shortcuts" style="text-align: center">
     <h1 style="text-align: center"><b><u>Useful keyboard shortcuts! Do you know them all?!</u></b></h1>
     <br>
-    <div class="col-xs-4">
+    <div class="col-md-4">
         <br>
         <br>
         <br>
@@ -444,7 +444,7 @@
         <h3 style="text-align: center"> Similarly, <b>' <i>SHIFT</i> '</b> and <b>' <i>TAB</i> '</b> together will indent the code line backwards 1 unit</h3>
         <h3 style="text-align: center"> Using <b>' <i>SHIFT</i> '</b> and <b>' <i>END</i> '</b> keys together will highlight the line of code that the cursor is currently on </h3>
     </div>
-    <div class="col-xs-4">
+    <div class="col-md-4">
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>S</i> '</b> will save the active document</h3>
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>A</i> '</b> will highlight all code on the active document</h3>
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>X</i> '</b> will cut out the selected code</h3>
@@ -452,8 +452,11 @@
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>V</i> '</b> will paste out code that has been copied or cut</h3>
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>Z</i> '</b> will undo your last change to your code - This is similar to the undo button in most word processor based software's </h3>
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>Y</i> '</b> will redo the last change you made to your code if <b>'<i>CTRL</i>'</b> + <b>'<i>Z</i>'</b> have been pressed beforehand</h3>
+        <br>
+        <br>
+        <h2>Most of these keyboard shortcuts are transferable into many different applications as well as general use of your computer! <br><br> Try them out and see what you think!</h2>
     </div>
-    <div class="col-xs-4">
+    <div class="col-md-4">
         <br>
         <br>
         <h3 style="text-align: center"> Pressing <b>' <i>CTRL</i>'</b> key and the <b> ' / ' </b>(<i>Forward Slash</i>) key on your keyboard will comment out the entire line of code</h3>

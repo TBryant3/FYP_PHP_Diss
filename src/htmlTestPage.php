@@ -134,36 +134,36 @@
         <div class="col-md-4">
             <div class="htmlOContainer" style="border-style: solid">
                 <div class="htmlQuestions"  id="htmlQuestion4"></div>
-                <div class="htmlAnswers" id="htmlAnswers4">
+                <div class="htmlOAnswers" id="htmlAnswers4">
                     <div class="htmlOChoices" id="htmlA4" onclick="htmlCheckAnswer4('A')"></div>
                     <div class="htmlOChoices" id="htmlB4" onclick="htmlCheckAnswer4('B')"></div>
                     <div class="htmlOChoices" id="htmlC4" onclick="htmlCheckAnswer4('C')"></div>
                 </div>
-                <div class="htmlResultProgress"  id="htmlResultProgress4"></div>
+                <div class="htmlOResultProgress"  id="htmlResultProgress4"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer4" style="display: none"> </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="htmlOContainer" style="border-style: solid">
                 <div class="htmlQuestions"  id="htmlQuestion5"></div>
-                    <div class="htmlAnswers" id="htmlAnswers5">
+                    <div class="htmlOAnswers" id="htmlAnswers5">
                         <div class="htmlOChoices" id="htmlA5" onclick="htmlCheckAnswer5('A')"></div>
                         <div class="htmlOChoices" id="htmlB5" onclick="htmlCheckAnswer5('B')"></div>
                         <div class="htmlOChoices" id="htmlC5" onclick="htmlCheckAnswer5('C')"></div>
                     </div>
-                    <div class="htmlResultProgress"  id="htmlResultProgress5"></div>
+                    <div class="htmlOResultProgress"  id="htmlResultProgress5"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer5" style="display: none"> </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="htmlOContainer" style="border-style: solid">
                 <div class="htmlQuestions"  id="htmlQuestion6"></div>
-                    <div class="htmlAnswers" id="htmlAnswers6">
+                    <div class="htmlOAnswers" id="htmlAnswers6">
                         <div class="htmlOChoices" id="htmlA6" onclick="htmlCheckAnswer6('A')"></div>
                         <div class="htmlOChoices" id="htmlB6" onclick="htmlCheckAnswer6('B')"></div>
                         <div class="htmlOChoices" id="htmlC6" onclick="htmlCheckAnswer6('C')"></div>
                     </div>
-                <div class="htmlResultProgress"  id="htmlResultProgress6"></div>
+                <div class="htmlOResultProgress"  id="htmlResultProgress6"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer6" style="display: none"> </div>
             </div>
         </div>

@@ -162,7 +162,6 @@ let favTest4 = document.getElementById("favTest4");
         }
     }
     let testAlert = new FavTestAlert();
-    FavTestAlert();
 
 
 
