@@ -13,6 +13,9 @@
     <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
     <script src="../assets/js/bootstrap.js"></script>
+    <!--Personal Icons-->
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
     <!-- Stylesheets -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
@@ -22,25 +25,14 @@
     <link href="../assets/css/themes/base/accordion.css" rel="stylesheet" type="text/css" />
 
     <style>
-        input[type=text]{
+        input[type=text], input[type=password]
+        {
             width: 100%;
             padding: 1%;
-            display: inline-block;
-
         }
-        input[type=text]:focus
+        input[type=text]:focus, input[type=password]:focus
         {
             background-color: #ddd;
-        }
-
-        .formContainer
-        {
-            padding: 1%;
-            background-color: white;
-        }
-        .submit:hover
-        {
-            background-color: darkgray;
         }
     </style>
 </head>
@@ -88,42 +80,39 @@
     </div>
 </div>
 
-
-
-
-
-<form method="post" id="forgotPSWForm" action="">
+<form method="post" id="forgotPSWForm"> <!--action="formSubmit"-->
     <div class="formContainer">
-        <h2 style="text-align:center"><strong>@ViewBag.Message</strong></h2>
+        <h2 style="text-align:center">User Password Recovery</h2>
         <br>
         <h4 style="text-align:center">Here you can reset your password!</h4>
         <h4 style="text-align: center ">You will be sent an email with instructions on what to do</h4>
         <br />
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <h4 style="text-align:center">Either input the Username of your account...</h4>
-                <div class="row" style="width:100%; padding-left:10%">
-                    <label for="username" style="width:25%; text-align:right">Username:
-                    <input type="text" name="username" placeholder="E.g: cojoUser1..." required />
-                    </label>
-                </div>
-                <br />
-                <h1 style="text-align:center"><b>OR</b></h1>
-                <br />
-                <h4 style="text-align:center">Input the email address that is linked to your account</h4>
-                <div class="row" style="width:100%; padding-left:10%">
-                    <label for="email" style="width:25%; text-align:right; padding-left:5%"><b>Email:</b>
-                    <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required />
-                    </label>
-                </div>
-                <br />
-                <div class="row" style="width:100%">
-                    <span style="padding-left:38%"><input type="submit" value="Submit" class="submit" style="border-radius:5%; height:15%; width:20%;"></span>
-                </div>
-                <div class="col-md-3"></div>
+        <div class="row" style="text-align: center">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4">
+                <i class="fa fa-user"></i>
+                <label for="username" style="width:35%">
+                    Username:<input type="text" name="username" placeholder="Insert username..." class="form-control" required />
+                </label>
             </div>
+            <div class="col-xs-4"></div>
         </div>
+        <h1 style="text-align: center"><b>OR</b></h1>
+        <div class="row" style="text-align: center">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4">
+                <i class="fa fa-user"></i>
+                <label for="email" style="width:35%">
+                    Email:<input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." required />
+                </label>
+            </div>
+            <div class="col-xs-4"></div>
+        </div>
+        <br />
+        <div class="row" style="text-align: center">
+            <span><input type="submit" value="Submit"  onclick="alert('Check your emails for password reset code \n [THIS FEATURE IS NOT CURRENTLY WORKING]')" style="border-radius:5%; height:15%; width:20%;"></span>
+        </div>
+        <div class="col-md-3"></div>
     </div>
 </form>
 

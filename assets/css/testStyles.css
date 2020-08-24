@@ -263,11 +263,79 @@
 
 
 
+/*Yellow Questions properties for drag and drop*/
+.draggableContentQ1
+{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    top:8px;
+    z-index: 9;
+}
+.draggableContentQ2
+{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    top:8px;
+    z-index: 9;
+}
+.draggableContentQ3
+{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    top:8px;
+    z-index: 9;
+    text-align: center;
+}
+.jsPieces
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
 
 
+.dropZoneQ1
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 40px;
+    text-align: center;
+}
+.dropZoneQ2
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 30px;
+    text-align: center;
+}
+.dropZoneQ3
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 30px;
+    text-align: center;
+}
 
-
-
-/*HTML TEST STYLES*/
-
-
+/*Text that shows when user gets answer right*/
+.correct
+{
+    width:50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: greenyellow;
+}
+/*Text that shows when user gets answer wrong*/
+.wrong
+{
+    width:50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: darkred;
+}

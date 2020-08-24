@@ -244,65 +244,65 @@
 
 
 
-    <div class="formContainer">
+    <div>
         <h2 style="text-align:center"><b>Register to join our community of Coding Ninja!</b></h2>
         <br>
         <h4 style="text-align:center">Here you can register an account with us!</h4>
         <h4 style="text-align: center ">Its quick and easy and comes with a variety of <a id="benefitsLink" href="aboutUs.php">Benefits</a></h4>
         <br />
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="registerForm">
+        <form action="<?php /*echo htmlspecialchars($_SERVER["PHP_SELF"]); */?>" method="post" id="registerForm">
             <div class="row">
                 <div class="col-xs-5"></div>
                 <div class="col-xs-7">
                     <!-- Username field -->
-                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group <?php /*echo (!empty($username_err)) ? 'has-error' : ''; */?>">
                         <i class="far fa-id-card"></i>
                         <label for="username" style="width:25%">Username:
-                        <input type="text" name="username" placeholder="E.g: CoJoUser1..." class="form-control" value="<?php echo $username; ?>">
+                        <input type="text" name="username" placeholder="E.g: CoJoUser1..." class="form-control" value="<?php /*echo $username; */?>" required>
                         </label>
-                        <span class="help-block"><?php echo $username_err; ?> </span>
+                        <span class="help-block"><?php /*echo $username_err; */?> </span>
                     </div>
                     <!-- First name field -->
-                    <div class="form-group <?php echo (!empty($firstName_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group <?php /*echo (!empty($firstName_err)) ? 'has-error' : ''; */?>">
                         <i class="fa fa-user"></i>
                             <label for="firstName" style="width:25%">First Name:
-                        <input type="text" name="firstName" placeholder="E.g: Tyler" class="form-control" value="<?php echo $firstName; ?>">
+                        <input type="text" name="firstName" placeholder="E.g: Tyler" class="form-control" value="<?php /*echo $firstName; */?>" required>
                             </label>
-                            <span class="help-block"><?php echo $firstName_err; ?></span>
+                            <span class="help-block"><?php /*echo $firstName_err; */?></span>
                     </div>
                     <!-- Last Name field -->
-                    <div class="form-group <?php echo (!empty($lastName_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group <?php /*echo (!empty($lastName_err)) ? 'has-error' : ''; */?>">
                         <i class="fa fa-user"></i>
                             <label for="lastName" style="width:25%">Last Name:
-                        <input type="text" name="lastName" placeholder="E.g: Bryant" class="form-control" value="<?php echo $lastName; ?>">
+                        <input type="text" name="lastName" placeholder="E.g: Bryant" class="form-control" value="<?php /*echo $lastName; */?>" required>
                             </label>
-                            <span class="help-block"><?php echo $lastName_err; ?></span>
+                            <span class="help-block"><?php /*echo $lastName_err; */?></span>
                     </div>
                     <!-- Email field -->
-                    <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group <?php /*echo (!empty($email_err)) ? 'has-error' : '';*/ ?>">
                         <i class="fa fa-envelope"></i>
                             <label for="email" style="width:25%">Email:
-                        <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." class="form-control" value="<?php echo $email; ?>">
+                        <input type="text" name="email" placeholder="E.g: cojoUser@cojo.co.uk..." class="form-control" value="<?php /*echo $email; */?>" required>
                             </label>
-                            <span class="help-block"><?php echo $email_err; ?> </span>
+                            <span class="help-block"><?php/* echo $email_err;*/ ?> </span>
                     </div>
                     <!-- Password field -->
-                    <div class="form-group <?php echo (!empty($psw_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group <?php/* echo (!empty($psw_err)) ? 'has-error' : ''; */?>">
                         <i class="fa fa-key"></i>
                             <label for="psw" style="width:25%">Password:
-                        <input type="password" name="psw" placeholder="Insert password..." class="form-control" value="<?php echo $psw; ?>">
+                        <input type="password" name="psw" placeholder="Insert password..." class="form-control" value="<?php /*echo $psw; */?>" required>
                             </label>
-                            <span class="help-block"><?php echo $psw_err; ?> </span>
+                            <span class="help-block"><?php /*echo $psw_err; */?> </span>
                     </div>
                     <!-- Confirm Password field -->
-                    <div class="form-group <?php echo (!empty($confirm_psw_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group <?php/* echo (!empty($confirm_psw_err)) ? 'has-error' : ''; */?>">
                         <i class="fa fa-key"></i>
                             <label for="confirm_psw" style="width:25%">Confirm Password:
-                        <input type="password" name="confirm_psw" placeholder="Re-type password..." class="form-control" value="<?php echo $confirm_psw; ?>">
+                        <input type="password" name="confirm_psw" placeholder="Re-type password..." class="form-control" value="<?php /*echo $confirm_psw; */?>" required>
                             </label>
-                            <span class="help-block"><?php echo $confirm_psw_err; ?> </span>
+                            <span class="help-block"><?php /*echo $confirm_psw_err; */?> </span>
                     </div>
-                    <div class="form-group <?php echo (!empty($country_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group <?php/* echo (!empty($country_err)) ? 'has-error' : ''; */?>" required>
                         <i class="fa fa-globe"></i>
                             <label for="countryChoice" style="width:10%">Country:</label>
                         <select id="countryChoice">
@@ -313,16 +313,27 @@
                             <option value="GER">Germany</option>
                             <option value="SPA">Spain</option>
                         </select>
-                        <span class="help-block"><?php echo $country_err; ?> </span>
+                        <span class="help-block"><?php /*echo $country_err; */?> </span>
                     </div>
 
                         <div class="form-group">
                             <p> By creating an account you agree to our <a href="Terms_Conditions.php">Terms & Privacy Policy</a>!</p>
-                            <input type="submit" value="Register" class="btn btn-primary" style="margin-right: 1%;border-radius:3%; height:5%; width:10%"><input type="reset" value="Reset" class="btn btn-default" style="margin-right: 1%;border-radius:3%; height:5%; width:10%">
+                            <input type="submit" value="Register" class="btn btn-primary" style="margin-right: 1%;border-radius:3%; height:5%; width:10%" onclick="registerText()"><input type="reset" value="Reset" class="btn btn-default" style="margin-right: 1%;border-radius:3%; height:5%; width:10%">
                             <p><b style="font-size:medium"> OR  </b> Already have an account? <a href="Login.php" style="font-size:medium">Sign In here</a>!</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+<script>
+    username = document.getElementById('username');
+    password = document.getElementById('password')
+    function registerText()
+    {
+        alert('You have been registered! \n Check your emails for your confirmation \n [THIS FEATURE IS COMING SOON, IT IS NOT WORKING]');
+    }
+</script>
+
+
 </body>
 </html>

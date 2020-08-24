@@ -201,7 +201,7 @@
             <div class="col-xs-4">
                 <i class="fa fa-user"></i>
                 <label for="username" style="width:35%">
-                    Username:<input type="text" name="username" placeholder="Insert username..." class="form-control" required />
+                    Username:<input type="text" id="username" placeholder="Insert username..." class="form-control" required />
                 </label>
             </div>
             <div class="col-xs-4"></div>
@@ -211,7 +211,7 @@
             <div class="col-xs-4">
                 <i class="fa fa-key"></i>
                 <label for="password" style="width:35%">
-                    Password:<input type="password" name="password" placeholder="Insert password..." class="form-control" required />
+                    Password:<input type="password" id="password" placeholder="Insert password..." class="form-control" required />
                 </label>
                 <p>Forgotten your password? <a href="forgotPsw.php"> Click me to recover</a>!</p>
             </div>
@@ -221,7 +221,17 @@
             <div class="col-xs-4"></div>
             <div class="col-xs-4">
                 <div id="signin-container" style="text-align: center">
-                    <p><input type="submit" value="Login" class="btn btn-info" style="border-radius:3%"> <br><br> <b style="font-size:large"> OR </b> <br><br> Don't already have an account?<br> <a href="Register.php" style="font-size:medium" >Register here</a>!</p>
+                    <p>
+                        <input value="Login" class="btn btn-info" style="border-radius:3%" onclick="loginText()">
+                        <br>
+                        <br>
+                        <b style="font-size:large"> OR </b>
+                        <br>
+                        <br>
+                        Don't already have an account?
+                        <br>
+                        <a href="Register.php" style="font-size:medium" >Register here</a>!
+                    </p>
                 </div>
             </div>
             <div class="col-xs-4"></div>
@@ -229,6 +239,26 @@
     </div>
 </form>
 
+<script>
+    username = document.getElementById('username');
+    password = document.getElementById('password')
+    function loginText()
+    {
+        if (password === null)
+        {
+            alert('Please insert your password');
+        }
+        if (username === null)
+        {
+            alert('Please insert your username');
+        }
+        else
+        {
+            alert('You are now logged in! \n [THIS FEATURE IS COMING SOON, IT IS NOT WORKING]');
+        }
+
+    }
+</script>
 
 </body>
 </html>

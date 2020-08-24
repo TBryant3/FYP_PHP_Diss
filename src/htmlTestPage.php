@@ -58,6 +58,7 @@
             <div class="nav navbar-nav navbar-right">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
+
                         <a class="nav-link" href="Login.php" style="font-size: medium">Log in</a>
                     </li>
                     <li class="nav-item">
@@ -78,6 +79,7 @@
 <br>
 <!--------------------------Test Tier 1----------------------------------------------------------------------------->
 <div class="row" style=" color: papayawhip; height: auto">
+    <h2 style="text-align: center"><u>Press the belt icon to minimise that tier</u></h2>
     <h1 style="text-align:center"> <b> White Belt Tests </b> <i class="fas fa-ribbon fa-1x" id="whiteBelt"></i></h1>
     <h3 style="text-align:center">The following tests are short and more straight forward which allow for you to answer in confidence and build up your overall approach to the rest of the tests!</h3>
     <div class="row" id="whiteGlobal">
@@ -179,91 +181,105 @@
     <h3 style="text-align:center">These tests will now introduce a new way to answer questions as to keep your mind thinking!</h3>
     <div class="row" id="yellowGlobal">
         <h3 style="text-align:center">Try and complete these equations with the provided pieces of code!</h3>
-        <div class="row" id="equations" style="text-align: center">
+
+        <!--        Equation / area where elements are dragged to-->
+        <div class="row" id="equations" style="text-align: center; height: auto">
             <div class="col-md-4">
-                <h3><b><u>Equation 1:</u></b><br>Complete the function</h3>
-                <div style="font-size: medium">
-                    function changeColour(){
-                    <div ondragover="allowDrop(e)"><div class="dropZone" ondrop="drop(e)"></div> ___________ </div>"(colourBox).style.backgroundColor = "green";
-                    }
+                <h3><b><u>Equation 1:</u></b><br>What is the missing tag in this example?</h3>
+                <br>
+                <div>
+                    <img src="../assets/img/Screenshots/whatIsMissing.png" style="height:235px; width: 450px">
+                    <div class="dropZoneQ1" style="padding-left: 10%; text-align: center; width: 100%">
+
+
+                    </div>_____________________
+                    <br>
+
+                </div>
+                <div class="results">
+                    <h3 class="correct" id="correct1" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong1" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
                 </div>
             </div>
+            <!--////////////////////////////////////////////////////////////////////////-->
             <div class="col-md-4">
-                <h3><b><u>Equation 2:</u></b><br> Complete the EventListener</h3>
+                <h3><b><u>Equation 2:</u></b><br> Which of these correctly applies a Bold effect on text?</h3>
+                <br>
+                <div>
+                    <p style="font-size: medium">
+                    <div class="dropZoneQ2" style="width: 200px; padding-left: 27px">
 
+
+                    </div>______________________);
+                    <br>
+                    </p>
+                </div>
+                <div class="results">
+                    <h3 class="correct" id="correct2" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong2" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
+                </div>
+                <!--/////////////////////////////////////////////////////////////////////////-->
             </div>
             <div class="col-md-4">
-                <h3><b><u>Equation 3:</u></b><br> Which variable would work best here</h3>
+                <h3><b><u>Equation 3:</u></b><br> Which is the correct output of 'values'?</h3>
+                <br>
+                <p style="font-size: medium">
+                    var x = "0.3";
+                    var y = "2.11";
+                    var z = "7"
+                    <br>
+                    var values = x + y + z;
+                </p>
+                <br>
 
+                <div class="dropZoneQ3">
+
+                </div>________________
+                <br>
+                <div class="results">
+                    <h3 class="correct" id="correct3" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong3" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--        Area for the draggable content-->
+        <div class="row" id="codePieces" style="text-align: center; height: auto">
+            <div class="col-md-4">
+                <h3><b><u>Equation 1 Pieces:</u></b></h3>
+                <div class="htmlPieces">
+                    <img src="../assets/img/Screenshots/htmlChoice1.png" style="height:30px; width: 150px" class="draggableContentQ1" draggable="true" alt="First droppable item">
+                    <br>
+                    <img src="../assets/img/Screenshots/htmlChoice2.png" style="height:25px; width: 250px" class="draggableContentQ1" draggable="true" alt="Second droppable item">
+                    <br>
+                    <img src="../assets/img/Screenshots/htmlChoice3.png" style="height:30px; width: 400px; margin-right: 2%" class="draggableContentQ1" draggable="true" alt="Third droppable item">
+                </div>
+                <button style="text-align: center; color: black">RESET</button>
+            </div>
+            <div class="col-md-4">
+                <h3><b><u>Equation 2 Pieces:</u></b></h3>
+                <div class="htmlPieces">
+                    <img src="../assets/img/Screenshots/boldTextExample1.png" style="height:30px; width: 350px" class="draggableContentQ2" draggable="true" alt="First droppable item">
+                    <br>
+                    <img src="../assets/img/Screenshots/boldExample2.png" style="height:150px; width: 200px" class="draggableContentQ2" draggable="true" alt="Second droppable item">
+                    <br>
+                    <img src="../assets/img/Screenshots/boldExample3.png" style="height:35px; width: 350px" class="draggableContentQ2" draggable="true" alt="Third droppable item">
+                </div>
+                <button style="text-align: center; color: black" onclick="">RESET</button>
+            </div>
+            <div class="col-md-4">
+                <h3><b><u>Equation 3 Pieces:</u></b></h3>
+                <div class="htmlPieces">
+                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip1" draggable="true">9.41</p>
+                    <br>
+                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip2" draggable="true">0.32.117</p>
+                    <br>
+                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip3" draggable="true">0.37.1099999</p>
+                </div>
+                <button style="text-align: center; color: black">RESET</button>
             </div>
         </div>
 
-        <div class="row" id="codePieces" style="text-align: center">
-            <div class="col-md-4">
-                <h3>Equation 1 Pieces:</h3>
-                <div id="jsPieces1">
-                    <div id="p1Frag1">
-                        <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip1" ondragstart="drag(e)" alt="First droppable item">
-                    </div>
-                    <div id="p1Frag2">
-
-                    </div>
-                    <div id="p1Frag3">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h3>Equation 2 Pieces:</h3>
-                <div id="jsPieces2">
-                    <div id="p2Frag1">
-                        <p>img</p>
-                    </div>
-                    <div id="p2Frag2">
-                        <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip2" ondragstart="drag(e)" alt="Second droppable item">
-                    </div>
-                    <div id="p2Frag3">
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-4">
-                <h3>Equation 3 Pieces:</h3>
-                <div id="jsPieces3">
-                    <div id="p3Frag1">
-                        <p>img</p>
-                    </div>
-                    <div id="p3Frag2">
-                        <p>img</p>
-                    </div>
-                    <div id="p3Frag3">
-                        <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:15px; width: 150px" id="e1Snip3" ondragstart="drag(e)" alt="Third droppable item">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row" id="equationResults" style="text-align: center">
-            <div class="col-md-4">
-                <h4>Result 1:</h4>
-                <p>Placeholder</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Result 2:</h4>
-                <p>Placeholder</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Result 3:</h4>
-                <p>Placeholder</p>
-            </div>
-        </div>
     </div>
 </div>
-<br>
-<br>
-<br>
 <br>
 <!------------------------------------Test Tier 4 Brown------------------------------------------------------------------->
 <div class="container" style="color: saddlebrown">
@@ -273,7 +289,7 @@
     <h2 style="color:saddlebrown; text-align:center"><b><i>Coming Soon</i></b></h2>
     <p id="countDownArea" style="text-align:center; font-size: x-large"></p>
 </div>
-<br>
+
 <!------------------------------------Test Tier 5------------------------------------------------------------------->
 <div class="container" style="color: black">
     <h1 style="text-align:center"><b> Black Belt Tests </b><i class="fas fa-ribbon fa-1x"></i></h1>
@@ -281,9 +297,6 @@
     <h2 style="color:black; text-align:center"><b>Coming Soon</b></h2>
     <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
 </div>
-<br>
-<br>
-<br>
 
 <script src="../assets/js/CustomScripts/htmlWhiteQuestions.js"></script>
 <script src="../assets/js/CustomScripts/htmlOrangeQuestions.js"></script>

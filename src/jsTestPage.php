@@ -77,6 +77,7 @@
 <br>
 <!--------------------------Test Tier 1 WHITE----------------------------------------------------------------------------->
 <div class="row" style="color: papayawhip; height: auto">
+    <h2 style="text-align: center"><u>Press the belt icon to minimise that tier</u></h2>
     <h1 style="text-align:center"><b> White Belt Tests </b> <i class="fas fa-ribbon fa-1x" id="whiteBelt"></i></h1>
     <h3 style="text-align:center">The following tests are short and more straight forward which allow for you to answer in confidence and build up your overall approach to the rest of the tests!</h3>
     <div class="row" id="whiteGlobal">
@@ -180,117 +181,112 @@
     <h3 style="text-align:center">These tests will now introduce a new way to answer questions as to keep your mind thinking!</h3>
     <div class="row" id="yellowGlobal">
         <h3 style="text-align:center">Try and complete these equations with the provided pieces of code!</h3>
-        <div class="row" id="equations" style="text-align: center; height: 200px">
+
+<!--        Equation / area where elements are dragged to-->
+        <div class="row" id="equations" style="text-align: center; height: auto">
             <div class="col-md-4">
-                <h3><b><u>Equation 1:</u></b><br>Complete the function</h3>
+                <h3><b><u>Equation 1:</u></b><br>Complete the function to change the colour of SINGLE div</h3>
+                <br>
                 <div>
-                    function changeColour()
-                    {
-                    <br>
-                    <br>
-                    <br>
-                       <div style="width: 100%; text-align: center"><div class="dropZone" ondragover="allowDrop(e)" ondrop="drop(e)">_________________</div></div>"(colourBox).style.backgroundColor = "green";
-                    }
+                    <p style="font-size: medium">
+                        function changeColour()
+                        {
+                        <div class="dropZoneQ1">
+
+
+                        </div>_____________________
+                        <br>
+                        (colourBox).style.backgroundColor = "green";
+                        }
+                    </p>
+                </div>
+                <div class="results">
+                    <h3 class="correct" id="correct1" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong1" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
                 </div>
             </div>
+            <!--////////////////////////////////////////////////////////////////////////-->
             <div class="col-md-4">
                 <h3><b><u>Equation 2:</u></b><br> Complete the EventListener</h3>
+                <br>
                 <div>
-                    btnEvent.addEventListener("click",<br><br><br><div style="width: 100%; text-align: center"><div class="dropZone" ondragover="allowDrop(e)" ondrop="drop(e)">_________________);</div></div>
-                    function displayAlert()
-                    {
-                        alert('Hello World')
-                    }
-                </div>
+                    <p style="font-size: medium">
+                        btnEvent.addEventListener("click",
+                        <div class="dropZoneQ2" style="width: 200px; padding-left: 27px">
 
+
+                        </div>______________________);
+                        <br>
+                        function displayAlert()
+                        {
+                            alert('Hello World')
+                        }
+                    </p>
+                </div>
+                <div class="results">
+                    <h3 class="correct" id="correct2" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong2" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
+                </div>
+            <!--/////////////////////////////////////////////////////////////////////////-->
             </div>
-            <div class="col-md-4" style="height: 50%">
+            <div class="col-md-4">
                 <h3><b><u>Equation 3:</u></b><br> Which is the correct output of 'values'?</h3>
-                var x = "0.3";
-                var y = "2.11";
-                var z = "7"
                 <br>
-                var values = x + y + z;
+                <p style="font-size: medium">
+                    var x = "0.3";
+                    var y = "2.11";
+                    var z = "7"
+                    <br>
+                    var values = x + y + z;
+                </p>
                 <br>
+
+                <div class="dropZoneQ3">
+
+                </div>________________
                 <br>
-                <div ondragover="allowDrop(e)" style="width: 100%; text-align: center"><div class="dropZone" ondrop="drop(e)">_________________);</div></div>
+                <div class="results">
+                    <h3 class="correct" id="correct3" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong3" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
+                </div>
             </div>
         </div>
         <br>
         <br>
-        <br>
-        <br>
-        <div class="row" id="codePieces" style="text-align: center">
+<!--        Area for the draggable content-->
+        <div class="row" id="codePieces" style="text-align: center; height: auto">
             <div class="col-md-4">
                 <h3><b><u>Equation 1 Pieces:</u></b></h3>
-                <div id="jsPieces1">
-                    <div id="p1Frag1" class="dragzone">
-                        <img src="../assets/img/Screenshots/getElementSnip.png" style = "height:20px; width: 200px" id="e1Snip1" ondragstart="drag(e)" alt="First droppable item">
-                    </div>
+                <div class="jsPieces">
+                   <img src="../assets/img/Screenshots/getElementSnip.png" style="height:25px" class="draggableContentQ1" id="e1Snip1" draggable="true" alt="First droppable item">
                     <br>
-                    <div id="p1Frag2" class="dragzone">
-                        <img src="../assets/img/Screenshots/getElementClassNameSnip.png" style = "height:25px; width: 200px" id="e1Snip2" ondragstart="drag(e)" alt="Second droppable item">
-                    </div>
+                    <img src="../assets/img/Screenshots/getElementClassNameSnip.png" style="height:25px;" class="draggableContentQ1" id="e1Snip2" draggable="true" alt="Second droppable item">
                     <br>
-                    <div id="p1Frag3" class="dragzone">
-                        <img src="../assets/img/Screenshots/getElementTagNameSnip.png" style = "height:25px; width: 200px" id="e1Snip3" ondragstart="drag(e)" alt="Third droppable item">
-                    </div>
+                    <img src="../assets/img/Screenshots/getElementTagNameSnip.png" style="height:25px;" class="draggableContentQ1" id="e1Snip3" draggable="true" alt="Third droppable item">
                 </div>
+                <button style="text-align: center; color: black">RESET</button>
             </div>
             <div class="col-md-4">
-                <h3><b><u>Equation 2 Pieces:</u><b></h3>
-                <div id="jsPieces2">
-                    <div id="p2Frag1">
-                        <img src="../assets/img/Screenshots/jsE2Snip.png" style = "height:25px; width: 150px" id="e2Snip1" ondragstart="drag(e)" alt="First droppable item">
-                    </div>
+                <h3><b><u>Equation 2 Pieces:</u></b></h3>
+                <div class="jsPieces">
+                    <img src="../assets/img/Screenshots/jsE2Snip2.png" style="height:25px; width: 150px" class="draggableContentQ2" id="e2Snip1" draggable="true" alt="First droppable item">
                     <br>
-                    <div id="p2Frag2">
-                        <img src="../assets/img/Screenshots/jsE2Snip2.png" style = "height:25px; width: 150px" id="e2Snip2" ondragstart="drag(e)" alt="First droppable item">
-                    </div>
+                    <img src="../assets/img/Screenshots/jsE2Snip.png" style="height:25px; width: 150px" class="draggableContentQ2" id="e2Snip2" draggable="true" alt="Second droppable item">
                     <br>
-                    <div id="p2Frag3">
-                        <img src="../assets/img/Screenshots/jsE2Snip3.png" style = "height:25px; width: 75px" id="e2Snip3" ondragstart="drag(e)" alt="First droppable item">
-                    </div>
+                    <img src="../assets/img/Screenshots/jsE2Snip3.png" style="height:25px; width: 75px" class="draggableContentQ2" id="e2Snip3" draggable="true" alt="Third droppable item">
                 </div>
-
+                <button style="text-align: center; color: black" onclick="">RESET</button>
             </div>
             <div class="col-md-4">
                 <h3><b><u>Equation 3 Pieces:</u></b></h3>
-                <div id="jsPieces3">
-                    <div id="p3Frag1">
-                        <p style="font-size: large">9.41</p>
-                    </div>
-                    <div id="p3Frag2">
-                        <p style="font-size: large">0.32.117</p>
-                    </div>
-                    <div id="p3Frag3">
-                        <p style="font-size: large">0.37.1099999</p>
-                    </div>
+                <div class="jsPieces">
+                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip1" draggable="true">9.41</p>
+                    <br>
+                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip2" draggable="true">0.32.117</p>
+                    <br>
+                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip3" draggable="true">0.37.1099999</p>
                 </div>
-
+                <button style="text-align: center; color: black">RESET</button>
             </div>
         </div>
 
-        <div class="row" id="equationResults" style="text-align: center">
-            <div class="col-md-4">
-                <h3><b><u>Result 1:</u><b></h3>
-                <div id="result1">
-                    <p>Placeholder</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h3><b><u>Result 2:</u><b></h3>
-                <div id="result2">
-                    <p>Placeholder</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h3><b><u>Result 3:</u><b></h3>
-                <div id="result3">
-                    <p>Placeholder</p>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <br>
@@ -313,8 +309,7 @@
         <p id="countDownArea1" style="text-align:center; font-size: x-large"></p>
     </div>
 <br>
-<br>
-<br>
+
 <!-- External Test Scripts -->
 <script src="../assets/js/CustomScripts/jsWhiteQuestions.js"></script>
 <script src="../assets/js/CustomScripts/jsOrangeQuestions.js"></script>

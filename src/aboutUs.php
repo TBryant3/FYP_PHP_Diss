@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<<!------------------NAV BAR SETTINGS------------------------>
+<!------------------NAV BAR SETTINGS------------------------>
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
