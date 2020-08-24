@@ -339,3 +339,49 @@
     margin-left: 25%;
     color: darkred;
 }
+
+
+/*/////////////////REFRESH BUTTONS/////////////////////////*/
+/*White question refresh button*/
+.btnWhite
+{
+    text-align: center;
+    color: black;
+    background-color: antiquewhite;
+    border-color: antiquewhite
+}
+.btnWhite:hover
+{
+    background-color: grey;
+    border-color: grey;
+}
+/*Orange tests refresh button*/
+.btnOrange
+{
+    text-align: center;
+    color: black;
+    background-color: orange;
+    border-color: orange
+}
+
+.btnOrange:hover
+{
+    background-color: orangered;
+    border-color: orangered;
+}
+/*Yellow question refresh button*/
+.btnYellow
+{
+    text-align: center;
+    color: black;
+    background-color: goldenrod;
+    border-color: goldenrod
+}
+.btnYellow:hover
+{
+    background-color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+
+

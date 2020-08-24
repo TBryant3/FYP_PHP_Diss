@@ -127,7 +127,7 @@ for (let i = 0; i < draggableContentQ2.length; i++)
 // Function to see if th user has dropped the correct answer or not
 function checkAnswer2()
 {
-    if (draggedItem === draggableContentQ2[1])
+    if (draggedItem === draggableContentQ2[2])
     {
         document.getElementById('correct2').style.display = 'block';
     }
@@ -193,6 +193,14 @@ function checkAnswer3()
     else
     {
         document.getElementById('wrong3').style.display = 'block';
+    }
+}
+
+function resetQuestions()
+{
+    if (confirm("You are about to reset all questions, \n is that correct?"))
+    {
+        location.reload();
     }
 }
 

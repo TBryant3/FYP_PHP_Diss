@@ -81,7 +81,7 @@
 <div class="row" style=" color: papayawhip; height: auto">
     <h2 style="text-align: center"><u>Press the belt icon to minimise that tier</u></h2>
     <h1 style="text-align:center"> <b> White Belt Tests </b> <i class="fas fa-ribbon fa-1x" id="whiteBelt"></i></h1>
-    <h3 style="text-align:center">The following tests are short and more straight forward which allow for you to answer in confidence and build up your overall approach to the rest of the tests!</h3>
+    <h3 style="text-align:center">The following tests are short, multiple choice questions to promote your confidence to build up your overall approach to the rest of the tests!</h3>
     <div class="row" id="whiteGlobal">
         <div class="col-md-4">
             <h3 style="text-align: center"><u>Test 1</u></h3>
@@ -95,6 +95,7 @@
                     <div class="htmlResultProgress" id="htmlResultProgress1"></div>
                 <div class="htmlScoreContainer" id="htmlScoreContainer1" style="display: none"></div>
             </div>
+            <button class="btnWhite" onclick="resetQuestions()">Refresh</button>
         </div>
         <!-- Second set of questions-->
         <div class="col-md-4">
@@ -109,6 +110,7 @@
                     <div class="htmlResultProgress" id="htmlResultProgress2"></div>
                 <div class="htmlScoreContainer" id="htmlScoreContainer2" style="display: none"> </div>
             </div>
+            <button class="btnWhite" onclick="resetQuestions()">Refresh</button>
         </div>
         <!-- Third set of questions-->
         <div class="col-md-4">
@@ -123,6 +125,7 @@
                     <div class="htmlResultProgress" id="htmlResultProgress3"></div>
                 <div class="htmlScoreContainer" id="htmlScoreContainer3" style="display: none"> </div>
             </div>
+            <button class="btnWhite" onclick="resetQuestions()">Refresh</button>
         </div>
     </div>
 </div>
@@ -144,6 +147,7 @@
                 <div class="htmlOResultProgress"  id="htmlResultProgress4" style="margin-top:18%"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer4" style="display: none"> </div>
             </div>
+            <button class="btnOrange" onclick="resetQuestions()">Refresh</button>
         </div>
         <div class="col-md-4">
             <div class="htmlOContainer" style="border-style: solid">
@@ -156,6 +160,7 @@
                     <div class="htmlOResultProgress"  id="htmlResultProgress5" style="margin-top: 18%"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer5" style="display: none"> </div>
             </div>
+            <button class="btnOrange" onclick="resetQuestions()">Refresh</button>
         </div>
         <div class="col-md-4">
             <div class="htmlOContainer" style="border-style: solid">
@@ -168,6 +173,7 @@
                 <div class="htmlOResultProgress"  id="htmlResultProgress6"></div>
                 <div class="htmlScoreContainer"  id="htmlScoreContainer6" style="display: none"> </div>
             </div>
+            <button class="btnOrange" onclick="resetQuestions()">Refresh</button>
         </div>
     </div>
 </div>
@@ -179,6 +185,8 @@
 <div class="row" style="color: gold">
     <h1 style="text-align:center"><b> Yellow Belt Tests </b> <i class="fas fa-ribbon fa-1x" id="yellowBelt"></i></h1>
     <h3 style="text-align:center">These tests will now introduce a new way to answer questions as to keep your mind thinking!</h3>
+    <h3 style="text-align:center">The questions are all drag and drop with 1 answer, if you get an answer wrong, that's okay, press the refresh button <br>
+    and you will be able to start again!</h3>
     <div class="row" id="yellowGlobal">
         <h3 style="text-align:center">Try and complete these equations with the provided pieces of code!</h3>
 
@@ -206,33 +214,26 @@
                 <br>
                 <div>
                     <p style="font-size: medium">
-                    <div class="dropZoneQ2" style="width: 200px; padding-left: 27px">
+                    <div class="dropZoneQ2" style="width: 200px; padding-left: 20px; height: 150px">
 
-
-                    </div>______________________);
+                    </div>_______________________________________________
                     <br>
                     </p>
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div class="results">
                     <h3 class="correct" id="correct2" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong2" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
                 </div>
                 <!--/////////////////////////////////////////////////////////////////////////-->
             </div>
             <div class="col-md-4">
-                <h3><b><u>Equation 3:</u></b><br> Which is the correct output of 'values'?</h3>
-                <br>
-                <p style="font-size: medium">
-                    var x = "0.3";
-                    var y = "2.11";
-                    var z = "7"
-                    <br>
-                    var values = x + y + z;
-                </p>
-                <br>
+                <h3><b><u>Equation 3:</u></b><br> Which of these code snippets will redirect you to another page?</h3>
+                <div class="dropZoneQ3" style="width: 100%">
 
-                <div class="dropZoneQ3">
-
-                </div>________________
+                </div>______________________________
                 <br>
                 <div class="results">
                     <h3 class="correct" id="correct3" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong3" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
@@ -244,6 +245,7 @@
         <!--        Area for the draggable content-->
         <div class="row" id="codePieces" style="text-align: center; height: auto">
             <div class="col-md-4">
+                <button class="btnYellow" onclick="resetQuestions()">Refresh</button>
                 <h3><b><u>Equation 1 Pieces:</u></b></h3>
                 <div class="htmlPieces">
                     <img src="../assets/img/Screenshots/htmlChoice1.png" style="height:30px; width: 150px" class="draggableContentQ1" draggable="true" alt="First droppable item">
@@ -252,9 +254,9 @@
                     <br>
                     <img src="../assets/img/Screenshots/htmlChoice3.png" style="height:30px; width: 400px; margin-right: 2%" class="draggableContentQ1" draggable="true" alt="Third droppable item">
                 </div>
-                <button style="text-align: center; color: black">RESET</button>
             </div>
             <div class="col-md-4">
+                <button class="btnYellow" onclick="resetQuestions()">Refresh</button>
                 <h3><b><u>Equation 2 Pieces:</u></b></h3>
                 <div class="htmlPieces">
                     <img src="../assets/img/Screenshots/boldTextExample1.png" style="height:30px; width: 350px" class="draggableContentQ2" draggable="true" alt="First droppable item">
@@ -263,18 +265,18 @@
                     <br>
                     <img src="../assets/img/Screenshots/boldExample3.png" style="height:35px; width: 350px" class="draggableContentQ2" draggable="true" alt="Third droppable item">
                 </div>
-                <button style="text-align: center; color: black" onclick="">RESET</button>
+                <br>
             </div>
             <div class="col-md-4">
+                <button class="btnYellow" onclick="resetQuestions()">Refresh</button>
                 <h3><b><u>Equation 3 Pieces:</u></b></h3>
                 <div class="htmlPieces">
-                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip1" draggable="true">9.41</p>
+                    <img src="../assets/img/Screenshots/htmlLinking2.png" style="height:30px; width: auto" class="draggableContentQ3" draggable="true" alt="First droppable item">
                     <br>
-                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip2" draggable="true">0.32.117</p>
+                    <img src="../assets/img/Screenshots/htmlLinking.png" style="height:30px; width: auto" class="draggableContentQ3" draggable="true" alt="Second droppable item">
                     <br>
-                    <p style="font-size: large" class="draggableContentQ3" id="e2Snip3" draggable="true">0.37.1099999</p>
+                    <img src="../assets/img/Screenshots/htmlLinking3.png" style="height:30px; width: auto" class="draggableContentQ3" draggable="true" alt="Third droppable item">
                 </div>
-                <button style="text-align: center; color: black">RESET</button>
             </div>
         </div>
 

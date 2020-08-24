@@ -93,12 +93,13 @@
                     <div class="jsResultProgress" id="jsResultProgress1"></div>
                 <div class="jsScoreContainer" id="jsScoreContainer1" style="display: none"></div>
             </div>
+            <button class="btnWhite" onclick="resetQuestions()">Refresh</button>
         </div>
         <!-- Second set of questions-->
         <div class="col-md-4">
             <h3 style="text-align: center"><u>Test 2</u></h3>
             <div class="jsWContainer" style="border-style: solid">
-                    <div class="jsQuestions" id="jsQuestion2"></div>
+                <div class="jsQuestions" id="jsQuestion2"></div>
                     <div class="jsAnswers" id="jsAnswers2">
                         <div class="jsWChoices" id="A2" onclick="jsCheckAnswer2('A')"></div>
                         <div class="jsWChoices" id="B2" onclick="jsCheckAnswer2('B')"></div>
@@ -107,6 +108,7 @@
                     <div class="jsResultProgress" id="jsResultProgress2"></div>
                 <div class="jsScoreContainer" id="jsScoreContainer2" style="display: none"> </div>
             </div>
+            <button class="btnWhite" onclick="resetQuestions()">Refresh</button>
         </div>
         <!-- Third set of questions-->
         <div class="col-md-4">
@@ -121,6 +123,7 @@
                     <div class="jsResultProgress" id="jsResultProgress3"></div>
                 <div class="jsScoreContainer" id="jsScoreContainer3" style="display: none"> </div>
             </div>
+            <button class="btnWhite" onclick="resetQuestions()">Refresh</button>
         </div>
     </div>
 </div>
@@ -144,6 +147,7 @@
                     <div class="jsResultProgress" id="jsResultProgress4"></div>
                 <div class="jsScoreContainer" id="jsScoreContainer4" style="display: none"> </div>
             </div>
+            <button class="btnOrange" onclick="resetQuestions()">Refresh</button>
         </div>
         <div class="col-md-4">
             <div class="jsOContainer" style="border-style: solid">
@@ -156,6 +160,7 @@
                     <div class="jsResultProgress" id="jsResultProgress5"></div>
                 <div class="jsScoreContainer" id="jsScoreContainer5" style="display: none"> </div>
             </div>
+            <button class="btnOrange" onclick="resetQuestions()">Refresh</button>
         </div>
         <div class="col-md-4">
             <div class="jsOContainer" style="border-style: solid">
@@ -168,6 +173,7 @@
                     <div class="jsResultProgress" id="jsResultProgress6"></div>
                 <div class="jsScoreContainer" id="jsScoreContainer6" style="display: none"> </div>
             </div>
+            <button class="btnOrange" onclick="resetQuestions()">Refresh</button>
         </div>
     </div>
 </div>
@@ -185,10 +191,11 @@
 <!--        Equation / area where elements are dragged to-->
         <div class="row" id="equations" style="text-align: center; height: auto">
             <div class="col-md-4">
+                <button class="btnYellow" onclick="resetQuestions()">Refresh</button>
                 <h3><b><u>Equation 1:</u></b><br>Complete the function to change the colour of SINGLE div</h3>
                 <br>
                 <div>
-                    <p style="font-size: medium">
+                    <div style="font-size: medium">
                         function changeColour()
                         {
                         <div class="dropZoneQ1">
@@ -198,7 +205,7 @@
                         <br>
                         (colourBox).style.backgroundColor = "green";
                         }
-                    </p>
+                    </div>
                 </div>
                 <div class="results">
                     <h3 class="correct" id="correct1" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong1" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
@@ -206,10 +213,11 @@
             </div>
             <!--////////////////////////////////////////////////////////////////////////-->
             <div class="col-md-4">
+                <button class="btnYellow" onclick="resetQuestions()">Refresh</button>
                 <h3><b><u>Equation 2:</u></b><br> Complete the EventListener</h3>
                 <br>
                 <div>
-                    <p style="font-size: medium">
+                    <div style="font-size: medium">
                         btnEvent.addEventListener("click",
                         <div class="dropZoneQ2" style="width: 200px; padding-left: 27px">
 
@@ -220,7 +228,7 @@
                         {
                             alert('Hello World')
                         }
-                    </p>
+                    </div>
                 </div>
                 <div class="results">
                     <h3 class="correct" id="correct2" style="display: none">That is correct! <br> Well done!<br> :) </h3> <h3 class="wrong" id="wrong2" style="display: none">This is incorrect! <br> Try again!<br>:( </h3>
@@ -228,6 +236,7 @@
             <!--/////////////////////////////////////////////////////////////////////////-->
             </div>
             <div class="col-md-4">
+                <button class="btnYellow" onclick="resetQuestions()">Refresh</button>
                 <h3><b><u>Equation 3:</u></b><br> Which is the correct output of 'values'?</h3>
                 <br>
                 <p style="font-size: medium">
@@ -261,7 +270,6 @@
                     <br>
                     <img src="../assets/img/Screenshots/getElementTagNameSnip.png" style="height:25px;" class="draggableContentQ1" id="e1Snip3" draggable="true" alt="Third droppable item">
                 </div>
-                <button style="text-align: center; color: black">RESET</button>
             </div>
             <div class="col-md-4">
                 <h3><b><u>Equation 2 Pieces:</u></b></h3>
@@ -272,7 +280,6 @@
                     <br>
                     <img src="../assets/img/Screenshots/jsE2Snip3.png" style="height:25px; width: 75px" class="draggableContentQ2" id="e2Snip3" draggable="true" alt="Third droppable item">
                 </div>
-                <button style="text-align: center; color: black" onclick="">RESET</button>
             </div>
             <div class="col-md-4">
                 <h3><b><u>Equation 3 Pieces:</u></b></h3>
@@ -283,7 +290,6 @@
                     <br>
                     <p style="font-size: large" class="draggableContentQ3" id="e2Snip3" draggable="true">0.37.1099999</p>
                 </div>
-                <button style="text-align: center; color: black">RESET</button>
             </div>
         </div>
 

@@ -452,6 +452,7 @@
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>V</i> '</b> will paste out code that has been copied or cut</h3>
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>Z</i> '</b> will undo your last change to your code - This is similar to the undo button in most word processor based software's </h3>
         <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>Y</i> '</b> will redo the last change you made to your code if <b>'<i>CTRL</i>'</b> + <b>'<i>Z</i>'</b> have been pressed beforehand</h3>
+        <h3 style="text-align: center"> <b>' <i>CTRL</i> '</b> + <b>' <i>D</i> '</b> will duplicate the highlighted code to the line below</h3>
         <br>
         <br>
         <h2>Most of these keyboard shortcuts are transferable into many different applications as well as general use of your computer! <br><br> Try them out and see what you think!</h2>

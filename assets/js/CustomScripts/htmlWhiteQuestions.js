@@ -410,5 +410,3 @@ $("#whiteBelt").click(function()
 {
     $("#whiteGlobal").toggle("slide");
 });
-
-

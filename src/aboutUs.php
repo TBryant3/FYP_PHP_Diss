@@ -13,6 +13,9 @@
     <script src="../assets/js/jquery-ui-1.12.1.js"></script>
     <!-- Bootstrap -->
     <script src="../assets/js/bootstrap.js"></script>
+    <!--Personal Icons-->
+    <link href="../assets/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
     <!-- Stylesheets -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
@@ -76,19 +79,31 @@
 </div>
 <!--Intro about Plymouth University-->
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
 
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
 
     </div>
 </div>
-<!--Code Example to show what the website will be able to show-->
+<!--Benefits-->
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
 
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4" style="text-align: center">
+        <h1>Benefits</h1>
+        <h2>Theory Content delivered in detail and with background information</h2>
+        <br>
+        <h2>Instantaneous Feedback when completing tests and topics</h2>
+        <br>
+        <h2>Savable topics and tests elements to check back on later </h2>
+        <p></p>
+    </div>
+    <div class="col-md-4">
 
     </div>
 </div>
