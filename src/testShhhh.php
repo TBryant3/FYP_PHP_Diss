@@ -1,11 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
 <?php
 // Server and db declarations
 $server = 'localhost';
-$username = 'admin';
-$password = 'adminpass';
+$username = 'root';
+$password = '';
 $db = 'fypdb';
 
 //Create connection to db
+//$connection = new mysqli('localhost', 'admin', 'adminpass', 'fypdb');
 $connection = new mysqli($server, $username, $password, $db);
 // Check connection, error is issue
 if ($connection->connect_error)
@@ -34,3 +38,7 @@ else
 $connection->close();
 
 ?>
+
+
+</body>
+</html>

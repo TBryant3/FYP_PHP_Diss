@@ -9,7 +9,7 @@
 //    exit;
 //}
 //
-//require_once "config/dbfunctions.php";
+//require_once "../config/dbfunctions.php";
 //
 ////Defining & Initialising login variables
 //$username = $psw = "";
@@ -44,7 +44,7 @@
 //        // Select statement to/from db
 //        $sql = "SELECT userID, username, psw FROM users WHERE username = :username";
 //
-//        if ($stmt = $dbConnection->prepare($sql))
+//        if ($stmt = $connection->prepare($sql))
 //        {
 //            //Bind variable parameters
 //            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
@@ -95,7 +95,7 @@
 //    // Close connection
 //    unset($pdo);
 //}
-//?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

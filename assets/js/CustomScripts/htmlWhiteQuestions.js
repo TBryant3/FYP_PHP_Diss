@@ -221,7 +221,7 @@ function correctHTMLAnswer2()
 //Turns marker red if wrong
 function wrongHTMLAnswer2()
 {
-    document.getElementById("htmlWProg2" + currentHTMLWhiteQuestion2).style.backgroundColor = "red";
+    document.getElementById(" " + currentHTMLWhiteQuestion2).style.backgroundColor = "red";
 }
 
 
@@ -339,12 +339,12 @@ htmlProgressRender3();
 //Turns marker green if correct
 function correctHTMLAnswer3()
 {
-    document.getElementById("jsWProg3" + currentHTMLWhiteQuestion3).style.backgroundColor = "green";
+    document.getElementById("htmlWProg3" + currentHTMLWhiteQuestion3).style.backgroundColor = "green";
 }
 //Turns marker red if wrong
 function wrongHTMLAnswer3()
 {
-    document.getElementById("jsWProg3" + currentHTMLWhiteQuestion3).style.backgroundColor = "red";
+    document.getElementById("htmlWProg3" + currentHTMLWhiteQuestion3).style.backgroundColor = "red";
 }
 
 // Function to check if the user has input the right answer

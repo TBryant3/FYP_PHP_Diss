@@ -117,7 +117,7 @@
             <h3 style="text-align: center"><u>Test 3</u></h3>
             <div class="htmlWContainer" style="border-style: solid; height: 250px;">
                     <div class="htmlQuestions" id="htmlQuestion3"></div>
-                    <div class="htmlAnswers" id="htmlAnswers3"> <!-- This is 'choices' in video-->
+                    <div class="htmlAnswers" id="htmlAnswers3">
                         <div class="htmlWChoices" id="htmlA3" onclick="checkHTMLAnswer3('A')"></div>
                         <div class="htmlWChoices" id="htmlB3" onclick="checkHTMLAnswer3('B')"></div>
                         <div class="htmlWChoices" id="htmlC3" onclick="checkHTMLAnswer3('C')"></div>
