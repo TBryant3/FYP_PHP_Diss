@@ -1,36 +1,27 @@
 <?php
+
 // Server and db declarations
 $server = 'localhost';
-$username = 'admin';
-$password = 'adminpass';
+$username = 'root';
+$password = '';
 $db = 'fypdb';
 
+try
+{
 //Create connection to db
-$connection = new mysqli($server, $username, $password, $db);
-// Check connection, error is issue
-if ($connection->connect_error)
-{
-    die("Connection failed: " . $connection->connect_error);
-}
-$sql = "SELECT userID, firstName, lastName FROM users";
-$result= $connection->query($sql);
+    $connection = new PDO("mysql:host=$server;dbname=$db", $username, $password);
 
-//If results exist
-if ($result->num_rows > 0)
-{
-    echo "<table><tr><th>UserID</th><th>Name</th></tr>";
-
-    //output
-    while($row = $result->fetch_assoc())
-    {
-        echo "<tr><td>".$row["userID"]."</td><td>".$row["firstName"]." ".$row["lastName"]."</td></tr>";
-    }
-    echo "</table>";
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
-else
+catch(PDOException $e)
 {
-    echo "0 results";
+    echo "Connection failed: " . $e->getMessage();
 }
-$connection->close();
 
-?>
+
+if (isset($_SESSION["username"]))
+{
+    $_SESSION["username"] = $user["username"];
+}
+
+

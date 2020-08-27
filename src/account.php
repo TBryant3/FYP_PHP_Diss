@@ -1,3 +1,9 @@
+<?php
+require '../config/dbFunctions.php';
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +75,7 @@
             <div class="nav navbar-nav navbar-right">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="Login.php" style="font-size: medium">Log in</a>
+                        <a class="nav-link" href="Logout.php" style="font-size: medium">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -82,25 +88,29 @@
 
     
 <div class="Welcoming">
-    <h1 style="text-align:center">Hi - <b><?php echo htmlspecialchars($_SESSION["username"]); ?> </b> - <i class="fas fa-user-ninja fa-2x"></i></h1>
+    <h1 style="text-align:center"> Welcome - <b> <?php echo $_SESSION["username"]; ?> </b> - <i class="fas fa-user-ninja fa-2x"></i>
     <h2 style="text-align:center">Welcome to your Account Page!</h2>
 </div>
+<br>
+<div style="text-align: center">
+    <input type="submit" value="Update Account" name="update" class="btn btn-info" style="height:10%;width: 10%" href="updateAccount.php">
+</div>
+<br>
 <div class="container">
-    <h1 style="text-align:center">Account Break-down</h1>
-    <div class="row" id="accBreakdown" style="border:double">
+    <h1 style="text-align:center"><b>Account Break-down</b></h1>
+    <br>
+    <div class="row" id="accBreakdown">
         <div class="col-md-4">
             <h2 style="text-align:center"><strong>Topics</strong></h2>
             <!-----------First Accordion for Topics ----------->
-            <div id="topicAccordion">
+            <div id="topicAccordion"style="width:70%; margin-right: 15%; margin-left:15%">
                 <h3>HTML & CSS</h3>
                 <!-----------Smaller Accordion within to show sub-sections----------->
                 <div id="htmlAcc">
-                    <h3>Module 1</h3>
-                    <p> For this Module, you have achieved: <b>#VALUE</b> % </p>
-                    <h3>Module 2</h3>
-                    <p> For this Module, you have achieved: <b>#VALUE</b> % </p>
-                    <h3>Module 3</h3>
-                    <p> For this Module, you have achieved: <b>#VALUE</b> % </p>
+                    <h3>HTML Development</h3>
+                    <p> For this Module, you have achieved: <b>100</b> % </p>
+                    <h3>Styling with CSS</h3>
+                    <p> For this Module, you have achieved: <b>50</b> % </p>
                 </div>
                 <h3>C#</h3>
                 <div id="cSharpAcc">
@@ -122,27 +132,33 @@
                 </div>
                 <h3>JavaScript</h3>
                 <div id="javaScriptAcc">
-                    <h3>Module 1</h3>
-                    <p> For this Module, you have achieved: <b>#VALUE</b> % </p>
-                    <h3>Module 2</h3>
-                    <p> For this Module, you have achieved: <b>#VALUE</b> % </p>>
-                    <h3>Module 3</h3>
-                    <p> For this Module, you have achieved: <b>#VALUE</b> % </p>
+                    <h3>Chronology of JS</h3>
+                    <p> For this Module, you have achieved: <b>100</b> % </p>
+                    <h3>Intro to JS</h3>
+                    <p> For this Module, you have achieved: <b>100</b> % </p>
+                    <h3>JS: Integration</h3>
+                    <p> For this Module, you have achieved: <b>100</b> % </p>
+                    <h3>JS: Variables</h3>
+                    <p> For this Module, you have achieved: <b>100</b> % </p>
+                    <h3>JS Recap/Reference</h3>
+                    <p> For this Module, you have achieved: <b>0</b> % </p>
+                    <h3>JS:Parameters </h3>
+                    <p> For this Module, you have achieved: <b>0</b> % </p>
                 </div>
             </div>
         </div>
         <!-----------Second Accordion for Tests ----------->
         <div class="col-md-4">
             <h2 style="text-align:center"><strong>Test Yourself</strong></h2>
-            <div id="testAccordion">
+            <div id="testAccordion" style="width:70%; margin-right: 15%; margin-left:15%">
                 <h3>HTML Tests</h3>
                 <div id="htmlTestAcc">
-                    <h3>Test 1</h3>
-                    <p> Test Result</p>
-                    <h3>Test 2</h3>
-                    <p> Test Result</p>
-                    <h3>Test 3</h3>
-                    <p>Test Result</p>
+                    <h3>White Belt</h3>
+                    <p> You have completed 3/3 Tests</p>
+                    <h3>Orange Belt</h3>
+                    <p> You have completed 2/3 Tests</p>
+                    <h3>Yellow Belt</h3>
+                    <p>You have completed 0/3 Tests</p>
                 </div>
                 <h3>C#</h3>
                 <div id="cSharpTestAcc">
@@ -164,63 +180,66 @@
                 </div>
                 <h3>JavaScript</h3>
                 <div id="javaScriptTestAcc">
-                    <h3>Test 1</h3>
-                    <p> Test Result</p>
-                    <h3>Test 2</h3>
-                    <p> Test Result</p>
-                    <h3>Test 3</h3>
-                    <p>Test Result</p>
+                    <h3>White Belt</h3>
+                    <p> You have completed 3/3 Tests</p>
+                    <h3>Orange Belt</h3>
+                    <p>You have completed 3/3 Tests</p>
+                    <h3>Yellow Belt</h3>
+                    <p>You have completed 3/3 Tests</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <h2 style="text-align:center"><strong>Favourites</strong></h2>
-            <h3 style="text-align:center">Selected Starred Topics which will be shown here</h3>
+        <div class="col-md-4" style="text-align:center">
+            <h2><strong>Favourites</strong></h2>
+            <h3>Selected Starred Topics which will be shown here</h3>
+            <span style="padding-right: 10px"><i class="fab fa-js-square fa-2x"></i><b>JavaScript Topics</b></span>
+            <span><i class="fab fa-js-square fa-2x"></i><b>JavaScript Tests</b></span>
         </div>
-        <br />
+        <br>
     </div>
-    <br />
+    <br>
+    <br>
     <!-----------Row 2 - Resume from Last------------>
       
-    <div class="row" id="resumeSection" style="border:double">
-        <div class="col-md-6" style="border:solid">
-            <h1 style="text-align:left"><u>Pick-up where you left off?</u></h1>
-            <br />
-            <h3 style="text-align:left"><strong>Current Topic:</strong>(#TOPIC#\ |+| /#MODULE#)</h3><!--### Obtain these from saved session log ###-->
+    <div class="row" id="resumeSection">
+        <div class="col-md-6" style="text-align: center">
+            <h1><u>Pick-up where you left off?</u></h1>
+            <h3><strong>Current Topic:</strong>HTML: Styling with CSS</h3><!--### Obtain these from saved session log ###-->
             <div>
-                <button style="float:left">Let's Go!</button>
-
+                <a class="btn btn-default" href="htmlPage.php" style="height:50px">Let's Go!</a>
+                <br>
+                <br>
             </div>
         </div>        
-        <div class="col-md-6" style="border:solid">
-            <h1 style="text-align:right"><u>Reflect on your past?</u></h1>
-            <br />
-            <h3 style="text-align:right"><strong>Last Test Attempted:</strong>(#TOPIC#\ |+| /#MODULE#)</h3><!--### Obtain these from saved session log - Database ###-->
+        <div class="col-md-6" style="text-align: center">
+            <h1><u>Reflect on your past?</u></h1>
+            <h3><strong>Last Test Attempted:</strong>HTML: Yellow Belt Tests</h3><!--### Obtain these from saved session log - Database ###-->
             <div>
-                <button style="float:right">Take me there</button>
-                
+                <a class="btn btn-default" href="jsTestPage.php" style="height:50px">Take me there</a>
+                <br>
+                <br>
             </div>            
         </div>
-        <br />
+        <br>
     </div>
-    <br />
+    <br>
     <!-----------Row 3 - Badge Case ----------->
-    <h1 style="text-align:center">Badge Case</h1>
+    <h1 style="text-align:center"><b>Badge Case</b></h1>
     <h3 style="text-align:center">Here you will see all of the badges which you have collected throughout the application and view the ones you're still missing</h3>
 
-    <div class="row" id="badgesRow1" style="border:double">
+    <div class="row" id="badgesRow1" style="border:double; width:70%; margin-left: 15%; margin-right: 15%">
         <h2 style="text-align:center"><u>Tier 1 Badges</u></h2>
         <div class="col-md-2"></div>
 
         <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 1</h4>
-            <span id="badge1"><i class="fab fa-html5 fa-3x"></i></span>
-            <h5 class="isObtained" style="text-align:center; font-style:oblique">Not Obtained</h5>
+            <span id="badge1" style="color: orange"><i class="fab fa-html5 fa-3x"></i></span>
+            <h5 class="isObtained" style="text-align:center; font-style:oblique">Obtained</h5>
         </div>
         <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 2</h4>
-            <span id="badge2"><i class="fab fa-html5 fa-3x"></i></span>
-            <h5 class="isObtained" style="text-align:center; font-style:oblique">Not Obtained</h5>
+            <span id="badge2" style="color: orange"><i class="fab fa-html5 fa-3x"></i></span>
+            <h5 class="isObtained" style="text-align:center; font-style:oblique">Obtained</h5>
         </div>
         <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 3</h4>
@@ -235,44 +254,49 @@
         <!--style="border:dashed"-->
         <div class="col-md-2"></div>
     </div>
-    <div class="row" id="badgesRow2" style="border:double">
+    <div class="row" id="badgesRow2" style="border:double; width:70%; margin-left: 15%; margin-right: 15%">
         <h2 style="text-align:center">Tier 2 Badges</h2>
         <div class="col-md-2"></div>
-
-        <div class="col-md-2" style="border:dashed; text-align:center">
+        <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 5</h4>
-            <span id="badge1"><i class="fab fa-html5 fa-3x"></i></span>
-            <h5 class="isObtained" style="text-align:center; font-style:oblique">Not Obtained</h5>
+            <span id="badge1" style="color: goldenrod"><i class="fab fa-js-square fa-3x"></i></span>
+            <h5 class="isObtained" style="text-align:center; font-style:oblique">Obtained</h5>
         </div>
-        <div class="col-md-2" style="border:dashed; text-align:center">
+        <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 6</h4>
-            <span id="badge2"><i class="fab fa-html5 fa-3x"></i></span>
-            <h5 class="isObtained" style="text-align:center; font-style:oblique">Not Obtained</h5>
+            <span id="badge2" style="color: goldenrod"><i class="fab fa-js-square fa-3x"></i></span>
+            <h5 class="isObtained" style="text-align:center; font-style:oblique">Obtained</h5>
         </div>
-        <div class="col-md-2" style="border:dashed; text-align:center">
+        <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 7</h4>
-            <span id="badge3"><i class="fab fa-html5 fa-3x"></i></span>
-            <h5 class="isObtained" style="text-align:center; font-style:oblique">Not Obtained</h5>
+            <span id="badge3" style="color: goldenrod"><i class="fab fa-js-square fa-3x"></i></span>
+            <h5 class="isObtained" style="text-align:center; font-style:oblique">Obtained</h5>
         </div>
-        <div class="col-md-2" style="border:dashed;text-align:center">
+        <div class="col-md-2" style="text-align:center">
             <h4 style="text-align:center">Badge 8</h4>
-            <span id="badge4"><i class="fab fa-html5 fa-3x"></i></span>
+            <span id="badge4"><i class="fab fa-js-square fa-3x"></i></span>
             <h5 class="isObtained" style="text-align:center; font-style:oblique">Not Obtained</h5>
         </div>
-
         <div class="col-md-2"></div>
-
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center">
+    <input type="submit" value="Delete Account" name="delete" class="btn btn-danger" style="height:10%;width: 10%">
     </div>
 </div>
-
-
 </body>
 </html>
 
 
-// JS SCRIPTS //
-
+<!--// JS SCRIPTS //-->
 <script>
+
+    function randomColour()
+    {
+        return '#' + ('00000' + (Math.random() * 100000 << 0).toString(16)).substr(-6);
+    }
+
     // Function which sets the options for the accordion elements //
     function collapseHeadings()
     {        // Topics main Accordion element
